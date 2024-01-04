@@ -1,0 +1,91 @@
+# > PayPal
+DOMAIN,cdn.honey.io
+DOMAIN,fraud-api.dyneti.com
+DOMAIN,survey.qualtrics.com
+# Braintree
+DOMAIN-SUFFIX,braintreegateway.com
+DOMAIN-SUFFIX,braintreegateway.tv
+DOMAIN-SUFFIX,braintreepayments.com
+DOMAIN-SUFFIX,braintreepayments.info
+DOMAIN-SUFFIX,braintreepayments.org
+DOMAIN-SUFFIX,braintreepayments.tv
+DOMAIN-SUFFIX,braintreepaymentsolutions.com
+DOMAIN-SUFFIX,braintreeps.com
+DOMAIN-SUFFIX,briantreepayments.net
+DOMAIN-SUFFIX,briantreepayments.tv
+DOMAIN-SUFFIX,card.io
+DOMAIN-SUFFIX,getbraintree.com
+# krakenjs
+DOMAIN-SUFFIX,krakenjs.com
+# LoanBuilder
+DOMAIN-SUFFIX,loanbuilder.com
+DOMAIN-SUFFIX,swiftcapital.com
+# Simility
+DOMAIN-SUFFIX,simility.com
+# Swift Financial
+DOMAIN-SUFFIX,cashify.net
+DOMAIN-SUFFIX,swiftbank.info
+DOMAIN-SUFFIX,swiftbank.us
+DOMAIN-SUFFIX,swiftfinancial.com
+DOMAIN-SUFFIX,swiftfinancial.info
+DOMAIN-SUFFIX,swiftfinancial.net
+# Venmo
+DOMAIN-SUFFIX,venmo-touch.com
+DOMAIN-SUFFIX,venmo.com
+DOMAIN-SUFFIX,venmo.info
+DOMAIN-SUFFIX,venmo.net
+DOMAIN-SUFFIX,venmo.org
+# Xoom
+DOMAIN-SUFFIX,cash2.com
+DOMAIN-SUFFIX,filipino-music.net
+DOMAIN-SUFFIX,s-xoom.com
+DOMAIN-SUFFIX,webmoneyinfo.com
+DOMAIN-SUFFIX,wiremoneytoirelandwithxoomeasierandcheaper.com
+DOMAIN-SUFFIX,wwwxoom.com
+DOMAIN-SUFFIX,xoom-experience.com
+DOMAIN-SUFFIX,xoom.com
+DOMAIN-SUFFIX,xoom.io
+DOMAIN-SUFFIX,xoom.net.cn
+DOMAIN-SUFFIX,xoom.us
+DOMAIN-SUFFIX,xoomcom.com
+# PayPal-Crop
+DOMAIN-SUFFIX,anfutong.cn
+DOMAIN-SUFFIX,anfutong.com
+DOMAIN-SUFFIX,anfutong.com.cn
+DOMAIN-SUFFIX,beibao.cn
+DOMAIN-SUFFIX,beibao.com
+DOMAIN-SUFFIX,beibao.com.cn
+DOMAIN-SUFFIX,bill-safe.com
+DOMAIN-SUFFIX,billmelater.com
+DOMAIN-SUFFIX,billmelater.info
+DOMAIN-SUFFIX,billmelater.net
+DOMAIN-SUFFIX,bml.info
+DOMAIN-SUFFIX,buyfast-paysmart.net
+DOMAIN-SUFFIX,cashify.com
+DOMAIN-SUFFIX,experiencebillmelater.com
+DOMAIN-SUFFIX,gmoney.org
+DOMAIN-SUFFIX,i-o-u.info
+DOMAIN-SUFFIX,mywaytopay.info
+DOMAIN-SUFFIX,mywaytopay.net
+DOMAIN-SUFFIX,pa9pal.com
+DOMAIN-SUFFIX,paaypal.com
+DOMAIN-SUFFIX,paily.net
+DOMAIN-SUFFIX,paily.org
+DOMAIN-SUFFIX,paipal.com
+DOMAIN-SUFFIX,pavpal.com
+DOMAIN-SUFFIX,paydiant.com
+DOMAIN-SUFFIX,paylike.com
+DOMAIN-SUFFIX,payppal.com
+DOMAIN-SUFFIX,payypal.com
+DOMAIN-SUFFIX,pdncommunity.com
+DOMAIN-SUFFIX,pp-soc.com
+DOMAIN-SUFFIX,pppds.com
+DOMAIN-SUFFIX,pypl.com
+DOMAIN-SUFFIX,pypl.info
+DOMAIN-SUFFIX,pypl.net
+DOMAIN-SUFFIX,pypl.tv
+DOMAIN-SUFFIX,theshoppingexpresslane.net
+DOMAIN-SUFFIX,xn--bnq297cix3a.cn
+DOMAIN-SUFFIX,venmo.s3.amazonaws.com
+DOMAIN-KEYWORD,paypal
+USER-AGENT,PayPal*

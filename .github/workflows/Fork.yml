@@ -1,0 +1,194 @@
+name: Fork filter lists
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "10 */12 * * *"
+  
+jobs:
+  Fork:
+    runs-on: ubuntu-latest
+    
+    steps: 
+    - name: Checkout target repository
+      uses: actions/checkout@v4.1.0
+      with:
+        repository: Jard1n/VPN_Tool
+        path: VPN_Tool-repo
+   
+    - name: Download file to Surge
+      run: |
+        mkdir -p VPN_Tool-repo/Surge/Rule
+        # 分流规则
+        curl -L -o VPN_Tool-repo/Surge/Rule/Proxy.list "https://raw.githubusercontent.com/SouthAlley/q/main/local/proxy.list"
+
+        # 广告规则 
+        curl -L -o VPN_Tool-repo/Surge/Rule/MyBlockAds.list "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list"
+        curl -L -o VPN_Tool-repo/Surge/Rule/Advertising.list "https://raw.githubusercontent.com/SouthAlley/q/main/rule/ad/fin.txt"
+
+    - name: Edit Surge/Rule
+      run: |
+        cd VPN_Tool-repo/Surge/Rule
+        for file in MyBlockAds.list Advertising.list Proxy.list; do
+          if [ -f "$file" ]; then
+            # 修改, 为,
+            sed -i 's/, /,/g' "$file"
+            # 删除规则
+            awk '{sub("host-wildcard.*$", ""); print}' "$file" > tmpfile
+            mv tmpfile "$file"
+            # 修改为大写
+            sed -i -e 's/host,/DOMAIN,/gi' "$file"
+            sed -i -e 's/host-suffix,/DOMAIN-SUFFIX,/gi' "$file"
+            sed -i -e 's/host-keyword,/DOMAIN-KEYWORD,/gi' "$file"
+            sed -i 's/ip-cidr,/IP-CIDR,/gi' "$file"
+            sed -i 's/ip6-cidr,/IP-CIDR6,/gi' "$file"
+            sed -i 's/user-agent,/USER-AGENT,/g' "$file"
+            # 删除不必要的部分
+            sed -i 's/\([^,]*,[^,]*\),.*/\1/g' "$file"
+            # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+            sed -i '/IP-CIDR/ {/no-resolve/! s/$/,no-resolve/}; /IP-CIDR6/ {/no-resolve/! s/$/,no-resolve/}' "$file"
+            # 修改;为#
+            sed -i 's/;/# /g' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit RuleSet
+      run: |
+        cd VPN_Tool-repo/Surge/Rule
+        for file in *_Set.list; do
+          if [ -f "$file" ]; then
+            # 删除 DOMAIN 和 DOMAIN-SUFFIX 行
+            awk '!/^(DOMAIN|DOMAIN-SUFFIX),/' "$file" > tmpfile
+            mv tmpfile "$file"
+            # 删除注释
+            sed -i 's/#.*//' "$file"
+            # 删除空行
+            sed -i '/^[[:space:]]*$/d' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Domain
+      run: |
+        cd VPN_Tool-repo/Surge/Rule
+        for file in *_Domain.list; do
+          if [ -f "$file" ]; then
+            # DOMAIN, 移除
+            sed -i 's/DOMAIN,//g' "$file"
+            # DOMAIN-SUFFIX, 替换为 .
+            sed -i 's/DOMAIN-SUFFIX,/./g' "$file"
+            # 删除规则
+            sed -i '/^\(PROCESS-NAME\|DOMAIN-KEYWORD\|IP-CIDR\|IP-CIDR6\|IP-ASN\|URL-REGEX\|USER-AGENT\|OR\|AND\),.*$/d' "$file"
+            # 删除注释
+            sed -i 's/#.*//' "$file"
+            # 删除空行
+            sed -i '/^[[:space:]]*$/d' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+
+    - name: Delete lines
+      run: |
+        original_file="VPN_Tool-repo/Surge/Rule/MyBlockAds.list"
+        del_file="VPN_Tool-repo/Surge/Rule/local/del.ini"
+
+        while IFS= read -r line
+        do
+          sed -i "/$line/d" "$original_file"
+        done < "$del_file"
+
+        echo "删除操作完成。"
+
+
+    - name: Copy custom rules
+      run: |
+       if [ -f "VPN_Tool-repo/Surge/Rule/MyBlockAds.list" ]; then
+         cat VPN_Tool-repo/Surge/Rule/local/rules.ini >> VPN_Tool-repo/Surge/Rule/MyBlockAds.list
+       else
+         cp VPN_Tool-repo/Surge/Rule/local/rules.ini VPN_Tool-repo/Surge/Rule/MyBlockAds.list
+       fi
+
+
+    - name: Download file to Surfboard
+      run: |
+        mkdir -p VPN_Tool-repo/Surfboard/Rule
+        # 分流规则
+        curl -L -o VPN_Tool-repo/Surfboard/Rule/Proxy_Domain.list "https://raw.githubusercontent.com/SouthAlley/q/main/rule/global/fin.txt"
+        # 广告规则 
+        curl -L -o VPN_Tool-repo/Surfboard/Rule/MyBlockAds.list "https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/MyBlockAds.list"
+        curl -L -o VPN_Tool-repo/Surfboard/Rule/Advertising.list "https://raw.githubusercontent.com/SouthAlley/q/main/rule/ad/fin.txt"
+        curl -L -o VPN_Tool-repo/Surfboard/Rule/Advertising_Domain.list "https://raw.githubusercontent.com/SouthAlley/q/main/rule/ad/fin.txt"
+
+    - name: Edit Surfboard/Rule
+      run: |
+        cd VPN_Tool-repo/Surfboard/Rule
+        for file in *.list; do
+          if [ -f "$file" ]; then
+            # 删除规则
+            sed -i '/^\(URL-REGEX\|USER-AGENT\|OR\|AND\),.*$/d' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit RuleSet to Surfboard
+      run: |
+        cd VPN_Tool-repo/Surfboard/Rule
+        for file in Advertising.list; do
+          if [ -f "$file" ]; then
+            # 删除 DOMAIN 和 DOMAIN-SUFFIX 行
+            awk '!/^(DOMAIN|DOMAIN-SUFFIX),/' "$file" > tmpfile
+            mv tmpfile "$file"
+            # 删除注释
+            sed -i 's/#.*//' "$file"
+            # 删除空行
+            sed -i '/^[[:space:]]*$/d' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+    - name: Edit Domain to Surfboard
+      run: |
+        cd VPN_Tool-repo/Surfboard/Rule
+        for file in *_Domain.list; do
+          if [ -f "$file" ]; then
+            # DOMAIN, 移除
+            sed -i 's/DOMAIN,//g' "$file"
+            # DOMAIN-SUFFIX, 替换为 .
+            sed -i 's/DOMAIN-SUFFIX,/./g' "$file"
+            # 删除规则
+            sed -i '/^\(PROCESS-NAME\|DOMAIN-KEYWORD\|IP-CIDR\|IP-CIDR6\|IP-ASN\|URL-REGEX\|USER-AGENT\|OR\|AND\),.*$/d' "$file"
+            # 删除注释
+            sed -i 's/#.*//' "$file"
+            # 删除空行
+            sed -i '/^[[:space:]]*$/d' "$file"
+          else
+            echo "$file not found."
+          fi
+        done
+
+        
+    - name: Add and Commits
+      run: |
+        cd VPN_Tool-repo
+        if [[ -n $(git status -s) ]]; then
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Surge/Rule/* Surfboard/Rule/*
+          git commit -m "Update"
+          git push
+        else
+          echo "No changes to commit."
+        fi
+    
+    - name: Cleanup Workflow
+      uses: Mattraks/delete-workflow-runs@main
+      with:
+        retain_days: 0
+        keep_minimum_runs: 2

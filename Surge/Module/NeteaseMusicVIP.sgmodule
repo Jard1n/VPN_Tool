@@ -1,0 +1,11 @@
+#!name=网易云音乐解锁VIP
+#!desc=仅解锁VIP歌曲
+
+
+[Script]
+# > 网易云解锁VIP
+网易云解锁VIP = type=http-request, pattern=^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/wangyy.js, timeout=60, script-update-interval=0
+
+
+[MITM]
+hostname = %APPEND% *.music.163.com

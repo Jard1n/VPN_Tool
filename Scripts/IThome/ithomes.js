@@ -1,0 +1,3 @@
+// 引用地址：https://github.com/Keywos/rule/raw/main/JS/ithomes.js
+// @timestamp thenkey 2023-12-11 20:46:15
+const e="undefined"!=typeof $loon;let t=!0,s=!0,d=!0;e&&(d="开启"===$persistentStore.read("去除轮播图广告"),t="开启"===$persistentStore.read("去除整个轮播图"),s="开启"===$persistentStore.read("去除置顶"));let a=[],n=JSON.parse($response.body);if(n?.data?.list){if(d&&!t)for(const e of n.data.list)if(10002===e.feedType){e.feedContent.focusNewsData=e.feedContent.focusNewsData.filter((e=>!1===e.isAd));break}t&&a.push(10002),s&&a.push(10003),n.data.list=n.data.list.filter((e=>!a.includes(e.feedType)&&!e.feedContent.smallTags?.[0].text.includes("广告")))}$done({body:JSON.stringify(n)});

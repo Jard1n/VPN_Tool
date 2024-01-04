@@ -1,0 +1,122 @@
+#!name = 净化 & 视频软件广告
+#!desc = 腾讯、优酷、芒果、爱奇艺app净化
+#!author = RuCu6
+#!update = 2023-12-11
+
+
+[Rule]
+# 爱奇艺放行地址
+DOMAIN-SUFFIX,cupid.iqiyi.com,DIRECT
+
+# 优酷放行地址
+DOMAIN,push.m.youku.com,DIRECT
+DOMAIN,un-acs.youku.com,DIRECT
+DOMAIN,dorangesource.alicdn.com,DIRECT
+
+# 腾讯视频
+URL-REGEX,^https:\/\/ossgw\.alicdn\.com\/creatives-assets/prod/feupload/user,REJECT
+URL-REGEX,^http:\/\/[\d\.:]*\/?(defaultts\.tc|vmind\.qqvideo\.tc|finderpdd\.video)\.qq\.com\/\w+,REJECT
+URL-REGEX,^http:\/\/apd-vlive\.apdcdn\.tc\.qq\.com\/vmind\.qqvideo\.tc\.qq\.com\/\w+,REJECT
+URL-REGEX,^http:\/\/apd-\w+\.v\.smtcdns\.com\/(defaultts|omts|vmind\.qqvideo)\.tc\.qq\.com\/\w+,REJECT
+
+# 芒果视频无用请求
+URL-REGEX,^http:\/\/[\d\.]+:\d{5}\/\?cmd=indexes,REJECT
+
+
+[Map Local]
+# ========== 腾讯视频 ==========
+# 腾讯视频 //vv.video.qq.com
+^https?:\/\/vv\.video\.qq\.com\/(diff|get)vmind data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+
+# ========== 爱奇艺 ==========
+# 播放页开通会员提示
+^https:\/\/act\.vip\.iqiyi\.com\/interact\/api\/v2\/show\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 播放页多余动效
+^https:\/\/iface2\.iqiyi\.com\/ivos\/interact\/video\/data\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 播放页升级白金会员按钮
+^https:\/\/iface2\.iqiyi\.com\/video\/3\.0\/v_interface_proxy\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 青少年弹窗
+^https:\/\/iface2\.iqiyi\.com\/views_pop\/3\.0\/pop_control\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+
+# ========== 芒果视频 ==========
+# 首页左上角推广
+^http:\/\/[\d\.]+\/odin\/c1\/(channel\/ads|skin\/config)\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 底部tab红点
+^https:\/\/damang\.api\.mgtv\.com\/station\/album\/red\/dot\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 播放器界面
+^https:\/\/hb-boom\.api\.mgtv\.com\/release\/pullReleaseInfo data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 升级弹窗
+^https:\/\/mobile\.api\.mgtv\.com\/v2\/mobile\/checkUpdate\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 搜索框填充词
+^http:\/\/mobileso\.bz\.mgtv\.com\/spotlight\/search\/v1\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 播放详情页
+^http:\/\/mobile-thor\.api\.mgtv\.com\/v1\/vod\/cms\/list\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+
+# ========== 优酷视频 ==========
+# 播放页弹窗动图
+^https:\/\/acs\.youku\.com\/gw\/mtop\.youku\.(pisp\.scripts\.get|xspace\.play\.position\.preload\.query|xspace\.poplayer\.position\.query) data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+
+
+[Script]
+# ========== 腾讯视频 ==========
+腾讯视频 = type=http-request, pattern=^https?:\/\/vv\.video\.qq\.com\/getvinfo, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, argument=&sppreviewtype=\d(.*)&spsrt=\d->&sppreviewtype=0$1&spsrt=0
+
+
+# ========== 爱奇艺 ==========
+# 首页信息流广告
+移除首页信息流广告 = type=http-response, pattern=^http:\/\/[\d\.]+\/3f1\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+移除首页信息流广告 = type=http-response, pattern=^http:\/\/access\.if\.iqiyi\.com\/3f1\/cards\.iqiyi\.com\/(views_category\/3\.0\/category_home|views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+移除首页信息流广告 = type=http-response, pattern=^https:\/\/cards\.iqiyi\.com\/views_category\/3\.0\/(category_home|categorylib_content|film_hybrid)\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+移除首页信息流广告 = type=http-response, pattern=^https:\/\/cards\.iqiyi\.com\/(views_home\/3\.0\/qy_home|waterfall\/3\.0\/feed)\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 播放详情页
+移除播放详情页广告 = type=http-response, pattern=^https:\/\/cards\.iqiyi\.com\/views_plt\/3\.0\/player_tabs_v2\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 搜索页列表
+移除搜索页列表推广 = type=http-response, pattern=^https:\/\/cards\.iqiyi\.com\/views_search\/3\.0\/(hot_query_)?search\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 评论区
+移除评论区推广 = type=http-response, pattern=^https:\/\/comment-card\.iqiyi\.com\/views_comment\/3\.0\/long_video_comments\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 我的页面菜单
+移除我的页面菜单推广 = type=http-response, pattern=^https:\/\/iface2\.iqiyi\.com\/aggregate\/3\.0\/getMyMenus\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 首页左上角天气
+移除首页左上角天气 = type=http-response, pattern=^https:\/\/iface2\.iqiyi\.com\/control\/3\.0\/init_proxy\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 通用控制 - 各标签页二楼
+移除各标签页页二楼推广 = type=http-response, pattern=^https:\/\/iface2\.iqiyi\.com\/fusion\/3\.0\/common_switch\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 底栏和顶部标签页推广
+移除底栏和顶部标签页推广 = type=http-response, pattern=^https:\/\/iface2\.iqiyi\.com\/views\/3\.0\/(bottom_theme|home_top_menu)\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 搜索框填充词
+移除搜索框填充词 = type=http-response, pattern=^https:\/\/search\.video\.iqiyi\.com\/q\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 开屏和播放广告
+移除开屏和播放广告 = type=http-response, pattern=^https?:\/\/(kjp|t7z)\.cupid\.iqiyi\.com\/mixer\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+
+
+# ========== 芒果视频 ==========
+# 我的页面
+移除我的页面推广 = type=http-response, pattern=^https:\/\/me\.bz\.mgtv\.com\/v3\/module\/list\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 首页信息流和顶部标签页
+移除首页信息流和顶部标签页推广 = type=http-response, pattern=^http:\/\/mob-st\.bz\.mgtv\.com\/odin\/c1\/channel\/index\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+移除首页信息流和顶部标签页推广 = type=http-response, pattern=^https?:\/\/dc2?\.bz\.mgtv\.com\/dynamic\/v1\/channel\/(index|vrsList)\/\w, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 底栏tap
+移除无用底栏 = type=http-response, pattern=^https:\/\/mobile\.api\.mgtv\.com\/mobile\/config\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 播放详情页
+移除播放详情页推广 = type=http-response, pattern=^https:\/\/mobile\.api\.mgtv\.com\/v10\/video\/info\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+移除播放详情页推广 = type=http-response, pattern=^https:\/\/mobile-thor\.api\.mgtv\.com\/v1\/vod\/info\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+# 搜索框填充词
+移除搜索框填充词 = type=http-response, pattern=^https?:\/\/mobileso\.bz\.mgtv\.com\/mobile\/recommend\/v2\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js, requires-body=true
+
+
+# ========== 优酷视频 ==========
+# 播放详情页,首页信息流,顶部tab,我的页面,评论区
+移除首页广告 = type=http-response,pattern=^https:\/\/acs\.youku\.com\/gw\/mtop\.youku\.columbus\.(gateway\.new\.execute|home\.feed|home\.query|uc\.query|ycp\.query),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js
+# 底部tab
+移除无用底栏 = type=http-response,pattern=^https:\/\/acs\.youku\.com\/gw\/mtop\.youku\.haidai\.lantern\.appconfig\.get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js
+# 青少年模式弹窗
+移除青少年模式弹窗 = type=http-response,pattern=^https:\/\/acs\.youku\.com\/gw\/mtop\.youku\.huluwa\.dispatcher\.youthmode\.config2,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js
+# 搜索列表
+移除搜索列表推广 = type=http-response,pattern=^https:\/\/acs\.youku\.com\/gw\/mtop\.youku\.soku\.yksearch,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js
+# 热剧弹窗
+移除热剧弹窗 = type=http-response,pattern=^https:\/\/push\.m\.youku\.com\/collect-api\/get_push_interval_config_wx\?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js
+# 开屏广告
+移除开屏广告 = type=http-response,pattern=^https:\/\/un-acs\.youku\.com\/gw\/mtop\.youku\.play\.ups\.appinfo\.get,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/cnftp.js
+
+
+[MITM]
+hostname = %APPEND% -i.vip.iqiyi.com, *.iqiyi.com, *.mgtv.com, vv.video.qq.com, acs.youku.com, push.m.youku.com, un-acs.youku.com

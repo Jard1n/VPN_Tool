@@ -1,0 +1,60 @@
+#!name = 净化 & 知乎
+#!desc = 去除各部广告
+
+
+[URL Rewrite]
+# 我的页面 项目列表,会员卡片
+^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
+# 服务器推送配置
+^https:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config - reject
+^https:\/\/link\.zhihu\.com\/\?target=(https?)?(%3A|:)?(\/\/|%2F%2F)?(.*?)(&source.*)?$ http://$4 302
+# 网页版去广告
+^https:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation - reject
+^https:\/\/www\.zhihu\.com\/api\/v4\/mcn\/v2\/linkcards\? - reject
+^https:\/\/www\.zhihu\.com\/api\/v4/(answers|questions)\/\d+/related-readings - reject
+^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner - reject
+^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation - reject
+
+[Map Local]
+# 首页 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
+^https:\/\/api\.zhihu\.com\/commercial_api\/(banners_v3\/app_topstory_banner|launch_v2|real_time_launch_v2) data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/api\.zhihu\.com\/(moments\/lastread|drama\/hot-drama-list) data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/api\.zhihu\.com\/root\/window data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 我的页面
+^https:\/\/api\.zhihu\.com\/me\/guides data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 搜索页
+^https:\/\/api\.zhihu\.com\/search\/preset_words data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(article|answer)\/\d+ data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 回答详情页
+^https:\/\/api\.zhihu\.com\/comment_v5\/(articles|answers)\/\d+\/list-headers data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/api\.zhihu\.com\/prague\/related_suggestion_native\/feed\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/api\.zhihu\.com\/v5\.1\/topics\/answer\/\d+\/relation data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/api\.zhihu\.com\/ad-style-service\/request data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+^https:\/\/appcloud2\.zhihu\.com\/v3\/resource\?group_name=mp data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+# 网页版去广告 //www.zhihu.com, zhuanlan.zhihu.com
+^https:\/\/api\.zhihu\.com\/distribute\/rhea\/qa_ad_card\/h5\/recommendation\? data="https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/mocks/reject-dict.json"
+
+
+[Script]
+# 首页 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
+移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/(moments_v3|topstory\/hot-lists\/total|topstory\/recommend), script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+移除首页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+
+# 搜索页
+移除搜索页关键词 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\?, script-path=https://raw.githubusercontent.com/Script-Hub-Org/Script-Hub/main/scripts/replace-body.js, requires-body=true, argument="recommend_queries":\{.+\}->"recommend_queries":{}
+
+# 回答详情页
+移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/next-(bff|data|render)\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/questions\/\d+(\/answers|\/feeds|\?include=), script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+移除回答详情页推广 = type=http-response, pattern=^https:\/\/www\.zhihu\.com\/api\/v4\/(articles|answers)\/\d+\/recommendations?\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+
+# 服务器推送配置
+拦截服务器推送配置 = type=http-response, pattern=^https:\/\/appcloud2\.zhihu\.com\/v3\/config, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+拦截服务器推送配置 = type=http-response, pattern=^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/config\/all\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/zhihu.js, requires-body=true
+
+
+[MITM]
+hostname = %APPEND% *.zhihu.com
