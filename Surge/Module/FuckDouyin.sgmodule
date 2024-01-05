@@ -1,5 +1,5 @@
 #!name=FuckDouyin
-#!desc=FuckDouyin
+#!desc(不推荐用,弄着玩的)FuckDouyin
 
 [Rule]
 DOMAIN-SUFFIX,douyin.com,REJECT
