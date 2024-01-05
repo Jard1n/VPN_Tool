@@ -1,4 +1,4 @@
-# Main total line 11952
+# Main total line 11960
 # ------------------------------------------
 DOMAIN,39d83s.com
 DOMAIN,a-remad.qm989.com
@@ -964,6 +964,7 @@ DOMAIN-SUFFIX,ad.duoduo.link
 DOMAIN-SUFFIX,ad.duomi.com
 DOMAIN-SUFFIX,ad.dzwindows.com
 DOMAIN-SUFFIX,ad.dzwww.com
+DOMAIN-SUFFIX,ad.e.waimai.sankuai.com
 DOMAIN-SUFFIX,ad.egou.com
 DOMAIN-SUFFIX,ad.endpo.in
 DOMAIN-SUFFIX,ad.epochtimes.com
@@ -2653,6 +2654,7 @@ DOMAIN-SUFFIX,b.9dreams.net
 DOMAIN-SUFFIX,b.aowugame.com
 DOMAIN-SUFFIX,b.babylon.com
 DOMAIN-SUFFIX,b.baiy.net
+DOMAIN-SUFFIX,b.bdstatic.com
 DOMAIN-SUFFIX,b.bst.126.net
 DOMAIN-SUFFIX,b.cyone.com.cn
 DOMAIN-SUFFIX,b.epinv.com
@@ -3103,6 +3105,7 @@ DOMAIN-SUFFIX,bu02.zybang.com
 DOMAIN-SUFFIX,bu1.duba.com
 DOMAIN-SUFFIX,bu2.duba.com
 DOMAIN-SUFFIX,bucketbean.com
+DOMAIN-SUFFIX,bugly.qq.com
 DOMAIN-SUFFIX,bugtags.com
 DOMAIN-SUFFIX,bulldogcpi.com
 DOMAIN-SUFFIX,business.92wy.com
@@ -3382,7 +3385,6 @@ DOMAIN-SUFFIX,chance-ad.com
 DOMAIN-SUFFIX,chanet.com.cn
 DOMAIN-SUFFIX,changan.bama555.com
 DOMAIN-SUFFIX,changhehengqi.com
-DOMAIN-SUFFIX,channel.fanxing.kugou.com
 DOMAIN-SUFFIX,channeladvisor.com
 DOMAIN-SUFFIX,channelintelligence.com
 DOMAIN-SUFFIX,chaojilamei.cn
@@ -3568,6 +3570,7 @@ DOMAIN-SUFFIX,cm.ad.gifshow.com
 DOMAIN-SUFFIX,cm.adcommon.bilibili.com
 DOMAIN-SUFFIX,cm.adgrx.com
 DOMAIN-SUFFIX,cm.baidu.com
+DOMAIN-SUFFIX,cm.bilibili.com
 DOMAIN-SUFFIX,cm.ctnsnet.com
 DOMAIN-SUFFIX,cm.downloader.commercial.kuaishou.com
 DOMAIN-SUFFIX,cm.game.bilibili.com
@@ -3923,6 +3926,7 @@ DOMAIN-SUFFIX,d.danangmo.cn
 DOMAIN-SUFFIX,d.elong.cn
 DOMAIN-SUFFIX,d.gossipcenter.com
 DOMAIN-SUFFIX,d.kugou.com
+DOMAIN-SUFFIX,d.meituan.net
 DOMAIN-SUFFIX,d.mingyihui.net
 DOMAIN-SUFFIX,d.rexuebi.com
 DOMAIN-SUFFIX,d.ruiwen.com
@@ -4338,6 +4342,7 @@ DOMAIN-SUFFIX,drd.hauchi.com.tw
 DOMAIN-SUFFIX,drdj.m.gxwztv.com
 DOMAIN-SUFFIX,drdwy.com
 DOMAIN-SUFFIX,dreamfull.cn
+DOMAIN-SUFFIX,dreport.meituan.net
 DOMAIN-SUFFIX,dressimage.img-cn-beijing.aliyuncs.com
 DOMAIN-SUFFIX,drlsf.com
 DOMAIN-SUFFIX,drm.cmgame.com
@@ -4897,6 +4902,7 @@ DOMAIN-SUFFIX,fancyapi.com
 DOMAIN-SUFFIX,fanqianbb.com
 DOMAIN-SUFFIX,fans.bestvogue.com
 DOMAIN-SUFFIX,fansi365.com
+DOMAIN-SUFFIX,fanxing.kugou.com
 DOMAIN-SUFFIX,fanza.cc
 DOMAIN-SUFFIX,farethief.com
 DOMAIN-SUFFIX,farmcrapsubsist.com
@@ -6005,7 +6011,6 @@ DOMAIN-SUFFIX,ioacfu.com
 DOMAIN-SUFFIX,ioam.de
 DOMAIN-SUFFIX,ioc.mmakd.top
 DOMAIN-SUFFIX,ios-informationplatform.wps.cn
-DOMAIN-SUFFIX,ios.bugly.qq.com
 DOMAIN-SUFFIX,ios.video.mpush.qq.com
 DOMAIN-SUFFIX,iosipa.b0.upaiyun.com
 DOMAIN-SUFFIX,ip.hivps.xyz
@@ -7114,6 +7119,7 @@ DOMAIN-SUFFIX,madmini.com
 DOMAIN-SUFFIX,mads.amazon.com
 DOMAIN-SUFFIX,mads.aol.com
 DOMAIN-SUFFIX,mads.dailymail.co.uk
+DOMAIN-SUFFIX,mads.meituan.com
 DOMAIN-SUFFIX,mads.suning.com
 DOMAIN-SUFFIX,madserving.com
 DOMAIN-SUFFIX,madvertise.de
@@ -7266,7 +7272,7 @@ DOMAIN-SUFFIX,megastats.com
 DOMAIN-SUFFIX,megawerbung.de
 DOMAIN-SUFFIX,meimeidaren.com
 DOMAIN-SUFFIX,meiti1.net
-DOMAIN-SUFFIX,meituan.xn--io0a7i
+DOMAIN-SUFFIX,meituan.xn
 DOMAIN-SUFFIX,meituan.yoga
 DOMAIN-SUFFIX,meituangov.cn
 DOMAIN-SUFFIX,meitubeauty.meitudata.com
@@ -9377,7 +9383,6 @@ DOMAIN-SUFFIX,somecoding.com
 DOMAIN-SUFFIX,somennew.com
 DOMAIN-SUFFIX,somoaudience.com
 DOMAIN-SUFFIX,son-in-lawmorbid.com
-DOMAIN-SUFFIX,song.fanxing.kugou.com
 DOMAIN-SUFFIX,song001.com
 DOMAIN-SUFFIX,sonobi.com
 DOMAIN-SUFFIX,sonomoyo.com
@@ -11666,7 +11671,9 @@ DOMAIN-KEYWORD,v1.log.moji.com
 DOMAIN-KEYWORD,v2.reachmax.cn
 DOMAIN-KEYWORD,val.atm.youku.com
 DOMAIN-KEYWORD,vidoza
+DOMAIN-KEYWORD,volccdn.com
 DOMAIN-KEYWORD,volceapplog.com
+DOMAIN-KEYWORD,volces.com
 DOMAIN-KEYWORD,volcvod.com
 DOMAIN-KEYWORD,vs10.bj2ct.u3.ucweb.com
 DOMAIN-KEYWORD,wax.weibo.com
@@ -11810,6 +11817,7 @@ IP-CIDR,183.224.40.24/32,no-resolve
 IP-CIDR,183.59.53.184/29,no-resolve
 IP-CIDR,183.59.53.237/32,no-resolve
 IP-CIDR,183.6.188.224/29,no-resolve
+IP-CIDR,188.89.204.198/32,no-resolve
 IP-CIDR,198.105.254.11/32,no-resolve
 IP-CIDR,198.40.52.11/32,no-resolve
 IP-CIDR,202.100.220.54/32,no-resolve

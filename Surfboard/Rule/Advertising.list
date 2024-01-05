@@ -202,7 +202,9 @@ DOMAIN-KEYWORD,v1.log.moji.com
 DOMAIN-KEYWORD,v2.reachmax.cn
 DOMAIN-KEYWORD,val.atm.youku.com
 DOMAIN-KEYWORD,vidoza
+DOMAIN-KEYWORD,volccdn.com
 DOMAIN-KEYWORD,volceapplog.com
+DOMAIN-KEYWORD,volces.com
 DOMAIN-KEYWORD,volcvod.com
 DOMAIN-KEYWORD,vs10.bj2ct.u3.ucweb.com
 DOMAIN-KEYWORD,wax.weibo.com
@@ -346,6 +348,7 @@ IP-CIDR,183.224.40.24/32,no-resolve
 IP-CIDR,183.59.53.184/29,no-resolve
 IP-CIDR,183.59.53.237/32,no-resolve
 IP-CIDR,183.6.188.224/29,no-resolve
+IP-CIDR,188.89.204.198/32,no-resolve
 IP-CIDR,198.105.254.11/32,no-resolve
 IP-CIDR,198.40.52.11/32,no-resolve
 IP-CIDR,202.100.220.54/32,no-resolve
