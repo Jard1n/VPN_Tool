@@ -9,21 +9,16 @@ DOMAIN-SUFFIX,apple-mapkit.com
 DOMAIN-SUFFIX,applemusic.com
 DOMAIN-SUFFIX,appstore.com
 DOMAIN-SUFFIX,apzones.com
+DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,icloud.com
 DOMAIN-SUFFIX,icloud.com.cn
 DOMAIN-SUFFIX,icloud-content.com
 DOMAIN-SUFFIX,me.com
 DOMAIN-SUFFIX,mzstatic.com
-DOMAIN-SUFFIX,itunes.com
-DOMAIN-SUFFIX,cdn-apple.com
-DOMAIN-SUFFIX,apple-dns.net
-DOMAIN-SUFFIX,itunes-apple.com.akadns.net
-DOMAIN-SUFFIX,push-apple.com.akadns.net
 DOMAIN-KEYWORD,apple.com.akadns.net
 DOMAIN-KEYWORD,apple.com.edgekey.net
 DOMAIN-KEYWORD,apple-support.akadns.net
 DOMAIN-KEYWORD,icloud.com.akadns.net
-DOMAIN-KEYWORD,apple.com
 
 IP-CIDR,17.0.0.0/8,no-resolve
 IP-CIDR,63.92.224.0/19,no-resolve
