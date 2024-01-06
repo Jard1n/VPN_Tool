@@ -30,7 +30,7 @@ jobs:
     - name: Edit Surge/Rule
       run: |
         cd VPN_Tool-repo/Surge/Rule
-        for file in MyBlockAds.list Advertising.list Proxy.list; do
+        for file in MyBlockAds.list Advertising.list Proxy.list Global.list; do
           if [ -f "$file" ]; then
             # 修改, 为,
             sed -i 's/, /,/g' "$file"
