@@ -71,7 +71,7 @@ DOMAIN-KEYWORD,gmail
 DOMAIN-KEYWORD,recaptcha
 
 # Google Static Files
-DOMAIN-KEYWORD,gstatic
+DOMAIN-SUFFIX,gstatic.com
 DOMAIN-SUFFIX,gmodules.com
 DOMAIN-SUFFIX,googleusercontent.com
 DOMAIN-SUFFIX,gvt0.com
