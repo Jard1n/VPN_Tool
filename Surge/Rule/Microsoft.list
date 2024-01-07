@@ -169,6 +169,11 @@ DOMAIN-SUFFIX,sway.com
 # VisualStudio
 DOMAIN-SUFFIX,vsassets.io
 DOMAIN-SUFFIX,visualstudio.com
+DOMAIN-SUFFIX,visualstudio.net
+DOMAIN-SUFFIX,vscode-cdn.net
+DOMAIN-SUFFIX,vscode-unpkg.net
+DOMAIN-SUFFIX,vscode-webview.net
+DOMAIN-SUFFIX,vscode.dev
 DOMAIN-SUFFIX,visualstudio-staging.com
 
 # Xiaobing
