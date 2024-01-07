@@ -40,44 +40,20 @@ DOMAIN-SUFFIX,bethsoft.com
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,biying.com
-DOMAIN-SUFFIX,bbing.com
-DOMAIN-SUFFIX,bibg.com
-DOMAIN-SUFFIX,biing.com
-DOMAIN-SUFFIX,binb.com
-DOMAIN-SUFFIX,binf.com
-DOMAIN-SUFFIX,bing123.com
-DOMAIN-SUFFIX,bing135.com
-DOMAIN-SUFFIX,bing4.com
 DOMAIN-SUFFIX,bingads.com
-DOMAIN-SUFFIX,bingagencyawards.com
 DOMAIN-SUFFIX,bingapis.com
+DOMAIN-SUFFIX,bingagencyawards.com
 DOMAIN-SUFFIX,bingapistatistics.com
-DOMAIN-SUFFIX,binginternal.com
-DOMAIN-SUFFIX,bingit.net
-DOMAIN-SUFFIX,bingiton.com
-DOMAIN-SUFFIX,bingj.com
-DOMAIN-SUFFIX,bingpix.com
-DOMAIN-SUFFIX,bingpk.com
-DOMAIN-SUFFIX,bings.com
 DOMAIN-SUFFIX,bingsandbox.com
-DOMAIN-SUFFIX,bingtoolbar.com
-DOMAIN-SUFFIX,bingtranslator.com
 DOMAIN-SUFFIX,bingvisualsearch.com
 DOMAIN-SUFFIX,bingworld.com
 DOMAIN-SUFFIX,bluehatnights.com
 DOMAIN-SUFFIX,dictate.ms
-DOMAIN-SUFFIX,discoverbing.com
-DOMAIN-SUFFIX,explorebing.com
 DOMAIN-SUFFIX,flipwithsurface.com
-DOMAIN-SUFFIX,mapblast.com
-DOMAIN-SUFFIX,mappoint.com
 DOMAIN-SUFFIX,masalladeloslimites.com
-DOMAIN-SUFFIX,msnmaps.com
 DOMAIN-SUFFIX,msunlimitedcloudsummit.com
-DOMAIN-SUFFIX,myhomemsn.com
-DOMAIN-SUFFIX,osdinfra.net
+DOMAIN-SUFFIX,renovacionoffice.com
 DOMAIN-SUFFIX,sprinklesapp.com
-DOMAIN-SUFFIX,working-bing-int.com
 
 # Cortana
 DOMAIN-SUFFIX,cortana.ai
@@ -167,21 +143,23 @@ DOMAIN-KEYWORD,office
 
 # OneDrive & Sharepoint
 DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,onedrive.net
+DOMAIN-SUFFIX,onedrive.org
 DOMAIN-SUFFIX,sharepoint.com
 DOMAIN-SUFFIX,sharepointonline.com
 DOMAIN-KEYWORD,1drv
 USER-AGENT,OneDrive*
 USER-AGENT,OneDriveiOSApp*
 
-# OneNote
-DOMAIN-SUFFIX,onenote.com
-DOMAIN-SUFFIX,onenote.net
-
 # Skype
 DOMAIN-SUFFIX,skype.com
 DOMAIN-SUFFIX,skype.net
 DOMAIN-SUFFIX,skypeassets.com
 DOMAIN-SUFFIX,skypeforbusiness.com
+
+# OneNote
+DOMAIN-SUFFIX,onenote.com
+DOMAIN-SUFFIX,onenote.net
 
 # Sway
 DOMAIN-SUFFIX,sway-cdn.com
