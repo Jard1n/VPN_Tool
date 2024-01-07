@@ -4,7 +4,6 @@ DOMAIN-KEYWORD,microsoft
 USER-AGENT,Microsoft*
 
 # Azure
-DOMAIN-SUFFIX,azure.cn
 DOMAIN-SUFFIX,azure.com
 DOMAIN-SUFFIX,azure.net
 DOMAIN-SUFFIX,azure-apim.net
@@ -26,9 +25,6 @@ DOMAIN-SUFFIX,azureserviceprofiler.com
 DOMAIN-SUFFIX,azuresmartspaces.net
 DOMAIN-SUFFIX,azurestackvalidation.com
 DOMAIN-SUFFIX,azurewebsites.net
-DOMAIN-SUFFIX,chinacloudapi.cn
-DOMAIN-SUFFIX,chinacloudapp.cn
-DOMAIN-SUFFIX,chinacloudsites.cn
 DOMAIN-SUFFIX,devopsms.com
 DOMAIN-SUFFIX,gotcosmos.com
 DOMAIN-SUFFIX,serverlesslibrary.net
@@ -99,8 +95,6 @@ DOMAIN-SUFFIX,s-msedge.net
 # Here
 DOMAIN-SUFFIX,here.com
 DOMAIN-SUFFIX,here.net
-DOMAIN-SUFFIX,heremaps.cn
-DOMAIN-SUFFIX,ovi.com.cn
 
 # M12
 DOMAIN-SUFFIX,femalefounderscomp.com
@@ -124,10 +118,8 @@ DOMAIN-SUFFIX,minecraftshop.com
 DOMAIN-SUFFIX,mojang.com
 
 # MSN
-DOMAIN-SUFFIX,msn.cn
 DOMAIN-SUFFIX,msn.com
 DOMAIN-SUFFIX,msnkids.com
-DOMAIN-SUFFIX,winmp.cn
 
 # Microsoft Developer
 DOMAIN-SUFFIX,adaptivecards.io
@@ -157,7 +149,6 @@ DOMAIN-SUFFIX,nugettest.org
 DOMAIN-SUFFIX,opentranslatorstothings.org
 DOMAIN-SUFFIX,poshtestgallery.com
 DOMAIN-SUFFIX,pwabuilder.com
-DOMAIN-SUFFIX,reactorms.com.cn
 DOMAIN-SUFFIX,sankie.net
 DOMAIN-SUFFIX,sqlserveronlinux.com
 DOMAIN-SUFFIX,timelinestoryteller.com
@@ -167,8 +158,6 @@ DOMAIN-SUFFIX,spoprod-a.akamaihd.net
 DOMAIN-SUFFIX,svc.ms
 
 # Office 365
-DOMAIN-SUFFIX,o365cn.com
-DOMAIN-SUFFIX,o365files.cn
 DOMAIN-SUFFIX,o365weve-dev.com
 DOMAIN-SUFFIX,o365weve-ppe.com
 DOMAIN-SUFFIX,o365weve.com
@@ -179,7 +168,6 @@ DOMAIN-KEYWORD,office
 # OneDrive & Sharepoint
 DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,sharepoint.com
-DOMAIN-SUFFIX,sharepoint.cn
 DOMAIN-SUFFIX,sharepointonline.com
 DOMAIN-KEYWORD,1drv
 USER-AGENT,OneDrive*
@@ -207,10 +195,8 @@ DOMAIN-SUFFIX,visualstudio-staging.com
 
 # Xiaobing
 DOMAIN-SUFFIX,aicscience.com
-DOMAIN-SUFFIX,mmais.com.cn
 DOMAIN-SUFFIX,msxiaobing.com
 DOMAIN-SUFFIX,msxiaoice.com
-DOMAIN-SUFFIX,msxiaona.cn
 DOMAIN-SUFFIX,renlifang.com
 
 # Xbox 
@@ -312,8 +298,7 @@ DOMAIN-SUFFIX,msads.net
 DOMAIN-SUFFIX,msappproxy.net
 DOMAIN-SUFFIX,msauthimages.net
 DOMAIN-SUFFIX,mschallenge2018.com
-DOMAIN-SUFFIX,msftauthimages.net
-DOMAIN-SUFFIX,msftcenterone.cn
+DOMAIN-SUFFIX,msftauthimages.ne
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msfteducation.ca
 DOMAIN-SUFFIX,msftidentity.com
@@ -323,9 +308,6 @@ DOMAIN-SUFFIX,msidentity.com
 DOMAIN-SUFFIX,msignitechina.com
 DOMAIN-SUFFIX,msocdn.com
 DOMAIN-SUFFIX,msocsp.com
-DOMAIN-SUFFIX,msopentech.cn
-DOMAIN-SUFFIX,mspil.cn
-DOMAIN-SUFFIX,msra.cn
 DOMAIN-SUFFIX,mstea.ms
 DOMAIN-SUFFIX,msturing.org
 DOMAIN-SUFFIX,msudalosti.com
@@ -340,7 +322,6 @@ DOMAIN-SUFFIX,outingsapp.com
 DOMAIN-SUFFIX,passport.net
 DOMAIN-SUFFIX,phonefactor.net
 DOMAIN-SUFFIX,pixapp.net
-DOMAIN-SUFFIX,playfabapi.cn
 DOMAIN-SUFFIX,playfabcn.com
 DOMAIN-SUFFIX,powerappscdn.net
 DOMAIN-SUFFIX,powerautomate.com
@@ -357,7 +338,6 @@ DOMAIN-SUFFIX,sfx.ms
 DOMAIN-SUFFIX,staffhub.ms
 DOMAIN-SUFFIX,successwithteams.com
 DOMAIN-SUFFIX,surface.com
-DOMAIN-SUFFIX,syncshop.cn
 DOMAIN-SUFFIX,sysinternals.com
 DOMAIN-SUFFIX,tailwindtraders.com
 DOMAIN-SUFFIX,techhub.ms
