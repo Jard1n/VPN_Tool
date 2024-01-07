@@ -214,11 +214,11 @@ DOMAIN-SUFFIX,sonyentertainmentnetwork.com
 
 
 # Rockstar
-DOMAIN-SUFFIX,gamedownloads-rockstargames-com.akamaized.net
-DOMAIN-SUFFIX,media-rockstargames-com.akamaized.net
-DOMAIN-SUFFIX,rockstargames.com
 DOMAIN-SUFFIX,rsg.sc
+DOMAIN-SUFFIX,rockstargames.com
+DOMAIN-SUFFIX,media-rockstargames-com.akamaized.net
 DOMAIN-SUFFIX,videos-rockstargames-com.akamaized.net
+DOMAIN-SUFFIX,gamedownloads-rockstargames-com.akamaized.net
 
 
 # > Riot
@@ -250,8 +250,11 @@ DOMAIN-SUFFIX,convrgencegame.com
 DOMAIN-SUFFIX,riotforgegames.com
 DOMAIN-SUFFIX,ruinedking.com
 # League of Lengends
+DOMAIN-SUFFIX,lolespor.com
 DOMAIN-SUFFIX,leaguehighschool.com
-DOMAIN-KEYWORD,leaguehighschool
+DOMAIN-SUFFIX,leagueoflegends.net
+DOMAIN-SUFFIX,leagueoflegends.com
+DOMAIN-SUFFIX,leagueoflegends.org
 
 
 # Garena
@@ -274,8 +277,8 @@ DOMAIN-SUFFIX,dlmobilegarena-a.akamaihd.net
 
 # GOG
 DOMAIN,gog.salesmanago.com
-DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,gog.qtlglb.com
 
 
