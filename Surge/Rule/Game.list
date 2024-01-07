@@ -20,6 +20,7 @@ DOMAIN-SUFFIX,valvesoftware.com
 
 # > SteamDownload
 # Akamai Download CDN
+DOMAIN-SUFFIX,steammobile.akamaized.net
 DOMAIN-SUFFIX,steambroadcast.akamaized.net
 DOMAIN-SUFFIX,steamcdn-a.akamaihd.net
 DOMAIN-SUFFIX,steamcommunity-a.akamaihd.net
