@@ -55,6 +55,10 @@ DOMAIN,np-edge.itunes.apple.com
 DOMAIN,play-edge.itunes.apple.com
 DOMAIN-SUFFIX,tv.apple.com
 
+# Bilibili港澳台
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN-KEYWORD,cn-hk-eq-
+
 # BBCiPlayer
 DOMAIN-KEYWORD,bbcfmt
 DOMAIN-KEYWORD,uk-live
