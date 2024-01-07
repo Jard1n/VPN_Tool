@@ -1,7 +1,6 @@
 # > Microsoft
 DOMAIN-KEYWORD,windows
 DOMAIN-KEYWORD,microsoft
-USER-AGENT,Microsoft*
 
 # Azure
 DOMAIN-SUFFIX,azure.com
