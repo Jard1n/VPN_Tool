@@ -1,3 +1,4 @@
+// 引用地址：https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/course.js
 let obj = JSON.parse($response.body);
 const courseList = obj.data.courseList;
 
