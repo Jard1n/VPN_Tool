@@ -1,5 +1,5 @@
-#!name=净化 & Keep
-#!desc=去除keep广告
+#!name= 净化 & Keep
+#!desc= 去除keep广告
 
 [Rule]
 DOMAIN,httpdns.calorietech.com,REJECT
