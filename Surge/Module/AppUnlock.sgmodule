@@ -13,7 +13,7 @@
 
 
 [Script]
-# 哔哩哔哩繁体CC字幕转中文简体
+# 哔哩哔哩繁体CC字幕转中文简体 //aisubtitle.hdslb.com,i0.hdslb.com
 bilibili_cc = type=http-response, pattern=^https?:\/\/.*\.hdslb\.com\/bfs\/subtitle\/.+\.json, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Bilibili/bilibili_cc.js
 
 # Spotify解锁 //spclient.wg.spotify.com
@@ -24,7 +24,7 @@ spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 彩云天气 = type=http-response, pattern=^https:\/\/biz\.cyapi\.cn\/(p\/v1\/vip_info|v2\/user), requires-body=1, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
 彩云天气 = type=http-request, pattern=^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\?, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/break/caiyun.js
 
-# 百度文库解锁VIP文档阅读权限
+# 百度文库解锁VIP文档阅读权限 //appwk.baidu.com
 百度文库=type=http-response,pattern=^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo,requires-body=1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/AppUnlock/baidulibrary.js
 
 # Emby播放权限 //mb3admin.com
@@ -32,4 +32,4 @@ emby=type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/regist
 
 
 [MITM]
-hostname = %APPEND% mb3admin.com, aisubtitle.hdslb.com,i0.hdslb.com, spclient.wg.spotify.com, biz.cyapi.cn, wrapper.cyapi.cn, appwk.baidu.com, *.aliyundrive.com, *.alipan.com
+hostname = %APPEND% mb3admin.com, aisubtitle.hdslb.com,i0.hdslb.com, spclient.wg.spotify.com, biz.cyapi.cn, wrapper.cyapi.cn, appwk.baidu.com
