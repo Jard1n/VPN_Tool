@@ -27,14 +27,9 @@ spotify-proto = type=http-response,pattern=^https:\/\/spclient\.wg\.spotify\.com
 # 百度文库解锁VIP文档阅读权限
 百度文库=type=http-response,pattern=^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo,requires-body=1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/AppUnlock/baidulibrary.js
 
-# WPS会员解锁 //*.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com
-WPS会员 = type=http-response, pattern=^https?:\/\/.*?account\.wps\.(com|cn)(:\d+)?\/api\/users\/\w+\/overview$, script-path=https://raw.githubusercontent.com/I-am-R-E/Functional-Store-Hub/Master/WPSOffice/Script/WPS.js, requires-body=true, max-size=3145728, timeout=30
-稻壳会员 = type=http-response, pattern=^https?:\/\/account\.wps\.cn\/api\/v3\/mine\/vips, script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPuserCrack.js, requires-body=true, max-size=3145728, timeout=30
-稻壳会员 = type=http-request, pattern=^https?:\/\/.+\.(docer.)?wps.cn\/(user\/v1\/vip|android\/mb\/buy|download\/v1\/ios|partner\/invoke\/usable|(api|rank)\/v1(\/mobile\/mb)?\/detail), script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/WPSDocerVIPowerCrack.js, timeout=30
-
 # Emby播放权限 //mb3admin.com
 emby=type=http-response,pattern=^https?:\/\/mb3admin.com\/admin\/service\/registration\/validateDevice,requires-body=1,max-size=0, script-path=https://raw.githubusercontent.com/Tartarus2014/Script/master/Emby.js
 
 
 [MITM]
-hostname = %APPEND% mb3admin.com, aisubtitle.hdslb.com,i0.hdslb.com, spclient.wg.spotify.com, biz.cyapi.cn, wrapper.cyapi.cn, appwk.baidu.com, *.docer.wps.cn,vipapi.wps.cn,account.wps.cn,*account.wps.com, *.aliyundrive.com, *.alipan.com
+hostname = %APPEND% mb3admin.com, aisubtitle.hdslb.com,i0.hdslb.com, spclient.wg.spotify.com, biz.cyapi.cn, wrapper.cyapi.cn, appwk.baidu.com, *.aliyundrive.com, *.alipan.com
