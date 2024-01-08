@@ -20,7 +20,7 @@ jobs:
       run: |
         mkdir -p VPN_Tool-repo/Surge/Rule
         # 分流规则
-        curl -L -o VPN_Tool-repo/Surge/Rule/Global.list "https://raw.githubusercontent.com/SouthAlley/q/main/local/Global.list"
+        curl -L -o VPN_Tool-repo/Surge/Rule/Global.list "https://raw.githubusercontent.com/SouthAlley/q/main/local/global.list"
         curl -L -o VPN_Tool-repo/Surge/Rule/Proxy.list "https://raw.githubusercontent.com/SouthAlley/q/main/local/proxy.list"
 
         # 广告规则 
