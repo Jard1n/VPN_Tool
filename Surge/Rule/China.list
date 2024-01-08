@@ -435,6 +435,7 @@ DOMAIN-SUFFIX,doh.360.cn
 IP-CIDR,1.12.12.12/32,no-resolve
 
 # Accelerate Direct Sites
+DOMAIN-SUFFIX,vip-vip-yzzy.com
 DOMAIN-SUFFIX,10010.com
 DOMAIN-SUFFIX,115.com
 DOMAIN-SUFFIX,12306.com
