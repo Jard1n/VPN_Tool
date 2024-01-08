@@ -1,3 +1,4 @@
+// 引用地址：https://raw.githubusercontent.com/Maasea/surgeModule/master/Script/Keep/basic.js
 const blackList = ["home", "entry", "mall"];
 let obj = JSON.parse($response.body);
 
