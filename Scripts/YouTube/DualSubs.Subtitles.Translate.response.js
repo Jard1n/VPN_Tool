@@ -3,7 +3,7 @@
 README: https://github.com/DualSubs/Universal
 */
 
-const $ = new Env("🍿️ DualSubs: 🎦 Universal v1.2.3(4) Subtitles.Translate.response");
+const $ = new Env("🍿️ DualSubs: 🎦 Universal v1.2.3(6) Subtitles.Translate.response");
 const URL = new URLs();
 const XML = new XMLs();
 const VTT = new WebVTT(["milliseconds", "timeStamp", "singleLine", "\n"]); // "multiLine"
@@ -18,7 +18,7 @@ const DataBase = {
 		}
 	},
 	"YouTube": {
-		"Settings":{"Switch":true,"Type":"Official","Languages":["AUTO","AUTO"],"AutoCC":true,"ShowOnly":false},
+		"Settings":{"Switch":true,"Type":"Official","Types":["Translate","External"],"Languages":["AUTO","AUTO"],"AutoCC":true,"ShowOnly":false},
 		"Configs":{
 			"Languages":{"BG":"bg-BG","CS":"cs","DA":"da-DK","DE":"de","EL":"el","EN":"en","EN-GB":"en-GB","EN-US":"en-US","EN-US SDH":"en-US SDH","ES":"es","ES-419":"es-419","ES-ES":"es-ES","ET":"et-EE","FI":"fi","FR":"fr","HU":"hu-HU","ID":"id","IS":"is-IS","IT":"it","JA":"ja","KO":"ko","LT":"lt-LT","LV":"lv-LV","NL":"nl-NL","NO":"nb-NO","PL":"pl-PL","PT":"pt","PT-PT":"pt-PT","PT-BR":"pt-BR","RO":"ro-RO","RU":"ru-RU","SK":"sk-SK","SL":"sl-SI","SV":"sv-SE","YUE":"yue","YUE-HK":"yue-HK","ZH":"zh","ZH-HANS":"zh-Hans","ZH-HK":"zh-Hant-HK","ZH-HANT":"zh-Hant","ZH-TW":"zh-TW"},
 			"translationLanguages":{
@@ -28,13 +28,16 @@ const DataBase = {
 		}
 	},
 	"Netflix":{
-		"Settings":{"Switch":true,"Type":"Translate","Languages":["EN","ZH"]},
+		"Settings":{"Switch":true,"Type":"Translate","Languages":["AUTO","ZH"]},
 		"Configs":{
 			"Languages":{"AR":"ar","CS":"cs","DA":"da","DE":"de","EN":"en","EN-GB":"en-GB","EN-US":"en-US","EN-US SDH":"en-US SDH","ES":"es","ES-419":"es-419","ES-ES":"es-ES","FI":"fi","FR":"fr","HE":"he","HR":"hr","HU":"hu","ID":"id","IT":"it","JA":"ja","KO":"ko","MS":"ms","NB":"nb","NL":"nl","PL":"pl","PT":"pt","PT-PT":"pt-PT","PT-BR":"pt-BR","RO":"ro","RU":"ru","SV":"sv","TH":"th","TR":"tr","UK":"uk","VI":"vi","IS":"is","ZH":"zh","ZH-HANS":"zh-Hans","ZH-HK":"zh-HK","ZH-HANT":"zh-Hant"}
 		}
 	},
-	"Official":{
-		"Settings":{"CacheSize":50,"Position":"Reverse","Offset":0,"Tolerance":1000}
+	"Spotify":{
+		"Settings":{"Switch":true,"Types":["Translate","External"],"Languages":["AUTO","ZH"]}
+	},
+	"Composite":{
+		"Settings":{"CacheSize":20,"ShowOnly":false,"Position":"Reverse","Offset":0,"Tolerance":1000}
 	},
 	"Translate":{
 		"Settings":{"Vendor":"Google","ShowOnly":false,"Position":"Forward","CacheSize":10,"Method":"Part","Times":3,"Interval":500,"Exponential":true},
@@ -47,10 +50,13 @@ const DataBase = {
 		}
 	},
 	"External":{
-		"Settings":{"URL":undefined,"ShowOnly":false,"Position":"Forward","Offset":0,"Tolerance":1000}
+		"Settings":{"SubVendor":"URL","LrcVendor":"NeteaseMusicNodeJS","CacheSize":50}
 	},
 	"API":{
-		"Settings":{"GoogleCloud":{"Version":"v2","Mode":"Key","Auth":undefined},"Microsoft":{"Version":"Azure","Mode":"Token","Region":undefined,"Auth":undefined},"DeepL":{"Version":"Free","Auth":undefined},"DeepLX":{"Endpoint":undefined,"Auth":undefined}}
+		"Settings":{
+			"GoogleCloud":{"Version":"v2","Mode":"Key","Auth":undefined},"Microsoft":{"Version":"Azure","Mode":"Token","Region":undefined,"Auth":undefined},"DeepL":{"Version":"Free","Auth":undefined},"DeepLX":{"Endpoint":undefined,"Auth":undefined},
+			"URL":undefined,"NeteaseMusic":{"PhoneNumber":undefined,"Password":undefined}
+		}
 	}
 };
 
@@ -449,78 +455,80 @@ $.log(`⚠ ${$.name}, FORMAT: ${FORMAT}`, "");
 									})(SyncType || (SyncType = {}));
 									class ColorLyricsResponse$Type extends MessageType {
 										constructor() {
-											super("com.spotify.lyrics.endpointretrofit.proto.ColorLyricsResponse", [
+											super("ColorLyricsResponse", [
 												{ no: 1, name: "lyrics", kind: "message", T: () => LyricsResponse },
 												{ no: 2, name: "colors", kind: "message", T: () => ColorData },
-												{ no: 3, name: "has_vocal_removal", kind: "scalar", opt: true, T: 8 /*ScalarType.BOOL*/ },
-												{ no: 4, name: "vocal_removal_colors", kind: "message", T: () => ColorData }
+												{ no: 3, name: "hasVocalRemoval", kind: "scalar", opt: true, T: 8 /*ScalarType.BOOL*/ },
+												{ no: 4, name: "vocalRemovalColors", kind: "message", T: () => ColorData }
 											]);
 										}
 									}
 									const ColorLyricsResponse = new ColorLyricsResponse$Type();
 									class LyricsResponse$Type extends MessageType {
 										constructor() {
-											super("com.spotify.lyrics.endpointretrofit.proto.LyricsResponse", [
-												{ no: 1, name: "sync_type", kind: "enum", T: () => ["com.spotify.lyrics.endpointretrofit.proto.SyncType", SyncType] },
+											super("LyricsResponse", [
+												{ no: 1, name: "syncType", kind: "enum", T: () => ["SyncType", SyncType] },
 												{ no: 2, name: "lines", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => LyricsLine },
 												{ no: 3, name: "provider", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-												{ no: 4, name: "provider_lyrics_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-												{ no: 5, name: "provider_display_name", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-												{ no: 6, name: "sync_lyrics_android_intent", kind: "message", T: () => AndroidIntent },
-												{ no: 7, name: "sync_lyrics_uri", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-												{ no: 8, name: "is_dense_typeface", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
+												{ no: 4, name: "providerLyricsId", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+												{ no: 5, name: "providerDisplayName", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+												{ no: 6, name: "syncLyricsAndroidIntent", kind: "message", T: () => AndroidIntent },
+												{ no: 7, name: "syncLyricsUri", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+												{ no: 8, name: "isDenseTypeface", kind: "scalar", T: 8 /*ScalarType.BOOL*/ },
 												{ no: 9, name: "alternatives", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Alternative },
-												{ no: 10, name: "lang", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-												{ no: 11, name: "rtl_lang", kind: "scalar", opt: true, T: 8 /*ScalarType.BOOL*/ },
-												{ no: 13, name: "show_upsell", kind: "scalar", opt: true, T: 8 /*ScalarType.BOOL*/ }
+												{ no: 10, name: "language", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+												{ no: 11, name: "isRtlLanguage", kind: "scalar", opt: true, T: 8 /*ScalarType.BOOL*/ },
+												{ no: 12, name: "fullscreenAction", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
+												{ no: 13, name: "showUpsell", kind: "scalar", opt: true, T: 8 /*ScalarType.BOOL*/ }
 											]);
 										}
 									}
 									const LyricsResponse = new LyricsResponse$Type();
 									class LyricsLine$Type extends MessageType {
 										constructor() {
-											super("com.spotify.lyrics.endpointretrofit.proto.LyricsLine", [
-												{ no: 1, name: "start_time_ms", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
-												{ no: 2, name: "text", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
-												{ no: 3, name: "syllables", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Syllable }
+											super("LyricsLine", [
+												{ no: 1, name: "startTimeMs", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
+												{ no: 2, name: "words", kind: "scalar", opt: true, T: 9 /*ScalarType.STRING*/ },
+												{ no: 3, name: "syllables", kind: "message", repeat: 1 /*RepeatType.PACKED*/, T: () => Syllable },
+												{ no: 4, name: "endTimeMs", kind: "scalar", opt: true, T: 3 /*ScalarType.INT64*/ }
 											]);
 										}
 									}
 									const LyricsLine = new LyricsLine$Type();
 									class Syllable$Type extends MessageType {
 										constructor() {
-											super("com.spotify.lyrics.endpointretrofit.proto.Syllable", [
-												{ no: 1, name: "start_time_ms", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
-												{ no: 2, name: "num_chars", kind: "scalar", T: 3 /*ScalarType.INT64*/ }
+											super("Syllable", [
+												{ no: 1, name: "startTimeMs", kind: "scalar", T: 3 /*ScalarType.INT64*/ },
+												{ no: 2, name: "numChars", kind: "scalar", T: 3 /*ScalarType.INT64*/ }
 											]);
 										}
 									}
 									const Syllable = new Syllable$Type();
 									class ColorData$Type extends MessageType {
 										constructor() {
-											super("com.spotify.lyrics.endpointretrofit.proto.ColorData", [
+											super("ColorData", [
 												{ no: 1, name: "background", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
 												{ no: 2, name: "text", kind: "scalar", T: 5 /*ScalarType.INT32*/ },
-												{ no: 3, name: "highlight_text", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
+												{ no: 3, name: "highlightText", kind: "scalar", T: 5 /*ScalarType.INT32*/ }
 											]);
 										}
 									}
 									const ColorData = new ColorData$Type();
 									class AndroidIntent$Type extends MessageType {
 										constructor() {
-											super("com.spotify.lyrics.endpointretrofit.proto.AndroidIntent", [
+											super("AndroidIntent", [
 												{ no: 1, name: "provider", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-												{ no: 2, name: "provider_android_app_id", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
+												{ no: 2, name: "providerAndroidAppId", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
 												{ no: 3, name: "action", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
 												{ no: 4, name: "data", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
-												{ no: 5, name: "content_type", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
+												{ no: 5, name: "contentType", kind: "scalar", T: 9 /*ScalarType.STRING*/ }
 											]);
 										}
 									}
 									const AndroidIntent = new AndroidIntent$Type();
 									class Alternative$Type extends MessageType {
 										constructor() {
-											super("com.spotify.lyrics.endpointretrofit.proto.Alternative", [
+											super("Alternative", [
 												{ no: 1, name: "language", kind: "scalar", T: 9 /*ScalarType.STRING*/ },
 												{ no: 2, name: "lines", kind: "scalar", repeat: 2 /*RepeatType.UNPACKED*/, T: 9 /*ScalarType.STRING*/ }
 											]);
@@ -532,7 +540,7 @@ $.log(`⚠ ${$.name}, FORMAT: ${FORMAT}`, "");
 									Languages[0] = (body?.lyrics?.language === "z1") ? "ZH-HANT"
 										: (body?.lyrics?.language) ? body?.lyrics?.language.toUpperCase()
 										: "AUTO";
-									let fullText = body.lyrics.lines.map(line => line?.text ?? "\u200b");
+									let fullText = body.lyrics.lines.map(line => line?.words ?? "\u200b");
 									const translation = await Translate(fullText, Settings?.Method, Settings?.Vendor, Languages[0], Languages[1], Settings?.[Settings?.Vendor], Configs?.Languages, Settings?.Times, Settings?.Interval, Settings?.Exponential);
 									if (!body?.lyrics?.alternatives) body.lyrics.alternatives = [];
 									body.lyrics.alternatives.unshift({
