@@ -3,7 +3,7 @@
 README:https://github.com/DualSubs/YouTube
 */
 
-const $ = new Env("🍿 DualSubs: ▶ YouTube v1.3.2(1) request");
+const $ = new Env("🍿 DualSubs: ▶ YouTube v1.3.2(2) request");
 const URL = new URLs();
 const DataBase = {
 	"Default":{
@@ -130,7 +130,7 @@ $.log(`⚠ ${$.name}, FORMAT: ${FORMAT}`, "");
 									};
 									break;
 								case "youtubei/v1/browse":
-									if (body?.browseId?.startsWith?.("MPLYt_")) url.query.subtype = "Translate";
+									if (body?.browseId?.startsWith?.("MPLYt_")) $.lodash_set(url, "query.subtype" , "Translate");
 									break;
 								};
 							$request.body = JSON.stringify(body);
@@ -142,7 +142,7 @@ $.log(`⚠ ${$.name}, FORMAT: ${FORMAT}`, "");
 						case "application/grpc+proto":
 						case "applecation/octet-stream":
 							//$.log(`🚧 ${$.name}`, `$request.body: ${JSON.stringify($request.body)}`, "");
-							let rawBody = $.isQuanX() ? new Uint8Array($request.bodyBytes) : $request?.body ?? new Uint8Array();
+							let rawBody = $.isQuanX() ? new Uint8Array($request?.bodyBytes ?? []) : $request?.body ?? new Uint8Array();
 							//$.log(`🚧 ${$.name}`, `isBuffer? ${ArrayBuffer.isView(rawBody)}: ${JSON.stringify(rawBody)}`, "");
 							/******************  initialization start  *******************/
 							// timostamm/protobuf-ts 2.9.0
@@ -253,7 +253,7 @@ $.log(`⚠ ${$.name}, FORMAT: ${FORMAT}`, "");
 											const Browse = new Browse$Type();
 											/******************  initialization finish  *******************/
 											body = Browse.fromBinary(rawBody);
-											if (body?.browseId?.startsWith?.("MPLYt_")) url.query.subtype = "Translate";
+											if (body?.browseId?.startsWith?.("MPLYt_")) $.lodash_set(url, "query.subtype", "Translate");
 											rawBody = Browse.toBinary(body);
 											break;
 									};
