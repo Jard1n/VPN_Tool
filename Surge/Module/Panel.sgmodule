@@ -1,0 +1,34 @@
+#!name = 软件面板合集
+#!desc = 整合常用软件面板显示
+#!system = ios
+#!category = 面板
+
+
+[Rule]
+DOMAIN-SUFFIX,ip-api.com,Manual
+
+
+[Host]
+ip-api.com = 208.95.112.1
+
+
+[Panel]
+# 显示当前的网络信息
+NetInfoPanel=title="",content="",style=info,script-name=net-info-panel.js,update-interval=5
+# 查看节点IP信息
+NetISP = script-name=NetISP,update-interval=5
+# 流媒体解锁检测
+stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=-1
+# GPT解锁检测
+CFGPT = script-name=CFGPT,update-interval=-1
+
+
+[Script]
+# 显示当前的网络信息
+net-info-panel.js=script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Network-Info/Moore/Network-Info.js,type=generic,timeout=30
+# 查看节点IP信息
+NetISP = type=generic,timeout=8,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Script/Panel/Netisp.js
+# 流媒体解锁检测
+stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Stream-All/Moore/Stream-All.js
+# GPT解锁检测
+CFGPT = type=generic,timeout=6,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/CFGPT/CFGPT_2.js,argument=icon=lasso.and.sparkles&iconerr=xmark.seal.fill&icon-color=#336FA9&iconerr-color=#D65C51

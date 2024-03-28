@@ -1,0 +1,6 @@
+#!name = 抓包 & MitM
+#!desc = 抓包的时候才开启此模块，抓完后请及时关闭
+
+
+[MITM]
+hostname = -*.icloud.com.cn,-*.icloud.com, -*.mzstatic.com, -*.crashlytics.com, -*.facebook.com, -*.instagram.com, -ap-*.spotify.com,  -<ip-address>,  -*apple.com, -*.apple.com,*

@@ -1,0 +1,54 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "789.123456.al",
+        "ac.zox.show",
+        "bili.bili.rip",
+        "cdn.bili.rip",
+        "cdn.lyrebirdemby.com",
+        "cdn.zox.show",
+        "cdnac.zox.show",
+        "cf.bili.rip",
+        "cf.jmsooo.com",
+        "cherrytv.one",
+        "chirsemby.top",
+        "emby.aca.best",
+        "emby.bangumi.ca",
+        "emby3.mcjoker.xyz",
+        "embyplus.org",
+        "film.reddust.link",
+        "gd.9521732.xyz",
+        "go.reddust.link",
+        "hk.jmsooo.com",
+        "imetyou.top",
+        "jmsooo.com",
+        "jp.zox.show",
+        "media.nijigem.by",
+        "misakaf.org",
+        "pilipiliultra.com",
+        "pilipiliultra.top",
+        "pornemby.club",
+        "sg.jmsooo.com",
+        "us.zox.show",
+        "zox.show"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".embyplus.org",
+        ".imetyou.top",
+        ".misakaf.org",
+        ".pilipiliultra.com",
+        ".pilipiliultra.top",
+        ".pornemby.club"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "102.223.180.108/32"
+      ]
+    }
+  ],
+  "version": 1
+}
