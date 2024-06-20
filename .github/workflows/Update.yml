@@ -1,0 +1,37 @@
+name: JS_Update
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: Checkout
+        run: |
+          pwd
+
+      - name: Update
+        run: python Scripts/UpdateJS.py
+
+      - name: Commit
+        run: |
+         if [[ -n $(git status -s) ]]; then
+           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+           git config --local user.name "github-actions[bot]"
+           git add .
+           git commit -m "UpdateJS" -a
+           git pull origin main
+         else
+          echo "No changes to commit."
+         fi
+
+      - name: Push
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
