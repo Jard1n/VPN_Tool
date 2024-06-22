@@ -7,7 +7,6 @@ a.wkanx.com
 abema-adx.ameba.jp
 abtest-ch.snssdk.com
 ad-analysis.pconline.com.cn
-ad-cdn.qingting.fm
 ad-cn.jovcloud.com
 ad-h5-cdn.soulapp.cn
 ad-h5-station-cdn.soulapp.cn
@@ -89,9 +88,9 @@ adshows.21cn.com
 adsmind.apdcdn.tc.qq.com
 adsmind.tc.qq.com
 adsstatic.vivo.com.cn
-adstore-index-1252524079.file.myqcloud.com
 adtrack.ucweb.com
 adtrack.xiaojukeji.com
+adtracker.adfunlink.com
 adttrackingprd.hwwt8.com
 adv-adlog.variflight.com
 adv-ads.variflight.com
@@ -211,8 +210,6 @@ ggic03.miguvideo.com
 ggmk.miguvideo.com
 ggs.myzaker.com
 ggv.cmvideo.cn
-ggx.cmvideo.cn
-ggx03.miguvideo.com
 glitter.services.disqus.com
 go.aoalmfwinbsstec23.com
 go.bbrdbr.com
@@ -438,9 +435,7 @@ wxsnsdy.tc.qq.com
 wxsnsdy.video.qq.com
 x.eccorp.cc
 yandexmetrica.com
-ykad-data.youku.com
 youhui.95516.com
-youku-acs.m.taobao.com
 yt-adp.nosdn.127.net
 yt-adp.ws.126.net
 zgsdk.zhugeio.com
@@ -570,6 +565,8 @@ zhanzhang.toutiao.com
 .acxiom-online.com
 .ad-balancer.at
 .ad-brix.com
+.ad-cache.dopool.com
+.ad-cdn.qingting.fm
 .ad-center.com
 .ad-channel.wikawika.xyz
 .ad-cloud.jp
@@ -836,6 +833,8 @@ zhanzhang.toutiao.com
 .adsrvr.org
 .adss.yahoo.com
 .adstats.tencentmusic.com
+.adstore-1252524079.file.myqcloud.com
+.adstore-index-1252524079.file.myqcloud.com
 .adsunflower.com
 .adsunion.com
 .adswizz.com
@@ -858,6 +857,7 @@ zhanzhang.toutiao.com
 .adukwai.com
 .adups.com
 .aduu.cn
+.adv.fjtv.net
 .adv.sec.intl.miui.com
 .adv.sec.miui.com
 .advert.api.thejoyrun.com
@@ -874,6 +874,7 @@ zhanzhang.toutiao.com
 .adwhirl.com
 .adwo.com
 .adx-drcn.op.dbankcloud.cn
+.adx-open-service.youku.com
 .adx.xiaodutv.com
 .adxadserv.com
 .adxlog-adnet.vivo.com.cn
@@ -899,6 +900,7 @@ zhanzhang.toutiao.com
 .aihaoduo.cn
 .airpr.com
 .airpush.com
+.aiseet.aa.atianqi.com
 .aishowbger.com
 .ajapk.com
 .akuai.top
@@ -940,6 +942,7 @@ zhanzhang.toutiao.com
 .analytics.woozooo.com
 .analytics.yahoo.com
 .analyze.lemurbrowser.com
+.andrqd.play.aiseet.atianqi.com
 .ane.yahoo.co.jp
 .angsrvr.com
 .annabelleabe.com
@@ -1270,6 +1273,7 @@ zhanzhang.toutiao.com
 .cudaojia.com
 .customer-security.online
 .cvda.17173.com
+.cws-cctv.conviva.com
 .d.g.mi.com
 .d.kugou.com
 .d.meituan.net
@@ -1524,6 +1528,9 @@ zhanzhang.toutiao.com
 .gg.kugou.com
 .gg.meitu.com
 .ggsfq.com
+.ggx.cmvideo.cn
+.ggx01.miguvideo.com
+.ggx03.miguvideo.com
 .gimg.baidu.com
 .giocdn.com
 .glispa.com
@@ -1831,6 +1838,9 @@ zhanzhang.toutiao.com
 .liveadvert.com
 .liveats-vod.video.ptqy.gitv.tv
 .livemonitor.huan.tv
+.livep.l.aiseet.atianqi.com
+.lives.l.aiseet.atianqi.com
+.lives.l.ott.video.qq.com
 .lm.licenses.adobe.com
 .lm.tv.sohu.com
 .lm10111.jtrincc.cn
@@ -2027,6 +2037,7 @@ zhanzhang.toutiao.com
 .mon.toutiao.com
 .mon.zijieapi.com
 .monitor-ads-test.huan.tv
+.monitor-uu.play.aiseet.atianqi.com
 .monitor.music.qq.com
 .monitor.qq.com
 .monsetting.toutiao.com
@@ -2151,6 +2162,7 @@ zhanzhang.toutiao.com
 .orbit.jd.com
 .oth.eve.mdt.qq.com
 .oth.str.mdt.qq.com
+.otheve.play.aiseet.atianqi.com
 .outbrain.com
 .outbrain.org
 .outbrainimg.com
@@ -2443,6 +2455,7 @@ zhanzhang.toutiao.com
 .sdkclick.mobile.sina.cn
 .sdkconf.avlyun.com
 .sdkconfig.ad.intl.xiaomi.com
+.sdkconfig.play.aiseet.atianqi.com
 .sdkconfig.video.qq.com
 .sdkinit.taobao.com
 .sdkoptedge.chinanetcenter.com
@@ -2899,6 +2912,7 @@ zhanzhang.toutiao.com
 .vervemobile.com
 .vi-serve.com
 .vidazoo.com
+.video-ad.sm.cn
 .video-dsp.pddpic.com
 .video.ktkjmp.com
 .videoadex.com
@@ -3032,6 +3046,7 @@ zhanzhang.toutiao.com
 .www42.zskwai.com
 .wx16999.com
 .wxa.wxs.qq.com
+.wxsnsad.tc.qq.com
 .wxsnsdy.wxs.qq.com
 .wxsnsdythumb.wxs.qq.com
 .x2sfa.javgg.eu
@@ -3101,6 +3116,8 @@ zhanzhang.toutiao.com
 .yitaopt.com
 .yiwk.com
 .yjqiqi.com
+.ykad-data.youku.com
+.ykad-gateway.youku.com
 .ykatr.youku.com
 .ykrec.youku.com
 .ykrectab.youku.com
@@ -3116,6 +3133,7 @@ zhanzhang.toutiao.com
 .yooli.com
 .yottos.com
 .youappi.com
+.youku-acs.m.taobao.com
 .youmi.net
 .youtube.112.2o7.net
 .youxi.kugou.com

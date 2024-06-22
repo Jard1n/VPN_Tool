@@ -1,4 +1,4 @@
-# Main total line 3426
+# Main total line 3444
 # ------------------------------------------
 DOMAIN,4lke.online
 DOMAIN,a.adtng.com
@@ -9,7 +9,6 @@ DOMAIN,a.wkanx.com
 DOMAIN,abema-adx.ameba.jp
 DOMAIN,abtest-ch.snssdk.com
 DOMAIN,ad-analysis.pconline.com.cn
-DOMAIN,ad-cdn.qingting.fm
 DOMAIN,ad-cn.jovcloud.com
 DOMAIN,ad-h5-cdn.soulapp.cn
 DOMAIN,ad-h5-station-cdn.soulapp.cn
@@ -91,9 +90,9 @@ DOMAIN,adshows.21cn.com
 DOMAIN,adsmind.apdcdn.tc.qq.com
 DOMAIN,adsmind.tc.qq.com
 DOMAIN,adsstatic.vivo.com.cn
-DOMAIN,adstore-index-1252524079.file.myqcloud.com
 DOMAIN,adtrack.ucweb.com
 DOMAIN,adtrack.xiaojukeji.com
+DOMAIN,adtracker.adfunlink.com
 DOMAIN,adttrackingprd.hwwt8.com
 DOMAIN,adv-adlog.variflight.com
 DOMAIN,adv-ads.variflight.com
@@ -213,8 +212,6 @@ DOMAIN,ggic03.miguvideo.com
 DOMAIN,ggmk.miguvideo.com
 DOMAIN,ggs.myzaker.com
 DOMAIN,ggv.cmvideo.cn
-DOMAIN,ggx.cmvideo.cn
-DOMAIN,ggx03.miguvideo.com
 DOMAIN,glitter.services.disqus.com
 DOMAIN,go.aoalmfwinbsstec23.com
 DOMAIN,go.bbrdbr.com
@@ -440,9 +437,7 @@ DOMAIN,wxsnsdy.tc.qq.com
 DOMAIN,wxsnsdy.video.qq.com
 DOMAIN,x.eccorp.cc
 DOMAIN,yandexmetrica.com
-DOMAIN,ykad-data.youku.com
 DOMAIN,youhui.95516.com
-DOMAIN,youku-acs.m.taobao.com
 DOMAIN,yt-adp.nosdn.127.net
 DOMAIN,yt-adp.ws.126.net
 DOMAIN,zgsdk.zhugeio.com
@@ -572,6 +567,8 @@ DOMAIN-SUFFIX,acuityplatform.com
 DOMAIN-SUFFIX,acxiom-online.com
 DOMAIN-SUFFIX,ad-balancer.at
 DOMAIN-SUFFIX,ad-brix.com
+DOMAIN-SUFFIX,ad-cache.dopool.com
+DOMAIN-SUFFIX,ad-cdn.qingting.fm
 DOMAIN-SUFFIX,ad-center.com
 DOMAIN-SUFFIX,ad-channel.wikawika.xyz
 DOMAIN-SUFFIX,ad-cloud.jp
@@ -838,6 +835,8 @@ DOMAIN-SUFFIX,adspecs.yahoo.com
 DOMAIN-SUFFIX,adsrvr.org
 DOMAIN-SUFFIX,adss.yahoo.com
 DOMAIN-SUFFIX,adstats.tencentmusic.com
+DOMAIN-SUFFIX,adstore-1252524079.file.myqcloud.com
+DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com
 DOMAIN-SUFFIX,adsunflower.com
 DOMAIN-SUFFIX,adsunion.com
 DOMAIN-SUFFIX,adswizz.com
@@ -860,6 +859,7 @@ DOMAIN-SUFFIX,adui.tg.meitu.com
 DOMAIN-SUFFIX,adukwai.com
 DOMAIN-SUFFIX,adups.com
 DOMAIN-SUFFIX,aduu.cn
+DOMAIN-SUFFIX,adv.fjtv.net
 DOMAIN-SUFFIX,adv.sec.intl.miui.com
 DOMAIN-SUFFIX,adv.sec.miui.com
 DOMAIN-SUFFIX,advert.api.thejoyrun.com
@@ -876,6 +876,7 @@ DOMAIN-SUFFIX,adwetec.com
 DOMAIN-SUFFIX,adwhirl.com
 DOMAIN-SUFFIX,adwo.com
 DOMAIN-SUFFIX,adx-drcn.op.dbankcloud.cn
+DOMAIN-SUFFIX,adx-open-service.youku.com
 DOMAIN-SUFFIX,adx.xiaodutv.com
 DOMAIN-SUFFIX,adxadserv.com
 DOMAIN-SUFFIX,adxlog-adnet.vivo.com.cn
@@ -901,6 +902,7 @@ DOMAIN-SUFFIX,aider-res.meizu.com
 DOMAIN-SUFFIX,aihaoduo.cn
 DOMAIN-SUFFIX,airpr.com
 DOMAIN-SUFFIX,airpush.com
+DOMAIN-SUFFIX,aiseet.aa.atianqi.com
 DOMAIN-SUFFIX,aishowbger.com
 DOMAIN-SUFFIX,ajapk.com
 DOMAIN-SUFFIX,akuai.top
@@ -942,6 +944,7 @@ DOMAIN-SUFFIX,analytics.wanmei.com
 DOMAIN-SUFFIX,analytics.woozooo.com
 DOMAIN-SUFFIX,analytics.yahoo.com
 DOMAIN-SUFFIX,analyze.lemurbrowser.com
+DOMAIN-SUFFIX,andrqd.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,ane.yahoo.co.jp
 DOMAIN-SUFFIX,angsrvr.com
 DOMAIN-SUFFIX,annabelleabe.com
@@ -1272,6 +1275,7 @@ DOMAIN-SUFFIX,ctrmi.com
 DOMAIN-SUFFIX,cudaojia.com
 DOMAIN-SUFFIX,customer-security.online
 DOMAIN-SUFFIX,cvda.17173.com
+DOMAIN-SUFFIX,cws-cctv.conviva.com
 DOMAIN-SUFFIX,d.g.mi.com
 DOMAIN-SUFFIX,d.kugou.com
 DOMAIN-SUFFIX,d.meituan.net
@@ -1526,6 +1530,9 @@ DOMAIN-SUFFIX,gg.jtertp.com
 DOMAIN-SUFFIX,gg.kugou.com
 DOMAIN-SUFFIX,gg.meitu.com
 DOMAIN-SUFFIX,ggsfq.com
+DOMAIN-SUFFIX,ggx.cmvideo.cn
+DOMAIN-SUFFIX,ggx01.miguvideo.com
+DOMAIN-SUFFIX,ggx03.miguvideo.com
 DOMAIN-SUFFIX,gimg.baidu.com
 DOMAIN-SUFFIX,giocdn.com
 DOMAIN-SUFFIX,glispa.com
@@ -1833,6 +1840,9 @@ DOMAIN-SUFFIX,links.services.disqus.com
 DOMAIN-SUFFIX,liveadvert.com
 DOMAIN-SUFFIX,liveats-vod.video.ptqy.gitv.tv
 DOMAIN-SUFFIX,livemonitor.huan.tv
+DOMAIN-SUFFIX,livep.l.aiseet.atianqi.com
+DOMAIN-SUFFIX,lives.l.aiseet.atianqi.com
+DOMAIN-SUFFIX,lives.l.ott.video.qq.com
 DOMAIN-SUFFIX,lm.licenses.adobe.com
 DOMAIN-SUFFIX,lm.tv.sohu.com
 DOMAIN-SUFFIX,lm10111.jtrincc.cn
@@ -2029,6 +2039,7 @@ DOMAIN-SUFFIX,mojiva.com
 DOMAIN-SUFFIX,mon.toutiao.com
 DOMAIN-SUFFIX,mon.zijieapi.com
 DOMAIN-SUFFIX,monitor-ads-test.huan.tv
+DOMAIN-SUFFIX,monitor-uu.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,monitor.music.qq.com
 DOMAIN-SUFFIX,monitor.qq.com
 DOMAIN-SUFFIX,monsetting.toutiao.com
@@ -2153,6 +2164,7 @@ DOMAIN-SUFFIX,optimus-ads.amap.com
 DOMAIN-SUFFIX,orbit.jd.com
 DOMAIN-SUFFIX,oth.eve.mdt.qq.com
 DOMAIN-SUFFIX,oth.str.mdt.qq.com
+DOMAIN-SUFFIX,otheve.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,outbrain.com
 DOMAIN-SUFFIX,outbrain.org
 DOMAIN-SUFFIX,outbrainimg.com
@@ -2445,6 +2457,7 @@ DOMAIN-SUFFIX,sdkclick.com
 DOMAIN-SUFFIX,sdkclick.mobile.sina.cn
 DOMAIN-SUFFIX,sdkconf.avlyun.com
 DOMAIN-SUFFIX,sdkconfig.ad.intl.xiaomi.com
+DOMAIN-SUFFIX,sdkconfig.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,sdkconfig.video.qq.com
 DOMAIN-SUFFIX,sdkinit.taobao.com
 DOMAIN-SUFFIX,sdkoptedge.chinanetcenter.com
@@ -2901,6 +2914,7 @@ DOMAIN-SUFFIX,verticalscope.com
 DOMAIN-SUFFIX,vervemobile.com
 DOMAIN-SUFFIX,vi-serve.com
 DOMAIN-SUFFIX,vidazoo.com
+DOMAIN-SUFFIX,video-ad.sm.cn
 DOMAIN-SUFFIX,video-dsp.pddpic.com
 DOMAIN-SUFFIX,video.ktkjmp.com
 DOMAIN-SUFFIX,videoadex.com
@@ -3034,6 +3048,7 @@ DOMAIN-SUFFIX,www.govshenzhen.cn
 DOMAIN-SUFFIX,www42.zskwai.com
 DOMAIN-SUFFIX,wx16999.com
 DOMAIN-SUFFIX,wxa.wxs.qq.com
+DOMAIN-SUFFIX,wxsnsad.tc.qq.com
 DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
 DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
 DOMAIN-SUFFIX,x2sfa.javgg.eu
@@ -3103,6 +3118,8 @@ DOMAIN-SUFFIX,yiqifa.com
 DOMAIN-SUFFIX,yitaopt.com
 DOMAIN-SUFFIX,yiwk.com
 DOMAIN-SUFFIX,yjqiqi.com
+DOMAIN-SUFFIX,ykad-data.youku.com
+DOMAIN-SUFFIX,ykad-gateway.youku.com
 DOMAIN-SUFFIX,ykatr.youku.com
 DOMAIN-SUFFIX,ykrec.youku.com
 DOMAIN-SUFFIX,ykrectab.youku.com
@@ -3118,6 +3135,7 @@ DOMAIN-SUFFIX,yongyuelm.com
 DOMAIN-SUFFIX,yooli.com
 DOMAIN-SUFFIX,yottos.com
 DOMAIN-SUFFIX,youappi.com
+DOMAIN-SUFFIX,youku-acs.m.taobao.com
 DOMAIN-SUFFIX,youmi.net
 DOMAIN-SUFFIX,youtube.112.2o7.net
 DOMAIN-SUFFIX,youxi.kugou.com
