@@ -866,6 +866,8 @@ zhanzhang.toutiao.com
 .advert.api.thejoyrun.com
 .advertiseonbing.azureedge.net
 .advertising-api-eu.amazon.com
+.advertising-api-fe.amazon.com
+.advertising-api.amazon.com
 .advertising.apple.com
 .advertising.com
 .advertising.yahoo.com
@@ -958,6 +960,8 @@ zhanzhang.toutiao.com
 .anythinktech.com
 .aoodoo.feng.com
 .apd-pcdnwxlogin.teg.tencent-cloud.net
+.apd-pcdnwxnat.teg.tencent-cloud.net
+.apd-pcdnwxstat.teg.tencent-cloud.net
 .api-ad-product.huxiu.com
 .api-deal.kechenggezi.com
 .api-flow.meizu.com
@@ -1076,6 +1080,7 @@ zhanzhang.toutiao.com
 .beyondcompare.cc
 .bfshan.cn
 .bhichong.com
+.bianxian.com
 .bianxianmao.com
 .biddingos.com
 .biddingx.com
@@ -1125,6 +1130,7 @@ zhanzhang.toutiao.com
 .c.autohome.com.cn
 .c.baidu.cn
 .c.baidu.com
+.c.bidtoolads.com
 .c.evidon.com
 .c.gj.qq.com
 .c.kuaiduizuoye.com
@@ -1223,6 +1229,12 @@ zhanzhang.toutiao.com
 .commdata.v.qq.com
 .comscore.com
 .config.chsmarttv.com
+.conn-service-cn-03.allawntech.com
+.conn-service-cn-04.allawntech.com
+.conn-service-cn-05.allawntech.com
+.conn-service-in-03.allawnos.com
+.conn-service-in-04.allawnos.com
+.conn-service-in-05.allawnos.com
 .connexity.net
 .conv.youdao.com
 .coocaatv.com
@@ -1592,6 +1604,7 @@ zhanzhang.toutiao.com
 .gzxnlk.com
 .haitaoad.nosdn.127.net
 .haloapps.com
+.hanlanad.com
 .haoghost.com
 .haoshengtoys.com
 .haoyundm.com
@@ -1839,6 +1852,7 @@ zhanzhang.toutiao.com
 .lianmeng.360.cn
 .linkeye.ximalaya.com
 .links.services.disqus.com
+.litchiads.com
 .liveadvert.com
 .liveats-vod.video.ptqy.gitv.tv
 .livemonitor.huan.tv
@@ -2452,6 +2466,7 @@ zhanzhang.toutiao.com
 .sdk.cferw.com
 .sdk.hzsanjiaomao.com
 .sdk.m.youku.com
+.sdk.markmedia.com.cn
 .sdk.mobads.adwangmai.com
 .sdkapp.mobile.sina.cn
 .sdkapp.uve.weibo.com
@@ -2781,6 +2796,7 @@ zhanzhang.toutiao.com
 .tribalfusion.com
 .trvdp.com
 .tskdfjksldk.sdhsgcj.com
+.tsvrv.com
 .tsyndicate.com
 .tt114.net
 .tt3sm4.cn
@@ -3050,6 +3066,7 @@ zhanzhang.toutiao.com
 .www42.zskwai.com
 .wx16999.com
 .wxa.wxs.qq.com
+.wximg.wxs.qq.com
 .wxsnsad.tc.qq.com
 .wxsnsdy.wxs.qq.com
 .wxsnsdythumb.wxs.qq.com
