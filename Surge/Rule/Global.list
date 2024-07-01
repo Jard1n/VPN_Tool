@@ -4306,7 +4306,6 @@ DOMAIN-SUFFIX,cmule.com
 DOMAIN-SUFFIX,cmule.org
 DOMAIN-SUFFIX,cmx.im
 DOMAIN-SUFFIX,cn-proxy.com
-DOMAIN-SUFFIX,cn.com
 DOMAIN-SUFFIX,cnabc.com
 DOMAIN-SUFFIX,cnd.org
 DOMAIN-SUFFIX,cnet.com
@@ -17520,6 +17519,7 @@ DOMAIN-SUFFIX,ulyssesapp.com
 DOMAIN-SUFFIX,umass.edu
 DOMAIN-SUFFIX,umich.edu
 DOMAIN-SUFFIX,unblock-us.com
+DOMAIN-SUFFIX,unblock.cn.com
 DOMAIN-SUFFIX,unblockdmm.com
 DOMAIN-SUFFIX,unblocker.yt
 DOMAIN-SUFFIX,unblocksit.es

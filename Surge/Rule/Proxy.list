@@ -138,6 +138,7 @@ DOMAIN-SUFFIX,9to5mac.com
 DOMAIN-SUFFIX,9to5terminal.com
 DOMAIN-SUFFIX,9to5toys.com
 DOMAIN-SUFFIX,a-normal-day.com
+DOMAIN-SUFFIX,a5.com.ru
 DOMAIN-SUFFIX,aaa.com
 DOMAIN-SUFFIX,aamacau.com
 DOMAIN-SUFFIX,abc.net.au
@@ -881,7 +882,6 @@ DOMAIN-SUFFIX,channelnewsasia.com
 DOMAIN-SUFFIX,chaoex.com
 DOMAIN-SUFFIX,chapm25.com
 DOMAIN-SUFFIX,character.ai
-DOMAIN-SUFFIX,chat.lmsys.org
 DOMAIN-SUFFIX,chatnook.com
 DOMAIN-SUFFIX,chaturbate.com
 DOMAIN-SUFFIX,checkgfw.com
@@ -894,7 +894,9 @@ DOMAIN-SUFFIX,cherrysave.com
 DOMAIN-SUFFIX,chhongbi.org
 DOMAIN-SUFFIX,chicagoncmtv.com
 DOMAIN-SUFFIX,chimeforchange.org
+DOMAIN-SUFFIX,china-mmm.jp.net
 DOMAIN-SUFFIX,china-mmm.net
+DOMAIN-SUFFIX,china-mmm.sa.com
 DOMAIN-SUFFIX,china-review.com.ua
 DOMAIN-SUFFIX,china-week.com
 DOMAIN-SUFFIX,china101.com
@@ -1037,7 +1039,6 @@ DOMAIN-SUFFIX,cmule.com
 DOMAIN-SUFFIX,cmule.org
 DOMAIN-SUFFIX,cmx.im
 DOMAIN-SUFFIX,cn-proxy.com
-DOMAIN-SUFFIX,cn.com
 DOMAIN-SUFFIX,cnabc.com
 DOMAIN-SUFFIX,cnd.org
 DOMAIN-SUFFIX,cnet.com
@@ -1084,7 +1085,6 @@ DOMAIN-SUFFIX,collabora.org
 DOMAIN-SUFFIX,collaboraoffice.com
 DOMAIN-SUFFIX,collateralmurder.com
 DOMAIN-SUFFIX,collateralmurder.org
-DOMAIN-SUFFIX,com.ru
 DOMAIN-SUFFIX,comedycentral.com
 DOMAIN-SUFFIX,comefromchina.com
 DOMAIN-SUFFIX,cometotheduckside.com
@@ -1276,6 +1276,7 @@ DOMAIN-SUFFIX,demdex.net
 DOMAIN-SUFFIX,democrats.org
 DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,depositphotos.com
+DOMAIN-SUFFIX,derekhsu.homeip.net
 DOMAIN-SUFFIX,desc.se
 DOMAIN-SUFFIX,desipro.de
 DOMAIN-SUFFIX,deskconnect.com
@@ -2379,7 +2380,6 @@ DOMAIN-SUFFIX,holymountaincn.com
 DOMAIN-SUFFIX,holyspiritspeaks.org
 DOMAIN-SUFFIX,home.sina.com
 DOMAIN-SUFFIX,homedepot.com
-DOMAIN-SUFFIX,homeip.net
 DOMAIN-SUFFIX,homeperversion.com
 DOMAIN-SUFFIX,homephoneplus.com
 DOMAIN-SUFFIX,homeservershow.com
@@ -2832,7 +2832,6 @@ DOMAIN-SUFFIX,journalofdemocracy.org
 DOMAIN-SUFFIX,joymiihub.com
 DOMAIN-SUFFIX,joyourself.com
 DOMAIN-SUFFIX,jp.hao123.com
-DOMAIN-SUFFIX,jp.net
 DOMAIN-SUFFIX,jpopforum.net
 DOMAIN-SUFFIX,jqueryui.com
 DOMAIN-SUFFIX,js.revsci.net
@@ -3088,7 +3087,6 @@ DOMAIN-SUFFIX,livecoin.net
 DOMAIN-SUFFIX,livejasmin.com
 DOMAIN-SUFFIX,liveleak.com
 DOMAIN-SUFFIX,livemint.com
-DOMAIN-SUFFIX,livestation.com
 DOMAIN-SUFFIX,livestream.com
 DOMAIN-SUFFIX,livevideo.com
 DOMAIN-SUFFIX,livingstream.com
@@ -3096,7 +3094,7 @@ DOMAIN-SUFFIX,liwangyang.com
 DOMAIN-SUFFIX,lizhizhuangbi.com
 DOMAIN-SUFFIX,lkcn.net
 DOMAIN-SUFFIX,llnwd.net
-DOMAIN-SUFFIX,llss.me
+DOMAIN-SUFFIX,lmsys.org
 DOMAIN-SUFFIX,lncn.org
 DOMAIN-SUFFIX,lnkd.in
 DOMAIN-SUFFIX,load.to
@@ -4202,7 +4200,6 @@ DOMAIN-SUFFIX,qxbbs.org
 DOMAIN-SUFFIX,qz.com
 DOMAIN-SUFFIX,r0.ru
 DOMAIN-SUFFIX,r18.com
-DOMAIN-SUFFIX,ra.gg
 DOMAIN-SUFFIX,racked.com
 DOMAIN-SUFFIX,radicalparty.org
 DOMAIN-SUFFIX,radio.garden
@@ -4363,7 +4360,6 @@ DOMAIN-SUFFIX,s1s1s1.com
 DOMAIN-SUFFIX,s4miniarchive.com
 DOMAIN-SUFFIX,s81c.com
 DOMAIN-SUFFIX,s8forum.com
-DOMAIN-SUFFIX,sa.com
 DOMAIN-SUFFIX,sa.hao123.com
 DOMAIN-SUFFIX,saboom.com
 DOMAIN-SUFFIX,sacks.com
@@ -5404,6 +5400,7 @@ DOMAIN-SUFFIX,ultraxs.com
 DOMAIN-SUFFIX,ulyssesapp.com
 DOMAIN-SUFFIX,umich.edu
 DOMAIN-SUFFIX,unblock-us.com
+DOMAIN-SUFFIX,unblock.cn.com
 DOMAIN-SUFFIX,unblockdmm.com
 DOMAIN-SUFFIX,unblocker.yt
 DOMAIN-SUFFIX,unblocksit.es
@@ -6021,7 +6018,6 @@ DOMAIN-SUFFIX,ying.com
 DOMAIN-SUFFIX,yingsuoss.com
 DOMAIN-SUFFIX,yinlei.org
 DOMAIN-SUFFIX,yipub.com
-DOMAIN-SUFFIX,yiyechat.com
 DOMAIN-SUFFIX,yizhihongxing.com
 DOMAIN-SUFFIX,yobit.net
 DOMAIN-SUFFIX,yobt.com
@@ -6059,7 +6055,6 @@ DOMAIN-SUFFIX,yuanming.net
 DOMAIN-SUFFIX,yuanzhengtang.org
 DOMAIN-SUFFIX,yulghun.com
 DOMAIN-SUFFIX,yunchao.net
-DOMAIN-SUFFIX,yuntipub.com
 DOMAIN-SUFFIX,yuvutu.com
 DOMAIN-SUFFIX,yvesgeleyn.com
 DOMAIN-SUFFIX,ywpw.com
@@ -6095,6 +6090,7 @@ DOMAIN-SUFFIX,zello.com
 DOMAIN-SUFFIX,zendesk.com
 DOMAIN-SUFFIX,zengjinyan.org
 DOMAIN-SUFFIX,zenmate.com
+DOMAIN-SUFFIX,zenmate.com.ru
 DOMAIN-SUFFIX,zerohedge.com
 DOMAIN-SUFFIX,zeronet.io
 DOMAIN-SUFFIX,zeutch.com
