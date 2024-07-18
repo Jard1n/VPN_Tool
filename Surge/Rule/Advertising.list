@@ -265,6 +265,7 @@ DOMAIN,iot-logser.realme.com
 DOMAIN,ipv4.music.163.com
 DOMAIN,ipv6.music.163.com
 DOMAIN,is-lq.snssdk.com
+DOMAIN,is.snssdk.com
 DOMAIN,itad.linetv.tw
 DOMAIN,ivy.pchouse.com.cn
 DOMAIN,js-ad.a.yximgs.com
@@ -1719,7 +1720,6 @@ DOMAIN-SUFFIX,ironsrc.com
 DOMAIN-SUFFIX,irs01.com
 DOMAIN-SUFFIX,irs01.net
 DOMAIN-SUFFIX,irs09.com
-DOMAIN-SUFFIX,is.snssdk.com
 DOMAIN-SUFFIX,ishop789.com
 DOMAIN-SUFFIX,iskyworker.com
 DOMAIN-SUFFIX,istreamsche.com
