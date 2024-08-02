@@ -1,4 +1,4 @@
-# Main total line 3360
+# Main total line 3357
 # ------------------------------------------
 DOMAIN,4lke.online
 DOMAIN,a.adtng.com
@@ -185,6 +185,7 @@ DOMAIN,dflow.bz.mgtv.com
 DOMAIN,dispatcher.360in.com
 DOMAIN,dns.alidns.com
 DOMAIN,dns.jd.com
+DOMAIN,dns.weixin.qq.com.cn
 DOMAIN,doraemon.xiaojukeji.com
 DOMAIN,duclick.baidu.com
 DOMAIN,effect.snssdk.com
@@ -2982,12 +2983,8 @@ DOMAIN-SUFFIX,wwis-dubc1-vip60.adobe.com
 DOMAIN-SUFFIX,www.govshenzhen.cn
 DOMAIN-SUFFIX,www42.zskwai.com
 DOMAIN-SUFFIX,wx16999.com
-DOMAIN-SUFFIX,wxa.wxs.qq.com
-DOMAIN-SUFFIX,wximg.wxs.qq.com
-DOMAIN-SUFFIX,wxsmw.wxs.qq.com
+DOMAIN-SUFFIX,wxs.qq.com
 DOMAIN-SUFFIX,wxsnsad.tc.qq.com
-DOMAIN-SUFFIX,wxsnsdy.wxs.qq.com
-DOMAIN-SUFFIX,wxsnsdythumb.wxs.qq.com
 DOMAIN-SUFFIX,x2sfa.javgg.eu
 DOMAIN-SUFFIX,xapads.com
 DOMAIN-SUFFIX,xchmai.com
