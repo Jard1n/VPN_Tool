@@ -4,7 +4,6 @@ DOMAIN,clubhouse.pubnubapi.com
 DOMAIN,ees.elsevier.com
 DOMAIN,ip-api.com
 DOMAIN,reddit.app.link
-DOMAIN,techspecs.ui.com
 DOMAIN-SUFFIX,000webhost.com
 DOMAIN-SUFFIX,01.org
 DOMAIN-SUFFIX,030buy.com
@@ -431,6 +430,7 @@ DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,atos.net
 DOMAIN-SUFFIX,att.com
 DOMAIN-SUFFIX,audionow.com
+DOMAIN-SUFFIX,auth0.com
 DOMAIN-SUFFIX,authorizeddns.net
 DOMAIN-SUFFIX,authorizeddns.org
 DOMAIN-SUFFIX,av-e-body.com
@@ -5399,6 +5399,7 @@ DOMAIN-SUFFIX,ugo.com
 DOMAIN-SUFFIX,uhdwallpapers.org
 DOMAIN-SUFFIX,uhrp.org
 DOMAIN-SUFFIX,uhub.com
+DOMAIN-SUFFIX,ui.com
 DOMAIN-SUFFIX,uighur.nl
 DOMAIN-SUFFIX,uighurbiz.net
 DOMAIN-SUFFIX,uk.to
@@ -5422,7 +5423,6 @@ DOMAIN-SUFFIX,unfiltered.news
 DOMAIN-SUFFIX,unholyknight.com
 DOMAIN-SUFFIX,uni.cc
 DOMAIN-SUFFIX,unicode.org
-DOMAIN-SUFFIX,unifi.ui.com
 DOMAIN-SUFFIX,unification.net
 DOMAIN-SUFFIX,unirule.cloud
 DOMAIN-SUFFIX,uniswap.org
