@@ -4,24 +4,21 @@
 
 
 [Map Local]
-# 此条可以屏蔽首次进入的天气动效图层  但是会导致足迹不显示地图数据
-#^https:\/\/mps\.amap\.com\/ws\/mps\/scene\? data-type=text data="{}" status-code=200
-
 # 导航详情页,路线规划,地点详情页,搜索详情页,导航结束页
-^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(car-end|route-plan)\? data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(car-end|route-plan) data-type=text data="{}" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="{}" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="{}" status-code=200
 ^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data-type=text data="{}" status-code=200
 
 # 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
-^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-(assets|location)\? data-type=text data="{}" status-code=200
-^https:\/\/m5\.amap\.com\/ws\/(mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword)\? data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page-(assets|location) data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/(mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword) data-type=text data="{}" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data-type=text data="{}" status-code=200
 ^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="{}" status-code=200
 ^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="{}" status-code=200
 
 # 打车页,红点角标,弹窗,天气图标,推广卡片
-^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(order\/car\/king_toolbox_car_bubble|tips\/onscene_visual_optimization)\? data-type=text data="{}" status-code=200
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(order\/car\/king_toolbox_car_bubble|tips\/onscene_visual_optimization) data-type=text data="{}" status-code=200
 
 
 [Script]
@@ -29,13 +26,14 @@
 移除通用广告请求 = type=http-response, pattern=^http:\/\/amdc\.m\.taobao\.com\/amdc\/mobileDispatch$, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/header.js
 
 # 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
-移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(routeInfo|routePlan)\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
-移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(common\/coupon\/info|poi\/detail)\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/af-hotel\/page\/main\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(routeInfo|routePlan), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(common\/coupon\/info|poi\/detail), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
 移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
-移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(homepage|mps|search\/sp|sug|tips_operation_location)\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+移除导航详情页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(homepage|mps|search\/sp|sug|tips_operation_location), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
 
 # 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
-移除首页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(card-service-plan-home|main-page)\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+移除首页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(card-service-plan-home|main-page), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
 移除首页扰人组件 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
 
 # 我的页面 - 个人主页、推广卡片
@@ -50,7 +48,7 @@
 # 打车页 - 红点角标、弹窗、推广卡片
 移除打车页推广 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
 移除打车页推广 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
-移除打车页推广 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(car\/order\/content_info|order_web\/friendly_information)\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
+移除打车页推广 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(car\/order\/content_info|order_web\/friendly_information), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/RuCu6/QuanX/main/Scripts/amap.js
 
 
 [MITM]
