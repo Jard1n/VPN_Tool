@@ -1,5 +1,5 @@
 // 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/baidu/tiebaJson.js
-// 2023-06-12 16:08
+// 2023-12-11 19:20
 
 const url = $request.url;
 const method = $request.method;
@@ -46,13 +46,7 @@ if (url.includes("tiebaads/commonbatch") && method === postMethod) {
   if ("config" in body) {
     if (body.config?.switch) {
       for (const item of body.config.switch) {
-        if (
-          [
-            "platform_csj_init",
-            "platform_ks_init",
-            "platform_gdt_init"
-          ].includes(item.name)
-        ) {
+        if (["platform_csj_init", "platform_ks_init", "platform_gdt_init"]?.includes(item.name)) {
           item.type = "0";
           // 禁止初始化穿山甲/广点通/快手
         }

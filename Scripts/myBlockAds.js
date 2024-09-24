@@ -1,5 +1,5 @@
 // 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/myBlockAds.js
-// 2024-02-18 19:20
+// 2024-09-22 12:25
 
 const url = $request.url;
 const isResp = typeof $response !== "undefined";
@@ -218,14 +218,14 @@ switch (isResp) {
           delete obj.data.settings.NOTICE;
         }
         if (obj?.data?.user) {
-          obj.data.user.vip_expired_at = "2090-12-31T23:59:59.000+08:00";
-          obj.data.user.is_vip = true;
+          // obj.data.user.vip_expired_at = "2090-12-31T23:59:59.000+08:00";
+          // obj.data.user.is_vip = true;
         }
       } else if (url.includes("/api/v1/users")) {
         // 伪装会员
         if (obj?.data?.user) {
-          obj.data.user.vip_expired_at = "2090-12-31T23:59:59.000+08:00";
-          obj.data.user.is_vip = true;
+          // obj.data.user.vip_expired_at = "2090-12-31T23:59:59.000+08:00";
+          // obj.data.user.is_vip = true;
         }
       } else if (url.includes("/api/v4/movies/")) {
         // 详情页banner
@@ -238,14 +238,6 @@ switch (isResp) {
       body = JSON.stringify(obj);
     } catch (err) {
       console.log(`JavDB, 出现异常: ` + err);
-    }
-    break;
-  // MISSAV-播放弹窗
-  case /^https:\/\/missav\.com\/(dm\d+\/)?\w{2}\/[\w-]+/.test(url):
-    try {
-      body = body.replace(/if\x20?\(nextDirectUrl\)/g, "if (rucu6)").replace(/htmlAdIndexes\.push/g, "// htmlAdIndexes.push");
-    } catch (err) {
-      console.log(`MISSAV-播放弹窗, 出现异常: ` + err);
     }
     break;
   default:
