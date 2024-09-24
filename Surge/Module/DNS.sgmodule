@@ -1,0 +1,130 @@
+#!name = 🍟 Fries: 🌐 DNS enhanced
+#!desc = 域名按所属DNS进行分流解析
+
+
+[Host]
+# 加密DNS
+dns.alidns.com = 223.5.5.5, 223.6.6.6
+doh.pub = 1.12.12.12, 120.53.53.53
+
+# Google
+mtalk.google.com = 108.177.125.188
+dl.google.com = server:119.29.29.29
+dl.l.google.com = server:119.29.29.29
+update.googleapis.com = server:119.29.29.29
+
+# 路由器管理面板
+router.synology.com = server:syslib //群晖Synology
+router.asus.com = server:syslib //华硕Asus
+www.miwifi.com = server:syslib //小米
+miwifi.com = server:syslib //小米
+mediarouter.home = server:syslib //华为
+tplogin.cn = server:syslib //TP-Link
+tplinklogin.net = server:syslib //TP-Link
+tplinkwifi.net = server:syslib //TP-Link
+melogin.cn = server:syslib //水星MERCURY
+falogin.cn = server:syslib //迅捷FAST
+tendawifi.com = server:syslib //腾达Tenda
+leike.cc = server:syslib //磊科Netcore
+zte.home = server:syslib //中兴ZTE
+
+# 腾讯
+*.tencent.com = server:https://doh.pub/dns-query // 腾讯
+*.qcloud.com = server:https://doh.pub/dns-query // 腾讯云
+*.qcloudcdn.cn = server:https://doh.pub/dns-query // 腾讯云CDN
+*.qcloudcdn.com = server:https://doh.pub/dns-query // 腾讯云CDN
+*.qcloudcos.com = server:https://doh.pub/dns-query // 腾讯云对象储存
+*.qcloudimg.com = server:https://doh.pub/dns-query // 腾讯云静态资源
+*.qcloudcjgj.com = server:https://doh.pub/dns-query // 腾讯云超级管家
+*.qcloudwzgj.com = server:https://doh.pub/dns-query // 腾讯云网站管家
+*.qcloudzygj.com = server:https://doh.pub/dns-query // 腾讯云主页管家
+*.myqcloud.com = server:https://doh.pub/dns-query // 腾讯开放云
+*.tencent-cloud.net = server:https://doh.pub/dns-query // 腾讯云
+*.tencentcloud-aiot.com = server:https://doh.pub/dns-query // 腾讯云aiot解决方案
+*.tencentcloudapi.com = server:https://doh.pub/dns-query // 腾讯云API
+*.tencentcloudcr.com = server:https://doh.pub/dns-query // 腾讯云容器镜像服务TCR
+*.tencentcloudmarket.com = server:https://doh.pub/dns-query // 腾讯云云市场
+*.qq.com = server:https://doh.pub/dns-query // QQ
+*.qlogo.cn = server:https://doh.pub/dns-query // 腾讯头像
+*.qpic.cn = server:https://doh.pub/dns-query // 腾讯图片
+*.weixin.qq.com = server:https://doh.pub/dns-query // 微信
+*.wx.qq.com = server:https://doh.pub/dns-query // 微信
+*.weixin.com = server:https://doh.pub/dns-query // 微信
+*.weixinbridge.com = server:https://doh.pub/dns-query // 微信公众平台
+*.wechat.com = server:https://doh.pub/dns-query // WeChat
+*.servicewechat.com = server:https://doh.pub/dns-query // 微信小程序
+*.weiyun.com = server:https://doh.pub/dns-query // 微云
+*.gtimg.cn = server:https://doh.pub/dns-query // 腾讯 图片 静态资源
+*.idqqimg.com = server:https://doh.pub/dns-query // 腾讯 图片 静态资源
+*.cdn-go.cn = server:https://doh.pub/dns-query // 腾讯 静态资源 CDN
+*.smtcdns.com = server:https://doh.pub/dns-query // 腾讯云 智能云解析DNS
+*.smtcdns.net = server:https://doh.pub/dns-query // 腾讯云 智能云解析DNS
+url.cn = server:https://doh.pub/dns-query // 腾讯短网址
+
+# Apple
+networking.apple = server:https://doh.dns.apple.com/dns-query
+*.apple.com = server:https://doh.dns.apple.com/dns-query
+*.icloud.com = server:https://doh.dns.apple.com/dns-query
+
+# 百度
+*.baidu = server:180.76.76.76 // 百度
+*.baidu.com = server:180.76.76.76 // 百度
+*.bdimg.com = server:180.76.76.76 // 百度 静态资源
+*.bdstatic.com = server:180.76.76.76 // 百度 静态资源
+*.baidupcs.* = server:180.76.76.76 // 百度网盘
+*.baiduyuncdn.* = server:180.76.76.76 // 百度云CDN
+*.baiduyundns.* = server:180.76.76.76 // 百度云DNS
+*.bdydns.* = server:180.76.76.76 // 百度云 DNS
+*.bdycdn.* = server:180.76.76.76 // 百度云 CDN
+*.bdysite.com = server:180.76.76.76 // 百度云 域名
+*.bdysites.com = server:180.76.76.76 // 百度云 域名
+*.baidubce.* = server:180.76.76.76 // 百度智能云
+*.bcedns.* = server:180.76.76.76 // 百度智能云 DNS
+*.bcebos.com = server:180.76.76.76 // 百度智能云 对象存储BOS
+*.bcevod.com = server:180.76.76.76 // 百度智能云 播放器服务
+*.bceimg.com = server:180.76.76.76 // 百度智能云 图片服务
+*.bcehost.com = server:180.76.76.76 // 百度智能云 主机
+*.bcehosts.com = server:180.76.76.76 // 百度智能云 主机
+dwz.cn = server:180.76.76.76 // 百度短网址
+
+# 字节跳动
+*.amemv.com = server:180.184.1.1 // 艾特迷
+*.bdxiguaimg.com = server:180.184.1.1 // 西瓜 图片服务
+*.bdxiguastatic.com = server:180.184.1.1 // 西瓜 静态资源
+*.byted-static.com = server:180.184.1.1 // 字节跳动 UNPKG
+*.bytedance.* = server:180.184.1.1 // 字节跳动
+*.bytedns.net = server:180.184.1.1 // 字节跳动 DNS
+*.bytednsdoc.com = server:180.184.1.1 // 字节跳动 CDN 文件存储
+*.bytegoofy.com = server:180.184.1.1 // 字节跳动 Goofy
+*.byteimg.com = server:180.184.1.1 // 字节跳动 图片服务
+*.bytescm.com = server:180.184.1.1 // 字节跳动 SCM
+*.bytetos.com = server:180.184.1.1 // 字节跳动 TOS
+*.bytexservice.com = server:180.184.1.1 // 飞书企业服务平台
+*.douyin.com = server:180.184.1.1 // 抖音
+*.douyinpic.com = server:180.184.1.1 // 抖音 静态资源
+*.douyinstatic.com = server:180.184.1.1 // 抖音 静态资源
+*.douyinvod.com = server:180.184.1.1 // 抖音 静态资源
+*.feelgood.cn = server:180.184.1.1 // FeelGood平台
+*.feiliao.com = server:180.184.1.1 // 飞聊官网
+*.gifshow.com = server:180.184.1.1 // 快手
+*.huoshan.com = server:180.184.1.1 // 火山网
+*.huoshanzhibo.com = server:180.184.1.1 // 火山直播
+*.ibytedapm.com = server:180.184.1.1 // 抖音 dapm
+*.iesdouyin.com = server:180.184.1.1 // 抖音 CDN
+*.ixigua.com = server:180.184.1.1 // 西瓜视频
+*.kspkg.com = server:180.184.1.1 // 快手
+# *.pstatp.com = server:180.184.1.1 // 抖音 静态资源
+*.snssdk.com = server:180.184.1.1 // 今日头条
+*.toutiao.com = server:180.184.1.1 // 今日头条
+*.toutiao13.com = server:180.184.1.1 // 今日头条
+*.toutiao???.??? = server:180.184.1.1 // 今日头条 静态资源
+*.toutiaocloud.cn = server:180.184.1.1 // 头条云
+*.toutiaocloud.com = server:180.184.1.1 // 头条云
+*.toutiaopage.com = server:180.184.1.1 // 今日头条 建站
+*.wukong.com = server:180.184.1.1 // 悟空
+*.zijieapi.com = server:180.184.1.1 // 字节跳动 API
+*.zijieimg.com = server:180.184.1.1 // 字节跳动 图片服务
+*.zjbyte.com = server:180.184.1.1 // 今日头条 网页版
+*.zjcdn.com = server:180.184.1.1 // 字节跳动 CDN
+
+

@@ -1,0 +1,30 @@
+#!name = 净化 & 滴滴出行
+#!desc = 移除滴滴出行广告
+#!category =  Block Ads
+
+
+[Rule]
+DOMAIN,gwp.xiaojukeji.com,REJECT
+
+
+[Map Local]
+^https:\/\/hd\.xiaojukeji\.com\/d data-type=text data="{}" status-code=200
+
+
+[Script]
+滴滴出行 = type=http-response, pattern=^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/daijia\.kuaidadi\.com\/gateway, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/daijia\.kuaidadi\.com:443\/gateway, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/freight\.xiaojukeji\.com\/gateway, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+滴滴出行 = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+
+
+[MITM]
+hostname = %APPEND% api.udache.com, common.diditaxi.com.cn, conf.diditaxi.com.cn, ct.xiaojukeji.com, daijia.kuaidadi.com, freight.xiaojukeji.com, hd.xiaojukeji.com, res.xiaojukeji.com
