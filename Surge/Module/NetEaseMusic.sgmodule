@@ -1,4 +1,4 @@
-#!name = 净化 & 网易云音乐(新版)
+#!name = 净化 & 网易云音乐
 #!desc = 音乐的力量不是用来看广告的
 #!arguments= 推荐:1,发现:1,漫游:0,动态:0,以下为首页卡片板块:--,问候语:0,每日推荐:1,推荐歌单:1,最近常听:1,音乐合伙人:1,雷达歌单:0,排行榜:0,推荐专属歌单:0,你的专属歌单:0
 #!arguments-desc= 不隐藏为:1  隐藏为:0
@@ -27,6 +27,10 @@ DOMAIN,httpdns.n.netease.com,REJECT-NO-DROP
 # 搜索页热搜卡片｜猜你喜欢｜我的应用下方提醒
 ^https?:\/\/interface\d?\.music\.163.com\/w?e?api\/(?:search\/(chart|rcmd\/keyword|specialkeyword)|resource-exposure\/|activity\/bonus\/playpage\/time\/query) data-type=text data="{}"
 ^https?:\/\/interface\d?\.music\.163.com\/eapi\/(?:mlivestream\/entrance\/playpage|link\/(position\/show\/strategy|scene\/show)|ios\/version|v\d\/content\/exposure\/comment\/banner) data-type=text data="{}"
+
+
+[Header Rewrite]
+http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(?:batch|v\d\/resource\/comment\/floor\/get|homepage\/block\/page|link\/page\/rcmd\/resource\/show|user\/follow\/users\/mixed\/get) header-del x-aeapi
 
 
 [Script]
