@@ -1,4 +1,4 @@
-# Main total line 3483
+# Main total line 3484
 # ------------------------------------------
 DOMAIN,4lke.online
 DOMAIN,a.adtng.com
@@ -3322,6 +3322,7 @@ DOMAIN-KEYWORD,video-cn.snssdk.com
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,xxshuyuan
 DOMAIN-KEYWORD,zjtoolbar
+IP-CIDR,0.0.0.0/24,no-resolve
 IP-CIDR,10.72.25.0/24,no-resolve
 IP-CIDR,101.124.19.122/32,no-resolve
 IP-CIDR,101.226.10.8/32,no-resolve
