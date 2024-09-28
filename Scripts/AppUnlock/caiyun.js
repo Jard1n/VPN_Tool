@@ -1,5 +1,5 @@
 // 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/break/caiyun.js
-// 2024-09-01 17:00
+// 2024-09-28 10:30
 
 const url = $request.url;
 const isQuanX = typeof $task !== "undefined";
@@ -37,6 +37,10 @@ if (typeof $response === "undefined") {
       obj = { status: "ok", activities: [{ items: [] }] };
     }
   } else if (url.includes("/api/v1/user_detail")) {
+    // 新版本 我的页面
+    if (obj?.vip_info?.show_upcoming_renewal) {
+      obj.vip_info.show_upcoming_renewal = false;
+    }
     if (obj?.vip_info?.svip) {
       if (obj?.vip_info?.svip) {
         obj.vip_info.svip.is_auto_renewal = true;
@@ -59,11 +63,14 @@ if (typeof $response === "undefined") {
     }
   } else if (url.includes("/v1/vip_info")) {
     // 我的页面
-    if (obj.vip) {
+    if (obj?.vip) {
       obj.vip.expires_time = "4030000000";
     }
-    if (obj.svip) {
+    if (obj?.svip) {
       obj.svip.expires_time = "4030000000";
+    }
+    if (obj?.show_upcoming_renewal) {
+      obj.show_upcoming_renewal = false;
     }
   } else if (url.includes("/v2/user")) {
     // 我的页面
