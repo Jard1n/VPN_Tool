@@ -1,5 +1,5 @@
 // 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
-// 2024-08-26 10:20
+// 2024-10-01 15:30
 
 const url = $request.url;
 if (!$response) $done({});
@@ -224,7 +224,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       for (let item of obj.items) {
         // 关注按钮
         removeAvatar(item?.data);
-        if (/infeed_may_interest_in/.test(item?.itemId)) {
+        if (/infeed_may_interest_in/?.test(item?.itemId)) {
           // 你可能感兴趣的超话
           continue;
         }
@@ -265,10 +265,10 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     if (obj?.channelInfo?.channels?.length > 0) {
       let newTabs = [];
       for (let tab of obj.channelInfo.channels) {
-        if (/_selfrecomm/.test(tab?.flowId)) {
+        if (/_selfrecomm/?.test(tab?.flowId)) {
           // 关注页推荐tab
           continue;
-        } else if (/_chaohua/.test(tab?.flowId)) {
+        } else if (/_chaohua/?.test(tab?.flowId)) {
           // 关注页超话tab
           continue;
         } else {
@@ -292,7 +292,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
             if (i?.data?.hasOwnProperty("promotion")) {
               // 热搜列表中的推广项目
               continue;
-            } else if (/_img_search_stick/.test(i?.data?.pic)) {
+            } else if (/_img_search_stick/?.test(i?.data?.pic)) {
               // 手动置顶的微博热搜
               continue;
             } else {
@@ -398,7 +398,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           if (item?.category === "card") {
             // 58微博展示时间段提示 216筛选按钮
             if ([58, 216]?.includes(item?.data?.card_type)) {
-              if (/没有公开博文，为你推荐以下精彩内容/.test(item?.data?.name)) {
+              if (/没有公开博文，为你推荐以下精彩内容/?.test(item?.data?.name)) {
                 // 个人微博页刷完后的推荐信息流
                 continue;
               }
@@ -487,7 +487,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         if (item?.identifier === "recommend") {
           // 相关推荐
           continue;
-        } else if (/reward_/.test(item?.identifier)) {
+        } else if (/reward_/?.test(item?.identifier)) {
           // 赞赏
           continue;
         } else {
@@ -615,7 +615,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
           } else if (item?.identifier === "urge") {
             // 催更
             continue;
-          } else if (/reward_/.test(item?.identifier)) {
+          } else if (/reward_/?.test(item?.identifier)) {
             // 赞赏
             continue;
           } else {
@@ -651,7 +651,20 @@ if (url.includes("/interface/sdk/sdkad.php")) {
       obj.feed_redpacket.starttime = "2208960000";
       obj.feed_redpacket.interval = "31536000";
       obj.feed_redpacket.endtime = "2209046399";
+      delete obj.feed_redpacket.finish_icon;
+      delete obj.feed_redpacket.guide;
+      delete obj.feed_redpacket.icon;
+      delete obj.feed_redpacket.pre_icon;
     }
+    if (obj?.floating_windows?.length > 0) {
+      obj.floating_windows = obj.floating_windows.filter((i) => !/^ad_?/?.test(i?.subtype));
+    }
+    if (obj?.profile_lotties) {
+      // 个人主页头像挂件素材
+      delete obj.profile_lotties;
+    }
+    delete obj.compose_add_guide; // 过期的情人节红包
+    delete obj.weibo_pic_banner; // 微博种草晒图
   } else if (url.includes("/2/search/")) {
     // 搜索页信息流
     if (url.includes("container_timeline")) {
