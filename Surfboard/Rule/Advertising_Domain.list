@@ -108,6 +108,7 @@ afdconf.baidu.com
 aff-partners-io.ck-cdn.com
 aff.partners.io
 affcpatrk.com
+amdc.m.taobao.com
 amdc.m.youku.com
 analytics-sg.tiktok.com
 analytics.slashdotmedia.com
@@ -182,6 +183,7 @@ etl.xlmc.sandai.net
 exp.360in.com
 extmaps-api.yandex.net
 ezozojawg.com
+feedback-c.zijieapi.com
 flash.sec.miui.com
 floor.bz.mgtv.com
 flowplus.meituan.net
@@ -195,6 +197,8 @@ gecko-hl.snssdk.com
 gecko-pangle-hl.snssdk.com
 gecko-pangle-lf.snssdk.com
 gecko-pangle-lq.snssdk.com
+gecko3-lq.zijieapi.com
+gecko5-lq.zijieapi.com
 get.sogou.com
 ggc.cmvideo.cn
 ggic03.miguvideo.com
@@ -285,6 +289,8 @@ mdrecv.app.cntvwb.cn
 media.net
 mercury-gateway.ixiaochuan.cn
 mermaid.ximalaya.com
+minigame3-normal.zijieapi.com
+minigame5-normal.zijieapi.com
 mob.bz.mgtv.com
 mobad.ijinshan.com
 mon.toutiaocloud.com
@@ -322,6 +328,7 @@ pgdt.gtimg.com
 pitaya.bytedance.com
 pixel.facebook.com
 pl.cp31.ott.cibntv.net
+polaris5-normal-lf.zijieapi.com
 pp-cdnfile2pcdn.msstatic.com
 pre-acs.youku.com
 pv.vipads.cc
@@ -366,6 +373,7 @@ smr.snssdk.com
 spider-tracker.xiaohongshu.com
 splashimgbssdl.yun.kugou.com
 splashqqlive.gtimg.com
+starkgame.zijieapi.com
 static.media.net
 sugar.zhihu.com
 switch.cup.com.cn
@@ -373,7 +381,9 @@ t-ads.xiaohongshu.com
 tbm.snssdk.com
 tc.vpubmi.com
 tempest.services.disqus.com
+timon.zijieapi.com
 tmeadbak.y.qq.com
+tnc11-alisc1.zijieapi.com
 tnc16-alisg.isnssdk.com
 tnc3-alisc1.snssdk.com
 tnc3-bjlgy.snssdk.com
@@ -400,8 +410,10 @@ vali-g1.cp31.ott.cibntv.net
 vali-ugc.cp31.ott.cibntv.net
 vcardsdkservice.vivo.com.cn
 vcl-brain.snssdk.com
+vcs.zijieapi.com
 vdapprecv.app.cntvwb.cn
 videoads-cloud.rovio.com
+view.zijieapi.com
 vinci.ie.sogou.com
 vip.bz.mgtv.com
 vstlog.17usoft.com
@@ -613,6 +625,7 @@ zhanzhang.toutiao.com
 .ad.ximalaya.com
 .ad.youku.com
 .ad.zhangyue.com
+.ad.zijieapi.com
 .ad1.ru
 .ad1.xiaomi.com
 .ad120m.com
@@ -787,6 +800,14 @@ zhanzhang.toutiao.com
 .ads.youtube.com
 .ads1.msn.com
 .ads2.msn.com
+.ads3-normal-hl.zijieapi.com
+.ads3-normal-lf.zijieapi.com
+.ads3-normal-lq.zijieapi.com
+.ads3-normal.zijieapi.com
+.ads5-normal-hl.zijieapi.com
+.ads5-normal-lf.zijieapi.com
+.ads5-normal-lq.zijieapi.com
+.ads5-normal.zijieapi.com
 .ads8.com
 .adsafeprotected.com
 .adsame.com
@@ -986,6 +1007,7 @@ zhanzhang.toutiao.com
 .applog.lc.quark.cn
 .applog.snssdk.com
 .applog.uc.cn
+.applog.zijieapi.com
 .applogapi.autohome.com.cn
 .applvn.com
 .appuu.cn
@@ -1093,7 +1115,6 @@ zhanzhang.toutiao.com
 .books-analytics-events.apple.com
 .bootcdn.net
 .bootcss.com
-.bossaudioandcomic-1252317822.image.myqcloud.com
 .boxshows.com
 .branch.io
 .brand.sogou.com
@@ -1224,12 +1245,6 @@ zhanzhang.toutiao.com
 .commdata.v.qq.com
 .comscore.com
 .config.chsmarttv.com
-.conn-service-cn-03.allawntech.com
-.conn-service-cn-04.allawntech.com
-.conn-service-cn-05.allawntech.com
-.conn-service-in-03.allawnos.com
-.conn-service-in-04.allawnos.com
-.conn-service-in-05.allawnos.com
 .connexity.net
 .conv.youdao.com
 .coocaatv.com
@@ -1906,6 +1921,7 @@ zhanzhang.toutiao.com
 .log.tbs.qq.com
 .log.vcgame.cn
 .log.web.kugou.com
+.log.zijieapi.com
 .log1.17173.com
 .log1.cmpassport.com
 .logbak.hicloud.com
@@ -2064,6 +2080,7 @@ zhanzhang.toutiao.com
 .mobvista.com
 .mojiva.com
 .mon.toutiao.com
+.mon.zijieapi.com
 .monitor-ads-test.huan.tv
 .monitor-uu.play.aiseet.atianqi.com
 .monitor.music.qq.com
@@ -2088,6 +2105,7 @@ zhanzhang.toutiao.com
 .mshow.fang.com
 .msphoneclick.kuwo.cn
 .mssdk.volces.com
+.mssdk.zijieapi.com
 .mtj.baidu.cn
 .mtj.baidu.com
 .mvads.kugou.com
@@ -2462,6 +2480,7 @@ zhanzhang.toutiao.com
 .sanme2.taisantech.com
 .sanya1.com
 .sape.ru
+.saveu5-normal-lq.zijieapi.com
 .sax.mobile.sina.cn
 .sax.sina.com.cn
 .saxd.sina.com.cn
@@ -2764,8 +2783,11 @@ zhanzhang.toutiao.com
 .tnc3-aliec2.bytedance.com
 .tnc3-aliec2.toutiaoapi.com
 .tnc3-alisc1.bytedance.com
+.tnc3-alisc1.zijieapi.com
+.tnc3-alisc2.zijieapi.com
 .tnc3-bjlgy.bytedance.com
 .tnc3-bjlgy.toutiaoapi.com
+.tnc3-bjlgy.zijieapi.com
 .tnkfactory.com
 .tns-counter.ru
 .tns.simba.taobao.com
@@ -3217,7 +3239,6 @@ zhanzhang.toutiao.com
 .zhuanfakong.com
 .zhushou.2345.cn
 .zhzzx.com
-.zijieapi.com
 .zlne800.com
 .zmlled.cn
 .znsv.baidu.cn

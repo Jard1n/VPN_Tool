@@ -1,4 +1,4 @@
-# Main total line 3485
+# Main total line 3506
 # ------------------------------------------
 DOMAIN,4lke.online
 DOMAIN,a.adtng.com
@@ -110,6 +110,7 @@ DOMAIN,afdconf.baidu.com
 DOMAIN,aff-partners-io.ck-cdn.com
 DOMAIN,aff.partners.io
 DOMAIN,affcpatrk.com
+DOMAIN,amdc.m.taobao.com
 DOMAIN,amdc.m.youku.com
 DOMAIN,analytics-sg.tiktok.com
 DOMAIN,analytics.slashdotmedia.com
@@ -184,6 +185,7 @@ DOMAIN,etl.xlmc.sandai.net
 DOMAIN,exp.360in.com
 DOMAIN,extmaps-api.yandex.net
 DOMAIN,ezozojawg.com
+DOMAIN,feedback-c.zijieapi.com
 DOMAIN,flash.sec.miui.com
 DOMAIN,floor.bz.mgtv.com
 DOMAIN,flowplus.meituan.net
@@ -197,6 +199,8 @@ DOMAIN,gecko-hl.snssdk.com
 DOMAIN,gecko-pangle-hl.snssdk.com
 DOMAIN,gecko-pangle-lf.snssdk.com
 DOMAIN,gecko-pangle-lq.snssdk.com
+DOMAIN,gecko3-lq.zijieapi.com
+DOMAIN,gecko5-lq.zijieapi.com
 DOMAIN,get.sogou.com
 DOMAIN,ggc.cmvideo.cn
 DOMAIN,ggic03.miguvideo.com
@@ -287,6 +291,8 @@ DOMAIN,mdrecv.app.cntvwb.cn
 DOMAIN,media.net
 DOMAIN,mercury-gateway.ixiaochuan.cn
 DOMAIN,mermaid.ximalaya.com
+DOMAIN,minigame3-normal.zijieapi.com
+DOMAIN,minigame5-normal.zijieapi.com
 DOMAIN,mob.bz.mgtv.com
 DOMAIN,mobad.ijinshan.com
 DOMAIN,mon.toutiaocloud.com
@@ -324,6 +330,7 @@ DOMAIN,pgdt.gtimg.com
 DOMAIN,pitaya.bytedance.com
 DOMAIN,pixel.facebook.com
 DOMAIN,pl.cp31.ott.cibntv.net
+DOMAIN,polaris5-normal-lf.zijieapi.com
 DOMAIN,pp-cdnfile2pcdn.msstatic.com
 DOMAIN,pre-acs.youku.com
 DOMAIN,pv.vipads.cc
@@ -368,6 +375,7 @@ DOMAIN,smr.snssdk.com
 DOMAIN,spider-tracker.xiaohongshu.com
 DOMAIN,splashimgbssdl.yun.kugou.com
 DOMAIN,splashqqlive.gtimg.com
+DOMAIN,starkgame.zijieapi.com
 DOMAIN,static.media.net
 DOMAIN,sugar.zhihu.com
 DOMAIN,switch.cup.com.cn
@@ -375,7 +383,9 @@ DOMAIN,t-ads.xiaohongshu.com
 DOMAIN,tbm.snssdk.com
 DOMAIN,tc.vpubmi.com
 DOMAIN,tempest.services.disqus.com
+DOMAIN,timon.zijieapi.com
 DOMAIN,tmeadbak.y.qq.com
+DOMAIN,tnc11-alisc1.zijieapi.com
 DOMAIN,tnc16-alisg.isnssdk.com
 DOMAIN,tnc3-alisc1.snssdk.com
 DOMAIN,tnc3-bjlgy.snssdk.com
@@ -402,8 +412,10 @@ DOMAIN,vali-g1.cp31.ott.cibntv.net
 DOMAIN,vali-ugc.cp31.ott.cibntv.net
 DOMAIN,vcardsdkservice.vivo.com.cn
 DOMAIN,vcl-brain.snssdk.com
+DOMAIN,vcs.zijieapi.com
 DOMAIN,vdapprecv.app.cntvwb.cn
 DOMAIN,videoads-cloud.rovio.com
+DOMAIN,view.zijieapi.com
 DOMAIN,vinci.ie.sogou.com
 DOMAIN,vip.bz.mgtv.com
 DOMAIN,vstlog.17usoft.com
@@ -615,6 +627,7 @@ DOMAIN-SUFFIX,ad.xiaomi.com
 DOMAIN-SUFFIX,ad.ximalaya.com
 DOMAIN-SUFFIX,ad.youku.com
 DOMAIN-SUFFIX,ad.zhangyue.com
+DOMAIN-SUFFIX,ad.zijieapi.com
 DOMAIN-SUFFIX,ad1.ru
 DOMAIN-SUFFIX,ad1.xiaomi.com
 DOMAIN-SUFFIX,ad120m.com
@@ -789,6 +802,14 @@ DOMAIN-SUFFIX,ads.yahoo.com
 DOMAIN-SUFFIX,ads.youtube.com
 DOMAIN-SUFFIX,ads1.msn.com
 DOMAIN-SUFFIX,ads2.msn.com
+DOMAIN-SUFFIX,ads3-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,ads3-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,ads3-normal-lq.zijieapi.com
+DOMAIN-SUFFIX,ads3-normal.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal-hl.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal-lf.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal-lq.zijieapi.com
+DOMAIN-SUFFIX,ads5-normal.zijieapi.com
 DOMAIN-SUFFIX,ads8.com
 DOMAIN-SUFFIX,adsafeprotected.com
 DOMAIN-SUFFIX,adsame.com
@@ -988,6 +1009,7 @@ DOMAIN-SUFFIX,applift.com
 DOMAIN-SUFFIX,applog.lc.quark.cn
 DOMAIN-SUFFIX,applog.snssdk.com
 DOMAIN-SUFFIX,applog.uc.cn
+DOMAIN-SUFFIX,applog.zijieapi.com
 DOMAIN-SUFFIX,applogapi.autohome.com.cn
 DOMAIN-SUFFIX,applvn.com
 DOMAIN-SUFFIX,appuu.cn
@@ -1095,7 +1117,6 @@ DOMAIN-SUFFIX,bole.shangshufang.ksosoft.com
 DOMAIN-SUFFIX,books-analytics-events.apple.com
 DOMAIN-SUFFIX,bootcdn.net
 DOMAIN-SUFFIX,bootcss.com
-DOMAIN-SUFFIX,bossaudioandcomic-1252317822.image.myqcloud.com
 DOMAIN-SUFFIX,boxshows.com
 DOMAIN-SUFFIX,branch.io
 DOMAIN-SUFFIX,brand.sogou.com
@@ -1226,12 +1247,6 @@ DOMAIN-SUFFIX,comet.yahoo.com
 DOMAIN-SUFFIX,commdata.v.qq.com
 DOMAIN-SUFFIX,comscore.com
 DOMAIN-SUFFIX,config.chsmarttv.com
-DOMAIN-SUFFIX,conn-service-cn-03.allawntech.com
-DOMAIN-SUFFIX,conn-service-cn-04.allawntech.com
-DOMAIN-SUFFIX,conn-service-cn-05.allawntech.com
-DOMAIN-SUFFIX,conn-service-in-03.allawnos.com
-DOMAIN-SUFFIX,conn-service-in-04.allawnos.com
-DOMAIN-SUFFIX,conn-service-in-05.allawnos.com
 DOMAIN-SUFFIX,connexity.net
 DOMAIN-SUFFIX,conv.youdao.com
 DOMAIN-SUFFIX,coocaatv.com
@@ -1908,6 +1923,7 @@ DOMAIN-SUFFIX,log.stat.kugou.com
 DOMAIN-SUFFIX,log.tbs.qq.com
 DOMAIN-SUFFIX,log.vcgame.cn
 DOMAIN-SUFFIX,log.web.kugou.com
+DOMAIN-SUFFIX,log.zijieapi.com
 DOMAIN-SUFFIX,log1.17173.com
 DOMAIN-SUFFIX,log1.cmpassport.com
 DOMAIN-SUFFIX,logbak.hicloud.com
@@ -2066,6 +2082,7 @@ DOMAIN-SUFFIX,mobjump.com
 DOMAIN-SUFFIX,mobvista.com
 DOMAIN-SUFFIX,mojiva.com
 DOMAIN-SUFFIX,mon.toutiao.com
+DOMAIN-SUFFIX,mon.zijieapi.com
 DOMAIN-SUFFIX,monitor-ads-test.huan.tv
 DOMAIN-SUFFIX,monitor-uu.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,monitor.music.qq.com
@@ -2090,6 +2107,7 @@ DOMAIN-SUFFIX,msg2.video.qiyi.com
 DOMAIN-SUFFIX,mshow.fang.com
 DOMAIN-SUFFIX,msphoneclick.kuwo.cn
 DOMAIN-SUFFIX,mssdk.volces.com
+DOMAIN-SUFFIX,mssdk.zijieapi.com
 DOMAIN-SUFFIX,mtj.baidu.cn
 DOMAIN-SUFFIX,mtj.baidu.com
 DOMAIN-SUFFIX,mvads.kugou.com
@@ -2464,6 +2482,7 @@ DOMAIN-SUFFIX,samsungads.com
 DOMAIN-SUFFIX,sanme2.taisantech.com
 DOMAIN-SUFFIX,sanya1.com
 DOMAIN-SUFFIX,sape.ru
+DOMAIN-SUFFIX,saveu5-normal-lq.zijieapi.com
 DOMAIN-SUFFIX,sax.mobile.sina.cn
 DOMAIN-SUFFIX,sax.sina.com.cn
 DOMAIN-SUFFIX,saxd.sina.com.cn
@@ -2766,8 +2785,11 @@ DOMAIN-SUFFIX,tnc3-aliec1.toutiaoapi.com
 DOMAIN-SUFFIX,tnc3-aliec2.bytedance.com
 DOMAIN-SUFFIX,tnc3-aliec2.toutiaoapi.com
 DOMAIN-SUFFIX,tnc3-alisc1.bytedance.com
+DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
+DOMAIN-SUFFIX,tnc3-alisc2.zijieapi.com
 DOMAIN-SUFFIX,tnc3-bjlgy.bytedance.com
 DOMAIN-SUFFIX,tnc3-bjlgy.toutiaoapi.com
+DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
 DOMAIN-SUFFIX,tnkfactory.com
 DOMAIN-SUFFIX,tns-counter.ru
 DOMAIN-SUFFIX,tns.simba.taobao.com
@@ -3219,7 +3241,6 @@ DOMAIN-SUFFIX,zhjfad.com
 DOMAIN-SUFFIX,zhuanfakong.com
 DOMAIN-SUFFIX,zhushou.2345.cn
 DOMAIN-SUFFIX,zhzzx.com
-DOMAIN-SUFFIX,zijieapi.com
 DOMAIN-SUFFIX,zlne800.com
 DOMAIN-SUFFIX,zmlled.cn
 DOMAIN-SUFFIX,znsv.baidu.cn
