@@ -1,5 +1,5 @@
 // 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/bilibili/json.js
-// 2024-09-28 13:15
+// 2024-10-09 01:35
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -147,9 +147,8 @@ if (url.includes("/x/resource/show/skin")) {
       } else if (["vertical_ad_av", "vertical_live", "vertical_pgc"]?.includes(item?.card_goto)) {
         continue;
       } else {
-        if (item?.story_cart_icon) {
-          delete item.story_cart_icon;
-        }
+        delete item.creative_entrance; // 推荐话题搜索框
+        delete item.story_cart_icon; // 多余图标
         newItems.push(item);
       }
     }
