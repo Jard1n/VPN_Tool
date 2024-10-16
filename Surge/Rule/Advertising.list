@@ -1,4 +1,4 @@
-# Main total line 3504
+# Main total line 3502
 # ------------------------------------------
 DOMAIN,4lke.online
 DOMAIN,a.adtng.com
@@ -2010,7 +2010,6 @@ DOMAIN-SUFFIX,meitubeauty.meitudata.com
 DOMAIN-SUFFIX,mercury-sdk.snssdk.com
 DOMAIN-SUFFIX,message.meitu.com
 DOMAIN-SUFFIX,meta.video.qiyi.com
-DOMAIN-SUFFIX,metok.sys.miui.com
 DOMAIN-SUFFIX,metrics.apple.com
 DOMAIN-SUFFIX,metrics.data.hicloud.com
 DOMAIN-SUFFIX,metrics.mzstatic.com
@@ -3389,7 +3388,6 @@ IP-CIDR,125.211.213.130/31,no-resolve
 IP-CIDR,125.211.213.132/31,no-resolve
 IP-CIDR,125.211.213.134/32,no-resolve
 IP-CIDR,125.76.239.244/31,no-resolve
-IP-CIDR,162.243.103.246/32,no-resolve
 IP-CIDR,169.254.169.254/32,no-resolve
 IP-CIDR,175.6.223.15/32,no-resolve
 IP-CIDR,180.153.103.224/32,no-resolve
