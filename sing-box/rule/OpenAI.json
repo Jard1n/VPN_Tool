@@ -1,0 +1,50 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "api.revenuecat.com",
+        "api.statsig.com",
+        "browser-intake-datadoghq.com",
+        "cdn.auth0.com",
+        "chatgpt.com",
+        "chatgpt.livekit.cloud",
+        "events.statsigapi.net",
+        "featuregates.org",
+        "host.livekit.cloud",
+        "identrust.com",
+        "intercom.io",
+        "intercomcdn.com",
+        "o33249.ingest.sentry.io",
+        "oaistatic.com",
+        "oaiusercontent.com",
+        "stripe.com",
+        "stripe.network",
+        "stripecdn.com",
+        "turn.livekit.cloud"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "openai"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".chatgpt.com",
+        ".chatgpt.livekit.cloud",
+        ".featuregates.org",
+        ".host.livekit.cloud",
+        ".identrust.com",
+        ".intercom.io",
+        ".intercomcdn.com",
+        ".oaistatic.com",
+        ".oaiusercontent.com",
+        ".stripe.com",
+        ".stripe.network",
+        ".stripecdn.com",
+        ".turn.livekit.cloud"
+      ]
+    }
+  ],
+  "version": 1
+}

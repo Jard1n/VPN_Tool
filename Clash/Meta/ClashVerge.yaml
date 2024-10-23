@@ -1,0 +1,137 @@
+mixed-port: 7893      # 混合端口 HTTP和SOCKS5用一个端口
+geodata-mode: false    #【Meta专属】使用geoip.dat数据库(默认：false使用mmdb数据库)
+tcp-concurrent: false #【Meta专属】TCP 并发连接所有 IP, 将使用最快握手的 TCP
+allow-lan: true       # 允许局域网的连接（可用来共享代理）
+bind-address: "*"     # 仅在将allow-lan设置为true时适用
+                      # #"*": 绑定所有IP地址
+find-process-mode: strict           #匹配所有进程（always/strict/off）
+ipv6: false           # 开启 IPv6 总开关，关闭阻断所有 IPv6 链接和屏蔽 DNS 请求 AAAA 记录
+mode: rule            # 规则模式：rule（规则） / global（全局代理）/ direct（全局直连）/ script (脚本)
+log-level: info       # 设置日志输出级别 (5 个级别：silent / error / warning / info / debug）
+external-controller: 0.0.0.0:9093   #外部控制器,可以使用 RESTful API 来控制你的 clash 内核
+global-client-fingerprint: chrome   #全局 TLS 指纹，优先低于 proxy 内的 client-fingerprint
+                                    #可选： "chrome","firefox","safari","ios","random","none" options.
+
+geox-url:             #自定义 geodata url
+  mmdb: "https://raw.githubusercontent.com/Jard1n/GeoIP/release/GeoIP-CN.mmdb"
+
+
+profile:
+  store-elected: true # 存储 elect 选择记录
+  store-fake-ip: true  # 持久化 fake-ip
+  
+sniffer:               # 嗅探域名 可选配置
+  enable: true
+  parse-pure-ip: true  # 是否使用嗅探结果作为实际访问，默认 true
+  sniff:
+    TLS:               # TLS 默认嗅探 443
+      ports: [443, 8443]
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    QUIC:
+      ports: [443, 8443]
+      
+tun:                   # Tun 配置
+  enable: true
+  stack: system        # 可选： system/gvisor/mixed；tun 模式堆栈,如无使用问题,建议使用 system 栈;MacOS 用户推荐 gvisor栈
+                       # system 使用系统协议栈,可以提供更稳定/全面的 tun 体验,且占用相对其他堆栈更低。 
+                       # gvisor 通过在用户空间中实现网络协议栈,可以提供更高的安全性和隔离性,同时可以避免操作系统内核和用户空间之间的切换,从而在特定情况下具有更好的网络处理性能
+                       # mixed 混合堆栈,tcp使用 system栈,udp使用 gvisor栈,使用体验可能相对更好
+  dns-hijack: [any:53]            # dns劫持,一般设置为 any:53 即可, 即劫持所有53端口的udp流量
+# strict_route: true   # 将所有连接路由到tun来防止泄漏，但你的设备将无法其他设备被访问
+  auto-route: true     # 自动设置全局路由，可以自动将全局流量路由进入tun网卡。
+  auto-detect-interface: true     # 自动识别出口网卡
+        
+dns:
+  enable: true             # 关闭将使用系统 DNS
+  ipv6: false              # IPV6解析开关；如果为false，将返回ipv6结果为空
+  enhanced-mode: fake-ip   # 模式：redir-host或fake-ip
+  listen: 0.0.0.0:53       # DNS监听地址
+  fake-ip-range: 198.18.0.1/16    # Fake-IP解析地址池
+  fake-ip-filter: ['*.lan', 'cable.auth.com', '*.msftconnecttest.com', '*.msftncsi.com', 'network-test.debian.org', 'detectportal.firefox.com', 'resolver1.opendns.com', '*.srv.nintendo.net', '*.stun.playstation.net', 'xbox.*.microsoft.com', '*.xboxlive.com', 'stun.*', 'global.turn.twilio.com', 'global.stun.twilio.com', 'localhost.*.qq.com', 'localhost.*.weixin.qq.com', '*.logon.battlenet.com.cn', '*.logon.battle.net', '*.blzstatic.cn', 'music.163.com', '*.music.163.com', '*.126.net', 'musicapi.taihe.com', 'music.taihe.com', 'songsearch.kugou.com', 'trackercdn.kugou.com', '*.kuwo.cn', 'api-jooxtt.sanook.com', 'api.joox.com', 'joox.com', 'y.qq.com', '*.y.qq.com', 'streamoc.music.tc.qq.com', 'mobileoc.music.tc.qq.com', 'isure.stream.qqmusic.qq.com', 'dl.stream.qqmusic.qq.com', 'aqqmusic.tc.qq.com', 'amobile.music.tc.qq.com', '*.xiami.com', '*.music.migu.cn', 'music.migu.cn', 'proxy.golang.org', '*.mcdn.bilivideo.cn', '*.cmpassport.com', 'id6.me', 'open.e.189.cn', 'mdn.open.wo.cn', 'opencloud.wostore.cn', 'auth.wosms.cn', '*.jegotrip.com.cn', '*.icitymobile.mobi', '*.pingan.com.cn', '*.cmbchina.com', 'pool.ntp.org', '*.pool.ntp.org', 'ntp.*.com', 'time.*.com', 'ntp?.*.com', 'time?.*.com', 'time.*.gov', 'time.*.edu.cn', '*.ntp.org.cn', 'PDC._msDCS.*.*', 'DC._msDCS.*.*', 'GC._msDCS.*.*']
+                          # fake ip 白名单列表'以下地址不会下发fakeip映射用于连接
+  nameserver: [https://223.5.5.5/dns-query, https://1.12.12.12/dns-query]
+
+
+# 建立锚点
+# 订阅更新和延迟测试
+p: &p {type: http, filter: "^(?!.*(套餐|流量|重置|测试|使用|更新|Expire|Traffic)).*$", interval: 86400, health-check: {enable: true, url: http://www.gstatic.com/generate_204, interval: 1800}}
+# 自动选择策略组：选取延迟最低节点
+auto: &auto {type: url-test, lazy: true, url: http://www.gstatic.com/generate_204, interval: 900, use: [Subscribe1, Subscribe2], hidden: true}
+# 手动选择策略组：手动选择想要的节点/策略组
+select: &select {type: select, use: [Subscribe1, Subscribe2]}
+# classical规则
+c: &c {type: http, behavior: classical, interval: 86400}
+# domain规则
+d: &d {type: http, behavior: domain, interval: 86400}
+# ipcidr规则
+i: &i {type: http, behavior: ipcidr, interval: 86400}
+
+# 机场订阅
+proxy-providers:
+  Subscribe1: {<<: *p, path: ./proxy-providers/Sub1.yaml, url: xxxxx}         
+  Subscribe2: {<<: *p, path: ./proxy-providers/Sub2.yaml, url: xxxxx}
+
+proxies: null
+
+
+# 代理策略
+proxy-groups:
+  - {name: 🕹️ Manual, type: select, use: [Subscribe1, Subscribe2], proxies: [🍟 低倍节点, 🇭🇰 延时优选, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点, DIRECT]}
+  - {name: 🍟 低倍节点, <<: *select, filter: "^(?=.*(?i)(0.2|emby)).*$"}
+  - {name: 🇭🇰 香港节点, <<: *select, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong Kong)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
+  - {name: 🇺🇸 美国节点, <<: *select, filter: "^(?=.*((?i)🇺🇸|美国|(\b(US|United States)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
+  - {name: 🇯🇵 日本节点, <<: *select, filter: "^(?=.*((?i)🇯🇵|日本|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
+  - {name: 🇸🇬 新加坡节点, <<: *select, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
+  - {name: 🇨🇳 台湾节点, <<: *select, filter: "^(?=.*((?i)🇨🇳|台湾|(\b(TW|Taiwan)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
+  - {name: 🇹🇷 土耳其节点, <<: *select, filter: "^(?=.*((?i)🇹🇷|土耳其|(\b(TUR|Türkiye)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
+  - {name: 🇦🇷 阿根廷节点, <<: *select, filter: "^(?=.*((?i)🇦🇷|阿根廷|(\b(AR|Argentina)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
+  - {name: 📽️ Streaming, type: select, proxies: [🕹️ Manual, 🍟 低倍节点, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点]}
+  - {name: 🍎 Apple, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点]}
+  - {name: Ⓜ️ Microsoft, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点]}
+  - {name: 🌎 Google, type: select, proxies: [🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点]}
+  - {name: 🎈 Telegram, type: select, proxies: [🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点]}
+  - {name: 🪙 PayPal, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点]}
+  - {name: 🤖 OpenAI, type: select, proxies: [🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点]}
+  - {name: 🚀 ProxyDownload, type: select, proxies: [DIRECT, 🕹️ Manual]}
+  - {name: 🎮 Game, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇹🇷 土耳其节点, 🇦🇷 阿根廷节点]}
+  - {name: ♾️ Final, type: select, proxies: [DIRECT, 🕹️ Manual]}
+  - {name: 🇭🇰 延时优选, <<: *auto, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong Kong)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b)|(20x|[2-9]x))).*$"}
+
+
+# 分流规则
+rule-providers:
+ Direct: {<<: *c, format: text, path: ./rule-providers/Direct.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/Direct.list}
+ Download: {<<: *c, format: text, path: ./rule-providers/Download.list, url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Download/Download.list}
+ ChinaGameDownload: {<<: *c, format: text, path: ./rule-providers/ChinaGameDownload.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/ChinaGameDownload.list}
+ ProxyDownloadCDN: {<<: *c, format: text, path: ./rule-providers/ProxyDownloadCDN.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/ProxyDownloadCDN.list}
+ OpenAI: {<<: *c, format: text, path: ./rule-providers/OpenAI.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/OpenAI.list}
+ ProxyMedia: {<<: *c, format: text, path: ./rule-providers/ProxyMedia.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/ProxyMedia.list}
+ Telegram: {<<: *c, format: text, path: ./rule-providers/Telegram.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/Telegram.list}
+ GameClient: {<<: *c, format: text, path: ./rule-providers/GameClient.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/GameClient.list}
+ Google: {<<: *c, format: text, path: ./rule-providers/Google.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/Google.list}
+ Microsoft: {<<: *c, format: text, path: ./rule-providers/Microsoft.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/Microsoft.list}
+ Apple: {<<: *c, format: text, path: ./rule-providers/Apple.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/Apple.list}
+ Proxy: {<<: *c, format: text, path: ./rule-providers/Proxy.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/Proxy.list}
+ China: {<<: *c, format: text, path: ./rule-providers/China.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/China.list}
+ LAN: {<<: *c, format: text, path: ./rule-providers/LAN.list, url: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Clash/Rule/LAN.list}
+ 
+rules:
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,Download,DIRECT
+  - RULE-SET,ChinaGameDownload,DIRECT
+  - RULE-SET,ProxyDownloadCDN,🚀 ProxyDownload
+  - RULE-SET,OpenAI,🪙 PayPal
+  - RULE-SET,OpenAI,🤖 OpenAI
+  - RULE-SET,ProxyMedia,📽️ Streaming
+  - RULE-SET,Telegram,🎈 Telegram
+  - RULE-SET,GameClient,🎮 Game
+  - RULE-SET,Google,🌎 Google
+  - RULE-SET,Microsoft,Ⓜ️ Microsoft
+  - RULE-SET,Apple,🍎 Apple
+  - RULE-SET,Proxy,🕹️ Manual
+  - RULE-SET,China,DIRECT
+  - RULE-SET,LAN,DIRECT
+  - GEOIP,CN,DIRECT
+  - MATCH,♾️ Final
