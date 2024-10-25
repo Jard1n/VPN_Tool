@@ -85,12 +85,32 @@ let result = {}
     // $.log($.toStr(result))
     $.done(result)
   })
+function parseJsonPath(_path) {
+  const path = _path.trim()
+  const output = []
+  const regex = /\.?([^\.\[\]]+)|\[(['"])(.*?)\2\]|\[(\d+)\]/g
+  let match
+
+  while ((match = regex.exec(path)) !== null) {
+    if (match[1] !== undefined) {
+      // 匹配点符号或初始键
+      output.push(match[1])
+    } else if (match[3] !== undefined) {
+      // 匹配带引号的括号表示法
+      output.push(match[3])
+    } else if (match[4] !== undefined) {
+      // 数组索引，转换为整数
+      output.push(parseInt(match[4], 10))
+    }
+  }
+  return output
+}
 function unset(object, path) {
   if (object == null) {
     return true
   }
 
-  const paths = path.replace(/\[(\d+)\]/g, '.$1').split('.')
+  const paths = parseJsonPath(path)
 
   var current = object
   for (var i = 0; i < paths.length - 1; i++) {
