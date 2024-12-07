@@ -1,0 +1,92 @@
+# pornemby
+DOMAIN-SUFFIX,pornemby.club
+
+# 卷毛鼠
+DOMAIN,cf1.jmsuper.com
+
+# AcEmby
+DOMAIN,ac.zox.show
+DOMAIN,cdnac.zox.show
+
+# Zox
+DOMAIN,zox.show
+DOMAIN,cdn.zox.show
+DOMAIN,us.zox.show
+DOMAIN,jp.zox.show
+
+# pilipili
+DOMAIN-SUFFIX,pilipili.club
+
+# TreeDiagram
+DOMAIN,789.123456.al
+
+# 二次元
+DOMAIN,media.nijigem.by
+
+# CherryTV
+DOMAIN,cherrytv.one
+
+# nyamedia
+DOMAIN,emby.bangumi.ca
+
+# 纸片人
+DOMAIN,emby.029902.xyz
+DOMAIN,gd.9521732.xyz
+DOMAIN,chirsemby.top
+DOMAIN-SUFFIX,embyplus.org
+
+# paul
+DOMAIN-SUFFIX,imetyou.top
+
+# MisakaF
+DOMAIN-SUFFIX,misakaf.org
+IP-CIDR,102.223.180.108/32,no-resolve
+
+# Lyrebird
+DOMAIN,cdn.lyrebirdemby.com
+
+# Hxd
+DOMAIN,bili.bili.rip
+DOMAIN,cdn.bili.rip
+DOMAIN,cf.bili.rip
+
+# 江湖
+DOMAIN,film.reddust.link
+DOMAIN,go.reddust.link
+
+# ACA
+DOMAIN,emby.aca.best
+
+# 叔服
+DOMAIN,emby3.mcjoker.xyz
+
+# 野兽餐厅
+DOMAIN,emby-micax-ca-v2.mius.uk
+DOMAIN,emby-mica-us-v1.mius.uk
+
+# 垃圾影音
+DOMAIN,cf.emby.ml
+DOMAIN,line.emby.moe
+DOMAIN-SUFFIX,xmsl.org
+DOMAIN-SUFFIX,loseremby.org
+
+# 飞跃彩虹
+DOMAIN,581658.best
+DOMAIN,7777777.buzz
+
+# Peach
+DOMAIN-SUFFIX,embymv.link
+IP-CIDR,193.123.232.141/32,no-resolve
+
+# Heisi
+DOMAIN,i109.com
+
+# lily
+DOMAIN,emby.lilyya.xy
+DOMAIN,cfemby.lilyya.xyz
+
+# 探花
+DOMAIN-SUFFIX,tanhuatv.site
+
+# AWA
+DOMAIN,emby.awatv.de

@@ -1,0 +1,69 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "581658.best",
+        "7777777.buzz",
+        "789.123456.al",
+        "ac.zox.show",
+        "bili.bili.rip",
+        "cdn.bili.rip",
+        "cdn.lyrebirdemby.com",
+        "cdn.zox.show",
+        "cdnac.zox.show",
+        "cf.bili.rip",
+        "cf.emby.ml",
+        "cf1.jmsuper.com",
+        "cfemby.lilyya.xyz",
+        "cherrytv.one",
+        "chirsemby.top",
+        "emby-mica-us-v1.mius.uk",
+        "emby-micax-ca-v2.mius.uk",
+        "emby.029902.xyz",
+        "emby.aca.best",
+        "emby.awatv.de",
+        "emby.bangumi.ca",
+        "emby.lilyya.xy",
+        "emby3.mcjoker.xyz",
+        "embymv.link",
+        "embyplus.org",
+        "film.reddust.link",
+        "gd.9521732.xyz",
+        "go.reddust.link",
+        "i109.com",
+        "imetyou.top",
+        "jp.zox.show",
+        "line.emby.moe",
+        "loseremby.org",
+        "media.nijigem.by",
+        "misakaf.org",
+        "pilipili.club",
+        "pornemby.club",
+        "tanhuatv.site",
+        "us.zox.show",
+        "xmsl.org",
+        "zox.show"
+      ]
+    },
+    {
+      "domain_suffix": [
+        ".embymv.link",
+        ".embyplus.org",
+        ".imetyou.top",
+        ".loseremby.org",
+        ".misakaf.org",
+        ".pilipili.club",
+        ".pornemby.club",
+        ".tanhuatv.site",
+        ".xmsl.org"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "102.223.180.108/32",
+        "193.123.232.141/32"
+      ]
+    }
+  ],
+  "version": 1
+}
