@@ -145,8 +145,6 @@ proxy-groups:
   - {name: 🇯🇵 日本节点, <<: *Select, filter: "^(?=.*((?i)🇯🇵|日本|(\b(JP|Japan)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
   - {name: 🇸🇬 新加坡节点, <<: *Select, filter: "^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
   - {name: 🇨🇳 台湾节点, <<: *Select, filter: "^(?=.*((?i)🇨🇳|台湾|(\b(TW|Taiwan)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
-  - {name: 🇹🇷 土耳其节点, <<: *Select, filter: "^(?=.*((?i)🇹🇷|土耳其|(\b(TUR|Türkiye)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
-  - {name: 🇦🇷 阿根廷节点, <<: *Select, filter: "^(?=.*((?i)🇦🇷|阿根廷|(\b(AR|Argentina)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$"}
   - {name: 📽️ Streaming, type: select, proxies: [🕹️ Manual, 🍟 低倍节点, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点]}
   - {name: 🍎 Apple, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点]}
   - {name: Ⓜ️ Microsoft, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点]}
@@ -155,8 +153,8 @@ proxy-groups:
   - {name: 🪙 PayPal, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点]}
   - {name: 🤖 Ai, type: select, proxies: [🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇸🇬 新加坡节点, 🇯🇵 日本节点, 🇨🇳 台湾节点]}
   - {name: 🚀 ProxyDownload, type: select, proxies: [DIRECT, 🕹️ Manual]}
-  - {name: 🎮 Game, type: select, proxies: [DIRECT, 🕹️ Manual, 🇭🇰 香港节点, 🇺🇸 美国节点, 🇹🇷 土耳其节点, 🇦🇷 阿根廷节点]}
-  - {name: ♾️ Final, type: select, proxies: [DIRECT, 🕹️ Manual]}
+  - {name: 🎮 Game, type: select, proxies: [DIRECT, 🕹️ Manual, 🇪🇺 Europe, 🎗️ Surplus]}
+  - {name: ♾️ Final, type: select, proxies: [DIRECT, 🕹️ Manual, 🇪🇺 Europe, 🎗️ Surplus]}
   - {name: 🇭🇰 延时优选, <<: *Auto, filter: "^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong Kong)\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b)|(20x|[2-9]x))).*$"}
 
 
