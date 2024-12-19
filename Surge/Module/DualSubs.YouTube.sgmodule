@@ -5,8 +5,6 @@
 #!homepage = https://DualSubs.github.io/guide/youtube
 #!icon = https://github.com/DualSubs/YouTube/raw/main/src/assets/icon_rounded.png
 #!category = 🍿️ DualSubs
-#!date = 2024-12-11 01:41:21
-#!version = 1.5.11
 #!arguments = Type:"Official",Types:"Translate",AutoCC:true,Position:"Forward",Vendor:"Google",ShowOnly:false,LogLevel:"WARN"
 #!arguments-desc = Type: [字幕] 启用类型\n    ├ Official: 官方字幕（合成器）\n    └ Translate: 翻译字幕（翻译器）\n请选择要使用的字幕，双语字幕将使用您选择类型呈现。\n\nTypes: [歌词] 启用类型\n    └ Translate: 翻译歌词（翻译器）\n请选择要添加的歌词选项，如果为多选，则会自动决定提供的歌词类型。\n\nAutoCC: [字幕] 自动显示\n是否总是自动开启字幕显示。\n\nPosition: [字幕] 主语言（源语言）字幕位置\n    ├ Forward: 上面（第一行）\n    └ Reverse: 下面（第二行）\n主语言（源语言）字幕的显示位置。\n\nVendor: [翻译器] 服务商API\n    ├ Google: Google Translate\n    └ Microsoft: Microsoft Translator（需填写API）\n请选择翻译器所使用的服务商API，更多翻译选项请使用BoxJs。\n\nShowOnly: [翻译器] 只显示“自动翻译”字幕\n是否仅显示“自动翻译”字幕，不显示源语言字幕。\n\nLogLevel: [调试] 日志等级\n    ├ OFF: 关闭\n    ├ ERROR: ❌ 错误\n    ├ WARN: ⚠️ 警告\n    ├ INFO: ℹ️ 信息\n    ├ DEBUG: 🅱️ 调试\n    └ ALL: 全部\n选择脚本日志的输出等级，低于所选等级的日志将全部输出。\n
 
