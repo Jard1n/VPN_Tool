@@ -2,7 +2,6 @@
   "rules": [
     {
       "domain": [
-        "ac.zox.show",
         "ad.12306.cn",
         "alt1-mtalk.google.com",
         "alt2-mtalk.google.com",
@@ -16,10 +15,8 @@
         "app.appsflyer.com",
         "baomitu.com",
         "bdtj.tagtic.cn",
-        "bili.bili.rip",
         "bootcss.com",
         "ca.iadsdk.apple.com",
-        "cdn.bili.rip",
         "clientservices.googleapis.com",
         "crl.pki.goog",
         "dl.delivery.mp.microsoft.com",
@@ -40,7 +37,6 @@
         "msg.umeng.com",
         "msg.umengcloud.com",
         "mtalk.google.com",
-        "music.imetyou.top",
         "my.router",
         "ntservicepack.microsoft.com",
         "ocsp.pki.goog",
@@ -71,7 +67,6 @@
         "wustat.windows.com",
         "www.asusrouter.com",
         "xiumi.us",
-        "zox.show",
         "zte.home"
       ]
     },
