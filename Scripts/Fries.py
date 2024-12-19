@@ -35,6 +35,24 @@ def download_file(url, output_folder="Surge/Module", is_js=False):
         print(f"Failed to download {url}. Error: {e}")
         return None
 
+def clean_sgmodule_file(file_path):
+    """
+    删除 .sgmodule 文件中的 #!date 和 #!version 行
+    """
+    try:
+        with open(file_path, "r", encoding="utf-8") as file:
+            lines = file.readlines()
+        
+        # 过滤掉包含 #!date 和 #!version 的行
+        cleaned_lines = [line for line in lines if not line.startswith("#!date") and not line.startswith("#!version")]
+        
+        with open(file_path, "w", encoding="utf-8") as file:
+            file.writelines(cleaned_lines)
+        
+        print(f"Cleaned #!date and #!version from: {file_path}")
+    except Exception as e:
+        print(f"Error cleaning file {file_path}: {e}")
+
 def extract_script_paths(file_path):
     script_paths = []
     try:
@@ -91,24 +109,16 @@ def download_js_files(script_paths, output_folder="Scripts/Fries"):
 
     return downloaded_files
 
-def process_multiple_files(url_list):
-    with ThreadPoolExecutor(max_workers=5) as executor:
-        futures = {}
-        for url in url_list:
-            futures[executor.submit(process_single_file, url)] = url
-
-        for future in as_completed(futures):
-            try:
-                future.result()  # 获取每个任务的执行结果
-            except Exception as e:
-                print(f"Error processing file from URL {futures[future]}: {e}")
-
 def process_single_file(url):
     print(f"\nProcessing URL: {url}")
 
     sgmodule_file = download_file(url, is_js=False)
 
     if sgmodule_file:
+        # 清理 .sgmodule 文件
+        print("\nCleaning .sgmodule file...")
+        clean_sgmodule_file(sgmodule_file)
+
         print("\nExtracting script paths...")
         script_paths = extract_script_paths(sgmodule_file)
 
@@ -123,6 +133,18 @@ def process_single_file(url):
                 replace_script_paths(sgmodule_file, script_paths, downloaded_js_files)
         else:
             print("没有找到脚本路径URL.")
+
+def process_multiple_files(url_list):
+    with ThreadPoolExecutor(max_workers=5) as executor:
+        futures = {}
+        for url in url_list:
+            futures[executor.submit(process_single_file, url)] = url
+
+        for future in as_completed(futures):
+            try:
+                future.result()  # 获取每个任务的执行结果
+            except Exception as e:
+                print(f"Error processing file from URL {futures[future]}: {e}")
 
 if __name__ == "__main__":
     url_list = [
