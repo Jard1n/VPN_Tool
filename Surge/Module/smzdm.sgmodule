@@ -1,0 +1,39 @@
+#!name = 净化 & 什么值得买
+#!desc = 移除广告
+#!category =  Block Ads
+
+
+[Rule]
+DOMAIN,aaid.uyunad.com,REJECT
+DOMAIN,acs4baichuan.m.taobao.com,REJECT
+DOMAIN,adashxgc.ut.taobao.com,REJECT
+DOMAIN,analytics-api.smzdm.com,REJECT
+DOMAIN,baichuan-sdk.alicdn.com,REJECT
+DOMAIN,dgstatic.jd.com,REJECT
+DOMAIN,msg.umengcloud.com,REJECT
+DOMAIN,sec.umeng.com,REJECT
+DOMAIN,ulogs.umeng.com,REJECT
+DOMAIN,ynuf.aliapp.org,REJECT
+
+[URL Rewrite]
+# 好价页面弹窗
+^https:\/\/s3\.zdmimg\.com\/third\/index - reject
+
+[Map Local]
+# 去除商品页广告
+^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/other_modul data-type=text data="{}" status-code=200
+^https:\/\/haojia\.m\.smzdm\.com\/detail_modul\/wiki_related_modul data-type=text data="{}" status-code=200
+
+[Script]
+smzdm = type=http-response, pattern=^https:\/\/app-api\.smzdm\.com\/util\/loading, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+smzdm = type=http-response, pattern=^https:\/\/haojia-api\.smzdm\.com\/home\/list, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+smzdm = type=http-response, pattern=^https:\/\/app-api\.smzdm\.com\/util\/update, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+smzdm = type=http-response, pattern=^https:\/\/homepage-api\.smzdm\.com\/v3\/home, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+smzdm = type=http-response, pattern=^https:\/\/user-api\.smzdm\.com\/vip, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+smzdm = type=http-response, pattern=^https:\/\/user-api\.smzdm\.com\/vip\/bottom_card_list, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+smzdm = type=http-response, pattern=^https:\/\/article-api\.smzdm\.com\/publish\/get_bubble, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+smzdm = type=http-response, pattern=^https:\/\/qianbao\.smzdm\.com\/v\d\/app\/home, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/smzdm/smzdm.js
+
+
+[MITM]
+hostname = %APPEND% haojia-api.smzdm.com, homepage-api.smzdm.com, app-api.smzdm.com, user-api.smzdm.com, article-api.smzdm.com, qianbao.smzdm.com, s3.zdmimg.com, haojia.m.smzdm.com

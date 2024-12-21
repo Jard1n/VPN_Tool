@@ -1,0 +1,34 @@
+#!name = 净化 & 滴滴出行
+#!desc = 移除滴滴出行广告
+#!category =  Block Ads
+
+
+[Rule]
+# 拦截HTTPDNS
+DOMAIN,hd.xiaojukeji.com,REJECT
+# 拦截广告下发
+DOMAIN,gwp.xiaojukeji.com,REJECT
+AND, ((IP-ASN, 45090, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
+AND, ((IP-ASN, 63646, no-resolve), (DEST-PORT, 25641), (PROTOCOL, TCP)), REJECT
+
+
+[Map Local]
+^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/xpget data-type=text data="{}" status-code=200
+^https:\/\/ct\.xiaojukeji\.com\/agent\/v3\/feeds data-type=text data="{}" status-code=200
+^https:\/\/freight\.xiaojukeji\.com\/gateway data-type=text data="{}" status-code=200
+^https:\/\/daijia\.kuaidadi\.com:443\/gateway data-type=text data="{}" status-code=200
+^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget data-type=text data="{}" status-code=200
+^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/other\/fast data-type=text data="{}" status-code=200
+^https:\/\/conf\.diditaxi\.com\.cn\/dynamic\/conf data-type=text data="{}" status-code=200
+
+
+[Script]
+DiDi = type=http-response, pattern=^https:\/\/common\.diditaxi\.com\.cn\/common\/v\d\/usercenter\/me, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+Didi = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/homepage\/v\d\/core, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+DiDi = type=http-response, pattern=^https:\/\/api\.udache\.com\/gulfstream\/pre-sale\/v1\/other\/pGetSceneList, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+DiDi = type=http-response, pattern=^https:\/\/conf\.diditaxi\.com\.cn\/ota\/na\/yuantu\/infoList, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+DiDi = type=http-response, pattern=^https:\/\/api\.udache\.com\/gulfstream\/passenger-center\/v2\/other\/pInTripLayout, requires-body=1, script-path=https://raw.githubusercontent.com/ZenmoFeiShi/Qx/main/Didichuxing.js
+
+
+[MITM]
+hostname = %APPEND% common.diditaxi.com.cn, freight.xiaojukeji.com, daijia.kuaidadi.com, ct.xiaojukeji.com, res.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, 123.207.209.*, 112.53.55.225, 120.241.142.*, 120.241.143.*, 116.85.2.*, 116.85.3.*, 139.199.240.84
