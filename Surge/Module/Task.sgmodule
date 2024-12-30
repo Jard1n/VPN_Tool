@@ -1,0 +1,8 @@
+#!name = Task
+#!desc = 定时签到
+#!system = ios
+
+
+[Script]
+# 阿里云盘签到
+阿里云盘签到 = type=cron,cronexp="0 6 * * *",wake-system=1,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
