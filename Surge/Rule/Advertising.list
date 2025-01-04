@@ -1,4 +1,4 @@
-# Main total line 3500
+# Main total line 3499
 # ------------------------------------------
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
@@ -409,8 +409,6 @@ DOMAIN-SUFFIX,123.sogoucdn.com
 DOMAIN-SUFFIX,123juzi.net
 DOMAIN-SUFFIX,138lm.com
 DOMAIN-SUFFIX,168.it168.com
-DOMAIN-SUFFIX,16dd-advertise-1252317822.file.myqcloud.com
-DOMAIN-SUFFIX,16dd-advertise-1252317822.image.myqcloud.com
 DOMAIN-SUFFIX,17gouwuba.com
 DOMAIN-SUFFIX,17un.com
 DOMAIN-SUFFIX,186078.com
@@ -1844,6 +1842,7 @@ DOMAIN-SUFFIX,knicks.jd.com
 DOMAIN-SUFFIX,knlk2md.cn
 DOMAIN-SUFFIX,kochava.com
 DOMAIN-SUFFIX,krux.net
+DOMAIN-SUFFIX,ks.ferlytc.com
 DOMAIN-SUFFIX,ks.pull.yximgs.com
 DOMAIN-SUFFIX,kstj.baidu.com
 DOMAIN-SUFFIX,kuaikaiapp.com
