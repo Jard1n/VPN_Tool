@@ -1,0 +1,13 @@
+#!name= 网易云解锁VIP
+#!desc= 解锁VIP
+#!author= Jard1n
+#!homepage= https://github.com/Jard1n/VPN_Tool/tree/main/Loon
+#!icon= https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Netease_Music_Unlock.png
+
+
+[script]
+# > 网易云解锁VIP
+http-request ^http[s]?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/wangyy.js, timeout=60 ,tag=网易云解锁VIP
+
+[mitm] 
+hostname = *.music.163.com
