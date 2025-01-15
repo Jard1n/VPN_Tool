@@ -726,8 +726,6 @@ DOMAIN-SUFFIX,broadpressinc.com
 DOMAIN-SUFFIX,brockbbs.com
 DOMAIN-SUFFIX,bronto.com
 DOMAIN-SUFFIX,brookings.edu
-DOMAIN-SUFFIX,browserleaks.com
-DOMAIN-SUFFIX,browserleaks.org
 DOMAIN-SUFFIX,brucewang.net
 DOMAIN-SUFFIX,brutaltgp.com
 DOMAIN-SUFFIX,bsky.app
@@ -1351,9 +1349,9 @@ DOMAIN-SUFFIX,dmm.com
 DOMAIN-SUFFIX,dmxleo.com
 DOMAIN-SUFFIX,dns-check.info
 DOMAIN-SUFFIX,dns-dns.com
+DOMAIN-SUFFIX,dns-leak.com
 DOMAIN-SUFFIX,dns-oarc.net
 DOMAIN-SUFFIX,dns-stuff.com
-DOMAIN-SUFFIX,dns.myipstack.com
 DOMAIN-SUFFIX,dns04.com
 DOMAIN-SUFFIX,dns05.com
 DOMAIN-SUFFIX,dns2go.com
@@ -1362,6 +1360,7 @@ DOMAIN-SUFFIX,dnset.com
 DOMAIN-SUFFIX,dnsimple.com
 DOMAIN-SUFFIX,dnsleak.asn247.net
 DOMAIN-SUFFIX,dnsleak.com
+DOMAIN-SUFFIX,dnsleak.privadovpn.com
 DOMAIN-SUFFIX,dnsleaktest.com
 DOMAIN-SUFFIX,dnsleaktest.org
 DOMAIN-SUFFIX,dnsrd.com
@@ -2000,6 +1999,7 @@ DOMAIN-SUFFIX,gaozhisheng.org
 DOMAIN-SUFFIX,gardennetworks.com
 DOMAIN-SUFFIX,gardennetworks.org
 DOMAIN-SUFFIX,gartlive.com
+DOMAIN-SUFFIX,gartner.com
 DOMAIN-SUFFIX,gate-project.com
 DOMAIN-SUFFIX,gate.io
 DOMAIN-SUFFIX,gatecoin.com
@@ -2719,6 +2719,7 @@ DOMAIN-SUFFIX,ippotv.com
 DOMAIN-SUFFIX,ipredator.se
 DOMAIN-SUFFIX,iptvbin.com
 DOMAIN-SUFFIX,ipvanish.com
+DOMAIN-SUFFIX,ipx.ac
 DOMAIN-SUFFIX,iredmail.org
 DOMAIN-SUFFIX,irib.ir
 DOMAIN-SUFFIX,ironpython.net
@@ -2901,6 +2902,7 @@ DOMAIN-SUFFIX,jungleheart.com
 DOMAIN-SUFFIX,junglobal.net
 DOMAIN-SUFFIX,juoaa.com
 DOMAIN-SUFFIX,justdied.com
+DOMAIN-SUFFIX,justdns.info
 DOMAIN-SUFFIX,justduckit.com
 DOMAIN-SUFFIX,justfreevpn.com
 DOMAIN-SUFFIX,justgetflux.com
@@ -3507,6 +3509,7 @@ DOMAIN-SUFFIX,myfreshnet.com
 DOMAIN-SUFFIX,myftp.info
 DOMAIN-SUFFIX,myftp.name
 DOMAIN-SUFFIX,myiphide.com
+DOMAIN-SUFFIX,myipstack.com
 DOMAIN-SUFFIX,mykomica.org
 DOMAIN-SUFFIX,mylftv.com
 DOMAIN-SUFFIX,mymaji.com
@@ -4268,6 +4271,7 @@ DOMAIN-SUFFIX,reabble.com
 DOMAIN-SUFFIX,read01.com
 DOMAIN-SUFFIX,read100.com
 DOMAIN-SUFFIX,readdle.com
+DOMAIN-SUFFIX,readme.com
 DOMAIN-SUFFIX,readmoo.com
 DOMAIN-SUFFIX,readyatdawn.com
 DOMAIN-SUFFIX,readydown.com
