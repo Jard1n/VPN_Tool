@@ -1,0 +1,90 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "ad.12306.cn",
+        "alt1-mtalk.google.com",
+        "alt2-mtalk.google.com",
+        "alt3-mtalk.google.com",
+        "alt4-mtalk.google.com",
+        "alt5-mtalk.google.com",
+        "alt6-mtalk.google.com",
+        "alt7-mtalk.google.com",
+        "alt8-mtalk.google.com",
+        "app.adjust.com",
+        "app.appsflyer.com",
+        "bdtj.tagtic.cn",
+        "ca.iadsdk.apple.com",
+        "clientservices.googleapis.com",
+        "crl.pki.goog",
+        "dl.google.com",
+        "dl.l.google.com",
+        "download.microsoft.com",
+        "fairplay.l.qq.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "instant.arubanetworks.com",
+        "livew.l.qq.com",
+        "log.mmstat.com",
+        "msg.umeng.com",
+        "msg.umengcloud.com",
+        "mtalk.google.com",
+        "ntservicepack.microsoft.com",
+        "ocsp.pki.goog",
+        "redirector.c.bigcache.googleapis.com",
+        "redirector.gvt1.com",
+        "router.asus.com",
+        "setmeup.arubanetworks.com",
+        "ssl.gstatic.com",
+        "sycm.mmstat.com",
+        "tools.google.com",
+        "tools.l.google.com",
+        "update.googleapis.com",
+        "vd.l.qq.com",
+        "vi.l.qq.com",
+        "wustat.windows.com",
+        "www.asusrouter.com"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "ctc.qzs.qzone.qq.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "baomitu.com",
+        "bootcss.com",
+        "dl.delivery.mp.microsoft.com",
+        "googletraveladservices.com",
+        "hiwifi.com",
+        "jiasule.com",
+        "leike.cc",
+        "miwifi.com",
+        "my.router",
+        "p.to",
+        "peiluyou.com",
+        "phicomm.me",
+        "router.ctc",
+        "routerlogin.com",
+        "staticfile.org",
+        "tendawifi.com",
+        "tplogin.cn",
+        "upaiyun.com",
+        "update.microsoft.com",
+        "wifi.cmcc",
+        "windowsupdate.com",
+        "windowsupdate.microsoft.com",
+        "xiumi.us",
+        "zte.home"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "192.168.0.1/24",
+        "192.168.1.1/24"
+      ]
+    }
+  ],
+  "version": 2
+}
