@@ -56,7 +56,7 @@ jobs:
                    # 删除不必要的部分
                    sed -i 's/\([^,]*,[^,]*\),.*/\1/g' "$original_file"
                    # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
-                   sed -i '/IP-CIDR/ {/no-resolve/! s/$/,no-resolve/}; /IP-CIDR6/ {/no-resolve/! s/$/,no-resolve/}' "$original_file"
+                   sed -i '/IP-/ {/no-resolve/! s/$/,no-resolve/} "$original_file"
                    # 修改;为#
                    sed -i 's/;/# /g' "$original_file"
                    }
@@ -130,7 +130,7 @@ jobs:
                fi
            done
 
-      - name: Add and Commit changes
+      - name: Add and 提交更改
         run: |
           cd VPN_Tool-repo
           if [[ -n $(git status -s) ]]; then
