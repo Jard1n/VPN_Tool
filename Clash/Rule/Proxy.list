@@ -729,6 +729,7 @@ DOMAIN-SUFFIX,btcbank.bank
 DOMAIN-SUFFIX,btctrade.im
 DOMAIN-SUFFIX,btdig.com
 DOMAIN-SUFFIX,btdigg.org
+DOMAIN-SUFFIX,btguard.com
 DOMAIN-SUFFIX,btku.me
 DOMAIN-SUFFIX,btku.org
 DOMAIN-SUFFIX,btlibrary.me
@@ -1321,6 +1322,7 @@ DOMAIN-SUFFIX,dler.io
 DOMAIN-SUFFIX,dlsite.com
 DOMAIN-SUFFIX,dm-event.net
 DOMAIN-SUFFIX,dm530.net
+DOMAIN-SUFFIX,dma.mil
 DOMAIN-SUFFIX,dmcdn.net
 DOMAIN-SUFFIX,dmhy.org
 DOMAIN-SUFFIX,dmm-extension.com
@@ -5353,6 +5355,7 @@ DOMAIN-SUFFIX,typography.com
 DOMAIN-SUFFIX,typora.io
 DOMAIN-SUFFIX,u15.info
 DOMAIN-SUFFIX,u9un.com
+DOMAIN-SUFFIX,ua5v.com
 DOMAIN-SUFFIX,ub0.cc
 DOMAIN-SUFFIX,ubddns.org
 DOMAIN-SUFFIX,uberproxy.net
@@ -5378,6 +5381,7 @@ DOMAIN-SUFFIX,uk.to
 DOMAIN-SUFFIX,uku.im
 DOMAIN-SUFFIX,ulike.net
 DOMAIN-SUFFIX,ulop.net
+DOMAIN-SUFFIX,ultravpn.com
 DOMAIN-SUFFIX,ultraxs.com
 DOMAIN-SUFFIX,ulyssesapp.com
 DOMAIN-SUFFIX,unblock-us.com
@@ -5435,6 +5439,7 @@ DOMAIN-SUFFIX,urlparser.com
 DOMAIN-SUFFIX,us.to
 DOMAIN-SUFFIX,usacn.com
 DOMAIN-SUFFIX,uscardforum.com
+DOMAIN-SUFFIX,uscg.mil
 DOMAIN-SUFFIX,uscnpm.org
 DOMAIN-SUFFIX,userapi.com
 DOMAIN-SUFFIX,usertesting.com
@@ -5607,6 +5612,7 @@ DOMAIN-SUFFIX,vpnmentor.com
 DOMAIN-SUFFIX,vpnpick.com
 DOMAIN-SUFFIX,vpnpop.com
 DOMAIN-SUFFIX,vpnpronet.com
+DOMAIN-SUFFIX,vpnproxymaster.com
 DOMAIN-SUFFIX,vpnreactor.com
 DOMAIN-SUFFIX,vpnreviewz.com
 DOMAIN-SUFFIX,vpnsecure.me
@@ -5955,8 +5961,6 @@ DOMAIN-SUFFIX,xuite.net
 DOMAIN-SUFFIX,xuzhiyong.net
 DOMAIN-SUFFIX,xvbelink.com
 DOMAIN-SUFFIX,xvideo.cc
-DOMAIN-SUFFIX,xvideos-cdn.com
-DOMAIN-SUFFIX,xvideos.com
 DOMAIN-SUFFIX,xvideos.es
 DOMAIN-SUFFIX,xvinlink.com
 DOMAIN-SUFFIX,xxbbx.com
@@ -6050,6 +6054,7 @@ DOMAIN-SUFFIX,yuanming.net
 DOMAIN-SUFFIX,yuanzhengtang.org
 DOMAIN-SUFFIX,yulghun.com
 DOMAIN-SUFFIX,yunchao.net
+DOMAIN-SUFFIX,yunomi.tokyo
 DOMAIN-SUFFIX,yuvutu.com
 DOMAIN-SUFFIX,yvesgeleyn.com
 DOMAIN-SUFFIX,ywpw.com

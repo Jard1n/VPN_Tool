@@ -1,4 +1,4 @@
-# Main total line 3508
+# Main total line 3518
 # ------------------------------------------
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
@@ -3345,6 +3345,16 @@ DOMAIN-KEYWORD,video-cn.snssdk.com
 DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,xxshuyuan
 DOMAIN-KEYWORD,zjtoolbar
+IP-ASN,1012
+IP-ASN,18044
+IP-ASN,27523
+IP-ASN,401111
+IP-ASN,54625
+IP-ASN,62489
+IP-ASN,62853
+IP-ASN,7257
+IP-ASN,7719
+IP-ASN,945
 IP-CIDR,0.0.0.0/24,no-resolve
 IP-CIDR,10.72.25.0/24,no-resolve
 IP-CIDR,101.124.19.122/32,no-resolve
