@@ -6,12 +6,12 @@
 
 
 [Rule]
-DOMAIN, iadmat.nosdn.127.net, REJECT
-DOMAIN, iadmatapk.nosdn.127.net, REJECT
-DOMAIN, iadmusicmat.music.126.net, REJECT
-DOMAIN, iadmusicmatvideo.music.126.net, REJECT
-DOMAIN, ipv4.music.163.com, REJECT
-DOMAIN, ipv6.music.163.com, REJECT
+DOMAIN, iadmat.nosdn.127.net, REJECT, extended-matching
+DOMAIN, iadmatapk.nosdn.127.net, REJECT, extended-matching
+DOMAIN, iadmusicmat.music.126.net, REJECT, extended-matching
+DOMAIN, iadmusicmatvideo.music.126.net, REJECT, extended-matching
+DOMAIN, ipv4.music.163.com, REJECT, extended-matching
+DOMAIN, ipv6.music.163.com, REJECT, extended-matching
 
 
 [URL Rewrite]
@@ -36,6 +36,12 @@ http-request ^https?:\/\/(?:ipv4|interface\d?)\.music\.163\.com\/e?api\/(?:batch
 ^https?:\/\/interface\d?\.music\.163.com\/eapi\/(?:mlivestream\/entrance\/playpage|link\/(position\/show\/strategy|scene\/show)|ios\/version|v\d\/content\/exposure\/comment\/banner) data-type=text data="{}"
 # 主页播客推荐
 ^https:\/\/interface\d?\.music\.163\.com\/eapi\/my\/podcast\/tab\/recommend data-type=text data="{}" status-code=200
+# 启动领VIP弹窗
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/sp\/flow\/popup\/query data-type=text data=" " status-code=200
+# 软件更新
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/ios\/upgrade\/get data-type=text data=" " status-code=200
+# 弹窗免费听歌
+^https?:\/\/interface\d?\.music\.163\.com\/e?api\/vip\/cashier\/tspopup\/get data-type=text data=" " status-code=200
 
 
 [Script]
