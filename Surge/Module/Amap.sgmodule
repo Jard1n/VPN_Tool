@@ -1,0 +1,68 @@
+#!name = 净化 & 高德地图
+#!desc = 过滤高德地图广告
+#!category =  Block Ads
+
+
+[Rule]
+# 移除广告下发请求
+AND,((URL-REGEX,^http:\/\/.+\/amdc\/mobileDispatch,extended-matching),(USER-AGENT,AMapiPhone*)),REJECT
+DOMAIN,amap-aos-info-nogw.amap.com,REJECT,extended-matching
+DOMAIN,free-aos-cdn-image.amap.com,REJECT,extended-matching
+DOMAIN-SUFFIX,v.smtcdns.com,REJECT,extended-matching
+
+
+[Body Rewrite]
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_business\/process\/marketingOperationStructured\? 'delpaths([["data","commonMaterial"], ["data","tipsOperationLocation"], ["data","resourcePlacement"]])'
+http-response-jq ^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/homepage\? 'delpaths([["history_tags"]])'
+http-response-jq ^https:\/\/m5-zb\.amap\.com\/ws\/sharedtrip\/taxi\/order_detail_car_tips\? 'delpaths([["data","carTips","data","popupInfo"]])'
+
+
+[Map Local]
+# 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
+^https:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword\? data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/card-service-(?:car-end|route-plan) data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/tips_adv\? data-type=text data="{}" status-code=200
+^https:\/\/oss\.amap\.com\/ws\/banner\/lists\/\? data-type=text data="{}" status-code=200
+
+# 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
+^https:\/\/m5\.amap\.com\/ws\/aos\/main\/page\/product\/list\? data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:main-page-assets|main-page-location|ridewalk-end-fc) data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/(?:mapapi\/hint_text\/offline_data|message\/notice\/list|shield\/search\/new_hotword) data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/shield\/scene\/recommend\? data-type=text data="{}" status-code=200
+^https:\/\/m5\.amap\.com\/ws\/valueadded\/weather\/v2\? data-type=text data="{}" status-code=200
+^https:\/\/sns\.amap\.com\/ws\/msgbox\/pull_mp\? data-type=text data="{}" status-code=200
+
+# 打车页 - 红点角标、弹窗、天气图标、推广卡片
+^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:order\/car\/king_toolbox_car_bubble|tips\/onscene_visual_optimization) data-type=text data="{}" status-code=200
+
+
+[Script]
+# 导航详情页 - 路线规划、地点详情页、搜索详情页、导航结束页
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/aos\/perception\/publicTravel\/beforeNavi\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除路线规划、导航结束页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/bus\/plan\/integrate\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除导航详情页底部酒店 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/c3frontend\/af-(?:hotel|launch)\/page\/main\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除路线规划推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/perception\/drive\/(?:routeInfo|routePlan), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除导航详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/(?:common\/coupon\/info|poi\/detail), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除搜索栏推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_bff\/hotword\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除搜索详情页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search_poi\/(?:mps|search\/sp|sug|tips_operation_location), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+
+# 首页 - 推广卡片、红点角标、右上角动图、搜索框热词、左下角天气、消息横幅
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/(?:card-service-plan-home|main-page), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除首页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable\/1\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+
+# 我的页面 - 个人主页、推广卡片
+移除我的页面推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+
+# 附近页
+移除附近页推广 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+
+# 开屏广告
+移除开屏广告 = type=http-response, pattern=^https:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+
+# 打车页 - 红点角标、弹窗、推广卡片
+移除打车页推广卡片、弹窗 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/boss\/(?:car\/order\/content_info|order_web\/friendly_information), requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+移除打车页红点角标、天气图标 = type=http-response, pattern=^https:\/\/m5-zb\.amap\.com\/ws\/promotion-web\/resource(\/home)?\?, requires-body=1, max-size=0, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Amap/amap.js
+
+
+[MITM]
+hostname = %APPEND% m5.amap.com, m5-zb.amap.com, oss.amap.com, sns.amap.com
