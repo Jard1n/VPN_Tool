@@ -1,0 +1,56 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "cdn.honey.io"
+      ]
+    },
+    {
+      "domain_keyword": [
+        "paypal"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "braintreegateway.com",
+        "braintreegateway.tv",
+        "braintreepayments.com",
+        "braintreepayments.info",
+        "braintreepayments.org",
+        "braintreepayments.tv",
+        "braintreepaymentsolutions.com",
+        "braintreeps.com",
+        "briantreepayments.net",
+        "briantreepayments.tv",
+        "card.io",
+        "cash2.com",
+        "cashify.net",
+        "filipino-music.net",
+        "getbraintree.com",
+        "loanbuilder.com",
+        "s-xoom.com",
+        "simility.com",
+        "swiftbank.info",
+        "swiftbank.us",
+        "swiftcapital.com",
+        "swiftfinancial.com",
+        "swiftfinancial.info",
+        "swiftfinancial.net",
+        "venmo-touch.com",
+        "venmo.com",
+        "venmo.info",
+        "venmo.net",
+        "venmo.org",
+        "webmoneyinfo.com",
+        "wwwxoom.com",
+        "xoom-experience.com",
+        "xoom.com",
+        "xoom.io",
+        "xoom.net.cn",
+        "xoom.us",
+        "xoomcom.com"
+      ]
+    }
+  ],
+  "version": 2
+}
