@@ -1,4 +1,4 @@
-# Main total line 3513
+# Main total line 3514
 # ------------------------------------------
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
@@ -1205,6 +1205,7 @@ DOMAIN-SUFFIX,clicks.beap.bc.yahoo.com
 DOMAIN-SUFFIX,clicktracks.com
 DOMAIN-SUFFIX,clickzs.com
 DOMAIN-SUFFIX,client-api.ele.me
+DOMAIN-SUFFIX,client.app.coc.10086.cn
 DOMAIN-SUFFIX,client.video.ucweb.com
 DOMAIN-SUFFIX,clkservice.youdao.com
 DOMAIN-SUFFIX,clog.miguvideo.com
