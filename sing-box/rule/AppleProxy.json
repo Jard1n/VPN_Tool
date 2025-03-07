@@ -1,0 +1,39 @@
+{
+  "rules": [
+    {
+      "domain": [
+        "amp-api.podcasts.apple.com // Podcasts",
+        "apple-relay.apple.com",
+        "apple-relay.cloudflare.com",
+        "apple-relay.fastly-edge.com",
+        "apple.comscoreresearch.com",
+        "apps.apple.com",
+        "beta.apple.com",
+        "beta.music.apple.com // Apple Music Web",
+        "books.apple.com",
+        "books.itunes.apple.com // iBooks Store download",
+        "facetime.apple.com // FaceTime Links",
+        "guzzoni.apple.com",
+        "itunes.apple.com",
+        "lookup-api.apple.com // Look Up",
+        "news-assets.apple.com",
+        "news-client-search.apple.com",
+        "news-client.apple.com",
+        "news-edge.apple.com",
+        "news-events.apple.com",
+        "radio.itunes.apple.com // Apple Music Radio",
+        "testflight.apple.com",
+        "tv.apple.com"
+      ]
+    },
+    {
+      "domain_suffix": [
+        "apple-dns.net",
+        "apple.news",
+        "appsto.re // Apple URL Shortener",
+        "smoot.apple.com // Spotlight"
+      ]
+    }
+  ],
+  "version": 2
+}
