@@ -4,7 +4,7 @@ const $ = new Env('BoxJs')
 // 为 eval 准备的上下文环境
 const $eval_env = {}
 
-$.version = '0.19.20'
+$.version = '0.19.21'
 $.versionType = 'beta'
 
 // 发出的请求需要需要 Surge、QuanX 的 rewrite
@@ -1003,18 +1003,49 @@ function update(obj, path, value) {
   current[keys[keys.length - 1]] = value
 }
 
+// 自定义并发控制函数
+async function limitConcurrency(tasks, limit) {
+  const results = [];
+  const executing = [];
+
+  for (const task of tasks) {
+    const promise = task(); // 执行任务
+    results.push(promise);
+
+    if (executing.length >= limit) {
+      await Promise.race(executing);
+    }
+
+    executing.push(promise);
+    promise.then(() => {
+      const index = executing.indexOf(promise);
+      if (index !== -1) executing.splice(index, 1);
+    }).catch(() => {
+      const index = executing.indexOf(promise);
+      if (index !== -1) executing.splice(index, 1);
+    });
+  }
+
+  return Promise.all(results);
+}
+
 async function reloadAppSubCaches() {
-  $.msg($.name, '更新订阅: 开始!')
-  const reloadActs = []
-  const usercfgs = getUserCfgs()
+  $.msg($.name, '更新订阅: 开始!');
+  const reloadActs = [];
+  const usercfgs = getUserCfgs();
+  
+  // 收集所有任务（函数形式）
   usercfgs.appsubs.forEach((sub) => {
-    reloadActs.push(reloadAppSubCache(sub.url))
-  })
-  await Promise.all(reloadActs)
-  $.log(`全部订阅, 完成!`)
-  const endTime = new Date().getTime()
-  const costTime = (endTime - $.startTime) / 1000
-  $.msg($.name, `更新订阅: 完成! 🕛 ${costTime} 秒`)
+    reloadActs.push(() => reloadAppSubCache(sub.url)); // 存储函数而不是立即执行的 Promise
+  });
+
+  // 使用并发限制执行任务
+  await limitConcurrency(reloadActs, 20); // 限制并发数为 20
+
+  $.log(`全部订阅, 完成!`);
+  const endTime = new Date().getTime();
+  const costTime = (endTime - $.startTime) / 1000;
+  $.msg($.name, `更新订阅: 完成! 🕛 ${costTime} 秒`);
 }
 
 function upgradeUserData() {
