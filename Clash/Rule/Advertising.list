@@ -1,4 +1,4 @@
-# Main total line 3516
+# Main total line 3518
 # ------------------------------------------
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
@@ -411,6 +411,7 @@ DOMAIN-SUFFIX,123.sogoucdn.com
 DOMAIN-SUFFIX,123juzi.net
 DOMAIN-SUFFIX,138lm.com
 DOMAIN-SUFFIX,1500020991.vodplayer.wxamedia.com
+DOMAIN-SUFFIX,1500026601.vodplayer.wxamedia.com
 DOMAIN-SUFFIX,168.it168.com
 DOMAIN-SUFFIX,17gouwuba.com
 DOMAIN-SUFFIX,17un.com
@@ -3400,6 +3401,7 @@ IP-CIDR,125.211.213.130/31,no-resolve
 IP-CIDR,125.211.213.132/31,no-resolve
 IP-CIDR,125.211.213.134/32,no-resolve
 IP-CIDR,125.76.239.244/31,no-resolve
+IP-CIDR,149.28.156.183/32,no-resolve
 IP-CIDR,169.254.169.254/32,no-resolve
 IP-CIDR,172.232.58.169/32,no-resolve
 IP-CIDR,172.232.58.237/32,no-resolve
