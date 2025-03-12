@@ -1,4 +1,4 @@
-# Main total line 3515
+# Main total line 3516
 # ------------------------------------------
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
@@ -2757,6 +2757,7 @@ DOMAIN-SUFFIX,tdrec.youku.com
 DOMAIN-SUFFIX,teads.tv
 DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tend.io
+DOMAIN-SUFFIX,terms-drcn.platform.dbankcloud.cn
 DOMAIN-SUFFIX,terraclicks.com
 DOMAIN-SUFFIX,terren.cntv.cn
 DOMAIN-SUFFIX,test.ott.youku.com
