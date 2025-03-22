@@ -1,0 +1,147 @@
+#!name = MyBlockAds
+#!desc = 自用App去广告合集
+#!category =  Block Ads
+
+
+[URL Rewrite]
+# 爱思助手 //list-app-m.i4.cn
+^https:\/\/list-app-m\.i4\.cn\/(adclickcb|getHotSearchList|getopfstadinfo)\.xhtml - reject
+
+# 交管12123 //gab.122.gov.cn
+^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$ - reject
+
+# 云闪付 //wallet.95516.com
+^https:\/\/wallet\.95516\.com(:10533)?\/s\/wl\/icon\/large\/1 - reject
+
+# 得物开屏广告 //app.dewu.com, cdn.poizon.com
+^https:\/\/app\.dewu\.com\/api\/v1\/app\/advertisement - reject
+
+# 完美世界电竞开屏广告 //api.wmpvp.com
+^https:\/\/api\.wmpvp\.com\/api\/v1\/config\/promote - reject
+
+# 联想 //api.club.lenovo.cn
+^https?:\/\/api\.club\.lenovo\.cn\/common\/open_ad - reject
+
+# 中国电信 //cloud.189.cn, zt-app.go189.cn
+^https?:\/\/cloud\.189\.cn\/include\/splash\/ - reject
+
+# 饿了么 //elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com
+^https:\/\/elemecdn.com\/.+\/sitemap - reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/640\/h\/\d{3,4} - reject
+^https:\/\/fuss10.elemecdn.com\/.+\/w\/750\/h\/\d{3,4} - reject
+^https:\/\/fuss10.elemecdn.com\/.+\.mp4 - reject
+^https:\/\/www1.elecfans.com\/www\/delivery - reject
+
+# 拼多多广告平台 //video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
+^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ - reject
+^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_union - reject
+^https:\/\/images\.pinduoduo\.com\/mrk\/ - reject
+^https:\/\/images\.pinduoduo\.com\/marketing_api\/ - reject
+
+
+[Body Rewrite]
+# 移除小黑盒热点板块信息流广告
+http-response-jq ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news '.result.links |= map(if .content_type == 27 then del(.title, .ad_pm, .img_gif, .idea_id, .ad_report, .label, .source, .intranet_only, .ad_cm, .content_type, .protocol, .img, .ad_ratio) else . end)'
+
+
+[Map Local]
+# 移除微信公众号中的推广内容 //mp.weixin.qq.com
+^http:\/\/\w+\.wxs\.qq\.com\/\d+\/\d+\/(snscosdownload|snssvpdownload)\/(SH|SZ)\/reserved\/\w+ data-type=text data="{}" status-code=200
+^https:\/\/mp\.weixin\.qq\.com\/mp\/(cps_product_info|getappmsgad|jsmonitor|masonryfeed|relatedarticle)\? data-type=text data="{}" status-code=200
+
+# 米家 //home.mi.com
+^https:\/\/home\.mi\.com\/cgi-op\/api\/v1\/recommendation\/(banner|carousel\/banners|myTab|openingBanner) data-type=text data="{}" status-code=200
+
+# 百度文库 //appwk.baidu.com
+^https?:\/\/appwk\.baidu\.com\/xpage\/interface\/wknaad data-type=text data=" " status-code=200
+
+# 得物
+^https?:\/\/cdn\.poizon\.com\/node-common\/.*.jpg data-type=text data=" " status-code=200
+
+# 和风天气 //hfapp-service.qweather.net
+^https:\/\/hfapp-service\.qweather\.net\/v2\.0\/app\/ad\/list\? data-type=text data="{}" status-code=200
+
+# 中国联通 //m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn
+^https?:\/\/m\.client\.10010\.com\/mobileService\/(activity|customer)\/(accountListData|get_client_adv|get_startadv) data-type=tiny-gif status-code=200
+^https?:\/\/m\.client\.10010\.com\/mobileService\/customer\/getclientconfig\.htm data-type=text data="{}" status-code=200
+^https?:\/\/m\.client\.10010\.com\/uniAdmsInterface\/(getHomePageAd|getWelcomeAd) data-type=tiny-gif status-code=200
+^https?:\/\/m1\.ad\.10010\.com\/noticeMag\/images\/imageUpload\/2\d{3} data-type=tiny-gif status-code=200
+^https?:\/\/res\.mall\.10010\.cn\/mall\/common\/js\/fa\.js?referer= data-type=tiny-gif status-code=200
+
+# 中国移动 //client.app.coc.10086.cn
+^https:\/\/client\.app\.coc\.10086\.cn\/biz-orange\/DN\/(explorePage\/getAdverList|init\/startInit) data-type=text data="{}" status-code=200
+
+# 中国电信
+^https?:\/\/zt-app\.go189\.cn\/zt-app\/welcome\/.*?Animation data-type=tiny-gif status-code=200
+
+# 中国广电 //app.10099.com.cn
+^https?:\/\/app\.10099\.com\.cn\/contact-web\/api\/version\/getFlashScreenPage data-type=text data=" " status-code=200
+
+# 顺丰速运 //ccsp-egmas.sf-express.com, ucmp.sf-express.com
+^https:\/\/ucmp\.sf-express\.com\/proxy\/esgcempcore\/memberGoods\/pointMallService\/goodsList data-type=text data="{}" status-code=200
+^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-video\/video\/app\/video\/labelClusterList data-type=text data="{}" status-code=200
+^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/ad\/queryInfoFlow data-type=text data="{}" status-code=200
+^https:\/\/ccsp-egmas\.sf-express\.com\/cx-app-base\/base\/app\/bms\/queryRecommend data-type=text data="{}" status-code=200
+
+# 不背单词 //hwimg.beingfine.cn, learnywhere.cn
+^https?:\/\/(img|hwimg)\.beingfine\.cn\/(float_button|card) data-type=text data="{}" status-code=200
+^https?:\/\/hwimg\.beingfine\.cn\/(card|Channel) data-type=text data="{}" status-code=200
+^https?:\/\/learnywhere\.cn\/api\/activity\/23\/423dsj\/inapp\/bb\/promote data-type=text data="{}" status-code=200
+
+# 百词斩 //advertise.bczeducation.cn, notify.baicizhan.com
+^https?:\/\/notify\.baicizhan\.com\/rpc\/notify\/get_latest_notify data-type=text data=" " status-code=200
+^https?://advertise\.bczeducation\.cn\/rpc\/advertise data-type=text data=" " status-code=200
+
+# 迅雷 //images.client.vip.xunlei.com, api-shoulei-ssl.xunlei.com
+^https?:\/\/images\.client\.vip\.xunlei\.com\/.+?\/advert\/ data-type=text data=" " status-code=200
+^https?:\/\/api-shoulei-ssl\.xunlei\.com\/flowhub\/v\d\/slots:batchGet data-type=text data=" " status-code=200
+
+# 网上国网 //osg-service.sgcc.com.cn
+^https:\/\/osg-service\.sgcc\.com\.cn:18600\/emss-pfa-appset-front\/bootpageoutter\/ data-type=text data="{}" status-code=200
+
+# 飞猪旅行 //acs.m.taobao.com
+^https:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.screen\.(?:allresource|predict) data-type=text data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.film\.mtopadvertiseapi\.queryloadingbanner data-type=text data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.fliggy\.crm\.popresource data-type=text data="{}" status-code=200
+^https?:\/\/acs\.m\.taobao\.com\/gw\/mtop\.trip\.guide\.guess\.what\.you\.like data-type=text data="{}" status-code=200
+
+# QQ钱包广告 //m.qianbao.qq.com
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getQQshopData\? data-type=text data="{}" status-code=200
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getGameData\? data-type=text data="{}" status-code=200
+^https:\/\/m\.qianbao\.qq\.com\/services\/walletHome\/getFootData\? data-type=text data="{}" status-code=200
+
+# 美团 & 美团外卖 //img.meituan.net, s3plus.meituan.net, flowplus.meituan.net
+^https?:\/\/wmapi\.meituan\.com\/api\/v7\/(loadInfo|openscreen|startpicture)\? data-type=text data="{}" status-code=200
+^https?:\/\/(s3plus|flowplus)\.meituan\.net\/v\d\/\w+\/linglong\/\w+\.(gif|jpg|mp4) data-type=text data="{}" status-code=200
+^https?:\/\/img\.meituan\.net\/bizad\/bizad_brandCpt_\d+\.jpg data-type=text data="{}" status-code=200
+^https?:\/\/s3plus\.meituan\.net\/ocean-blk-index\/index\/blk_conf_73\.json data-type=text data="{}" status-code=200
+^https?:\/\/s3plus\.meituan\.net\/v1\/mss_\w+\/(brandcpt-vedio|waimai-alita)\/\w+\.zip$ data-type=text data="{}" status-code=200
+# 美团订单详情页更多推荐
+^https?:\/\/apimobile\.meituan\.com\/group\/v1\/recommend\/unity\/recommends data-type=text data="{}" status-code=200
+
+# 美团充电宝小程序 //cdb.meituan.com
+^https?:\/\/cdb\.meituan\.com\/marketing\/source\/getPageSlotList data-type=text data="{}" status-code=200
+
+# 小黑盒开屏广告 //api.xiaoheihe.cn
+^https:\/\/api\.xiaoheihe\.cn\/account\/get_ads_info_v2 data-type=text data="{}" status-code=200
+
+# 12306更新弹窗 //mobile.12306.cn
+^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mds\/mgw\.htm data-type=text data="{}" status-code=200
+
+
+[Script]
+# 广告联盟 //api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
+广告联盟 = type=http-response,pattern=^https:\/\/((api-access\.pangolin-sdk-toutiao|is\.snssdk)\.com\/api\/ad\/union\/sdk\/get_ads|open\.e\.kuaishou\.com\/rest\/e\/v3\/open\/univ$|mi\.gdt\.qq\.com\/gdt_mview\.fcg\?),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/adsense.js
+
+# 12306 //ad.12306.cn
+12306 = type=http-request, pattern=^https?:\/\/ad\.12306\.cn\/ad\/ser\/getAdList, requires-body=1, script-update-interval=-1, script-path=https://raw.githubusercontent.com/kokoryh/Script/master/js/12306.js
+
+# 微信公众号去广告
+微信公众号去广告 = type=http-response, pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad, requires-body=1, max-size=0, timeout=10, script-update-interval=-1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Weixin/WeChatAdBlock.js
+
+# 微信封禁页面 //weixin110.qq.com, security.wechat.com
+微信外部链接解锁 = type=http-response, pattern=^https\:\/\/(weixin110\.qq|security.wechat)\.com\/cgi-bin\/mmspamsupport-bin\/newredirectconfirmcgi\?, requires-body=1, script-update-interval=-1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Weixin/weixin110.js
+
+
+[MITM]
+hostname = %APPEND% wallet.95516.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, mobile.12306.cn, api.xiaoheihe.cn, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, cdb.meituan.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, client.app.coc.10086.cn, cloud.189.cn, zt-app.go189.cn, m.qianbao.qq.com, acs.m.taobao.com, list-app-m.i4.cn, gab.122.gov.cn, app.dewu.com, cdn.poizon.com, api.wmpvp.com, api.club.lenovo.cn, mp.weixin.qq.com, weixin110.qq.com, security.wechat.com, home.mi.com, appwk.baidu.com, hfapp-service.qweather.net, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, app.10099.com.cn, ccsp-egmas.sf-express.com, ucmp.sf-express.com, hwimg.beingfine.cn, learnywhere.cn, advertise.bczeducation.cn, notify.baicizhan.com, images.client.vip.xunlei.com, api-shoulei-ssl.xunlei.com, osg-service.sgcc.com.cn, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, ad.12306.cn

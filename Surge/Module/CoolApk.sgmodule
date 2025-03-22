@@ -1,0 +1,17 @@
+#!name = 净化 & 酷安
+#!desc = 过滤酷安广告
+#!category =  Block Ads
+
+[Body Rewrite]
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/?:feed\/detail '.data.hotReplyRows |= (select(. != null) | map(select(.id))) | .data.topReplyRows |= (select(. != null) | map(select(.id))) | .data.detailSponsorCard = [] | .data.include_goods = [] | .data.include_goods_ids = []'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/feed\/replyList '.data |= map(select(.id))'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/page\/dataList '.data |= map(select(.title != "酷安热搜" and .entityTemplate != "imageScaleCard" and .entityTemplate != "sponsorCard"))'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/main\/dataList '.data |= map(select(.entityTemplate != "sponsorCard" and .title != "精选配件"))'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/main\/indexV8 '.data |= map(select(.entityTemplate != "sponsorCard" and .entityId != 8639 and .entityId != 29349 and .entityId != 33006 and .entityId != 32557 and (.title | contains("值得买") | not) and (.title | contains("红包") | not)))'
+http-response-jq ^https:\/\/api\.coolapk\.com\/v6\/main\/init '.data |= map(select(.entityId != 944 and .entityId != 945 and .entityId != 6390)) | .data |= map(if .entityId == 20131 then .entities |= map(select(.title != "酷品")) else . end)'
+
+[Map Local]
+^https:\/\/api\.coolapk\.com\/v6\/search\?.*type=hotSearch data-type=text data="{}" status-code=200
+
+[MITM]
+hostname = %APPEND% api.coolapk.com

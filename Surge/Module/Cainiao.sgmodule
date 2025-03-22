@@ -1,0 +1,48 @@
+#!name = 净化 & 菜鸟
+#!desc = 移除广告推广
+#!category =  Block Ads
+
+
+[Rule]
+# 移除广告下发请求
+AND,((URL-REGEX,^http:\/\/.+\/amdc\/mobileDispatch,extended-matching),(USER-AGENT,Cainiao4iPhone*)),REJECT
+
+
+[Map Local]
+# 底部发现页 - 角标
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.home\.tabbar\.marketing\.get\.cn data-type=text data="{}" status-code=200
+
+# 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.adkeyword\.get\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.cncommunity\.my\.station\.query\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.(?:batch\.show\.v2|expose\.mreply|index)\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbopen\.miniapp\.recommend\.cpc\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbmensa\.research\.researchservice\.(?:acquire|event|close)\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(?:homepage\.merge|tabbar\.marketing)\.get\.cn data-type=text data="{}" status-code=200
+
+# 发现页 - 数字角标、裹裹券
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cnactivitycenter data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.cncreditmarket\.hit\.getactivityhit\.cn data-type=text data="{}" status-code=200
+^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.com\.cainiao\.longquan\.place\.getpageresourcecontent\.cn data-type=text data="{}" status-code=200
+
+# 支付宝 - 菜鸟小程序
+^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.adx\.flyad\.getad data-type=text data="{}" status-code=200
+
+
+[Script]
+# 我的页面
+移除我的页面推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.app\.mine\.main\.cn, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Alibaba/cainiao.js
+
+# 首页 - 好物推荐、商品推广、底部标签页、快递详情页、问卷调查、主页图标
+移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.m?show\.cn, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Alibaba/cainiao.js
+移除首页推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.cainiao\.nbpresentation\.(?:pickup\.empty\.page|protocol\.homepage)\.get\.cn, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Alibaba/cainiao.js
+
+# 消息中心
+移除消息中心推广 = type=http-response, pattern=^https:\/\/cn-acs\.m\.cainiao\.com\/gw\/mtop\.nbfriend\.message\.conversation\.list\.cn, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Alibaba/cainiao.js
+
+# 支付宝 - 菜鸟小程序
+移除菜鸟小程序推广 = type=http-response, pattern=^https:\/\/guide-acs\.m\.taobao\.com\/gw\/mtop\.cainiao\.guoguo\.nbnetflow\.ads\.mshow, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Alibaba/cainiao.js
+
+
+[MITM]
+hostname = %APPEND% cn-acs.m.cainiao.com,guide-acs.m.taobao.com
