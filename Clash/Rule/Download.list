@@ -1,0 +1,16 @@
+DOMAIN-SUFFIX,qbittorrent.org
+DOMAIN-SUFFIX,bittorrent.com
+DOMAIN-SUFFIX,libtorrent.org
+DOMAIN-KEYWORD,aria2
+PROCESS-NAME-REGEX,.*BitComet.*
+PROCESS-NAME-REGEX,.*DownloadService.*
+PROCESS-NAME-REGEX,.*NetTransport.*
+PROCESS-NAME-REGEX,.*Thunder.*
+PROCESS-NAME-REGEX,.*Transmission.*
+PROCESS-NAME-REGEX,.*WebTorrent.*
+PROCESS-NAME-REGEX,.*Weiyun.*
+PROCESS-NAME-REGEX,.*aria2c.*
+PROCESS-NAME-REGEX,.*baidunetdisk.*
+PROCESS-NAME-REGEX,.*fdm.*
+PROCESS-NAME-REGEX,.*qbittorrent.*
+PROCESS-NAME-REGEX,.*uTorrent.*

@@ -1,0 +1,33 @@
+#########################################
+# Sukka's Ruleset - Microsoft CDN
+# Size: 21
+# License: AGPL 3.0
+# Homepage: https://ruleset.skk.moe
+# GitHub: https://github.com/SukkaW/Surge
+#
+# This file contains Microsoft's domains using their China mainland CDN servers.
+#
+# Data from:
+#  - https://github.com/felixonmars/dnsmasq-china-list
+#########################################
+DOMAIN,statics.teams.cdn.office.net
+DOMAIN,res-1.cdn.office.net
+DOMAIN,res.cdn.office.net
+DOMAIN-SUFFIX,download.windowsupdate.com
+DOMAIN-SUFFIX,ctldl.windowsupdate.com
+DOMAIN-SUFFIX,cn.windowssearch.com
+DOMAIN-SUFFIX,download.visualstudio.microsoft.com
+DOMAIN-SUFFIX,officecdn.microsoft.com
+DOMAIN-SUFFIX,developer.microsoft.com
+DOMAIN-SUFFIX,download.microsoft.com
+DOMAIN-SUFFIX,devblogs.microsoft.com
+DOMAIN-SUFFIX,learn.microsoft.com
+DOMAIN-SUFFIX,download.prss.microsoft.com
+DOMAIN-SUFFIX,docs.microsoft.com
+DOMAIN-SUFFIX,wscont2.apps.microsoft.com
+DOMAIN-SUFFIX,wscont1.apps.microsoft.com
+DOMAIN-SUFFIX,sdx.microsoft.com
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
+DOMAIN-SUFFIX,storeedgefd.dsx.mp.microsoft.com
+DOMAIN-SUFFIX,fs.microsoft.com
+################## EOF ##################

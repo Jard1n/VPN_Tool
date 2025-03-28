@@ -1,0 +1,14 @@
+#!name = Google Redirect
+#!desc = Google重定向
+#!icon = https://raw.githubusercontent.com/luestr/IconResource/main/App_icon/120px/Google.png
+
+ 
+[Rewrite]
+# 谷歌搜索
+^https?:\/\/(www.)?(g|google)\.cn 307 https://www.google.com
+# 谷歌地图
+^https?:\/\/(ditu|maps).google\.cn 307 https://maps.google.com
+ 
+ 
+[MitM]
+hostname = www.google.cn
