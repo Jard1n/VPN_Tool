@@ -1,10 +1,9 @@
-# Main total line 3510 
+# Main total line 3509 
 # ------------------------------------------
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DST-PORT,6443))
 AND,((IP-CIDR,111.225.147.191/32,no-resolve),(DST-PORT,6443))
 AND,((IP-CIDR,111.63.61.101/32,no-resolve),(DST-PORT,6443))
 AND,((IP-CIDR,220.243.141.0/32,no-resolve),(DST-PORT,6443))
-AND,((OR,((DOMAIN-SUFFIX,bytegecko.com),(DOMAIN-SUFFIX,byteeffecttos.com))),(DOMAIN-KEYWORD,ncdn))
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
 DOMAIN,abema-adx.ameba.jp
