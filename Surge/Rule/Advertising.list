@@ -1,4 +1,4 @@
-# Main total line 3509 
+# Main total line 3507 
 # ------------------------------------------
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,111.225.147.191/32,no-resolve),(DEST-PORT,6443))
@@ -2078,7 +2078,6 @@ DOMAIN-SUFFIX,mobilemsg.youku.com
 DOMAIN-SUFFIX,mobilityware.com
 DOMAIN-SUFFIX,mobisage.cn
 DOMAIN-SUFFIX,mobjump.com
-DOMAIN-SUFFIX,mobvista.com
 DOMAIN-SUFFIX,mojiva.com
 DOMAIN-SUFFIX,mon.toutiao.com
 DOMAIN-SUFFIX,mon.zijieapi.com
@@ -2172,7 +2171,6 @@ DOMAIN-SUFFIX,nsclick.baidu.cn
 DOMAIN-SUFFIX,nsclick.baidu.com
 DOMAIN-SUFFIX,nsclickvideo.baidu.com
 DOMAIN-SUFFIX,nstat.tudou.com
-DOMAIN-SUFFIX,ntalker.com
 DOMAIN-SUFFIX,ntfsformac.cc
 DOMAIN-SUFFIX,ntfsformac.cn
 DOMAIN-SUFFIX,ntv.io
