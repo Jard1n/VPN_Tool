@@ -1,0 +1,24 @@
+#!name = 📺 BiliBili: 🔀 Redirect
+#!desc = 哔哩哔哩：重定向\n中国站CDN自定义
+#!openUrl = http://boxjs.com/#/app/BiliBili.Redirect
+#!author = VirgilClyne[https://github.com/VirgilClyne]
+#!homepage = https://Redirect.BiliUniverse.io
+#!icon = https://github.com/BiliUniverse/Redirect/raw/main/src/assets/icon_rounded.png
+#!category = 🪐 BiliUniverse
+#!arguments = Host.Akamaized:"upos-sz-mirrorali.bilivideo.com",Host.BStar:"upos-sz-mirrorali.bilivideo.com",Host.PCDN:"upos-sz-mirrorali.bilivideo.com",Host.MCDN:"proxy-tf-all-ws.bilivideo.com",LogLevel:"WARN"
+#!arguments-desc = Host.Akamaized: [主机名] 重定向 Akamaized CDN (港澳台)\n    ├ upos-sz-mirrorali.bilivideo.com: 阿里云 CDN\n    ├ upos-sz-mirrorcos.bilivideo.com: 腾讯云 CDN\n    ├ upos-sz-mirrorhw.bilivideo.com: 华为云 CDN，融合 CDN\n    ├ upos-sz-mirroraliov.bilivideo.com: 阿里云 CDN，海外\n    ├ upos-sz-mirrorcosov.bilivideo.com: 腾讯云 CDN，海外\n    └ upos-sz-mirrorhwov.bilivideo.com: 华为云 CDN，海外\n请选择 Akamaized 要重定向的主机名。\n\nHost.BStar: [主机名] 重定向 BStar CDN (国际版)\n    ├ upos-sz-mirrorali.bilivideo.com: 阿里云 CDN\n    ├ upos-sz-mirrorcos.bilivideo.com: 腾讯云 CDN\n    ├ upos-sz-mirrorhw.bilivideo.com: 华为云 CDN，融合 CDN\n    ├ upos-sz-mirroraliov.bilivideo.com: 阿里云 CDN，海外\n    ├ upos-sz-mirrorcosov.bilivideo.com: 腾讯云 CDN，海外\n    └ upos-sz-mirrorhwov.bilivideo.com: 华为云 CDN，海外\n请选择 BStar 要重定向的主机名。\n\nHost.PCDN: [主机名] 重定向 PCDN 主机名 (中国大陆)\n    ├ upos-sz-mirrorali.bilivideo.com: 阿里云 CDN\n    ├ upos-sz-mirrorcos.bilivideo.com: 腾讯云 CDN\n    ├ upos-sz-mirrorhw.bilivideo.com: 华为云 CDN，融合 CDN\n    ├ upos-sz-mirroraliov.bilivideo.com: 阿里云 CDN，海外\n    ├ upos-sz-mirrorcosov.bilivideo.com: 腾讯云 CDN，海外\n    └ upos-sz-mirrorhwov.bilivideo.com: 华为云 CDN，海外\n请选择 PCDN 要重定向的主机名。\n\nHost.MCDN: [主机名] 重定向 MCDN 主机名 (中国大陆)\n    └ proxy-tf-all-ws.bilivideo.com: proxy-tf-all-ws.bilivideo.com\n请选择 MCDN 要重定向的主机名。\n\nLogLevel: [调试] 日志等级\n    ├ OFF: 关闭\n    ├ ERROR: ❌ 错误\n    ├ WARN: ⚠️ 警告\n    ├ INFO: ℹ️ 信息\n    ├ DEBUG: 🅱️ 调试\n    └ ALL: 全部\n选择脚本日志的输出等级，低于所选等级的日志将全部输出。\n
+
+[General]
+# > TCP Force HTTP Hosts
+# 让 Surge 把 TCP 连接当作 HTTP 请求来处理。Surge HTTP 引擎将处理这些请求，所有的高级功能，如捕获、重写和脚本等都可以使用。
+force-http-engine-hosts = %APPEND% *:4480, *.mcdn.bilivideo.cn:4483, *:8000, *:8082, *.mcdn.bilivideo.cn:9102
+
+[Script]
+📺 BiliBili.Redirect.CDN.upgcxcode.m4s = type=http-request, pattern=^https?:\/\/.+\.bilivideo\.com\/upgcxcode\/, engine=webview, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Fries/Redirect.request.bundle.js, argument=Host.Akamaized="{{{Host.Akamaized}}}"&Host.BStar="{{{Host.BStar}}}"&Host.PCDN="{{{Host.PCDN}}}"&Host.MCDN="{{{Host.MCDN}}}"&LogLevel="{{{LogLevel}}}"
+📺 BiliBili.Redirect.MCDN.v1.resource.m4s = type=http-request, pattern=^https?:\/\/(.+):(8000|8082)\/v1\/resource\/, engine=webview, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Fries/Redirect.request.bundle.js, argument=Host.Akamaized="{{{Host.Akamaized}}}"&Host.BStar="{{{Host.BStar}}}"&Host.PCDN="{{{Host.PCDN}}}"&Host.MCDN="{{{Host.MCDN}}}"&LogLevel="{{{LogLevel}}}"
+📺 BiliBili.Redirect.MCDN.upgcxcode.m4s = type=http-request, pattern=^https?:\/\/[xy0-9]+\.mcdn\.bilivideo\.(cn|com):(4483|9102)\/upgcxcode\/, engine=webview, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Fries/Redirect.request.bundle.js, argument=Host.Akamaized="{{{Host.Akamaized}}}"&Host.BStar="{{{Host.BStar}}}"&Host.PCDN="{{{Host.PCDN}}}"&Host.MCDN="{{{Host.MCDN}}}"&LogLevel="{{{LogLevel}}}"
+📺 BiliBili.Redirect.PCDN.upgcxcode.m4s = type=http-request, pattern=^https?:\/\/(.+):4480\/upgcxcode\/, engine=webview, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Fries/Redirect.request.bundle.js, argument=Host.Akamaized="{{{Host.Akamaized}}}"&Host.BStar="{{{Host.BStar}}}"&Host.PCDN="{{{Host.PCDN}}}"&Host.MCDN="{{{Host.MCDN}}}"&LogLevel="{{{LogLevel}}}"
+📺 BiliBili.Redirect.Akamaized.upgcxcode.m4s = type=http-request, pattern=^https?:\/\/upos-(hz|bstar1)-mirrorakam\.akamaized\.net/upgcxcode\/, engine=webview, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Fries/Redirect.request.bundle.js, argument=Host.Akamaized="{{{Host.Akamaized}}}"&Host.BStar="{{{Host.BStar}}}"&Host.PCDN="{{{Host.PCDN}}}"&Host.MCDN="{{{Host.MCDN}}}"&LogLevel="{{{LogLevel}}}"
+
+[MITM]
+hostname = %APPEND% *.mcdn.bilivideo.cn, upos-sz-mirror*bstar1.bilivideo.com, upos-*-mirrorakam.akamaized.net

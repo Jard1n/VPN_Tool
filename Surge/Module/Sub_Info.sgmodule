@@ -1,0 +1,16 @@
+#!name = 机场流量信息
+#!desc = 显示机场剩余流量、流量使用情况、流量重置日期、套餐到期时间
+#!arguments = 机场名称:#, 订阅链接:sub_link, 面板图标:internaldrive.fill, 图标颜色:#007aff, 流量重置日期:1, 面板刷新时间:3600,  机场名称:#,  订阅链接:sub_link,  面板图标:internaldrive.fill,  图标颜色:#007aff,  流量重置日期:flash,  面板刷新时间:3600
+#!arguments-desc = 注意两个面板显示风格不同！！！ \n\n部分参数指导:\n\n1. 面板图标为SF Symbol的符号图标\n\n2. 图标颜色需Hex颜色代码\n\n3. 面板刷新时间以秒为单位\n\n4. 订阅链接必须经过encode\n\n5. 不想显示重置日期添加false取消显示(只适用订阅2)
+#!category = 面板
+
+[Panel]
+{{{机场名称}}} = script-name=Sub_info,update-interval={{{面板刷新时间}}}
+
+{{{ 机场名称}}} = script-name=Sub_info1,update-interval={{{面板刷新时间}}}
+
+
+[Script]
+Sub_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/getsomecat/GetSomeCats/Surge/modules/Panel/Sub-info/Moore/Sub-info.js,argument=url={{{订阅链接}}}&reset_day={{{流量重置日期}}}&title={{{机场名称}}}&icon={{{面板图标}}}&color={{{图标颜色}}}
+
+Sub_info1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/Rabbit-Spec/Surge/Master/Module/Panel/Sub-info/Moore/Sub-info.js,argument=url={{{ 订阅链接}}}&reset_day={{{ 流量重置日期}}}&title={{{ 机场名称}}}&icon={{{ 面板图标}}}&color={{{ 图标颜色}}}

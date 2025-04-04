@@ -1,0 +1,19 @@
+#!name = 净化 & 京东
+#!desc = 移除京东开屏广告，精简我的页面
+#!category =  Block Ads
+
+
+[Rule]
+DOMAIN,dns.jd.com,REJECT,extended-matching
+URL-REGEX,"^http:\/\/\w{32}\.jddebug\.com\/diagnose\?",REJECT,extended-matching
+IP-CIDR,101.124.19.122/32,REJECT,no-resolve
+IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve
+
+[Map Local]
+^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(searchBoxWord|stationPullService|uniformRecommend[06]) data-type=text data="{}" status-code=200
+
+[Script]
+京东 = type=http-response, pattern=^https:\/\/api\.m\.jd\.com\/client\.action\?functionId=(deliverLayer|getTabHomeInfo|myOrderInfo|orderTrackBusiness|personinfoBusiness|start|welcomeHome), requires-body=1, max-size=0, script-update-interval=-1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/JD/JD_remove_ads.js
+
+[MITM]
+hostname = %APPEND% api.m.jd.com
