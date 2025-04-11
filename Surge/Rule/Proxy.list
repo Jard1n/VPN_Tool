@@ -4485,6 +4485,7 @@ DOMAIN-SUFFIX,razerzone.com
 DOMAIN-SUFFIX,rd.com
 DOMAIN-SUFFIX,rdio.com
 DOMAIN-SUFFIX,rdtcdn.com
+DOMAIN-SUFFIX,re
 DOMAIN-SUFFIX,reabble.com
 DOMAIN-SUFFIX,read01.com
 DOMAIN-SUFFIX,read100.com
@@ -4816,7 +4817,6 @@ DOMAIN-SUFFIX,simpleswap.io
 DOMAIN-SUFFIX,sinchew.com.my
 DOMAIN-SUFFIX,singfortibet.com
 DOMAIN-SUFFIX,singlelogin.me
-DOMAIN-SUFFIX,singlelogin.re
 DOMAIN-SUFFIX,singlelogin.rs
 DOMAIN-SUFFIX,singlelogin.se
 DOMAIN-SUFFIX,singtao.com
@@ -6342,7 +6342,6 @@ DOMAIN-SUFFIX,yakbutterblues.com
 DOMAIN-SUFFIX,yam.com
 DOMAIN-SUFFIX,yamaxun
 DOMAIN-SUFFIX,yamaxun.com
-DOMAIN-SUFFIX,yande.re
 DOMAIN-SUFFIX,yandex.com
 DOMAIN-SUFFIX,yandex.net
 DOMAIN-SUFFIX,yandex.org
