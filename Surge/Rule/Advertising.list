@@ -1,4 +1,4 @@
-# Main total line 3514 
+# Main total line 3531 
 # ------------------------------------------
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,111.225.147.191/32,no-resolve),(DEST-PORT,6443))
@@ -249,7 +249,6 @@ DOMAIN,lc.map.baidu.com
 DOMAIN,lf-ad-ies.bytecdn.cn
 DOMAIN,livep.l.t002.ottcn.com
 DOMAIN,livewebbs2.msstatic.com
-DOMAIN,livewebbs2pcdn.msstatic.com
 DOMAIN,log-hl.snssdk.com
 DOMAIN,log.51wnl-cq.com
 DOMAIN,log.ycapp.yiche.com
@@ -411,6 +410,7 @@ DOMAIN-SUFFIX,123.sogoucdn.com
 DOMAIN-SUFFIX,123juzi.net
 DOMAIN-SUFFIX,138lm.com
 DOMAIN-SUFFIX,1500020991.vodplayer.wxamedia.com
+DOMAIN-SUFFIX,1500022744.vodplayer.wxamedia.com
 DOMAIN-SUFFIX,1500026601.vodplayer.wxamedia.com
 DOMAIN-SUFFIX,168.it168.com
 DOMAIN-SUFFIX,17gouwuba.com
@@ -533,11 +533,8 @@ DOMAIN-SUFFIX,ad-cdn.qingting.fm
 DOMAIN-SUFFIX,ad-center.com
 DOMAIN-SUFFIX,ad-channel.wikawika.xyz
 DOMAIN-SUFFIX,ad-cloud.jp
-DOMAIN-SUFFIX,ad-cmp.hismarttv.com
 DOMAIN-SUFFIX,ad-delivery.net
 DOMAIN-SUFFIX,ad-display.wikawika.xyz
-DOMAIN-SUFFIX,ad-download.hismarttv.com
-DOMAIN-SUFFIX,ad-imp.hismarttv.com
 DOMAIN-SUFFIX,ad-locus.com
 DOMAIN-SUFFIX,ad-maven.com
 DOMAIN-SUFFIX,ad-move.jp
@@ -895,6 +892,7 @@ DOMAIN-SUFFIX,alert.autohome.com.cn
 DOMAIN-SUFFIX,alexametrics.com
 DOMAIN-SUFFIX,algovid.com
 DOMAIN-SUFFIX,ali-ad.a.yximgs.com
+DOMAIN-SUFFIX,ali-p2p-v2.pull.yximgs.com
 DOMAIN-SUFFIX,alienskins.cn
 DOMAIN-SUFFIX,alipaylog.com
 DOMAIN-SUFFIX,alitui.weibo.com
@@ -1155,7 +1153,6 @@ DOMAIN-SUFFIX,ccc-x.jd.com
 DOMAIN-SUFFIX,cdj99d.cn
 DOMAIN-SUFFIX,cdn-ad.wtzw.com
 DOMAIN-SUFFIX,cdn-ads.oss-cn-shanghai.aliyuncs.com
-DOMAIN-SUFFIX,cdn-plugin-sync-upgrade-juui.hismarttv.com
 DOMAIN-SUFFIX,cdn.chinaliftoff-creatives.io
 DOMAIN-SUFFIX,cdn.hpplay.com.cn
 DOMAIN-SUFFIX,cdn.jiuzhilan.com
@@ -1402,6 +1399,8 @@ DOMAIN-SUFFIX,dw.xcar.com.cn
 DOMAIN-SUFFIX,dwyhup.cn
 DOMAIN-SUFFIX,dxp.baidu.com
 DOMAIN-SUFFIX,dxpmedia.com
+DOMAIN-SUFFIX,dyp2p-ali.douyucdn.cn
+DOMAIN-SUFFIX,dyp2p-hw.douyucdn.cn
 DOMAIN-SUFFIX,dzl.baidu.com
 DOMAIN-SUFFIX,e.aa985.cn
 DOMAIN-SUFFIX,e.baidu.cn
@@ -1639,6 +1638,7 @@ DOMAIN-SUFFIX,heads-ak.spotify.com.edgesuite.net
 DOMAIN-SUFFIX,heads-fa.spotify.com
 DOMAIN-SUFFIX,hexagon-analytics.com
 DOMAIN-SUFFIX,heyzap.com
+DOMAIN-SUFFIX,hismarttv.com
 DOMAIN-SUFFIX,hitslink.com
 DOMAIN-SUFFIX,hivecn.cn
 DOMAIN-SUFFIX,hivedata.cc
@@ -1672,6 +1672,8 @@ DOMAIN-SUFFIX,huichuan.sm.cn
 DOMAIN-SUFFIX,huishenghuiying.com.cn
 DOMAIN-SUFFIX,huodonghezi.cn
 DOMAIN-SUFFIX,hw-ot-ad.a.yximgs.com
+DOMAIN-SUFFIX,hw-p2p-pull.video-voip.com
+DOMAIN-SUFFIX,hw-p2p.pull.yximgs.com
 DOMAIN-SUFFIX,hwpub-s01-drcn.cloud.dbankcloud.cn
 DOMAIN-SUFFIX,hybrid.miniapp.taobao.com
 DOMAIN-SUFFIX,hydra.alibaba.com
@@ -1862,6 +1864,8 @@ DOMAIN-SUFFIX,knicks.jd.com
 DOMAIN-SUFFIX,knlk2md.cn
 DOMAIN-SUFFIX,kochava.com
 DOMAIN-SUFFIX,krux.net
+DOMAIN-SUFFIX,ks-p2p-v2.pull.yximgs.com
+DOMAIN-SUFFIX,ks-p2p.pull.yximgs.com
 DOMAIN-SUFFIX,ks.ferlytc.com
 DOMAIN-SUFFIX,ks.pull.yximgs.com
 DOMAIN-SUFFIX,kstj.baidu.com
@@ -1898,6 +1902,7 @@ DOMAIN-SUFFIX,livemonitor.huan.tv
 DOMAIN-SUFFIX,livep.l.aiseet.atianqi.com
 DOMAIN-SUFFIX,lives.l.aiseet.atianqi.com
 DOMAIN-SUFFIX,lives.l.ott.video.qq.com
+DOMAIN-SUFFIX,livewebbs2pcdn.msstatic.com
 DOMAIN-SUFFIX,lm.licenses.adobe.com
 DOMAIN-SUFFIX,lm.tv.sohu.com
 DOMAIN-SUFFIX,lm10111.jtrincc.cn
@@ -2046,6 +2051,7 @@ DOMAIN-SUFFIX,mindmanager.cc
 DOMAIN-SUFFIX,mindmanager.cn
 DOMAIN-SUFFIX,mindmapper.cc
 DOMAIN-SUFFIX,minfo.wps.cn
+DOMAIN-SUFFIX,mini-prog-drm.vodplayvideo.net
 DOMAIN-SUFFIX,minidcsc.kugou.com
 DOMAIN-SUFFIX,minipage.2345.cn
 DOMAIN-SUFFIX,minisite.letv.com
@@ -2239,6 +2245,10 @@ DOMAIN-SUFFIX,p1-lm.adkwai.com
 DOMAIN-SUFFIX,p2-lm.adkwai.com
 DOMAIN-SUFFIX,p2.hunantv.com
 DOMAIN-SUFFIX,p242.plainwrk.name
+DOMAIN-SUFFIX,p2pchunk-table.douyucdn.cn
+DOMAIN-SUFFIX,p2plive-ali.douyucdn.cn
+DOMAIN-SUFFIX,p2pupdate.gamedl.qq.com
+DOMAIN-SUFFIX,p2pupgrade.gamedl.qq.com
 DOMAIN-SUFFIX,p3-lm.adkwai.com
 DOMAIN-SUFFIX,p3-tt.byteimg.com
 DOMAIN-SUFFIX,p3p.yahoo.com
@@ -2266,6 +2276,7 @@ DOMAIN-SUFFIX,pc.stgowan.com
 DOMAIN-SUFFIX,pc.uf.ksosoft.com
 DOMAIN-SUFFIX,pc.videoclick.baidu.com
 DOMAIN-SUFFIX,pcd.autohome.com.cn
+DOMAIN-SUFFIX,pcdn.xmcdn.com
 DOMAIN-SUFFIX,pcfg.wps.cn
 DOMAIN-SUFFIX,pcm-img.zhls.qq.com
 DOMAIN-SUFFIX,pd.sogou.com
@@ -2393,6 +2404,7 @@ DOMAIN-SUFFIX,qichexin.com
 DOMAIN-SUFFIX,qinchugudao.com
 DOMAIN-SUFFIX,qinzhihao.com
 DOMAIN-SUFFIX,qiyou.com
+DOMAIN-SUFFIX,qn-cdnfile1pcdn.msstatic.com
 DOMAIN-SUFFIX,qoiw1xw.cn
 DOMAIN-SUFFIX,qqdata.ab.qq.com
 DOMAIN-SUFFIX,qqq123987.site
@@ -2498,6 +2510,7 @@ DOMAIN-SUFFIX,sape.ru
 DOMAIN-SUFFIX,sax.mobile.sina.cn
 DOMAIN-SUFFIX,sax.sina.com.cn
 DOMAIN-SUFFIX,saxd.sina.com.cn
+DOMAIN-SUFFIX,saxysec.com
 DOMAIN-SUFFIX,saymedia.com
 DOMAIN-SUFFIX,sc.shayugg.com
 DOMAIN-SUFFIX,scdown.qq.com
@@ -2698,6 +2711,7 @@ DOMAIN-SUFFIX,streamrail.com
 DOMAIN-SUFFIX,streamrail.net
 DOMAIN-SUFFIX,strikead.com
 DOMAIN-SUFFIX,strip.taobaocdn.com
+DOMAIN-SUFFIX,stun.hitv.com
 DOMAIN-SUFFIX,su.bdimg.com
 DOMAIN-SUFFIX,su.bdstatic.com
 DOMAIN-SUFFIX,sumome.com
@@ -2814,6 +2828,7 @@ DOMAIN-SUFFIX,tosv.boe.byted.org
 DOMAIN-SUFFIX,tosv.byted.org
 DOMAIN-SUFFIX,touclick.com
 DOMAIN-SUFFIX,tp-pay.snssdk.com
+DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
 DOMAIN-SUFFIX,tpc.googlesyndication-cn.com
 DOMAIN-SUFFIX,tpns.tencent.com
 DOMAIN-SUFFIX,tracelog-debug.qquanquan.com
@@ -2870,6 +2885,8 @@ DOMAIN-SUFFIX,tvapp.hpplay.cn
 DOMAIN-SUFFIX,tvuser-ch.cedock.com
 DOMAIN-SUFFIX,tx-ad.a.yximgs.com
 DOMAIN-SUFFIX,tx-kmpaudio.pull.yximgs.com
+DOMAIN-SUFFIX,tx-p2p-pull.live-voip.com
+DOMAIN-SUFFIX,tx-p2p-v2.pull.yximgs.com
 DOMAIN-SUFFIX,tyh.taobao.com
 DOMAIN-SUFFIX,tynt.com
 DOMAIN-SUFFIX,tyrantdb.com
@@ -2897,6 +2914,7 @@ DOMAIN-SUFFIX,uerzyr.cn
 DOMAIN-SUFFIX,ugc.moji001.com
 DOMAIN-SUFFIX,ugdtimg.com
 DOMAIN-SUFFIX,ugvip.com
+DOMAIN-SUFFIX,uhabo.com
 DOMAIN-SUFFIX,uimserv.net
 DOMAIN-SUFFIX,ujian.cc
 DOMAIN-SUFFIX,ukeiae.com
@@ -2938,7 +2956,6 @@ DOMAIN-SUFFIX,update.avlyun.sec.miui.com
 DOMAIN-SUFFIX,update.lejiao.tv
 DOMAIN-SUFFIX,update.mobile.kugou.com
 DOMAIN-SUFFIX,updatepage.kuwo.cn
-DOMAIN-SUFFIX,upgrade-update.hismarttv.com
 DOMAIN-SUFFIX,upgrade.xl9.xunlei.com
 DOMAIN-SUFFIX,upltv.com
 DOMAIN-SUFFIX,uprivaladserver.net
@@ -2973,7 +2990,6 @@ DOMAIN-SUFFIX,uyunad.com
 DOMAIN-SUFFIX,v.smtcdns.com
 DOMAIN-SUFFIX,v1-ad.video.yximgs.com
 DOMAIN-SUFFIX,v2-ad.video.yximgs.com
-DOMAIN-SUFFIX,v2-api-channel-launcher.hismarttv.com
 DOMAIN-SUFFIX,v2.hunantv.com
 DOMAIN-SUFFIX,v3-ad.video.yximgs.com
 DOMAIN-SUFFIX,v3.fstats.xyz
@@ -3153,6 +3169,7 @@ DOMAIN-SUFFIX,xtzxmy.com
 DOMAIN-SUFFIX,xxxjmp.com
 DOMAIN-SUFFIX,xy.com
 DOMAIN-SUFFIX,xy7elite.com
+DOMAIN-SUFFIX,xycdn.com
 DOMAIN-SUFFIX,xyrkl.com
 DOMAIN-SUFFIX,yadro.ru
 DOMAIN-SUFFIX,yads.yahoo.co.jp
