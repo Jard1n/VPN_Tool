@@ -1,4 +1,4 @@
-# Main total line 3530 
+# Main total line 3529 
 # ------------------------------------------
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,111.225.147.191/32,no-resolve),(DEST-PORT,6443))
@@ -2694,7 +2694,6 @@ DOMAIN-SUFFIX,stats-locations.com
 DOMAIN-SUFFIX,stats.autohome.com.cn
 DOMAIN-SUFFIX,stats.chinaz.com
 DOMAIN-SUFFIX,stats.developingperspective.com
-DOMAIN-SUFFIX,stats.qiumibao.com
 DOMAIN-SUFFIX,stats.tudou.com
 DOMAIN-SUFFIX,stats.wp.com
 DOMAIN-SUFFIX,statsigapi.net
