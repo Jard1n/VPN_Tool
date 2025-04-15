@@ -128,6 +128,12 @@ http-response-jq ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news '.result.l
 # 12306更新弹窗 //mobile.12306.cn
 ^https:\/\/mobile\.12306\.cn\/otsmobile\/app\/mds\/mgw\.htm data-type=text data="{}" status-code=200
 
+# 招商银行 //webappcfg.paas.cmbchina.com, mbmodule-openapi.paas.cmbchina.com
+# 开屏广告
+^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig data-type=text data=" " status-code=200
+# 首页横幅广告
+^https?:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data-type=text data="{}" status-code=200
+
 
 [Script]
 # 广告联盟 //api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com
@@ -144,4 +150,4 @@ http-response-jq ^https:\/\/api\.xiaoheihe\.cn\/bbs\/app\/feeds\/news '.result.l
 
 
 [MITM]
-hostname = %APPEND% wallet.95516.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, mobile.12306.cn, api.xiaoheihe.cn, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, cdb.meituan.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, client.app.coc.10086.cn, cloud.189.cn, zt-app.go189.cn, m.qianbao.qq.com, acs.m.taobao.com, list-app-m.i4.cn, gab.122.gov.cn, app.dewu.com, cdn.poizon.com, api.wmpvp.com, api.club.lenovo.cn, mp.weixin.qq.com, weixin110.qq.com, security.wechat.com, home.mi.com, appwk.baidu.com, hfapp-service.qweather.net, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, app.10099.com.cn, ccsp-egmas.sf-express.com, ucmp.sf-express.com, hwimg.beingfine.cn, learnywhere.cn, advertise.bczeducation.cn, notify.baicizhan.com, images.client.vip.xunlei.com, api-shoulei-ssl.xunlei.com, osg-service.sgcc.com.cn, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, ad.12306.cn
+hostname = %APPEND% webappcfg.paas.cmbchina.com, mbmodule-openapi.paas.cmbchina.com, wallet.95516.com, video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com, mobile.12306.cn, api.xiaoheihe.cn, img.meituan.net, s3plus.meituan.net, flowplus.meituan.net, cdb.meituan.com, elemecdn.com, fuss10.elemecdn.com, www1.elecfans.com, client.app.coc.10086.cn, cloud.189.cn, zt-app.go189.cn, m.qianbao.qq.com, acs.m.taobao.com, list-app-m.i4.cn, gab.122.gov.cn, app.dewu.com, cdn.poizon.com, api.wmpvp.com, api.club.lenovo.cn, mp.weixin.qq.com, weixin110.qq.com, security.wechat.com, home.mi.com, appwk.baidu.com, hfapp-service.qweather.net, m.client.10010.com, m1.ad.10010.com, res.mall.10010.cn, app.10099.com.cn, ccsp-egmas.sf-express.com, ucmp.sf-express.com, hwimg.beingfine.cn, learnywhere.cn, advertise.bczeducation.cn, notify.baicizhan.com, images.client.vip.xunlei.com, api-shoulei-ssl.xunlei.com, osg-service.sgcc.com.cn, api-access.pangolin-sdk-toutiao.com, mi.gdt.qq.com, open.e.kuaishou.com, ad.12306.cn
