@@ -46,6 +46,14 @@ DOMAIN-SUFFIX,1anime.me
 DOMAIN-SUFFIX,1bao.org
 DOMAIN-SUFFIX,1dumb.com
 DOMAIN-SUFFIX,1eew.com
+DOMAIN-SUFFIX,1lib.cloud
+DOMAIN-SUFFIX,1lib.cz
+DOMAIN-SUFFIX,1lib.domains
+DOMAIN-SUFFIX,1lib.education
+DOMAIN-SUFFIX,1lib.limited
+DOMAIN-SUFFIX,1lib.pl
+DOMAIN-SUFFIX,1lib.sk
+DOMAIN-SUFFIX,1lib.to
 DOMAIN-SUFFIX,1mobile.com
 DOMAIN-SUFFIX,1password.com
 DOMAIN-SUFFIX,1passwordservices.com
@@ -67,6 +75,7 @@ DOMAIN-SUFFIX,233v2.com
 DOMAIN-SUFFIX,24smile.org
 DOMAIN-SUFFIX,25u.com
 DOMAIN-SUFFIX,2du5.com
+DOMAIN-SUFFIX,2lib.org
 DOMAIN-SUFFIX,2lipstube.com
 DOMAIN-SUFFIX,2mdn.net
 DOMAIN-SUFFIX,2o7.net
@@ -82,6 +91,7 @@ DOMAIN-SUFFIX,3a5a.com
 DOMAIN-SUFFIX,3arabtv.com
 DOMAIN-SUFFIX,3boys2girls.com
 DOMAIN-SUFFIX,3d-game.com
+DOMAIN-SUFFIX,3lib.net
 DOMAIN-SUFFIX,3movs.com
 DOMAIN-SUFFIX,3tui.net
 DOMAIN-SUFFIX,404museum.com
@@ -435,6 +445,7 @@ DOMAIN-SUFFIX,arkoselabs.com
 DOMAIN-SUFFIX,arlingtoncemetery.mil
 DOMAIN-SUFFIX,armorgames.com
 DOMAIN-SUFFIX,army.mil
+DOMAIN-SUFFIX,art1lib.com
 DOMAIN-SUFFIX,art4tibet1998.org
 DOMAIN-SUFFIX,arte.tv
 DOMAIN-SUFFIX,articles.sk
@@ -527,7 +538,11 @@ DOMAIN-SUFFIX,azerimix.com
 DOMAIN-SUFFIX,azirevpn.com
 DOMAIN-SUFFIX,azubu.tv
 DOMAIN-SUFFIX,azurecontainer.io
+DOMAIN-SUFFIX,b-ok.africa
+DOMAIN-SUFFIX,b-ok.asia
 DOMAIN-SUFFIX,b-ok.cc
+DOMAIN-SUFFIX,b-ok.global
+DOMAIN-SUFFIX,b-ok.org
 DOMAIN-SUFFIX,b0ne.com
 DOMAIN-SUFFIX,baby-kingdom.com
 DOMAIN-SUFFIX,babylonbee.com
@@ -744,8 +759,16 @@ DOMAIN-SUFFIX,bonbonsex.com
 DOMAIN-SUFFIX,bonfoundation.org
 DOMAIN-SUFFIX,bongacams.com
 DOMAIN-SUFFIX,boobstagram.com
+DOMAIN-SUFFIX,book4you.org
 DOMAIN-SUFFIX,bookdepository.com
 DOMAIN-SUFFIX,bookepub.com
+DOMAIN-SUFFIX,bookfi.net
+DOMAIN-SUFFIX,booksc.me
+DOMAIN-SUFFIX,booksc.org
+DOMAIN-SUFFIX,booksc.xyz
+DOMAIN-SUFFIX,bookshome.info
+DOMAIN-SUFFIX,bookshome.net
+DOMAIN-SUFFIX,bookshome.world
 DOMAIN-SUFFIX,boomssr.com
 DOMAIN-SUFFIX,boomtrain.com
 DOMAIN-SUFFIX,booth.pm
@@ -1389,6 +1412,7 @@ DOMAIN-SUFFIX,ddns.ms
 DOMAIN-SUFFIX,ddns.name
 DOMAIN-SUFFIX,ddns.net
 DOMAIN-SUFFIX,de-sci.org
+DOMAIN-SUFFIX,de1lib.org
 DOMAIN-SUFFIX,deadhouse.org
 DOMAIN-SUFFIX,deadline.com
 DOMAIN-SUFFIX,deaftone.com
@@ -2547,6 +2571,7 @@ DOMAIN-SUFFIX,hjd2048.com
 DOMAIN-SUFFIX,hk-pub.com
 DOMAIN-SUFFIX,hk.hao123img.com
 DOMAIN-SUFFIX,hk01.com
+DOMAIN-SUFFIX,hk1lib.org
 DOMAIN-SUFFIX,hk32168.com
 DOMAIN-SUFFIX,hkacg.com
 DOMAIN-SUFFIX,hkacg.net
@@ -2972,6 +2997,7 @@ DOMAIN-SUFFIX,isunaffairs.com
 DOMAIN-SUFFIX,isuntv.com
 DOMAIN-SUFFIX,isupportuyghurs.org
 DOMAIN-SUFFIX,itaboo.info
+DOMAIN-SUFFIX,italian-books.sk
 DOMAIN-SUFFIX,italiatibet.org
 DOMAIN-SUFFIX,italkbb.com
 DOMAIN-SUFFIX,italkbbtv.com
@@ -3323,6 +3349,9 @@ DOMAIN-SUFFIX,liaowangxizang.net
 DOMAIN-SUFFIX,libertysculpturepark.com
 DOMAIN-SUFFIX,libgen.fun
 DOMAIN-SUFFIX,libraryinformationtechnology.com
+DOMAIN-SUFFIX,libsolutions.app
+DOMAIN-SUFFIX,libsolutions.domains
+DOMAIN-SUFFIX,libsolutions.net
 DOMAIN-SUFFIX,libsyn.com
 DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,lidecheng.com
@@ -3444,6 +3473,7 @@ DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,m8008.com
 DOMAIN-SUFFIX,ma.hao123.com
+DOMAIN-SUFFIX,ma1lib.org
 DOMAIN-SUFFIX,macgamestore.com
 DOMAIN-SUFFIX,macid.co
 DOMAIN-SUFFIX,macpaw.com
@@ -4878,6 +4908,7 @@ DOMAIN-SUFFIX,sfmcompile.club
 DOMAIN-SUFFIX,sfshibao.com
 DOMAIN-SUFFIX,sftindia.org
 DOMAIN-SUFFIX,sftuk.org
+DOMAIN-SUFFIX,sg1lib.org
 DOMAIN-SUFFIX,sgwritings.com
 DOMAIN-SUFFIX,sgzhan.com
 DOMAIN-SUFFIX,shadeyouvpn.com
@@ -4962,9 +4993,11 @@ DOMAIN-SUFFIX,simpleproductivityblog.com
 DOMAIN-SUFFIX,simpleswap.io
 DOMAIN-SUFFIX,sinchew.com.my
 DOMAIN-SUFFIX,singfortibet.com
+DOMAIN-SUFFIX,singlelogin.app
 DOMAIN-SUFFIX,singlelogin.me
 DOMAIN-SUFFIX,singlelogin.rs
 DOMAIN-SUFFIX,singlelogin.se
+DOMAIN-SUFFIX,singlelogin.site
 DOMAIN-SUFFIX,singtao.com
 DOMAIN-SUFFIX,singtaousa.com
 DOMAIN-SUFFIX,singular.net
@@ -6619,10 +6652,14 @@ DOMAIN-SUFFIX,yyii.org
 DOMAIN-SUFFIX,yyjlymb.xyz
 DOMAIN-SUFFIX,yysub.net
 DOMAIN-SUFFIX,yzzk.com
+DOMAIN-SUFFIX,z-lib.gd
 DOMAIN-SUFFIX,z-lib.gs
 DOMAIN-SUFFIX,z-lib.io
 DOMAIN-SUFFIX,z-lib.org
+DOMAIN-SUFFIX,z-lib.ps
 DOMAIN-SUFFIX,z-library.rs
+DOMAIN-SUFFIX,z-library.se
+DOMAIN-SUFFIX,z-library.sk
 DOMAIN-SUFFIX,zacebook.com
 DOMAIN-SUFFIX,zalmos.com
 DOMAIN-SUFFIX,zalo.me
@@ -6684,6 +6721,9 @@ DOMAIN-SUFFIX,ziporn.com
 DOMAIN-SUFFIX,zippyshare.com
 DOMAIN-SUFFIX,zkaip.com
 DOMAIN-SUFFIX,zkiz.com
+DOMAIN-SUFFIX,zlib.life
+DOMAIN-SUFFIX,zlibcdn.com
+DOMAIN-SUFFIX,zlibcdn2.com
 DOMAIN-SUFFIX,zndsk.com
 DOMAIN-SUFFIX,zoho.com
 DOMAIN-SUFFIX,zomobo.net
