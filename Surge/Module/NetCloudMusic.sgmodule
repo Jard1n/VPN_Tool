@@ -1,0 +1,48 @@
+#!name = 净化 & 网易云音乐iPad
+#!desc = 音乐的力量不是用来看广告的
+#!category =  Block Ads
+
+
+[Map Local]
+# 开屏广告,首页顶部横幅广告
+^https?:\/\/interface3?\.music\.163.com\/e?api\/(ocpc\/)?ad\/.* data-type=text data="{}" status-code=200
+
+# 搜索页,填充词,排行榜
+^https?:\/\/interface3?\.music\.163.com\/eapi\/search\/(chart\/(detail|list)|default\/keyword\/list|rcmd\/keyword\/get\/v2|specialkeyword\/get) data-type=text data="{}" status-code=200
+
+# 播放页,多余图标,各种小提示,高品质音乐试用弹窗
+^https:\/\/interface3?\.music\.163\.com\/eapi\/(link\/position\/show\/(resource|strategy)|music\/songshare\/text\/recommend\/get) data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/eapi\/(mlivestream\/entrance\/playpage\/v7|community\/friends\/fans-group\/artist\/group)\/get data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/eapi\/mlog\/vinyl\/story\/list data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/eapi\/(user\/sub\/artist\/exist|vipcenter\/tspopup\/get) data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/eapi\/zone\/songplay\/entry\/get data-type=text data="{}" status-code=200
+^https?:\/\/interface3?\.music\.163\.com\/eapi\/resniche\/position\/play\/new\/get data-type=text data="{}" status-code=200
+^https?:\/\/interface3?\.music\.163\.com\/eapi\/comment\/(hotcomment\/collect\/fetchmodelinfov2|feed\/inserted\/resources|tips\/v2\/get) data-type=text data="{}" status-code=200
+^https?:\/\/interface3?\.music\.163\.com\/eapi\/(content\/exposure\/vinyl\/comment\/entrance|v1\/content\/exposure\/comment\/banner)\/get data-type=text data="{}" status-code=200
+
+# 首页,右上角多余图标,会员续费弹窗,侧边栏推广
+^https:\/\/interface3?\.music\.163\.com\/eapi\/event\/floating\/layer data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/eapi\/(homepage\/banner\/ad\/get|link\/scene\/show\/resource) data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/eapi\/(music-vip-membership\/client\/vip\/info|vipauth\/app\/auth\/recycle) data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/eapi\/(side-bar\/mini-program\/music-service\/account|delivery\/batch-deliver) data-type=text data="{}" status-code=200
+
+# 我的页面,小部件红点
+^https:\/\/interface3?\.music\.163\.com\/eapi\/mine\/applet\/redpoint data-type=text data="{}" status-code=200
+
+# 播客,弹出广告
+^https:\/\/interface3?\.music\.163\.com\/eapi\/voice\/play\/page\/ad\/info data-type=text data="{}" status-code=200
+
+# 歌单页,横幅广告
+^https:\/\/interface3?\.music\.163\.com\/weapi\/(activity\/bonus\/playpage\/time\/query|middle\/clientcfg\/config\/list) data-type=text data="{}" status-code=200
+^https:\/\/interface3?\.music\.163\.com\/w?eapi\/resource-exposure\/(activity\/config\/get|config) data-type=text data="{}" status-code=200
+
+# 流量卡弹窗
+^https:\/\/interface3?\.music\.163\.com\/eapi\/sp\/flow\/popup\/query data-type=text data="{}" status-code=200
+
+
+[Header Rewrite]
+^https?:\/\/interface3?\.music\.163\.com\/eapi\/batch header-replace-regex cookie appver=.+$ appver=2333
+
+
+[MITM]
+hostname = %APPEND% interface*.music.163.com
