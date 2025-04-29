@@ -1,4 +1,4 @@
-# Main total line 3555 
+# Main total line 3556 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443)),REJECT
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -79,7 +79,6 @@ DOMAIN,ads.yahoo.de
 DOMAIN,adsapi.manhuaren.com
 DOMAIN,adsapi.snapchat.com
 DOMAIN,adsdk.dmzj.com
-DOMAIN,adsdk.vivo.com.cn
 DOMAIN,adserver.pandora.com
 DOMAIN,adservetx.media.net
 DOMAIN,adsfilebssdlbig.tx.kugou.com
@@ -202,7 +201,6 @@ DOMAIN,glitter.services.disqus.com
 DOMAIN,goblin.hupu.com
 DOMAIN,gtm.mouseflow.com
 DOMAIN,hbftgh.ibjkqnhjwd.xyz
-DOMAIN,hc-ssp.sm.cn
 DOMAIN,hdns.ksyun.com
 DOMAIN,hnrtg.iujkegbpo.xyz
 DOMAIN,httpdns.baidubce.com
@@ -566,6 +564,7 @@ DOMAIN-SUFFIX,ad.daum.net
 DOMAIN-SUFFIX,ad.docer.wps.cn
 DOMAIN-SUFFIX,ad.duomi.com
 DOMAIN-SUFFIX,ad.g.daum.net
+DOMAIN-SUFFIX,ad.gameley.com
 DOMAIN-SUFFIX,ad.ganji.com
 DOMAIN-SUFFIX,ad.gt
 DOMAIN-SUFFIX,ad.house365.com
@@ -736,6 +735,7 @@ DOMAIN-SUFFIX,ads-api.twitter.com
 DOMAIN-SUFFIX,ads-img-qc.xhscdn.com
 DOMAIN-SUFFIX,ads-marketing-vivofs.vivo.com.cn
 DOMAIN-SUFFIX,ads-pixiv.net
+DOMAIN-SUFFIX,ads-sdk-api.ranfenghd.com
 DOMAIN-SUFFIX,ads-sg.tiktok.com
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,ads-video-al.xhscdn.com
@@ -787,6 +787,7 @@ DOMAIN-SUFFIX,adsame.com
 DOMAIN-SUFFIX,adscdn.baidu.cn
 DOMAIN-SUFFIX,adscdn.baidu.com
 DOMAIN-SUFFIX,adsco.re
+DOMAIN-SUFFIX,adsdk.vivo.com.cn
 DOMAIN-SUFFIX,adse.test.ximalaya.com
 DOMAIN-SUFFIX,adse.wsa.ximalaya.com
 DOMAIN-SUFFIX,adse.ximalaya.com
@@ -1642,6 +1643,7 @@ DOMAIN-SUFFIX,haoyundm.com
 DOMAIN-SUFFIX,haoyuntj.com
 DOMAIN-SUFFIX,hbhuatie.com
 DOMAIN-SUFFIX,hbssjd.cn
+DOMAIN-SUFFIX,hc-ssp.sm.cn
 DOMAIN-SUFFIX,hc.baidu.cn
 DOMAIN-SUFFIX,hc.baidu.com
 DOMAIN-SUFFIX,hdswgc.com
@@ -3125,7 +3127,6 @@ DOMAIN-SUFFIX,wl.hd.sohu.com
 DOMAIN-SUFFIX,wm.baidu.cn
 DOMAIN-SUFFIX,wm.baidu.com
 DOMAIN-SUFFIX,wmlog.meituan.com
-DOMAIN-SUFFIX,wn.x.jd.com
 DOMAIN-SUFFIX,wooboo.com.cn
 DOMAIN-SUFFIX,woopra.com
 DOMAIN-SUFFIX,wootric.com
