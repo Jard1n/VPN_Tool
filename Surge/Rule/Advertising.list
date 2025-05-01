@@ -1,4 +1,4 @@
-# Main total line 3556 
+# Main total line 3560 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443)),REJECT
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -1038,6 +1038,7 @@ DOMAIN-SUFFIX,baidustatic.com
 DOMAIN-SUFFIX,baidutv.baidu.com
 DOMAIN-SUFFIX,baifendian.com
 DOMAIN-SUFFIX,baiwanchuangyi.com
+DOMAIN-SUFFIX,bankingbloatedcaptive.com
 DOMAIN-SUFFIX,banlv.baidu.com
 DOMAIN-SUFFIX,banmamedia.com
 DOMAIN-SUFFIX,bannera.kingsoft-office-service.com
@@ -1144,6 +1145,7 @@ DOMAIN-SUFFIX,c.youdao.com
 DOMAIN-SUFFIX,c0563.com
 DOMAIN-SUFFIX,cacafly.com
 DOMAIN-SUFFIX,cal.meizu.com
+DOMAIN-SUFFIX,capndr.com
 DOMAIN-SUFFIX,carbonads.net
 DOMAIN-SUFFIX,casalemedia.com
 DOMAIN-SUFFIX,casee.cn
@@ -1153,6 +1155,7 @@ DOMAIN-SUFFIX,catalog.fjwhcbsh.com
 DOMAIN-SUFFIX,catdomepimyth.com
 DOMAIN-SUFFIX,cb.baidu.cn
 DOMAIN-SUFFIX,cb.baidu.com
+DOMAIN-SUFFIX,cb260f4651.com
 DOMAIN-SUFFIX,cbjs.baidu.cn
 DOMAIN-SUFFIX,cbjs.baidu.com
 DOMAIN-SUFFIX,cbjslog.baidu.cn
@@ -1280,7 +1283,6 @@ DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
 DOMAIN-SUFFIX,cre.dp.sina.cn
 DOMAIN-SUFFIX,creative.kbnmnl.com
 DOMAIN-SUFFIX,creative.live.missav.com
-DOMAIN-SUFFIX,creative.mnaspm.com
 DOMAIN-SUFFIX,creative.myavlive.com
 DOMAIN-SUFFIX,creditcard-fin.meituan.com
 DOMAIN-SUFFIX,crispadvertising.com
@@ -1580,7 +1582,6 @@ DOMAIN-SUFFIX,gn01.top
 DOMAIN-SUFFIX,go-mpulse
 DOMAIN-SUFFIX,go-mpulse.net
 DOMAIN-SUFFIX,go.10086.cn
-DOMAIN-SUFFIX,go.mnaspm.com
 DOMAIN-SUFFIX,go.myavlive.com
 DOMAIN-SUFFIX,go.sohu.com
 DOMAIN-SUFFIX,go2cloud.org
@@ -2079,6 +2080,7 @@ DOMAIN-SUFFIX,mkitgfs.com
 DOMAIN-SUFFIX,mlnbike.com
 DOMAIN-SUFFIX,mm9842.com
 DOMAIN-SUFFIX,mmgame.qpic.cn
+DOMAIN-SUFFIX,mnaspm.com
 DOMAIN-SUFFIX,mng-ads.com
 DOMAIN-SUFFIX,mnqlog.ldmnq.com
 DOMAIN-SUFFIX,mo.kugou.com
@@ -2216,6 +2218,7 @@ DOMAIN-SUFFIX,offerwall.yandex.net
 DOMAIN-SUFFIX,officesoftcn.com
 DOMAIN-SUFFIX,ogads-pa.clients6.google.com
 DOMAIN-SUFFIX,ogury.io
+DOMAIN-SUFFIX,ohjluvpunaxg.com
 DOMAIN-SUFFIX,oimagea2.ydstatic.com
 DOMAIN-SUFFIX,ojooo.com
 DOMAIN-SUFFIX,okanjo.com
@@ -2370,6 +2373,7 @@ DOMAIN-SUFFIX,propellerads.com
 DOMAIN-SUFFIX,proper.io
 DOMAIN-SUFFIX,proxistore.com
 DOMAIN-SUFFIX,ps-chajian.com
+DOMAIN-SUFFIX,ptelastaxo.com
 DOMAIN-SUFFIX,pu0glv.cn
 DOMAIN-SUFFIX,pub.funshion.com
 DOMAIN-SUFFIX,pub.mop.com

@@ -1,4 +1,4 @@
-# Main total line 20308 
+# Main total line 20310 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -12110,6 +12110,8 @@ DOMAIN-SUFFIX,msftnet.org
 DOMAIN-SUFFIX,msgamesresearch.com
 DOMAIN-SUFFIX,msguancha.com
 DOMAIN-SUFFIX,mshome.net
+DOMAIN-SUFFIX,msi.cn
+DOMAIN-SUFFIX,msi.com
 DOMAIN-SUFFIX,msidentity.com
 DOMAIN-SUFFIX,msinnovationchallenge.com
 DOMAIN-SUFFIX,msk.ilnk.info
