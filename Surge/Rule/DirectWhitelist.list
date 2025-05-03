@@ -18,7 +18,6 @@ DOMAIN,crl.pki.goog
 DOMAIN,ocsp.pki.goog
 DOMAIN,dl.google.com
 DOMAIN,dl.l.google.com
-DOMAIN,fonts.gstatic.com
 DOMAIN,ssl.gstatic.com
 DOMAIN,tools.google.com
 DOMAIN,tools.l.google.com
