@@ -16,8 +16,6 @@ DOMAIN,bdtj.tagtic.cn
 # Google China
 DOMAIN,crl.pki.goog
 DOMAIN,ocsp.pki.goog
-DOMAIN,dl.google.com
-DOMAIN,dl.l.google.com
 DOMAIN,ssl.gstatic.com
 DOMAIN,tools.google.com
 DOMAIN,tools.l.google.com
