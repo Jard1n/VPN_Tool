@@ -2,6 +2,7 @@ DOMAIN,cn.download.nvidia.com
 DOMAIN,config.ubnt.com
 DOMAIN,dl.ubnt.com
 DOMAIN,gstore.val.manlaxy.com
+DOMAIN,i.dell.com
 DOMAIN,media.cdn.queniuqe.com
 DOMAIN,ocsp.globalsign.com
 DOMAIN,ocsp2.globalsign.com
@@ -159,6 +160,7 @@ DOMAIN-SUFFIX,bokecc.com
 DOMAIN-SUFFIX,bosszhipin.com
 DOMAIN-SUFFIX,broadcasthe.net
 DOMAIN-SUFFIX,byteacctimg.com
+DOMAIN-SUFFIX,bytecdntp.com
 DOMAIN-SUFFIX,byted-static.com
 DOMAIN-SUFFIX,byted.org
 DOMAIN-SUFFIX,bytedance.com
@@ -533,6 +535,7 @@ DOMAIN-SUFFIX,letvcloud.com
 DOMAIN-SUFFIX,letvimg.com
 DOMAIN-SUFFIX,letvlive.com
 DOMAIN-SUFFIX,letvstore.com
+DOMAIN-SUFFIX,lf127.net
 DOMAIN-SUFFIX,lianjia.com
 DOMAIN-SUFFIX,licdn.com
 DOMAIN-SUFFIX,livechina.com
