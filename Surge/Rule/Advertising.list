@@ -1,4 +1,4 @@
-# Main total line 3562 
+# Main total line 3529 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -37,7 +37,6 @@ DOMAIN,adbs.ximalaya.com
 DOMAIN,adcdn6.tencentmusic.com
 DOMAIN,adextra.51wnl-cq.com
 DOMAIN,adfile.wifi8.com
-DOMAIN,adfox.yandex.ru
 DOMAIN,adgame.waimai.meituan.com
 DOMAIN,adim.pinduoduo.com
 DOMAIN,adimg.uve.weibo.com
@@ -79,7 +78,6 @@ DOMAIN,adsapi.manhuaren.com
 DOMAIN,adsapi.snapchat.com
 DOMAIN,adsdk.dmzj.com
 DOMAIN,adserver.pandora.com
-DOMAIN,adservetx.media.net
 DOMAIN,adsfilebssdlbig.tx.kugou.com
 DOMAIN,adshow.58.com
 DOMAIN,adshows.21cn.com
@@ -106,17 +104,13 @@ DOMAIN,adxlog.vivo.com.cn
 DOMAIN,afdconf.baidu.com
 DOMAIN,affcpatrk.com
 DOMAIN,amdc.m.youku.com
-DOMAIN,analytics-sg.tiktok.com
 DOMAIN,analytics.slashdotmedia.com
 DOMAIN,analytics.snssdk.com
 DOMAIN,api-ad.kajicam.com
 DOMAIN,api.adnet.mob.com
-DOMAIN,api.bugsnag.com
 DOMAIN,api.helloclue.com
 DOMAIN,api.iqiyi.com
 DOMAIN,api.liquidlink.cn
-DOMAIN,api.luckyorange.com
-DOMAIN,api.mouseflow.com
 DOMAIN,api.nx-perf.cn
 DOMAIN,api.sm.cn
 DOMAIN,api.zuihuimai.com
@@ -124,12 +118,9 @@ DOMAIN,apiv4-iyes.youku.com
 DOMAIN,apm.gotokeep.com
 DOMAIN,app-ad.variflight.com
 DOMAIN,app-log.dewu.com
-DOMAIN,app.bugsnag.com
-DOMAIN,app.getsentry.com
 DOMAIN,appcloud.zhihu.com
 DOMAIN,appcloud2.in.zhihu.com
 DOMAIN,apple.comscoreresearch.com
-DOMAIN,appmetrica.yandex.ru
 DOMAIN,appnext-a.akamaihd.net
 DOMAIN,appnext.hs.llnwd.net
 DOMAIN,apppv.zol.com.cn
@@ -138,17 +129,12 @@ DOMAIN,at4.doubanio.com
 DOMAIN,atrace.chelaile.net.cn
 DOMAIN,banners.itunes.apple.com
 DOMAIN,brahe.apptimize.com
-DOMAIN,browser.sentry-cdn.com
 DOMAIN,business.msstatic.com
 DOMAIN,c.bing.com
 DOMAIN,c1wx.lianwangtech.com
 DOMAIN,cad.youku.com
-DOMAIN,cdn-test.mouseflow.com
 DOMAIN,cdn.adapi.fotoable.com
-DOMAIN,cdn.luckyorange.com
-DOMAIN,cdn.mouseflow.com
 DOMAIN,cf-ads.pinger.com
-DOMAIN,claritybt.freshmarketer.com
 DOMAIN,client-log.poizon.com
 DOMAIN,collector.clue.run
 DOMAIN,counter.ksosoft.com
@@ -158,7 +144,6 @@ DOMAIN,credits.bz.mgtv.com
 DOMAIN,credits2.bz.mgtv.com
 DOMAIN,credits3.bz.mgtv.com
 DOMAIN,cronus.ie.sogou.com
-DOMAIN,cs.luckyorange.net
 DOMAIN,cwx.lianwangtech.com
 DOMAIN,dagonghuzhu.com
 DOMAIN,ddacn6pr5v0tl.cloudfront.net
@@ -175,13 +160,10 @@ DOMAIN,encounter.bz.mgtv.com
 DOMAIN,erebor.douban.com
 DOMAIN,etl.xlmc.sandai.net
 DOMAIN,exp.360in.com
-DOMAIN,extmaps-api.yandex.net
 DOMAIN,feedback-c.zijieapi.com
 DOMAIN,flash.sec.miui.com
 DOMAIN,floor.bz.mgtv.com
 DOMAIN,flowplus.meituan.net
-DOMAIN,freshmarketer.com
-DOMAIN,fwtracks.freshmarketer.com
 DOMAIN,g.ousns.net
 DOMAIN,g1.163.com
 DOMAIN,galaxy.bjcathay.com
@@ -198,7 +180,6 @@ DOMAIN,ggs.myzaker.com
 DOMAIN,ggv.cmvideo.cn
 DOMAIN,glitter.services.disqus.com
 DOMAIN,goblin.hupu.com
-DOMAIN,gtm.mouseflow.com
 DOMAIN,hbftgh.ibjkqnhjwd.xyz
 DOMAIN,hdns.ksyun.com
 DOMAIN,hnrtg.iujkegbpo.xyz
@@ -256,7 +237,6 @@ DOMAIN,log3-normal.toutiaoapi.com
 DOMAIN,logs.chelaile.net.cn
 DOMAIN,logsdk.qq.com
 DOMAIN,lookup.api.bsb.baidu.com
-DOMAIN,luckyorange.com
 DOMAIN,m-vali.cp31.ott.cibntv.net
 DOMAIN,m.adyounger.com
 DOMAIN,ma-adx.ctrip.com
@@ -264,7 +244,6 @@ DOMAIN,mads.suning.com
 DOMAIN,mapi.apptimize.com
 DOMAIN,md-i-s.apptimize.com
 DOMAIN,mdrecv.app.cntvwb.cn
-DOMAIN,media.net
 DOMAIN,mercury-gateway.ixiaochuan.cn
 DOMAIN,mermaid.ximalaya.com
 DOMAIN,minigame3-normal.zijieapi.com
@@ -276,7 +255,6 @@ DOMAIN,mon.toutiaocloud.net
 DOMAIN,mon11-misc-lq.toutiaoapi.com
 DOMAIN,monitor.ssp.admobile.top
 DOMAIN,mopnativeadv.037201.com
-DOMAIN,mouseflow.com
 DOMAIN,mqtt.zhihu.com
 DOMAIN,mssdk-bu.snssdk.com
 DOMAIN,mssdk.snssdk.com
@@ -286,10 +264,7 @@ DOMAIN,nativeadv.dftoutiao.com
 DOMAIN,nbsdk-baichuan.alicdn.com
 DOMAIN,nex.163.com
 DOMAIN,nggfe.fdgem.com
-DOMAIN,notify.bugsnag.com
-DOMAIN,o2.mouseflow.com
 DOMAIN,open.kuaishou.com
-DOMAIN,open.oneplus.net
 DOMAIN,optimus-ads.amap.com.w.alikunlun.com
 DOMAIN,ossgw.alicdn.com
 DOMAIN,p1-dpa.byteimg.com
@@ -300,7 +275,6 @@ DOMAIN,pagead2.googlesyndication-cn.com
 DOMAIN,pageviewp.icbc.com.cn
 DOMAIN,pangolin16.sgsnssdk.com
 DOMAIN,pgdt.gtimg.com
-DOMAIN,pixel.facebook.com
 DOMAIN,polaris5-normal-lf.zijieapi.com
 DOMAIN,pp-cdnfile2pcdn.msstatic.com
 DOMAIN,pre-acs.youku.com
@@ -309,7 +283,6 @@ DOMAIN,qwapi.apple.com
 DOMAIN,r.51wnl-cq.com
 DOMAIN,ra.gtimg.com
 DOMAIN,rc-topic-api.bz.mgtv.com
-DOMAIN,realtime.luckyorange.com
 DOMAIN,regist.fotoable.com
 DOMAIN,reporting.cdndex.io
 DOMAIN,rich.kuwo.cn
@@ -333,8 +306,6 @@ DOMAIN,sdk.qzbonline.com
 DOMAIN,sdk.ssp.admobile.top
 DOMAIN,sdk.tianmu.mobi
 DOMAIN,sensors.dewu.com
-DOMAIN,sessions.bugsnag.com
-DOMAIN,settings.luckyorange.net
 DOMAIN,sf-tb-sg.ibytedtos.com
 DOMAIN,sf1-pitaya-tos.pstatp.com
 DOMAIN,sf19-fe-tos-sg.i18n-pglstatp.com
@@ -344,7 +315,6 @@ DOMAIN,spider-tracker.xiaohongshu.com
 DOMAIN,splashimgbssdl.yun.kugou.com
 DOMAIN,splashqqlive.gtimg.com
 DOMAIN,starkgame.zijieapi.com
-DOMAIN,static.media.net
 DOMAIN,sugar.zhihu.com
 DOMAIN,switch.cup.com.cn
 DOMAIN,t-ads.xiaohongshu.com
@@ -359,7 +329,6 @@ DOMAIN,tnc3-alisc1.snssdk.com
 DOMAIN,tnc3-bjlgy.snssdk.com
 DOMAIN,toblog.tobsnssdk.com
 DOMAIN,tong.8888888888.bid
-DOMAIN,tools.mouseflow.com
 DOMAIN,toots-a.akamaihd.net
 DOMAIN,tpns.qq.com
 DOMAIN,tpstelemetry.tencent.com
@@ -369,10 +338,8 @@ DOMAIN,track.tenjin.io
 DOMAIN,track.tiara.daum.net
 DOMAIN,track.tiara.kakao.com
 DOMAIN,tracking.intl.miui.com
-DOMAIN,trk.pinterest.com
 DOMAIN,tunion-api.m.taobao.com
 DOMAIN,union.macoms.la
-DOMAIN,upload.luckyorange.net
 DOMAIN,ups.ksmobile.net
 DOMAIN,vali-g1.cp31.ott.cibntv.net
 DOMAIN,vcardsdkservice.vivo.com.cn
@@ -383,7 +350,6 @@ DOMAIN,view.zijieapi.com
 DOMAIN,vinci.ie.sogou.com
 DOMAIN,vip.bz.mgtv.com
 DOMAIN,vstlog.17usoft.com
-DOMAIN,w1.luckyorange.com
 DOMAIN,wa.gtimg.com
 DOMAIN,ws.ksmobile.net
 DOMAIN,wxsmsdy.video.qq.com
@@ -3450,6 +3416,7 @@ IP-CIDR,125.211.213.132/31,no-resolve
 IP-CIDR,125.211.213.134/32,no-resolve
 IP-CIDR,125.76.239.244/31,no-resolve
 IP-CIDR,149.28.156.183/32,no-resolve
+IP-CIDR,155.138.203.91/32,no-resolve
 IP-CIDR,162.243.103.246/32,no-resolve
 IP-CIDR,169.254.169.254/32,no-resolve
 IP-CIDR,175.6.223.15/32,no-resolve
