@@ -22,6 +22,7 @@ DOMAIN,dl.begellhouse.com
 DOMAIN,dy.tagsub.net
 DOMAIN,f3b7q2p3.ssl.hwcdn.net
 DOMAIN,firstsearch.oclc.org
+DOMAIN,gog.salesmanago.com
 DOMAIN,help.ubnt.com
 DOMAIN,i.jeded.com
 DOMAIN,imperial.insendi.com
@@ -907,7 +908,6 @@ DOMAIN-SUFFIX,aisex.com
 DOMAIN-SUFFIX,aishegw.com
 DOMAIN-SUFFIX,aiv-cdn.net
 DOMAIN-SUFFIX,aiv-cdn.net.c.footprint.net
-DOMAIN-SUFFIX,aiv-delivery.net
 DOMAIN-SUFFIX,aiweiwei.com
 DOMAIN-SUFFIX,aiweiweiblog.com
 DOMAIN-SUFFIX,aixingge2.cc
@@ -2269,6 +2269,7 @@ DOMAIN-SUFFIX,battleforcecomix.com
 DOMAIN-SUFFIX,battlefront2.com
 DOMAIN-SUFFIX,battlefrontii.com
 DOMAIN-SUFFIX,battlelog.com
+DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,bauhaus
 DOMAIN-SUFFIX,baxsound.com
 DOMAIN-SUFFIX,bayareabmw.com
@@ -2282,7 +2283,6 @@ DOMAIN-SUFFIX,bb33.net
 DOMAIN-SUFFIX,bbbaihu.vip
 DOMAIN-SUFFIX,bbc
 DOMAIN-SUFFIX,bbc-anal.com
-DOMAIN-SUFFIX,bbc.co
 DOMAIN-SUFFIX,bbc.com
 DOMAIN-SUFFIX,bbc.mp-pxcdn.com
 DOMAIN-SUFFIX,bbcchinese.com
@@ -2968,6 +2968,7 @@ DOMAIN-SUFFIX,blinkx.com
 DOMAIN-SUFFIX,blinw.com
 DOMAIN-SUFFIX,blip.tv
 DOMAIN-SUFFIX,blizzard.com
+DOMAIN-SUFFIX,blizzard.net
 DOMAIN-SUFFIX,blizzardgearstore.com
 DOMAIN-SUFFIX,blockbuster
 DOMAIN-SUFFIX,blockcn.com
@@ -5605,7 +5606,6 @@ DOMAIN-SUFFIX,dynu.com
 DOMAIN-SUFFIX,dynu.net
 DOMAIN-SUFFIX,dysfz.cc
 DOMAIN-SUFFIX,dz
-DOMAIN-SUFFIX,dzcdn.net
 DOMAIN-SUFFIX,dzze.com
 DOMAIN-SUFFIX,e-bay.com
 DOMAIN-SUFFIX,e-bay.net
@@ -7780,6 +7780,7 @@ DOMAIN-SUFFIX,gofuckmenow.com
 DOMAIN-SUFFIX,gofundme.com
 DOMAIN-SUFFIX,gog-statics.com
 DOMAIN-SUFFIX,gog.com
+DOMAIN-SUFFIX,gog.qtlglb.com
 DOMAIN-SUFFIX,gogle.com
 DOMAIN-SUFFIX,gogo-load.com
 DOMAIN-SUFFIX,gogoanime3.co
@@ -8211,6 +8212,7 @@ DOMAIN-SUFFIX,hellporno.com
 DOMAIN-SUFFIX,hellven.net
 DOMAIN-SUFFIX,helpeachpeople.com
 DOMAIN-SUFFIX,helplinfen.com
+DOMAIN-SUFFIX,helpshift.com
 DOMAIN-SUFFIX,helpuyghursnow.org
 DOMAIN-SUFFIX,helpzhuling.org
 DOMAIN-SUFFIX,helsinki
@@ -12911,6 +12913,7 @@ DOMAIN-SUFFIX,nintendostore.com
 DOMAIN-SUFFIX,nintendoswitch.com
 DOMAIN-SUFFIX,nintendoswitch.net
 DOMAIN-SUFFIX,nintendoswitchtogether.com
+DOMAIN-SUFFIX,nintendowifi.net
 DOMAIN-SUFFIX,nintendowii.com
 DOMAIN-SUFFIX,ninth.biz
 DOMAIN-SUFFIX,niosii.com
@@ -13170,7 +13173,6 @@ DOMAIN-SUFFIX,obyte.org
 DOMAIN-SUFFIX,ocaspro.com
 DOMAIN-SUFFIX,ocbmwdealers.com
 DOMAIN-SUFFIX,occupytiananmen.com
-DOMAIN-SUFFIX,ocnttv.com
 DOMAIN-SUFFIX,ocreampies.com
 DOMAIN-SUFFIX,ocry.com
 DOMAIN-SUFFIX,ocsp-certum.com
@@ -13932,6 +13934,7 @@ DOMAIN-SUFFIX,playshowtv.com
 DOMAIN-SUFFIX,playstation
 DOMAIN-SUFFIX,playstation.com
 DOMAIN-SUFFIX,playstation.net
+DOMAIN-SUFFIX,playstationnetwork.com
 DOMAIN-SUFFIX,playvalorant.com
 DOMAIN-SUFFIX,playvids.com
 DOMAIN-SUFFIX,playwarcraft3.com
@@ -16598,7 +16601,6 @@ DOMAIN-SUFFIX,supanimegames.com
 DOMAIN-SUFFIX,supchina.com
 DOMAIN-SUFFIX,superadultgames.com
 DOMAIN-SUFFIX,supercell.com
-DOMAIN-SUFFIX,supercell.helpshift.com
 DOMAIN-SUFFIX,supercell.net
 DOMAIN-SUFFIX,supercellcreators.com
 DOMAIN-SUFFIX,supercellgames.com
@@ -17903,8 +17905,6 @@ DOMAIN-SUFFIX,uniswap.org
 DOMAIN-SUFFIX,unitedsocialpress.com
 DOMAIN-SUFFIX,unity.com
 DOMAIN-SUFFIX,unity3d.com
-DOMAIN-SUFFIX,unity3dusercontent.com
-DOMAIN-SUFFIX,unityedu.com
 DOMAIN-SUFFIX,universalorlando.com
 DOMAIN-SUFFIX,universalpictures.com
 DOMAIN-SUFFIX,universalpicturesinternational.com
