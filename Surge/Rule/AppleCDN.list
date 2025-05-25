@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Apple CDN
-# Size: 164
+# Size: 165
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -141,6 +141,7 @@ DOMAIN-SUFFIX,music.apple.com
 DOMAIN-SUFFIX,amp-api.media.apple.com
 DOMAIN-SUFFIX,ipcdn.apple.com
 DOMAIN-SUFFIX,cstat.apple.com
+DOMAIN-SUFFIX,certs.apple.com
 DOMAIN-SUFFIX,seed-swallow.siri.apple.com
 DOMAIN-SUFFIX,seed-sequoia.siri.apple.com
 DOMAIN-SUFFIX,probe.siri.apple.com
