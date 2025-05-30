@@ -1,4 +1,4 @@
-# Main total line 3570 
+# Main total line 3574 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -480,6 +480,7 @@ DOMAIN-SUFFIX,86.cc
 DOMAIN-SUFFIX,888.tv.sohu.com
 DOMAIN-SUFFIX,8le8le.com
 DOMAIN-SUFFIX,8ox.cn
+DOMAIN-SUFFIX,8rn1y79f02-1.algolianet.com
 DOMAIN-SUFFIX,915.com
 DOMAIN-SUFFIX,91veg.com
 DOMAIN-SUFFIX,92x.tumblr.com
@@ -541,6 +542,8 @@ DOMAIN-SUFFIX,ad-scope.com.cn
 DOMAIN-SUFFIX,ad-score.com
 DOMAIN-SUFFIX,ad-sdk-config.youdao.com
 DOMAIN-SUFFIX,ad-sdk.huxiu.com
+DOMAIN-SUFFIX,ad-splash-tracking.hktvmall.com
+DOMAIN-SUFFIX,ad-splash.hktvmall.com
 DOMAIN-SUFFIX,ad-srv.co
 DOMAIN-SUFFIX,ad-stir.com
 DOMAIN-SUFFIX,ad-survey.com
@@ -1908,6 +1911,7 @@ DOMAIN-SUFFIX,lianmeng.360.cn
 DOMAIN-SUFFIX,linkeye.ximalaya.com
 DOMAIN-SUFFIX,links.services.disqus.com
 DOMAIN-SUFFIX,litchiads.com
+DOMAIN-SUFFIX,live-api.hktvmall.com
 DOMAIN-SUFFIX,liveadvert.com
 DOMAIN-SUFFIX,liveats-vod.video.ptqy.gitv.tv
 DOMAIN-SUFFIX,livemonitor.huan.tv
