@@ -1,4 +1,4 @@
-# Main total line 3574 
+# Main total line 3576 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -110,6 +110,7 @@ DOMAIN,analytics-sg.tiktok.com
 DOMAIN,analytics.slashdotmedia.com
 DOMAIN,analytics.snssdk.com
 DOMAIN,api-ad.kajicam.com
+DOMAIN,api-dsp.8ziben.com
 DOMAIN,api.adnet.mob.com
 DOMAIN,api.bugsnag.com
 DOMAIN,api.helloclue.com
@@ -331,6 +332,7 @@ DOMAIN,sdapprecv.app.cntvwb.cn
 DOMAIN,sdk.qzbonline.com
 DOMAIN,sdk.ssp.admobile.top
 DOMAIN,sdk.tianmu.mobi
+DOMAIN,sdk.zhangyuyidong.cn
 DOMAIN,sensors.dewu.com
 DOMAIN,sessions.bugsnag.com
 DOMAIN,settings.luckyorange.net
