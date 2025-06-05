@@ -1,4 +1,4 @@
-# Main total line 20344 
+# Main total line 20346 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -3888,6 +3888,7 @@ DOMAIN-SUFFIX,cdmatech.com
 DOMAIN-SUFFIX,cdn-apple.com
 DOMAIN-SUFFIX,cdn-terapeak.com
 DOMAIN-SUFFIX,cdn.angruo.com
+DOMAIN-SUFFIX,cdn.arstechnica.net
 DOMAIN-SUFFIX,cdn.segment.com
 DOMAIN-SUFFIX,cdn77.com
 DOMAIN-SUFFIX,cdn77.org
@@ -4184,6 +4185,7 @@ DOMAIN-SUFFIX,chyoa.com
 DOMAIN-SUFFIX,ci
 DOMAIN-SUFFIX,ci-en.net
 DOMAIN-SUFFIX,ciattackers.com
+DOMAIN-SUFFIX,cici.com
 DOMAIN-SUFFIX,ciciai.com
 DOMAIN-SUFFIX,cienen.com
 DOMAIN-SUFFIX,cilk.com
