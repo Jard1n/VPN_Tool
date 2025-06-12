@@ -107,6 +107,7 @@ DOMAIN,afdconf.baidu.com
 DOMAIN,affcpatrk.com
 DOMAIN,amdc.m.youku.com
 DOMAIN,analytics-sg.tiktok.com
+DOMAIN,analytics.google.com
 DOMAIN,analytics.slashdotmedia.com
 DOMAIN,analytics.snssdk.com
 DOMAIN,api-ad.kajicam.com
@@ -928,7 +929,6 @@ DOMAIN-SUFFIX,analysys.cn
 DOMAIN-SUFFIX,analytics-api.samsunghealthcn.com
 DOMAIN-SUFFIX,analytics.126.net
 DOMAIN-SUFFIX,analytics.ganji.com
-DOMAIN-SUFFIX,analytics.google.com
 DOMAIN-SUFFIX,analytics.meituan.net
 DOMAIN-SUFFIX,analytics.pinterest.com
 DOMAIN-SUFFIX,analytics.pointdrive.linkedin.com
