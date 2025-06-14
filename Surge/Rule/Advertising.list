@@ -1,4 +1,4 @@
-# Main total line 3579 
+# Main total line 3576 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -275,7 +275,6 @@ DOMAIN,mobad.ijinshan.com
 DOMAIN,mon.toutiaocloud.com
 DOMAIN,mon.toutiaocloud.net
 DOMAIN,mon11-misc-lq.toutiaoapi.com
-DOMAIN,monitor.ssp.admobile.top
 DOMAIN,mopnativeadv.037201.com
 DOMAIN,mouseflow.com
 DOMAIN,mqtt.zhihu.com
@@ -331,8 +330,6 @@ DOMAIN,saxn.sina.com.cn
 DOMAIN,saxs.sina.com.cn
 DOMAIN,sdapprecv.app.cntvwb.cn
 DOMAIN,sdk.qzbonline.com
-DOMAIN,sdk.ssp.admobile.top
-DOMAIN,sdk.tianmu.mobi
 DOMAIN,sdk.zhangyuyidong.cn
 DOMAIN,sensors.dewu.com
 DOMAIN,sessions.bugsnag.com
@@ -695,6 +692,7 @@ DOMAIN-SUFFIX,adk2x.com
 DOMAIN-SUFFIX,adkernel.com
 DOMAIN-SUFFIX,adkmob.com
 DOMAIN-SUFFIX,adks.hpplay.cn
+DOMAIN-SUFFIX,adkwai.com
 DOMAIN-SUFFIX,adlink-api.huan.tv
 DOMAIN-SUFFIX,adlive.cn
 DOMAIN-SUFFIX,adlocus.com
@@ -713,6 +711,7 @@ DOMAIN-SUFFIX,admgr.qingting.fm
 DOMAIN-SUFFIX,admicro.vn
 DOMAIN-SUFFIX,admin6.com
 DOMAIN-SUFFIX,admob.com
+DOMAIN-SUFFIX,admobile.top
 DOMAIN-SUFFIX,admon.cn
 DOMAIN-SUFFIX,adnet.sohu.com
 DOMAIN-SUFFIX,adnetwork.vn
@@ -743,7 +742,6 @@ DOMAIN-SUFFIX,ads-img-qc.xhscdn.com
 DOMAIN-SUFFIX,ads-jp.tiktok.com
 DOMAIN-SUFFIX,ads-marketing-vivofs.vivo.com.cn
 DOMAIN-SUFFIX,ads-pixiv.net
-DOMAIN-SUFFIX,ads-sdk-api.ranfenghd.com
 DOMAIN-SUFFIX,ads-sg.tiktok.com
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,ads-video-al.xhscdn.com
@@ -2270,15 +2268,12 @@ DOMAIN-SUFFIX,p.s.360.cn
 DOMAIN-SUFFIX,p.twitter.com
 DOMAIN-SUFFIX,p.vq6nsu.cn
 DOMAIN-SUFFIX,p0y.cn
-DOMAIN-SUFFIX,p1-lm.adkwai.com
-DOMAIN-SUFFIX,p2-lm.adkwai.com
 DOMAIN-SUFFIX,p2.hunantv.com
 DOMAIN-SUFFIX,p242.plainwrk.name
 DOMAIN-SUFFIX,p2pchunk-table.douyucdn.cn
 DOMAIN-SUFFIX,p2plive-ali.douyucdn.cn
 DOMAIN-SUFFIX,p2pupdate.gamedl.qq.com
 DOMAIN-SUFFIX,p2pupgrade.gamedl.qq.com
-DOMAIN-SUFFIX,p3-lm.adkwai.com
 DOMAIN-SUFFIX,p3-tt.byteimg.com
 DOMAIN-SUFFIX,p3p.yahoo.com
 DOMAIN-SUFFIX,pagead-tpc.l.google.com
@@ -2459,6 +2454,7 @@ DOMAIN-SUFFIX,r.browser.miui.com
 DOMAIN-SUFFIX,rabbit.meitustat.com
 DOMAIN-SUFFIX,rabbit.tg.meitu.com
 DOMAIN-SUFFIX,rads.msn.com
+DOMAIN-SUFFIX,ranfenghd.com
 DOMAIN-SUFFIX,rating6.kingsoft-office-service.com
 DOMAIN-SUFFIX,rayjump.com
 DOMAIN-SUFFIX,rcgi.video.qq.com
@@ -2828,6 +2824,7 @@ DOMAIN-SUFFIX,thetrafficstat.net
 DOMAIN-SUFFIX,thoughtleadr.com
 DOMAIN-SUFFIX,thumb.fvs.io
 DOMAIN-SUFFIX,tianmidian.com
+DOMAIN-SUFFIX,tianmu.mobi
 DOMAIN-SUFFIX,tidaltv.com
 DOMAIN-SUFFIX,tiqcdn.com
 DOMAIN-SUFFIX,tj.b.qq.com
