@@ -1,4 +1,4 @@
-# Main total line 20361 
+# Main total line 20364 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -10447,6 +10447,8 @@ DOMAIN-SUFFIX,kodi.tv
 DOMAIN-SUFFIX,kodingen.com
 DOMAIN-SUFFIX,koeln
 DOMAIN-SUFFIX,komatsu
+DOMAIN-SUFFIX,komoot.com
+DOMAIN-SUFFIX,komoot.net
 DOMAIN-SUFFIX,kompoz.com
 DOMAIN-SUFFIX,kompoz2.com
 DOMAIN-SUFFIX,kompozer.net
@@ -13001,6 +13003,7 @@ DOMAIN-SUFFIX,nixos.org
 DOMAIN-SUFFIX,niziero.info
 DOMAIN-SUFFIX,nj.com
 DOMAIN-SUFFIX,njactb.org
+DOMAIN-SUFFIX,njav.com
 DOMAIN-SUFFIX,njav.tv
 DOMAIN-SUFFIX,njuice.com
 DOMAIN-SUFFIX,nke6.com
