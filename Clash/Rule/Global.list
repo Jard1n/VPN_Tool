@@ -1,4 +1,4 @@
-# Main total line 20365 
+# Main total line 20366 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -5306,6 +5306,7 @@ DOMAIN-SUFFIX,dns-stuff.com
 DOMAIN-SUFFIX,dns04.com
 DOMAIN-SUFFIX,dns05.com
 DOMAIN-SUFFIX,dns2go.com
+DOMAIN-SUFFIX,dnschecker.org
 DOMAIN-SUFFIX,dnscrypt.org
 DOMAIN-SUFFIX,dnset.com
 DOMAIN-SUFFIX,dnsimple.com
