@@ -3,12 +3,14 @@ DOMAIN,config.ubnt.com
 DOMAIN,dl.ubnt.com
 DOMAIN,gstore.val.manlaxy.com
 DOMAIN,i.dell.com
+DOMAIN,kms.03k.org
 DOMAIN,media.cdn.queniuqe.com
 DOMAIN,ocsp.globalsign.com
 DOMAIN,ocsp2.globalsign.com
 DOMAIN,www.layuicdn.com
 DOMAIN-SUFFIX,00cdn.com
 DOMAIN-SUFFIX,10010.com
+DOMAIN-SUFFIX,110.com
 DOMAIN-SUFFIX,111.com
 DOMAIN-SUFFIX,115.com
 DOMAIN-SUFFIX,115cdn.com
@@ -54,6 +56,7 @@ DOMAIN-SUFFIX,36kr.com
 DOMAIN-SUFFIX,36krcdn.com
 DOMAIN-SUFFIX,39.net
 DOMAIN-SUFFIX,3dmgame.com
+DOMAIN-SUFFIX,4008823823.com
 DOMAIN-SUFFIX,423down.com
 DOMAIN-SUFFIX,4399.com
 DOMAIN-SUFFIX,4399pk.com
@@ -428,6 +431,7 @@ DOMAIN-SUFFIX,huya.com
 DOMAIN-SUFFIX,hwccpc.com
 DOMAIN-SUFFIX,hwht.com
 DOMAIN-SUFFIX,hwtrip.com
+DOMAIN-SUFFIX,hwwt8.com
 DOMAIN-SUFFIX,hxcdn.net
 DOMAIN-SUFFIX,ibreader.com
 DOMAIN-SUFFIX,ibuscloud.com

@@ -1,4 +1,4 @@
-# Main total line 3887 
+# Main total line 3902 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -155,7 +155,6 @@ DOMAIN,client-log.poizon.com
 DOMAIN,collector.clue.run
 DOMAIN,counter.ksosoft.com
 DOMAIN,crash.xiaohongshu.com
-DOMAIN,crash2.zhihu.com
 DOMAIN,credits.bz.mgtv.com
 DOMAIN,credits2.bz.mgtv.com
 DOMAIN,credits3.bz.mgtv.com
@@ -206,11 +205,9 @@ DOMAIN,hdns.ksyun.com
 DOMAIN,hnrtg.iujkegbpo.xyz
 DOMAIN,httpdns.baidubce.com
 DOMAIN,hudong.alicdn.com
-DOMAIN,huichuan-mc.sm.cn
 DOMAIN,huodong.weibo.cn
 DOMAIN,huyafile.msstatic.com
 DOMAIN,i.snssdk.com
-DOMAIN,iad.g.163.com
 DOMAIN,iad0ssl.pcauto.com.cn
 DOMAIN,iad0ssl.pconline.com.cn
 DOMAIN,iadcontent.apple.com
@@ -284,7 +281,6 @@ DOMAIN,mtvod.meituan.net
 DOMAIN,n.3g.163.com
 DOMAIN,nativeadv.dftoutiao.com
 DOMAIN,nbsdk-baichuan.alicdn.com
-DOMAIN,nex.163.com
 DOMAIN,nggfe.fdgem.com
 DOMAIN,notify.bugsnag.com
 DOMAIN,o2.mouseflow.com
@@ -392,7 +388,6 @@ DOMAIN,yt-adp.nosdn.127.net
 DOMAIN,yt-adp.ws.126.net
 DOMAIN,zgsdk.zhugeio.com
 DOMAIN,zhanzhang.toutiao.com
-DOMAIN,zxid-m.mobileservice.cn
 DOMAIN-SUFFIX,09mk.cn
 DOMAIN-SUFFIX,1.letvlive.com
 DOMAIN-SUFFIX,1.win7china.com
@@ -819,6 +814,7 @@ DOMAIN-SUFFIX,adsp.xunlei.com
 DOMAIN-SUFFIX,adspecs.yahoo.com
 DOMAIN-SUFFIX,adsrvr.org
 DOMAIN-SUFFIX,adss.yahoo.com
+DOMAIN-SUFFIX,adstat.izuiyou.com
 DOMAIN-SUFFIX,adstats.tencentmusic.com
 DOMAIN-SUFFIX,adstore-1252524079.file.myqcloud.com
 DOMAIN-SUFFIX,adstore-index-1252524079.file.myqcloud.com
@@ -1282,6 +1278,7 @@ DOMAIN-SUFFIX,cpu-admin.baidu.com
 DOMAIN-SUFFIX,cpx.to
 DOMAIN-SUFFIX,cpx24.com
 DOMAIN-SUFFIX,cr-nielsen.com
+DOMAIN-SUFFIX,crash2.zhihu.com
 DOMAIN-SUFFIX,crasheye.cn
 DOMAIN-SUFFIX,crashlyticsreports-pa.googleapis.com
 DOMAIN-SUFFIX,cre.dp.sina.cn
@@ -1324,6 +1321,7 @@ DOMAIN-SUFFIX,data.chsmarttv.com
 DOMAIN-SUFFIX,data.mistat.india.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.rus.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.xiaomi.com
+DOMAIN-SUFFIX,datacollection.uve.weibo.com
 DOMAIN-SUFFIX,datax.baidu.com
 DOMAIN-SUFFIX,datouniao.com
 DOMAIN-SUFFIX,dc.letv.com
@@ -1686,6 +1684,7 @@ DOMAIN-SUFFIX,hubcloud.com.cn
 DOMAIN-SUFFIX,hudong.pl.youku.com
 DOMAIN-SUFFIX,hugelog.fcbox.com
 DOMAIN-SUFFIX,hui.sohu.com
+DOMAIN-SUFFIX,huichuan-mc.sm.cn
 DOMAIN-SUFFIX,huichuan.sm.cn
 DOMAIN-SUFFIX,huishenghuiying.com.cn
 DOMAIN-SUFFIX,huodonghezi.cn
@@ -1715,6 +1714,7 @@ DOMAIN-SUFFIX,iad-06.braze.com
 DOMAIN-SUFFIX,iad-08.braze.com
 DOMAIN-SUFFIX,iad-apple.com
 DOMAIN-SUFFIX,iad.apple.com
+DOMAIN-SUFFIX,iad.g.163.com
 DOMAIN-SUFFIX,iadctest.qwapi.com
 DOMAIN-SUFFIX,iadmatvideo.nosdn.127.net
 DOMAIN-SUFFIX,iadsdk.apple.com
@@ -2193,6 +2193,7 @@ DOMAIN-SUFFIX,news.docer.com
 DOMAIN-SUFFIX,newscgp.com
 DOMAIN-SUFFIX,newspush.sinajs.cn
 DOMAIN-SUFFIX,newton-api.ele.me
+DOMAIN-SUFFIX,nex.163.com
 DOMAIN-SUFFIX,nex.corp.163.com
 DOMAIN-SUFFIX,nex8.net
 DOMAIN-SUFFIX,nexac.com
@@ -2811,7 +2812,6 @@ DOMAIN-SUFFIX,tdrec.youku.com
 DOMAIN-SUFFIX,teads.tv
 DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tend.io
-DOMAIN-SUFFIX,terms-drcn.platform.dbankcloud.cn
 DOMAIN-SUFFIX,terraclicks.com
 DOMAIN-SUFFIX,terren.cntv.cn
 DOMAIN-SUFFIX,test.ott.youku.com
@@ -3314,6 +3314,7 @@ DOMAIN-SUFFIX,zucks.net
 DOMAIN-SUFFIX,zumobi.com
 DOMAIN-SUFFIX,zunmi.cn
 DOMAIN-SUFFIX,zwaar.org
+DOMAIN-SUFFIX,zxid-m.mobileservice.cn
 DOMAIN-SUFFIX,zxrtb.com
 DOMAIN-SUFFIX,zymo.mps.weibo.com
 DOMAIN-SUFFIX,zz.bdstatic.com
@@ -3451,6 +3452,7 @@ IP-CIDR,109.206.175.85/32,no-resolve
 IP-CIDR,109.206.176.75/32,no-resolve
 IP-CIDR,109.206.181.2/32,no-resolve
 IP-CIDR,109.206.191.198/32,no-resolve
+IP-CIDR,109.230.237.116/32,no-resolve
 IP-CIDR,110.93.143.144/32,no-resolve
 IP-CIDR,111.11.208.2/32,no-resolve
 IP-CIDR,111.175.220.163/32,no-resolve
@@ -3488,6 +3490,7 @@ IP-CIDR,125.211.213.130/31,no-resolve
 IP-CIDR,125.211.213.132/31,no-resolve
 IP-CIDR,125.211.213.134/32,no-resolve
 IP-CIDR,125.76.239.244/31,no-resolve
+IP-CIDR,13.248.148.254/32,no-resolve
 IP-CIDR,132.148.220.142/32,no-resolve
 IP-CIDR,134.209.136.174/32,no-resolve
 IP-CIDR,138.128.161.250/31,no-resolve
@@ -3508,11 +3511,13 @@ IP-CIDR,144.76.1.130/32,no-resolve
 IP-CIDR,146.19.169.98/31,no-resolve
 IP-CIDR,147.135.16.27/32,no-resolve
 IP-CIDR,147.135.253.55/32,no-resolve
+IP-CIDR,147.93.63.211/32,no-resolve
 IP-CIDR,149.30.232.154/32,no-resolve
 IP-CIDR,15.197.244.48/32,no-resolve
 IP-CIDR,151.236.60.142/32,no-resolve
 IP-CIDR,154.199.255.184/32,no-resolve
 IP-CIDR,154.204.32.99/32,no-resolve
+IP-CIDR,154.223.16.232/32,no-resolve
 IP-CIDR,154.7.80.158/32,no-resolve
 IP-CIDR,156.233.32.123/32,no-resolve
 IP-CIDR,156.245.23.49/32,no-resolve
@@ -3573,7 +3578,12 @@ IP-CIDR,185.196.9.214/32,no-resolve
 IP-CIDR,185.196.9.222/32,no-resolve
 IP-CIDR,185.246.188.124/31,no-resolve
 IP-CIDR,185.38.149.111/32,no-resolve
+IP-CIDR,185.53.177.50/31,no-resolve
+IP-CIDR,185.53.177.52/31,no-resolve
 IP-CIDR,185.53.177.54/32,no-resolve
+IP-CIDR,185.53.178.50/31,no-resolve
+IP-CIDR,185.53.178.52/31,no-resolve
+IP-CIDR,185.53.178.54/32,no-resolve
 IP-CIDR,185.68.16.189/32,no-resolve
 IP-CIDR,185.87.148.199/32,no-resolve
 IP-CIDR,188.72.219.35/32,no-resolve
@@ -3761,7 +3771,10 @@ IP-CIDR,37.34.176.37/32,no-resolve
 IP-CIDR,38.180.96.244/32,no-resolve
 IP-CIDR,39.107.15.115/32,no-resolve
 IP-CIDR,42.123.125.237/32,no-resolve
+IP-CIDR,43.100.125.58/32,no-resolve
 IP-CIDR,43.128.142.70/32,no-resolve
+IP-CIDR,43.159.140.215/32,no-resolve
+IP-CIDR,43.162.119.45/32,no-resolve
 IP-CIDR,44.223.210.42/32,no-resolve
 IP-CIDR,44.228.230.225/32,no-resolve
 IP-CIDR,44.228.85.26/32,no-resolve
@@ -3781,7 +3794,9 @@ IP-CIDR,45.8.92.138/32,no-resolve
 IP-CIDR,45.82.68.79/32,no-resolve
 IP-CIDR,45.90.109.196/32,no-resolve
 IP-CIDR,45.90.58.90/32,no-resolve
+IP-CIDR,46.101.81.149/32,no-resolve
 IP-CIDR,47.110.187.87/32,no-resolve
+IP-CIDR,47.76.132.29/32,no-resolve
 IP-CIDR,47.89.59.182/32,no-resolve
 IP-CIDR,5.188.62.36/32,no-resolve
 IP-CIDR,5.61.55.143/32,no-resolve
