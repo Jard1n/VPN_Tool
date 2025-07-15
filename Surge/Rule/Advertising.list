@@ -1,4 +1,4 @@
-# Main total line 3902 
+# Main total line 3904 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -139,6 +139,7 @@ DOMAIN,at3.doubanio.com
 DOMAIN,at4.doubanio.com
 DOMAIN,atrace.chelaile.net.cn
 DOMAIN,banners.itunes.apple.com
+DOMAIN,bootpreload.uve.weibo.com
 DOMAIN,brahe.apptimize.com
 DOMAIN,browser.sentry-cdn.com
 DOMAIN,business.msstatic.com
@@ -966,7 +967,6 @@ DOMAIN-SUFFIX,api.kingdata.ksyun.com
 DOMAIN-SUFFIX,api.mp.uc.cn
 DOMAIN-SUFFIX,api.newad.ifeng.com
 DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,api.touch-moblie.com
 DOMAIN-SUFFIX,api.yfanads.com
 DOMAIN-SUFFIX,api5-normal-quic-lf.ixigua.com
 DOMAIN-SUFFIX,apiyd.my91app.com
@@ -2866,6 +2866,7 @@ DOMAIN-SUFFIX,toolbar.baidu.com
 DOMAIN-SUFFIX,topitme.com
 DOMAIN-SUFFIX,tosv.boe.byted.org
 DOMAIN-SUFFIX,tosv.byted.org
+DOMAIN-SUFFIX,touch-moblie.com
 DOMAIN-SUFFIX,touclick.com
 DOMAIN-SUFFIX,tp-pay.snssdk.com
 DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
@@ -3187,6 +3188,7 @@ DOMAIN-SUFFIX,xcy8.com
 DOMAIN-SUFFIX,xd3r.javgg.eu
 DOMAIN-SUFFIX,xdcs-collector.ximalaya.com
 DOMAIN-SUFFIX,xdrig.com
+DOMAIN-SUFFIX,xdrun.com
 DOMAIN-SUFFIX,xgcsr.com
 DOMAIN-SUFFIX,xhsbpza.com
 DOMAIN-SUFFIX,xiaohuau.xyz
