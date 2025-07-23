@@ -1,4 +1,4 @@
-# Main total line 3903 
+# Main total line 3912 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -868,6 +868,7 @@ DOMAIN-SUFFIX,adyun.com
 DOMAIN-SUFFIX,adzerk.net
 DOMAIN-SUFFIX,ae.bdstatic.com
 DOMAIN-SUFFIX,aegis.qq.com
+DOMAIN-SUFFIX,aem.dentsuchina.cn
 DOMAIN-SUFFIX,afd.baidu.cn
 DOMAIN-SUFFIX,afd.baidu.com
 DOMAIN-SUFFIX,afd.l.google.com
@@ -895,6 +896,8 @@ DOMAIN-SUFFIX,alexametrics.com
 DOMAIN-SUFFIX,algovid.com
 DOMAIN-SUFFIX,ali-ad.a.yximgs.com
 DOMAIN-SUFFIX,ali-p2p-v2.pull.yximgs.com
+DOMAIN-SUFFIX,alicoccdncnc-xn.inter.71edge.com
+DOMAIN-SUFFIX,alicoccdnct-xn.inter.71edge.com
 DOMAIN-SUFFIX,alienskins.cn
 DOMAIN-SUFFIX,alipaylog.com
 DOMAIN-SUFFIX,alitui.weibo.com
@@ -1051,6 +1054,7 @@ DOMAIN-SUFFIX,bd2.52che.com
 DOMAIN-SUFFIX,bdad.123pan.cn
 DOMAIN-SUFFIX,bdapi-ads.realmemobile.com
 DOMAIN-SUFFIX,bdapi-in-ads.realmemobile.com
+DOMAIN-SUFFIX,bdcdncnc.inter.71edge.com
 DOMAIN-SUFFIX,bdj.tianya.cn
 DOMAIN-SUFFIX,bdj.tianyaui.cn
 DOMAIN-SUFFIX,bdplus.baidu.com
@@ -1748,6 +1752,7 @@ DOMAIN-SUFFIX,img.taotaosou.cn
 DOMAIN-SUFFIX,img01.taotaosou.cn
 DOMAIN-SUFFIX,img1.126.net
 DOMAIN-SUFFIX,img2.126.net
+DOMAIN-SUFFIX,img2.360buyimg.com
 DOMAIN-SUFFIX,imgapp.yeyou.com
 DOMAIN-SUFFIX,imgxxx.shunxincar.cn
 DOMAIN-SUFFIX,imindmap.cc
@@ -1984,6 +1989,7 @@ DOMAIN-SUFFIX,lvehaisen.com
 DOMAIN-SUFFIX,lvip.youku.com
 DOMAIN-SUFFIX,m-adnet.hiaiabc.com
 DOMAIN-SUFFIX,m.12306media.com
+DOMAIN-SUFFIX,m.iqiyipic.com
 DOMAIN-SUFFIX,m.ourlj.com
 DOMAIN-SUFFIX,m.simba.taobao.com
 DOMAIN-SUFFIX,m.txtxr.com
@@ -2712,6 +2718,7 @@ DOMAIN-SUFFIX,stat.y.qq.com
 DOMAIN-SUFFIX,stat.youku.com
 DOMAIN-SUFFIX,statcounter.com
 DOMAIN-SUFFIX,stathat.com
+DOMAIN-SUFFIX,static-s.iqiyi.com
 DOMAIN-SUFFIX,static.app.m.letv.com
 DOMAIN-SUFFIX,static.duoshuo.com
 DOMAIN-SUFFIX,static.flv.uuzuonline.com
@@ -3249,6 +3256,8 @@ DOMAIN-SUFFIX,yiqifa.com
 DOMAIN-SUFFIX,yitaopt.com
 DOMAIN-SUFFIX,yiwk.com
 DOMAIN-SUFFIX,yjqiqi.com
+DOMAIN-SUFFIX,yk-ssp-ad.cp31.ott.cibntv.net
+DOMAIN-SUFFIX,ykad-data.cp31.ott.cibntv.net
 DOMAIN-SUFFIX,ykad-data.youku.com
 DOMAIN-SUFFIX,ykad-gateway.youku.com
 DOMAIN-SUFFIX,ykatr.youku.com
