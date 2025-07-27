@@ -1,4 +1,4 @@
-# Main total line 22663 
+# Main total line 22666 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -114,6 +114,8 @@ DOMAIN-SUFFIX,114av.xyz
 DOMAIN-SUFFIX,119474.xyz
 DOMAIN-SUFFIX,11jav.com
 DOMAIN-SUFFIX,123-hp.com
+DOMAIN-SUFFIX,123av.com
+DOMAIN-SUFFIX,123av.me
 DOMAIN-SUFFIX,123bin.cc
 DOMAIN-SUFFIX,123dapp.com
 DOMAIN-SUFFIX,123dappipad.com
@@ -18655,6 +18657,7 @@ DOMAIN-SUFFIX,tagwalk.com
 DOMAIN-SUFFIX,taiav.com
 DOMAIN-SUFFIX,tail-f.com
 DOMAIN-SUFFIX,tailf.com
+DOMAIN-SUFFIX,tailfin.cc
 DOMAIN-SUFFIX,tailscale.com
 DOMAIN-SUFFIX,tailscale.io
 DOMAIN-SUFFIX,tailwindcss.com
