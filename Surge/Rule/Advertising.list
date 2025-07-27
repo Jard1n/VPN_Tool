@@ -1,4 +1,4 @@
-# Main total line 3912 
+# Main total line 3910 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -2121,7 +2121,6 @@ DOMAIN-SUFFIX,mobisage.cn
 DOMAIN-SUFFIX,mobjump.com
 DOMAIN-SUFFIX,mojiva.com
 DOMAIN-SUFFIX,mon.toutiao.com
-DOMAIN-SUFFIX,mon.zijieapi.com
 DOMAIN-SUFFIX,monitor-ads-test.huan.tv
 DOMAIN-SUFFIX,monitor-uu.play.aiseet.atianqi.com
 DOMAIN-SUFFIX,monitor.music.qq.com
@@ -2852,7 +2851,6 @@ DOMAIN-SUFFIX,tnc3-aliec1.toutiaoapi.com
 DOMAIN-SUFFIX,tnc3-aliec2.bytedance.com
 DOMAIN-SUFFIX,tnc3-aliec2.snssdk.com
 DOMAIN-SUFFIX,tnc3-aliec2.toutiaoapi.com
-DOMAIN-SUFFIX,tnc3-aliec2.zijieapi.com
 DOMAIN-SUFFIX,tnc3-alisc1.bytedance.com
 DOMAIN-SUFFIX,tnc3-alisc1.snssdk.com
 DOMAIN-SUFFIX,tnc3-alisc1.toutiaoapi.com
