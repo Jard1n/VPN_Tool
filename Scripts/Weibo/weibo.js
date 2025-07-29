@@ -2,7 +2,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2025-07-22 09:15
+// 2025-07-28 20:40
 
 const url = $request.url;
 if (!$response) $done({});
@@ -1118,6 +1118,20 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         }
       }
       obj.items = newItems;
+    }
+  } else if (url.includes("/2/statuses/container_detail?")) {
+    // 新版 微博详情页
+    if (obj?.pageHeader?.data?.items?.length > 0) {
+      let newItems = [];
+      for (let item of obj.pageHeader.data.items) {
+        if (item?.data?.card_type === 236 && item?.category === "wboxcard") {
+          // 底部横版广告
+          continue;
+        } else {
+          newItems.push(item);
+        }
+      }
+      obj.pageHeader.data.items = newItems;
     }
   } else if (url.includes("/2/statuses/container_timeline_topic")) {
     // 超话信息流
