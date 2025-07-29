@@ -2,7 +2,7 @@
 /*
 引用地址：https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/weibo.js
 */
-// 2025-07-28 20:40
+// 2025-07-29 13:40
 
 const url = $request.url;
 if (!$response) $done({});
@@ -125,7 +125,7 @@ if (url.includes("/interface/sdk/sdkad.php")) {
     if (obj?.elements?.length > 0) {
       obj.elements = obj.elements.filter((i) => ["写微博", "图片", "视频"]?.includes(i?.app_name));
     }
-  } else if (url.includes("/2/comments/build_comments") || url.includes("/2/statuses/container_detail_comment")) {
+  } else if (url.includes("/2/comments/build_comments")) {
     // 评论区
     if (obj?.datas?.length > 0) {
       let newItems = [];
@@ -1132,6 +1132,45 @@ if (url.includes("/interface/sdk/sdkad.php")) {
         }
       }
       obj.pageHeader.data.items = newItems;
+    }
+  } else if (url.includes("/2/statuses/container_detail_comment")) {
+    // 新版 微博评论区
+    if (obj?.items?.length > 0) {
+      let newItems = [];
+      for (let item of obj.items) {
+        if (item?.data) {
+          if (!isAd(item?.data)) {
+            if (item?.data?.comment_bubble) {
+              delete item.data.comment_bubble; // 评论气泡
+            }
+            if (item?.data?.comment_bullet_screens_message) {
+              delete item.data.comment_bullet_screens_message; // 评论弹幕
+            }
+            if (item?.data?.hot_icon) {
+              delete item.data.hot_icon; // 热评小图标 弹幕 首评
+            }
+            if (item?.data?.vip_button) {
+              delete item.data.vip_button; // 会员气泡按钮
+            }
+            // 微博伪装评论
+            if (item?.data?.user) {
+              removeAvatar(item?.data); // 头像挂件,关注按钮
+              if (/(超话社区|微博)/.test(item?.data?.user?.name)) {
+                continue;
+              }
+            }
+            // 6为你推荐更多精彩内容 15过滤提示 41评论区氛围调查
+            if ([6, 15, 41]?.includes(item?.type)) {
+              continue;
+            }
+            if (["广告", "荐读", "评论总结", "推荐", "相关内容", "相关评论"]?.includes(item?.adType)) {
+              continue;
+            }
+            newItems.push(item);
+          }
+        }
+      }
+      obj.items = newItems;
     }
   } else if (url.includes("/2/statuses/container_timeline_topic")) {
     // 超话信息流
