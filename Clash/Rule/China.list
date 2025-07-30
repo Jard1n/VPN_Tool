@@ -98,6 +98,7 @@ DOMAIN-SUFFIX,air-matters.io
 DOMAIN-SUFFIX,aixifan.com
 DOMAIN-SUFFIX,algocasts.io
 DOMAIN-SUFFIX,ali213.net
+DOMAIN-SUFFIX,alibtrip.com
 DOMAIN-SUFFIX,alicloudccp.com
 DOMAIN-SUFFIX,alidns.com
 DOMAIN-SUFFIX,aliexpress.com
@@ -172,6 +173,7 @@ DOMAIN-SUFFIX,bytedance.com
 DOMAIN-SUFFIX,bytedance.net
 DOMAIN-SUFFIX,bytedns.net
 DOMAIN-SUFFIX,bytednsdoc.com
+DOMAIN-SUFFIX,byteeffecttos.com
 DOMAIN-SUFFIX,bytefcdnrd.com
 DOMAIN-SUFFIX,bytegecko.com
 DOMAIN-SUFFIX,bytegoofy.com
@@ -297,6 +299,7 @@ DOMAIN-SUFFIX,doh.pub
 DOMAIN-SUFFIX,donews.com
 DOMAIN-SUFFIX,dongchedi.com
 DOMAIN-SUFFIX,dongchediapp.com
+DOMAIN-SUFFIX,doubao.com
 DOMAIN-SUFFIX,douyin.com
 DOMAIN-SUFFIX,douyincdn.com
 DOMAIN-SUFFIX,douyinliving.com
@@ -352,6 +355,7 @@ DOMAIN-SUFFIX,fqnovelstatic.com
 DOMAIN-SUFFIX,frdic.com
 DOMAIN-SUFFIX,fresh-ideas.cc
 DOMAIN-SUFFIX,freshhema.com
+DOMAIN-SUFFIX,freshippo.com
 DOMAIN-SUFFIX,fun.tv
 DOMAIN-SUFFIX,funshion.com
 DOMAIN-SUFFIX,futu5.com
@@ -627,6 +631,7 @@ DOMAIN-SUFFIX,nuomi.com
 DOMAIN-SUFFIX,oceanengine.com
 DOMAIN-SUFFIX,office.com
 DOMAIN-SUFFIX,office365.com
+DOMAIN-SUFFIX,okr.com
 DOMAIN-SUFFIX,onedns.net
 DOMAIN-SUFFIX,oneplus.com
 DOMAIN-SUFFIX,oneplusbbs.com
@@ -660,6 +665,7 @@ DOMAIN-SUFFIX,pinduoduo.com
 DOMAIN-SUFFIX,pinduoduo.net
 DOMAIN-SUFFIX,pingan.com
 DOMAIN-SUFFIX,pingwest.com
+DOMAIN-SUFFIX,pipix.com
 DOMAIN-SUFFIX,pniao.com
 DOMAIN-SUFFIX,polyv.net
 DOMAIN-SUFFIX,pphimalayanrt.com
@@ -667,6 +673,9 @@ DOMAIN-SUFFIX,pplive.com
 DOMAIN-SUFFIX,pps.tv
 DOMAIN-SUFFIX,ppsimg.com
 DOMAIN-SUFFIX,pptv.com
+DOMAIN-SUFFIX,ppximg.com
+DOMAIN-SUFFIX,ppxstatic.com
+DOMAIN-SUFFIX,ppxvod.com
 DOMAIN-SUFFIX,privatehd.to
 DOMAIN-SUFFIX,psbc.com
 DOMAIN-SUFFIX,pstatp.com
@@ -843,6 +852,7 @@ DOMAIN-SUFFIX,vivo.com
 DOMAIN-SUFFIX,vmall.com
 DOMAIN-SUFFIX,vmallres.com
 DOMAIN-SUFFIX,volccdn.com
+DOMAIN-SUFFIX,volcengine.com
 DOMAIN-SUFFIX,volces.com
 DOMAIN-SUFFIX,volcvideo.com
 DOMAIN-SUFFIX,wallstreetcn.com
@@ -893,6 +903,7 @@ DOMAIN-SUFFIX,xiaomiev.com
 DOMAIN-SUFFIX,xiaomixiaoai.com
 DOMAIN-SUFFIX,xiaomiyoupin.com
 DOMAIN-SUFFIX,xiaote.net
+DOMAIN-SUFFIX,xiaoxiaapi.com
 DOMAIN-SUFFIX,ximalaya.com
 DOMAIN-SUFFIX,xincai.com
 DOMAIN-SUFFIX,xinhuanet.com
@@ -984,6 +995,7 @@ DOMAIN-SUFFIX,zoho.com
 DOMAIN-SUFFIX,zui.com
 DOMAIN-SUFFIX,zuimeitianqi.com
 DOMAIN-SUFFIX,zuoyebang.com
+DOMAIN-SUFFIX,zybang.com
 DOMAIN-SUFFIX,cn
 DOMAIN-KEYWORD,.tmall.
 DOMAIN-KEYWORD,360buy
