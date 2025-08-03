@@ -1,10 +1,15 @@
-# Main total line 3910 
+# Main total line 3915 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,111.225.147.191/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,111.63.61.101/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,220.243.141.0/32,no-resolve),(DEST-PORT,6443))
+*-ad.sm.cn*
+*-ad.video.yximgs.com*
+*-ad.wtzw.com*
+*-be-pack-sign.pglstatp-toutiao.com*
+*-normal.zijieapi.com*
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
 DOMAIN,abema-adx.ameba.jp
@@ -328,7 +333,6 @@ DOMAIN,saxn.sina.com.cn
 DOMAIN,saxs.sina.com.cn
 DOMAIN,sdapprecv.app.cntvwb.cn
 DOMAIN,sdk.qzbonline.com
-DOMAIN,sdk.zhangyuyidong.cn
 DOMAIN,sensors.dewu.com
 DOMAIN,sessions.bugsnag.com
 DOMAIN,settings.luckyorange.net
@@ -859,6 +863,7 @@ DOMAIN-SUFFIX,adwo.com
 DOMAIN-SUFFIX,adx-drcn.op.dbankcloud.cn
 DOMAIN-SUFFIX,adx-open-service.youku.com
 DOMAIN-SUFFIX,adx.ads.heytapmobi.com
+DOMAIN-SUFFIX,adx.adwangmai.com
 DOMAIN-SUFFIX,adx.appsdk.com.cn
 DOMAIN-SUFFIX,adx.sogaha.cn
 DOMAIN-SUFFIX,adx.xiaodutv.com
@@ -967,7 +972,6 @@ DOMAIN-SUFFIX,api.mp.uc.cn
 DOMAIN-SUFFIX,api.newad.ifeng.com
 DOMAIN-SUFFIX,api.ssp.xcultur.com
 DOMAIN-SUFFIX,api.statsig.com
-DOMAIN-SUFFIX,api.yfanads.com
 DOMAIN-SUFFIX,api5-normal-quic-lf.ixigua.com
 DOMAIN-SUFFIX,apiyd.my91app.com
 DOMAIN-SUFFIX,apk.shouji.koowo.com
@@ -1319,6 +1323,7 @@ DOMAIN-SUFFIX,dafapromo.com
 DOMAIN-SUFFIX,daitdai.com
 DOMAIN-SUFFIX,daoyoudao.com
 DOMAIN-SUFFIX,data.chsmarttv.com
+DOMAIN-SUFFIX,data.hicloud.com
 DOMAIN-SUFFIX,data.mistat.india.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.rus.xiaomi.com
 DOMAIN-SUFFIX,data.mistat.xiaomi.com
@@ -1943,6 +1948,7 @@ DOMAIN-SUFFIX,log-upload.mihoyo.com
 DOMAIN-SUFFIX,log-verify.dutils.com
 DOMAIN-SUFFIX,log-verify.hiaiabc.com
 DOMAIN-SUFFIX,log.aispeech.com
+DOMAIN-SUFFIX,log.aliyuncs.com
 DOMAIN-SUFFIX,log.amemv.com
 DOMAIN-SUFFIX,log.appstore3.huan.tv
 DOMAIN-SUFFIX,log.avlyun.com
@@ -2053,9 +2059,7 @@ DOMAIN-SUFFIX,meitubeauty.meitudata.com
 DOMAIN-SUFFIX,mercury-sdk.snssdk.com
 DOMAIN-SUFFIX,message.meitu.com
 DOMAIN-SUFFIX,meta.video.qiyi.com
-DOMAIN-SUFFIX,metrics.data.hicloud.com
 DOMAIN-SUFFIX,metrics.mzstatic.com
-DOMAIN-SUFFIX,metrics2.data.hicloud.com
 DOMAIN-SUFFIX,metrika.yandex.ru
 DOMAIN-SUFFIX,mg09.zhaopin.com
 DOMAIN-SUFFIX,mgid.com
@@ -2554,7 +2558,6 @@ DOMAIN-SUFFIX,scupio.com
 DOMAIN-SUFFIX,sdfp.snssdk.com
 DOMAIN-SUFFIX,sdk-ab-config.qquanquan.com
 DOMAIN-SUFFIX,sdk-cache.video.ptqy.gitv.tv
-DOMAIN-SUFFIX,sdk.adx.adwangmai.com
 DOMAIN-SUFFIX,sdk.cferw.com
 DOMAIN-SUFFIX,sdk.hzsanjiaomao.com
 DOMAIN-SUFFIX,sdk.m.youku.com
@@ -3238,6 +3241,7 @@ DOMAIN-SUFFIX,ydpushserver.youdao.com
 DOMAIN-SUFFIX,yeahmobi.com
 DOMAIN-SUFFIX,yengo.com
 DOMAIN-SUFFIX,yes1.feng.com
+DOMAIN-SUFFIX,yfanads.com
 DOMAIN-SUFFIX,ygyzx.cn
 DOMAIN-SUFFIX,yhdichan.com
 DOMAIN-SUFFIX,yicha.jp
@@ -3301,6 +3305,7 @@ DOMAIN-SUFFIX,zedo.com
 DOMAIN-SUFFIX,zemanta.com
 DOMAIN-SUFFIX,zestads.com
 DOMAIN-SUFFIX,zeustechnology.com
+DOMAIN-SUFFIX,zhangyuyidong.cn
 DOMAIN-SUFFIX,zhaozecheng.cn
 DOMAIN-SUFFIX,zhenxinet.com
 DOMAIN-SUFFIX,zhidian3g.cn
