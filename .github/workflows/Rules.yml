@@ -59,6 +59,7 @@ jobs:
                    sed -i '/IP-/ {/no-resolve/! s/$/,no-resolve/}' "$original_file"
                    # 修改;为#
                    sed -i 's/;/# /g' "$original_file"
+                   sed -E -i '/\*/{/^DOMAIN-WILDCARD,/! s/^/DOMAIN-WILDCARD,/}' "$original_file"
                    }
                    
                # 处理 _Set.list 文件
