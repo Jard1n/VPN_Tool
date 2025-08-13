@@ -663,6 +663,7 @@ DOMAIN-SUFFIX,binance.cc
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,binance.info
 DOMAIN-SUFFIX,binance.me
+DOMAIN-SUFFIX,binance.org
 DOMAIN-SUFFIX,binancezh.cc
 DOMAIN-SUFFIX,bintray.com
 DOMAIN-SUFFIX,binux.me
@@ -2878,6 +2879,7 @@ DOMAIN-SUFFIX,indiemerch.com
 DOMAIN-SUFFIX,influxdata.com
 DOMAIN-SUFFIX,infoq.com
 DOMAIN-SUFFIX,informer.com
+DOMAIN-SUFFIX,infura.io
 DOMAIN-SUFFIX,ingress.com
 DOMAIN-SUFFIX,inherit.live
 DOMAIN-SUFFIX,initiativesforchina.org
