@@ -1,4 +1,4 @@
-# Main total line 3917 
+# Main total line 3920 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -1665,6 +1665,7 @@ DOMAIN-SUFFIX,hitslink.com
 DOMAIN-SUFFIX,hivecn.cn
 DOMAIN-SUFFIX,hivedata.cc
 DOMAIN-SUFFIX,hl2rcv.adobe.com
+DOMAIN-SUFFIX,hlog.bigda.com
 DOMAIN-SUFFIX,hlrcv.stage.adobe.com
 DOMAIN-SUFFIX,hm.baidu.cn
 DOMAIN-SUFFIX,hm.baidu.com
@@ -2091,6 +2092,7 @@ DOMAIN-SUFFIX,mixpanel.com
 DOMAIN-SUFFIX,mjmobi.com
 DOMAIN-SUFFIX,mkitgfs.com
 DOMAIN-SUFFIX,mlnbike.com
+DOMAIN-SUFFIX,mlog.bigda.com
 DOMAIN-SUFFIX,mm9842.com
 DOMAIN-SUFFIX,mmgame.qpic.cn
 DOMAIN-SUFFIX,mnaspm.com
@@ -2988,6 +2990,7 @@ DOMAIN-SUFFIX,umini.shujupie.com
 DOMAIN-SUFFIX,umtrack.com
 DOMAIN-SUFFIX,undertone.com
 DOMAIN-SUFFIX,unimhk.com
+DOMAIN-SUFFIX,union-mlog.bigda.com
 DOMAIN-SUFFIX,union-wifi.com
 DOMAIN-SUFFIX,union.6.cn
 DOMAIN-SUFFIX,union.baidu.cn
