@@ -1,4 +1,4 @@
-# Main total line 3920 
+# Main total line 3921 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -950,6 +950,7 @@ DOMAIN-SUFFIX,anydeskchina.cn
 DOMAIN-SUFFIX,anysdk.com
 DOMAIN-SUFFIX,anythinktech.com
 DOMAIN-SUFFIX,aoodoo.feng.com
+DOMAIN-SUFFIX,ap.dongdianqiu.com
 DOMAIN-SUFFIX,ap.dongqiudi.com
 DOMAIN-SUFFIX,apd-pcdnwxlogin.teg.tencent-cloud.net
 DOMAIN-SUFFIX,apd-pcdnwxnat.teg.tencent-cloud.net
