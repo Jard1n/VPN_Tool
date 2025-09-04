@@ -1,4 +1,4 @@
-# Main total line 3923 
+# Main total line 3919 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DST-PORT,6443))
@@ -3420,14 +3420,10 @@ DOMAIN-KEYWORD,wlmonitor
 DOMAIN-KEYWORD,xxshuyuan
 DOMAIN-KEYWORD,zjtoolbar
 IP-ASN,1012,no-resolve
-IP-ASN,140915,no-resolve
 IP-ASN,14651,no-resolve
 IP-ASN,18044,no-resolve
 IP-ASN,401111,no-resolve
-IP-ASN,40115,no-resolve
-IP-ASN,44324,no-resolve
 IP-ASN,5111,no-resolve
-IP-ASN,53808,no-resolve
 IP-ASN,54625,no-resolve
 IP-ASN,60539,no-resolve
 IP-ASN,60842,no-resolve
