@@ -172,6 +172,7 @@ def process_multiple_urls(url_list):
 
 if __name__ == "__main__":
     url_list = [
+        "https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.sgmodule",
         "https://github.com/BiliUniverse/Enhanced/releases/latest/download/BiliBili.Enhanced.sgmodule",
         "https://github.com/BiliUniverse/Global/releases/latest/download/BiliBili.Global.sgmodule",
         "https://github.com/BiliUniverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule",
@@ -179,6 +180,7 @@ if __name__ == "__main__":
         "https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.sgmodule",
         "https://github.com/NSRingo/GeoServices/releases/latest/download/iRingo.Location.sgmodule",
         "https://github.com/NSRingo/GeoServices/releases/latest/download/iRingo.Maps.sgmodule",
+        "https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.sgmodule"
     ]
     
     print("开始批量处理 .sgmodule 文件...")
