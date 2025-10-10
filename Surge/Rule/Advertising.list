@@ -1,4 +1,4 @@
-# Main total line 3918 
+# Main total line 3917 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -2097,7 +2097,6 @@ DOMAIN-SUFFIX,mkitgfs.com
 DOMAIN-SUFFIX,mlnbike.com
 DOMAIN-SUFFIX,mlog.bigda.com
 DOMAIN-SUFFIX,mm9842.com
-DOMAIN-SUFFIX,mmgame.qpic.cn
 DOMAIN-SUFFIX,mnaspm.com
 DOMAIN-SUFFIX,mng-ads.com
 DOMAIN-SUFFIX,mnqlog.ldmnq.com
