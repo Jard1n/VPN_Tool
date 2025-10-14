@@ -1,4 +1,4 @@
-# Main total line 22897 
+# Main total line 22898 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -1609,6 +1609,7 @@ DOMAIN-SUFFIX,appl.com
 DOMAIN-SUFFIX,appl4e.com
 DOMAIN-SUFFIX,appla.com
 DOMAIN-SUFFIX,apple
+DOMAIN-SUFFIX,apple-cdn.net
 DOMAIN-SUFFIX,apple-cloudkit.com
 DOMAIN-SUFFIX,apple-darwin.com
 DOMAIN-SUFFIX,apple-darwin.net
