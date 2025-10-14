@@ -1,4 +1,4 @@
-// https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/cainiao.js
+// 引用地址：https://kelee.one/Resource/JavaScript/Cainiao/Cainiao_remove_ads.js
 // 2024-09-27 11:50
 
 const url = $request.url;
