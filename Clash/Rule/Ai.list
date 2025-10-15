@@ -1,7 +1,6 @@
 # ChatGPT
 AND,((DOMAIN-KEYWORD,chatgpt-async-webps-prod-),(DOMAIN-SUFFIX,webpubsub.azure.com))
 AND,((DOMAIN-KEYWORD,openaicom-api-),(DOMAIN-SUFFIX,azurefd.net))
-AND,((OR,((IP-ASN,31898,no-resolve),(IP-ASN,20473,no-resolve),(IP-ASN,14061,no-resolve))),(OR,((DEST-PORT,3478),(DEST-PORT,7881))),(OR,((PROTOCOL,STUN),(PROTOCOL,TCP))))
 DOMAIN,o33249.ingest.sentry.io
 DOMAIN,o33249.ingest.us.sentry.io
 DOMAIN-SUFFIX,turn.livekit.cloud
