@@ -1,4 +1,4 @@
-# Main total line 3917 
+# Main total line 3918 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -127,6 +127,7 @@ DOMAIN,api.luckyorange.com
 DOMAIN,api.mouseflow.com
 DOMAIN,api.nx-perf.cn
 DOMAIN,api.sm.cn
+DOMAIN,api.xsj.wasu.tv
 DOMAIN,api.zuihuimai.com
 DOMAIN,apiv4-iyes.youku.com
 DOMAIN,apm.gotokeep.com
