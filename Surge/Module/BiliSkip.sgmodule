@@ -1,0 +1,10 @@
+#!name=Bilibili AI Skip
+#!desc=使用 AI 跳过 Bilibili 视频植入广告
+
+
+[Script]
+bilijump-surge = type=http-request,pattern=^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.app\.playerunite\.v1\.Player\/PlayViewUnite$,requires-body=1,binary-body-mode=1,max-size=-1,engine=webview,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Bilibili/bilijump.bundle.js
+bilijump-surge-dm = type=http-request,pattern=^https:\/\/(?:grpc\.biliapi\.net|app\.bilibili\.com)\/bilibili\.community\.service\.dm\.v1\.DM\/DmSegMobile$,requires-body=1,binary-body-mode=1,max-size=-1,engine=webview,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Bilibili/bilijump.bundle.js
+
+[MITM]
+hostname = %APPEND% grpc.biliapi.net, app.bilibili.com, api.bilibili.com
