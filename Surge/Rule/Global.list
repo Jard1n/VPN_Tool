@@ -1,4 +1,4 @@
-# Main total line 22953 
+# Main total line 22962 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -19,6 +19,7 @@ DOMAIN,clubhouse.pubnubapi.com
 DOMAIN,community.oneplus.com
 DOMAIN,crl.versign.net
 DOMAIN,databank.worldbank.org
+DOMAIN,datarouter.apps.netherrealm.com
 DOMAIN,default.exp-tas.com
 DOMAIN,deribit.cdn.prismic.io
 DOMAIN,deutschewelle.h-cdn.com
@@ -71,6 +72,7 @@ DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,sglong.wechat.com
 DOMAIN,sgminorshort.wechat.com
 DOMAIN,sgshort.wechat.com
+DOMAIN,straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 DOMAIN,tagcdnsub.work
 DOMAIN,tmdb-image-prod.b-cdn.net
 DOMAIN,ut1-time.colorado.edu
@@ -5838,6 +5840,7 @@ DOMAIN-SUFFIX,deviantart.com
 DOMAIN-SUFFIX,deviantart.net
 DOMAIN-SUFFIX,deviantclip.com
 DOMAIN-SUFFIX,devilsfilm.com
+DOMAIN-SUFFIX,devin.ai
 DOMAIN-SUFFIX,devm2m.com
 DOMAIN-SUFFIX,devopsassessment.net
 DOMAIN-SUFFIX,devopsms.com
@@ -6143,6 +6146,7 @@ DOMAIN-SUFFIX,docker.io
 DOMAIN-SUFFIX,dockerhub.com
 DOMAIN-SUFFIX,dockerizer.com
 DOMAIN-SUFFIX,dockerstatic.com
+DOMAIN-SUFFIX,dockerstatus.com
 DOMAIN-SUFFIX,docleradn.com
 DOMAIN-SUFFIX,doclercdn.com
 DOMAIN-SUFFIX,docs.cfw.lbyczf.com
@@ -18632,6 +18636,7 @@ DOMAIN-SUFFIX,stoweboyd.com
 DOMAIN-SUFFIX,straightouttasomewhere.com
 DOMAIN-SUFFIX,straightpornstuds.com
 DOMAIN-SUFFIX,straitstimes.com
+DOMAIN-SUFFIX,straitsx.com
 DOMAIN-SUFFIX,stranabg.com
 DOMAIN-SUFFIX,straplessdildo.com
 DOMAIN-SUFFIX,strava.com
@@ -21181,6 +21186,7 @@ DOMAIN-SUFFIX,warddogs.com
 DOMAIN-SUFFIX,warehouse333.com
 DOMAIN-SUFFIX,wariolandshakeit.com
 DOMAIN-SUFFIX,wariowarediy.com
+DOMAIN-SUFFIX,warnerbrosgames.com
 DOMAIN-SUFFIX,warp.plus
 DOMAIN-SUFFIX,warroom.org
 DOMAIN-SUFFIX,wasdj.com
@@ -21220,9 +21226,12 @@ DOMAIN-SUFFIX,waybackmachine.org
 DOMAIN-SUFFIX,waybig.com
 DOMAIN-SUFFIX,waymo.com
 DOMAIN-SUFFIX,waze.com
+DOMAIN-SUFFIX,wbagora.com
 DOMAIN-SUFFIX,wballiance.com
 DOMAIN-SUFFIX,wbd.ms
 DOMAIN-SUFFIX,wbdnbo.net
+DOMAIN-SUFFIX,wbgames.com
+DOMAIN-SUFFIX,wbinsights.com
 DOMAIN-SUFFIX,wbrks.com
 DOMAIN-SUFFIX,wbvm4s.com
 DOMAIN-SUFFIX,wd.bible
