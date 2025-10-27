@@ -1,4 +1,4 @@
-# Main total line 23018 
+# Main total line 23020 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -4912,6 +4912,7 @@ DOMAIN-SUFFIX,cloudflare-gateway.com
 DOMAIN-SUFFIX,cloudflare-ipfs.com
 DOMAIN-SUFFIX,cloudflare-quic.com
 DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,cloudflare.dev
 DOMAIN-SUFFIX,cloudflare.net
 DOMAIN-SUFFIX,cloudflare.tv
 DOMAIN-SUFFIX,cloudflareaccess.com
@@ -9214,6 +9215,7 @@ DOMAIN-SUFFIX,hanime.me
 DOMAIN-SUFFIX,hanime.tv
 DOMAIN-SUFFIX,hanime.xxx
 DOMAIN-SUFFIX,hanime.xyz
+DOMAIN-SUFFIX,hanime1.com
 DOMAIN-SUFFIX,hanime1.me
 DOMAIN-SUFFIX,hanimeone.me
 DOMAIN-SUFFIX,hanmail.net
