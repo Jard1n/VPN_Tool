@@ -179,7 +179,7 @@ if __name__ == "__main__":
         "https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule",
         "https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.sgmodule",
         "https://github.com/NSRingo/LocationService/releases/latest/download/iRingo.LocationService.sgmodule",
-        "https://github.com/NSRingo/GeoServices/releases/latest/download/iRingo.Maps.sgmodule",
+        "https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.sgmodule",
         "https://github.com/DualSubs/Spotify/releases/latest/download/DualSubs.Spotify.sgmodule"
     ]
     
