@@ -22,7 +22,6 @@ DOMAIN,th-a.pinduoduo.com,REJECT,extended-matching
 DOMAIN,ta-a.pinduoduo.com,REJECT,extended-matching
 DOMAIN,meta.pinduoduo.com,REJECT,extended-matching
 DOMAIN,apm-a.pinduoduo.com,REJECT,extended-matching
-DOMAIN,m.pinduoduo.net,REJECT,extended-matching
 
 [Body Rewrite]
 http-response-jq ^https:\/\/api\.pinduoduo\.com\/api\/alexa\/homepage\/hub\? 'delpaths([["result","dy_module","irregular_banner_dy"]])'
