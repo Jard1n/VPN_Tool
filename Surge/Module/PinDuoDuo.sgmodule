@@ -15,7 +15,6 @@ DOMAIN,cdl-p2.pddpic.com,REJECT,extended-matching
 DOMAIN,cd-1.pddpic.com,REJECT,extended-matching
 DOMAIN,apm.pinduoduo.com,REJECT,extended-matching
 DOMAIN,th-b.pinduoduo.com,REJECT,extended-matching
-DOMAIN,file.pinduoduo.com,REJECT,extended-matching
 DOMAIN,ta.pinduoduo.com,REJECT,extended-matching
 DOMAIN,th.pinduoduo.com,REJECT,extended-matching
 DOMAIN,th-a.pinduoduo.com,REJECT,extended-matching
