@@ -1,4 +1,4 @@
-# Main total line 23002 
+# Main total line 22997 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -1413,8 +1413,8 @@ DOMAIN-SUFFIX,ancensored.com
 DOMAIN-SUFFIX,anchor.fm
 DOMAIN-SUFFIX,anchorfree.com
 DOMAIN-SUFFIX,ancsconf.org
-DOMAIN-SUFFIX,and
 DOMAIN-SUFFIX,andfaraway.net
+DOMAIN-SUFFIX,android
 DOMAIN-SUFFIX,android-x86.org
 DOMAIN-SUFFIX,android.com
 DOMAIN-SUFFIX,androidapksfree.com
@@ -4380,7 +4380,6 @@ DOMAIN-SUFFIX,cavporn.com
 DOMAIN-SUFFIX,cbart.net
 DOMAIN-SUFFIX,cbbank.com.mm
 DOMAIN-SUFFIX,cbm.com.mm
-DOMAIN-SUFFIX,cbs
 DOMAIN-SUFFIX,cbs.com
 DOMAIN-SUFFIX,cbsaavideo.com
 DOMAIN-SUFFIX,cbscorporation.com
@@ -12918,14 +12917,12 @@ DOMAIN-SUFFIX,mcadforums.com
 DOMAIN-SUFFIX,mcaf.ee
 DOMAIN-SUFFIX,mcafee.com
 DOMAIN-SUFFIX,mcb.com.mm
-DOMAIN-SUFFIX,mcd
 DOMAIN-SUFFIX,mcd.com
 DOMAIN-SUFFIX,mcdelivery.co.in
 DOMAIN-SUFFIX,mcdelivery.com.my
 DOMAIN-SUFFIX,mcdelivery.com.ph
 DOMAIN-SUFFIX,mcdindia.com
 DOMAIN-SUFFIX,mcdindonesia.com
-DOMAIN-SUFFIX,mcdonalds
 DOMAIN-SUFFIX,mcdonalds-online.com
 DOMAIN-SUFFIX,mcdonalds.be
 DOMAIN-SUFFIX,mcdonalds.co.nz
@@ -17911,7 +17908,6 @@ DOMAIN-SUFFIX,shotgunvfx.com
 DOMAIN-SUFFIX,shotwithgeforce.com
 DOMAIN-SUFFIX,showhaotu.com
 DOMAIN-SUFFIX,shownote.com
-DOMAIN-SUFFIX,showtime
 DOMAIN-SUFFIX,showtime.com
 DOMAIN-SUFFIX,showtimeanytime.com
 DOMAIN-SUFFIX,showup.tv
@@ -19285,7 +19281,6 @@ DOMAIN-SUFFIX,thegayoffice.com
 DOMAIN-SUFFIX,thegeorgiascene.com
 DOMAIN-SUFFIX,thegioitinhoc.vn
 DOMAIN-SUFFIX,thegly.com
-DOMAIN-SUFFIX,theguardian
 DOMAIN-SUFFIX,theguardian.com
 DOMAIN-SUFFIX,theguardiandns.com
 DOMAIN-SUFFIX,thehabibshow.com
