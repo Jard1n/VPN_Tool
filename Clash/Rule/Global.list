@@ -1,4 +1,4 @@
-# Main total line 22997 
+# Main total line 22995 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -3201,7 +3201,6 @@ DOMAIN-SUFFIX,bing
 DOMAIN-SUFFIX,bing.com
 DOMAIN-SUFFIX,bing.net
 DOMAIN-SUFFIX,bing123.com
-DOMAIN-SUFFIX,bingads.com
 DOMAIN-SUFFIX,bingagencyawards.com
 DOMAIN-SUFFIX,bingapis.com
 DOMAIN-SUFFIX,bingapistatistics.com
@@ -13151,7 +13150,6 @@ DOMAIN-SUFFIX,microsoft.vn
 DOMAIN-SUFFIX,microsoft365.com
 DOMAIN-SUFFIX,microsoftaccountguard.com
 DOMAIN-SUFFIX,microsoftadc.com
-DOMAIN-SUFFIX,microsoftads.com
 DOMAIN-SUFFIX,microsoftadvertising.com
 DOMAIN-SUFFIX,microsoftadvertisingregionalawards.com
 DOMAIN-SUFFIX,microsoftaffiliates.com
@@ -13817,7 +13815,6 @@ DOMAIN-SUFFIX,ms-studiosmedia.com
 DOMAIN-SUFFIX,ms365surfaceoffer.com
 DOMAIN-SUFFIX,ms4dre.com
 DOMAIN-SUFFIX,msa-it.org
-DOMAIN-SUFFIX,msads.net
 DOMAIN-SUFFIX,msauth.net
 DOMAIN-SUFFIX,mschallenge2018.com
 DOMAIN-SUFFIX,msdn.com
@@ -17517,6 +17514,7 @@ DOMAIN-SUFFIX,sensorynetworks.com
 DOMAIN-SUFFIX,sensualgirls.org
 DOMAIN-SUFFIX,sensualmothers.com
 DOMAIN-SUFFIX,sensueel.net
+DOMAIN-SUFFIX,sentry-cdn.com
 DOMAIN-SUFFIX,sentry.dev
 DOMAIN-SUFFIX,sentry.io
 DOMAIN-SUFFIX,sentry.prod.mozaws.net
