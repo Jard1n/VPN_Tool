@@ -306,8 +306,8 @@ DOMAIN-SUFFIX,moloco.com,REJECT,extended-matching
 DOMAIN-SUFFIX,rayjump.com,REJECT,extended-matching
 DOMAIN-SUFFIX,rixengine.com,REJECT,extended-matching
 
+DOMAIN-SUFFIX,ad.aggrxinc.com,REJECT,extended-matching
 [URL Rewrite]
-ad.aggrxinc.com, - reject
 ^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ - reject
 ^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_ - reject
 ^https:\/\/images\.pinduoduo\.com\/mrk\/ - reject
