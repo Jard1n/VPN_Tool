@@ -29,6 +29,9 @@ jobs:
       - name: Update
         run: python Scripts/UpdateJS.py
 
+      - name: sgmodule
+        run: python Scripts/download.py
+
       - name: Commit
         run: |
          if [[ -n $(git status -s) ]]; then
