@@ -74,7 +74,7 @@ def process_module(local_filename):
     try:
         # 1. 构造文件名和路径
         base_name = os.path.splitext(local_filename)[0]
-        remote_filename = f"{base_name}_.sgmodule"
+        remote_filename = f"{base_name}.sgmodule"
         download_url = f"{BASE_URL}{remote_filename}"
         local_rule_path = os.path.join(LOCAL_RULES_DIR, local_filename)
         output_path = os.path.join(OUTPUT_DIR, remote_filename)
