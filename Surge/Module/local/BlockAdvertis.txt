@@ -1,11 +1,8 @@
-#!name=广告平台拦截器
-#!desc=此插件是所有去广告插件的基础，只针对广告平台处理。
-#!category =  Block Ads
 [DELETE]
-#!desc=
-#!author=可莉🅥[https://github.com/luestr/ProxyResource/blob/main/README.md]
-#!icon=https://raw.githubusercontent.com/luestr/IconResource/main/Website_icon/120px/TencentAd.png
-#!tag=去广告, 依赖
-#!loon_version=3.2.4(787)
-#!homepage=https://hub.kelee.one
-
+#!author=
+#!icon=
+#!loon_version=
+#!homepage=
+[REPLACE]
+#!desc => #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
+#!tag => #!category =  Block Ads
