@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2025-11-29 20:19:07
+#!date=2025-12-05 00:50:43
 
 [Rule]
 AND,((DOMAIN-KEYWORD,tnc),(OR,((DOMAIN-SUFFIX,capcutapi.com),(DOMAIN-SUFFIX,zijieapi.com),(DOMAIN-SUFFIX,isnssdk.com),(DOMAIN-SUFFIX,toutiaoapi.com),(DOMAIN-SUFFIX,bytedance.com),(DOMAIN-SUFFIX,snssdk.com),(DOMAIN-SUFFIX,sgsnssdk.com)))),DIRECT
@@ -276,7 +276,6 @@ DOMAIN-SUFFIX,domob.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,adwangmai.com,REJECT,extended-matching
 DOMAIN-SUFFIX,bxsnews.com,REJECT,extended-matching
 DOMAIN-SUFFIX,ranfenghd.com,REJECT,extended-matching
-DOMAIN-SUFFIX,mmstat.com,REJECT,extended-matching
 DOMAIN-SUFFIX,miaozhen.com,REJECT,extended-matching
 DOMAIN-SUFFIX,qchannel01.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,ad.xelements.cn,REJECT,extended-matching
