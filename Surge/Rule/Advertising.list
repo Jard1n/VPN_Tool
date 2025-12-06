@@ -1,4 +1,4 @@
-# Main total line 3987 
+# Main total line 3982 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -325,6 +325,7 @@ DOMAIN,rthmnj.xyz
 DOMAIN,s.c-ctrip.com
 DOMAIN,safe.sogou.com
 DOMAIN,safe.ucweb.com
+DOMAIN,sax.sina.com.cn
 DOMAIN,saxn.sina.com.cn
 DOMAIN,saxs.sina.com.cn
 DOMAIN,sdapprecv.app.cntvwb.cn
@@ -342,6 +343,7 @@ DOMAIN,spider-tracker.xiaohongshu.com
 DOMAIN,splashimgbssdl.yun.kugou.com
 DOMAIN,splashqqlive.gtimg.com
 DOMAIN,starkgame.zijieapi.com
+DOMAIN,stat.10jqka.com.cn
 DOMAIN,static.media.net
 DOMAIN,sugar.zhihu.com
 DOMAIN,switch.cup.com.cn
@@ -1485,7 +1487,6 @@ DOMAIN-SUFFIX,enrichyummy.com
 DOMAIN-SUFFIX,entry.baidu.com
 DOMAIN-SUFFIX,epro.sogou.com
 DOMAIN-SUFFIX,epro.sohu.com
-DOMAIN-SUFFIX,eq.10jqka.com.cn
 DOMAIN-SUFFIX,eqads.com
 DOMAIN-SUFFIX,erdoscs.com
 DOMAIN-SUFFIX,ereg.adobe.com
@@ -2299,7 +2300,6 @@ DOMAIN-SUFFIX,overture.com
 DOMAIN-SUFFIX,overturechina.com
 DOMAIN-SUFFIX,owneriq.net
 DOMAIN-SUFFIX,ownlocal.com
-DOMAIN-SUFFIX,ozone.10jqka.com.cn
 DOMAIN-SUFFIX,p-log.ykimg.com
 DOMAIN-SUFFIX,p.kugou.com
 DOMAIN-SUFFIX,p.s.360.cn
@@ -2330,7 +2330,6 @@ DOMAIN-SUFFIX,partner.toutiao.com
 DOMAIN-SUFFIX,passport-log.youku.com
 DOMAIN-SUFFIX,passwordrecovery.cn
 DOMAIN-SUFFIX,patriot.cs.pp.cn
-DOMAIN-SUFFIX,pay.mobile.sina.cn
 DOMAIN-SUFFIX,pay.sboot.cn
 DOMAIN-SUFFIX,pb.hd.sohu.com
 DOMAIN-SUFFIX,pb.sogou.com
@@ -2580,7 +2579,6 @@ DOMAIN-SUFFIX,samsungads.com
 DOMAIN-SUFFIX,sanya1.com
 DOMAIN-SUFFIX,sape.ru
 DOMAIN-SUFFIX,sax.mobile.sina.cn
-DOMAIN-SUFFIX,sax.sina.com.cn
 DOMAIN-SUFFIX,saxd.sina.com.cn
 DOMAIN-SUFFIX,saxysec.com
 DOMAIN-SUFFIX,saymedia.com
@@ -2672,7 +2670,6 @@ DOMAIN-SUFFIX,silvermob.com
 DOMAIN-SUFFIX,simaba.m.taobao.com
 DOMAIN-SUFFIX,simaba.taobao.com
 DOMAIN-SUFFIX,simba.6.cn
-DOMAIN-SUFFIX,similarweb.com
 DOMAIN-SUFFIX,simplereach.com
 DOMAIN-SUFFIX,simpli.fi
 DOMAIN-SUFFIX,singular.net
@@ -2737,7 +2734,6 @@ DOMAIN-SUFFIX,stargame.com
 DOMAIN-SUFFIX,startapp.com
 DOMAIN-SUFFIX,startappexchange.com
 DOMAIN-SUFFIX,startappservice.com
-DOMAIN-SUFFIX,stat.10jqka.com.cn
 DOMAIN-SUFFIX,stat.360safe.com
 DOMAIN-SUFFIX,stat.dongqiudi.com
 DOMAIN-SUFFIX,stat.funshion.com
@@ -3093,7 +3089,6 @@ DOMAIN-SUFFIX,vads.net.vn
 DOMAIN-SUFFIX,vads.vn
 DOMAIN-SUFFIX,val.api.youku.com
 DOMAIN-SUFFIX,vamaker.com
-DOMAIN-SUFFIX,vaserviece.10jqka.com.cn
 DOMAIN-SUFFIX,vcbn65.xyz
 DOMAIN-SUFFIX,vda.17173.com
 DOMAIN-SUFFIX,vdopia.com
