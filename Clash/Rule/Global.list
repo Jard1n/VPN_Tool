@@ -1,4 +1,4 @@
-# Main total line 23057 
+# Main total line 23054 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -21,7 +21,6 @@ DOMAIN,crl.versign.net
 DOMAIN,databank.worldbank.org
 DOMAIN,datarouter.apps.netherrealm.com
 DOMAIN,default.exp-tas.com
-DOMAIN,deribit.cdn.prismic.io
 DOMAIN,deutschewelle.h-cdn.com
 DOMAIN,dl.begellhouse.com
 DOMAIN,dy.tagsub.net
@@ -1580,7 +1579,6 @@ DOMAIN-SUFFIX,api-extractor.com
 DOMAIN-SUFFIX,api.ai
 DOMAIN-SUFFIX,api.mixpanel.com
 DOMAIN-SUFFIX,api.news
-DOMAIN-SUFFIX,api.palworldgame.com
 DOMAIN-SUFFIX,api.proxlet.com
 DOMAIN-SUFFIX,api.tv.colnv.com
 DOMAIN-SUFFIX,apiary.io
@@ -10596,7 +10594,6 @@ DOMAIN-SUFFIX,imagekit.io
 DOMAIN-SUFFIX,imagemodeler.com
 DOMAIN-SUFFIX,imagepost.com
 DOMAIN-SUFFIX,images-gaytube.com
-DOMAIN-SUFFIX,images.prismic.io
 DOMAIN-SUFFIX,imageshack.com
 DOMAIN-SUFFIX,imagetwist.com
 DOMAIN-SUFFIX,imagevenue.com
@@ -11514,7 +11511,6 @@ DOMAIN-SUFFIX,jiaochuanba26.buzz
 DOMAIN-SUFFIX,jiaoyou8.com
 DOMAIN-SUFFIX,jiayoulu.com
 DOMAIN-SUFFIX,jibemobile.com
-DOMAIN-SUFFIX,jichangtj.com
 DOMAIN-SUFFIX,jieav.com
 DOMAIN-SUFFIX,jiehua.cz
 DOMAIN-SUFFIX,jiepang.com
@@ -12546,7 +12542,6 @@ DOMAIN-SUFFIX,lyzsxx.com
 DOMAIN-SUFFIX,lzjscript.com
 DOMAIN-SUFFIX,lzmtnews.org
 DOMAIN-SUFFIX,m-power.com
-DOMAIN-SUFFIX,m-team.cc
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,m.plixi.com
 DOMAIN-SUFFIX,m.slandr.net
@@ -15494,6 +15489,7 @@ DOMAIN-SUFFIX,pali.ltd
 DOMAIN-SUFFIX,paljorpublications.com
 DOMAIN-SUFFIX,palmislife.com
 DOMAIN-SUFFIX,paltalk.com
+DOMAIN-SUFFIX,palworldgame.com
 DOMAIN-SUFFIX,panasonic
 DOMAIN-SUFFIX,panasonic.com
 DOMAIN-SUFFIX,pancakeswap.finance
@@ -16440,6 +16436,7 @@ DOMAIN-SUFFIX,printspots.com
 DOMAIN-SUFFIX,printspots.net
 DOMAIN-SUFFIX,prism-break.org
 DOMAIN-SUFFIX,prisma.io
+DOMAIN-SUFFIX,prismic.io
 DOMAIN-SUFFIX,prismlauncher.org
 DOMAIN-SUFFIX,prismlive.com
 DOMAIN-SUFFIX,prisoneralert.com
