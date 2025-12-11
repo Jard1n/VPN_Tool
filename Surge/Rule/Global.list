@@ -1,4 +1,4 @@
-# Main total line 23057 
+# Main total line 23061 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -15924,7 +15924,10 @@ DOMAIN-SUFFIX,poecdn.net
 DOMAIN-SUFFIX,poeditor.com
 DOMAIN-SUFFIX,pogo.com
 DOMAIN-SUFFIX,pogobeta.com
+DOMAIN-SUFFIX,poi.icu
 DOMAIN-SUFFIX,poi.moe
+DOMAIN-SUFFIX,poi6.net
+DOMAIN-SUFFIX,poihub.com
 DOMAIN-SUFFIX,points-media.com
 DOMAIN-SUFFIX,poisontube.com
 DOMAIN-SUFFIX,pojapp.cfd
@@ -16467,6 +16470,7 @@ DOMAIN-SUFFIX,prodrive-japan.com
 DOMAIN-SUFFIX,producthunt.com
 DOMAIN-SUFFIX,profilemaster.com
 DOMAIN-SUFFIX,profreeporno.com
+DOMAIN-SUFFIX,project-poi.com
 DOMAIN-SUFFIX,project-syndicate.org
 DOMAIN-SUFFIX,projectapex.com
 DOMAIN-SUFFIX,projectara.com
