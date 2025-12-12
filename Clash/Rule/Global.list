@@ -1,4 +1,4 @@
-# Main total line 23061 
+# Main total line 23067 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -52,6 +52,10 @@ DOMAIN,ntp6.ntp-servers.net
 DOMAIN,ntp7.ntp-servers.net
 DOMAIN,ood.opsource.net
 DOMAIN,public-us-pingsx.api.clonoth.com
+DOMAIN,roovza-launches.appsflyersdk.com
+DOMAIN,roovza.inapps.appsflyersdk.com
+DOMAIN,roovza.launches.appsflyersdk.com
+DOMAIN,roovza.skadsdk.appsflyersdk.com
 DOMAIN,rss.4040940.xyz
 DOMAIN,rss.datuan.dev
 DOMAIN,rss.littlebaby.life
@@ -4126,6 +4130,7 @@ DOMAIN-SUFFIX,byjhd.com
 DOMAIN-SUFFIX,bymj.io
 DOMAIN-SUFFIX,bypasscensorship.org
 DOMAIN-SUFFIX,byrut.org
+DOMAIN-SUFFIX,bytedapm.com
 DOMAIN-SUFFIX,byteglb.com
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,byteoversea.net
@@ -14498,6 +14503,7 @@ DOMAIN-SUFFIX,nextmgz.com
 DOMAIN-SUFFIX,nextra.site
 DOMAIN-SUFFIX,nextstop.com
 DOMAIN-SUFFIX,nexus
+DOMAIN-SUFFIX,nexus-cdn.com
 DOMAIN-SUFFIX,nexusmods.com
 DOMAIN-SUFFIX,nfjtyd.com
 DOMAIN-SUFFIX,nflhotsalejerseys.com
