@@ -1,0 +1,210 @@
+# > Blizzard/Battle
+# 暗黑破坏神
+DOMAIN-SUFFIX,diablo3.com
+DOMAIN-SUFFIX,diabloimmortal.com
+IP-CIDR,24.105.30.129/32,no-resolve
+IP-CIDR,54.94.196.47/32,no-resolve
+IP-CIDR,185.60.112.157/32,no-resolve
+IP-CIDR,185.60.112.158/32,no-resolve
+IP-CIDR,182.162.135.1/32,no-resolve
+IP-CIDR,210.242.235.6/32,no-resolve
+IP-CIDR,103.4.115.248/32,no-resolve
+# 炉石传说
+DOMAIN-SUFFIX,firesidegatherings.com
+DOMAIN-SUFFIX,playhearthstone.com
+IP-CIDR,182.162.132.1/32,no-resolve
+# 风暴英雄
+DOMAIN-SUFFIX,heroesofthestorm.com
+IP-CIDR,24.105.62.129/32,no-resolve
+IP-CIDR,103.4.114.233/32,no-resolve
+IP-CIDR,202.9.67.59/32,no-resolve
+IP-CIDR,54.207.104.145/32,no-resolve
+IP-CIDR,182.162.116.1/32,no-resolve
+IP-CIDR,203.69.111.4/32,no-resolve
+# 守望先锋
+DOMAIN-SUFFIX,playoverwatch.com
+IP-CIDR,54.207.107.12/32,no-resolve
+IP-CIDR,185.60.114.159/32,no-resolve
+IP-CIDR,211.234.110.1/32,no-resolve
+IP-CIDR,203.66.81.98/32,no-resolve
+# 星际争霸
+DOMAIN-SUFFIX,starcraft.com
+DOMAIN-SUFFIX,starcraft2.com
+IP-CIDR,222.231.22.1/32,no-resolve
+IP-CIDR,202.9.67.254/32,no-resolve
+# 魔兽争霸III
+DOMAIN-SUFFIX,playwarcraft3.com
+# 魔兽世界
+DOMAIN-SUFFIX,worldofwarcraft.com
+IP-CIDR,211.115.104.1/32,no-resolve
+IP-CIDR,210.71.148.11/32,no-resolve
+
+
+# > UBI
+# R6
+DOMAIN-SUFFIX,r6s1.battleye.com
+DOMAIN-SUFFIX,lb-rdv-r6-pc.ubisoft.com
+DOMAIN-SUFFIX,r6logstorage05.blob.core.windows.net
+DOMAIN-SUFFIX,api-configuration-live01.live01.pc-live.r6.ubi.com
+DOMAIN-SUFFIX,api-discovery.live01.pc-live.r6.ubi.com
+DOMAIN-SUFFIX,cdn.prod.r6.ubi.com
+DOMAIN-SUFFIX,player.prod.r6.ubi.com
+# 存档
+DOMAIN-SUFFIX,ubisoft-uplay-savegames.s3.amazonaws.com
+DOMAIN-SUFFIX,ubisoft-orbit-savegames.s3.amazonaws.com
+DOMAIN-SUFFIX,uplaypc-s-ubisoft.cdn.ubi.com
+
+
+# > Epicgames
+DOMAIN-SUFFIX,battlebreakers.com
+DOMAIN-SUFFIX,eac-cdn.com
+DOMAIN-SUFFIX,easy.ac
+DOMAIN-SUFFIX,easyanticheat.net
+DOMAIN-SUFFIX,fortnite.com
+DOMAIN-SUFFIX,playparagon.com
+DOMAIN-SUFFIX,roborecall.com
+DOMAIN-SUFFIX,shadowcomplex.com
+DOMAIN-SUFFIX,spyjinx.com
+DOMAIN-SUFFIX,unrealtournament.com
+
+
+# > EA
+# Apex Legends
+DOMAIN-SUFFIX,apexlegends.com
+DOMAIN-SUFFIX,projectapex.com
+# 战地
+DOMAIN-SUFFIX,battlefield.com
+DOMAIN-SUFFIX,battlefield1943.com
+DOMAIN-SUFFIX,battlefield3.com
+DOMAIN-SUFFIX,battlefield4.com
+DOMAIN-SUFFIX,battlefield5.com
+DOMAIN-SUFFIX,battlefieldheroes.com
+DOMAIN-SUFFIX,battlefieldv.com
+DOMAIN-SUFFIX,battlelog.com
+# 死亡空间：重制版 
+DOMAIN-SUFFIX,deadspacegame.com
+# 龙腾世纪
+DOMAIN-SUFFIX,dragonage.com
+DOMAIN-SUFFIX,dragonagekeep.com
+DOMAIN-SUFFIX,dragonagemovie.com
+DOMAIN-SUFFIX,thedreadwolfrises.com
+# FIFA
+DOMAIN-SUFFIX,eafootballworld.com
+DOMAIN-SUFFIX,fifastreet.com
+DOMAIN-SUFFIX,fifastreet3.com
+# 质量效应系列
+DOMAIN-SUFFIX,masseffect.com
+DOMAIN-SUFFIX,masseffectarchives.com
+# 镜之边缘
+DOMAIN-SUFFIX,eamirrorsedge.com
+DOMAIN-SUFFIX,mirrorsedge.com
+DOMAIN-SUFFIX,mirrorsedge.jp
+DOMAIN-SUFFIX,mirrorsedge.net
+DOMAIN-SUFFIX,mirrorsedge2.com
+DOMAIN-SUFFIX,mirrorsedge2d.com
+
+
+# > 微软游戏
+# 极限竞速
+DOMAIN-SUFFIX,forzamotorsport.net
+DOMAIN-SUFFIX,forzaracingchampionship.com
+DOMAIN-SUFFIX,forzarc.com
+# 精灵与萤火意志
+DOMAIN-SUFFIX,orithegame.com
+# 我的世界
+DOMAIN-SUFFIX,callersbane.com
+DOMAIN-SUFFIX,minecraft.net
+DOMAIN-SUFFIX,minecraftshop.com
+DOMAIN-SUFFIX,mojang.com
+## >> Bethesda
+DOMAIN-SUFFIX,beth.games
+DOMAIN-SUFFIX,bethesda.net
+DOMAIN-SUFFIX,bethesdagamestudios.com
+DOMAIN-SUFFIX,bethsoft.com
+
+
+# > Riot
+# 英雄联盟
+DOMAIN-SUFFIX,leagueoflegends.com
+DOMAIN-SUFFIX,leagueoflegends.info
+DOMAIN-SUFFIX,leagueoflegends.net
+DOMAIN-SUFFIX,leagueoflegends.org
+DOMAIN-SUFFIX,leagueoflegendsscripts.com
+DOMAIN-SUFFIX,leaguesharp.info
+DOMAIN-SUFFIX,leaguoflegends.com
+DOMAIN-SUFFIX,learnwithleague.com
+DOMAIN-SUFFIX,lol-europe.com
+DOMAIN-SUFFIX,lolclub.org
+DOMAIN-SUFFIX,lolespor.com
+DOMAIN-SUFFIX,lolesports.com
+DOMAIN-SUFFIX,lolfanart.net
+DOMAIN-SUFFIX,lolpcs.com
+DOMAIN-SUFFIX,lolstatic-a.akamaihd.net
+DOMAIN-SUFFIX,lolstatic.com
+DOMAIN-SUFFIX,lolusercontent.com
+DOMAIN-SUFFIX,pvp.net
+DOMAIN-SUFFIX,pvp.tv
+DOMAIN-SUFFIX,ulol.com
+# 瓦罗兰特
+DOMAIN-SUFFIX,playvalorant.com
+# Riot Forge
+DOMAIN-SUFFIX,convrgencegame.com
+DOMAIN-SUFFIX,riotforgegames.com
+DOMAIN-SUFFIX,ruinedking.com
+
+
+# > Nintendo任天堂
+# 动物森友会
+DOMAIN-SUFFIX,ac-pocketcamp.com
+# 火焰之纹章
+DOMAIN-SUFFIX,fire-emblem-heroes.com
+DOMAIN-SUFFIX,fireemblemawakening.com
+# 精灵宝可梦
+DOMAIN-SUFFIX,dialga.com
+DOMAIN-SUFFIX,giratina.com
+DOMAIN-SUFFIX,kyurem.com
+DOMAIN-SUFFIX,pokedex3d.com
+DOMAIN-SUFFIX,pokemon-moon.com
+DOMAIN-SUFFIX,pokemon-sun.com
+DOMAIN-SUFFIX,pokemon-sunmoon.com
+DOMAIN-SUFFIX,pokemon.com
+DOMAIN-SUFFIX,pokemonbank.com
+DOMAIN-SUFFIX,pokemonblackwhite.com
+DOMAIN-SUFFIX,pokemonbw.com
+DOMAIN-SUFFIX,pokemonchampionships.com
+DOMAIN-SUFFIX,pokemongoldsilver.com
+DOMAIN-SUFFIX,pokemonhome.com
+DOMAIN-SUFFIX,pokemonletsgoeevee.com
+DOMAIN-SUFFIX,pokemonletsgopikachu.com
+DOMAIN-SUFFIX,pokemonmysterydungeon.com
+DOMAIN-SUFFIX,pokemonpicross.com
+DOMAIN-SUFFIX,pokemonplatinum.com
+DOMAIN-SUFFIX,pokemonrubysapphire.com
+DOMAIN-SUFFIX,pokemonsunmoon.com
+DOMAIN-SUFFIX,pokemonswordshield.com
+DOMAIN-SUFFIX,pokemonultrasunmoon.com
+DOMAIN-SUFFIX,pokemonvgc.com
+DOMAIN-SUFFIX,pokemonwifi.net
+# 喷射战士2
+DOMAIN-SUFFIX,splatoon2tournament.com
+# 超级马力欧
+DOMAIN-SUFFIX,drmario-world.com
+DOMAIN-SUFFIX,marioandluigidreamteam.com
+DOMAIN-SUFFIX,mariobroswii.com
+DOMAIN-SUFFIX,mariokart7.com
+DOMAIN-SUFFIX,mariokart8.com
+DOMAIN-SUFFIX,mariosupersluggers.com
+DOMAIN-SUFFIX,newsupermariobrosu.com
+DOMAIN-SUFFIX,supermario.com
+DOMAIN-SUFFIX,supermario3dworld.com
+DOMAIN-SUFFIX,supermariogalaxy.com
+DOMAIN-SUFFIX,supermariorun.com
+DOMAIN-SUFFIX,superpapermario.com
+# 异度神剑
+DOMAIN-SUFFIX,xenoblade.com
+
+
+
+
+
+

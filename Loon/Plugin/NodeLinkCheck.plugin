@@ -1,0 +1,9 @@
+#!name = 代理链路检测
+#!desc = 查看目标节点的代理走向
+#!author=I-am-R-E[https://github.com/I-am-R-E]
+#!tag=节点检测
+#!icon=https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Stack.png
+
+
+[Script]
+generic script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Loon/Script/NodeLinkCheck.js,tag=代理链路检测,img-url=link.circle.system

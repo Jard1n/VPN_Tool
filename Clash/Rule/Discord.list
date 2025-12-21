@@ -1,0 +1,8 @@
+DOMAIN-SUFFIX,discord.co
+DOMAIN-SUFFIX,discord.com
+DOMAIN-SUFFIX,discord.gg
+DOMAIN-SUFFIX,discord.media
+DOMAIN-SUFFIX,discordapp.com
+DOMAIN-SUFFIX,discordapp.net
+AND,((PROTOCOL,UDP),(DEST-PORT,>50000),(IP-ASN,49544,no-resolve))
+AND,((PROTOCOL,UDP),(DEST-PORT,>50000),(IP-ASN,15169,no-resolve))

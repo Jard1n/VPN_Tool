@@ -1,0 +1,15 @@
+#!name = CookieGet
+#!desc = 获取Cookie
+#!system = ios
+
+
+[Script]
+# 阿里云盘Cookie
+阿里云盘签到cookie = requires-body=1,type=http-response,pattern=https:\/\/auth.(aliyundrive|alipan).com\/v2\/account\/token,script-path=https://raw.githubusercontent.com/lowking/Scripts/master/ali/aliYunPanCheckIn.js
+
+# 京东Cookie
+京东 = type=http-request,requires-body=1,pattern=^https:\/\/(api\.m|me-api|ms\.jr)\.jd\.com\/(client\.action\?functionId=signBean|user_new\/info\/GetJDUserInfoUnion\?|gw\/generic\/hy\/h5\/m\/appSign\?),script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+
+
+[MITM]
+hostname = %APPEND% auth.alipan.com, ms.jr.jd.com, me-api.jd.com

@@ -1,0 +1,49 @@
+# 苹果时间同步
+DOMAIN,time.apple.com
+
+# 苹果天气服务
+DOMAIN-KEYWORD,weather-edge.apple.com
+DOMAIN-KEYWORD,weather-adge.apple.com
+DOMAIN-SUFFIX,weather-data.apple.com
+DOMAIN-SUFFIX,weather-map.apple.com
+DOMAIN-SUFFIX,weather-analytics-events.apple.com
+
+# 苹果输入法相关服务
+DOMAIN-KEYWORD,api.smoot.apple.com
+DOMAIN-KEYWORD,api.smoot.apple.cn
+
+# 苹果其他服务
+DOMAIN,smp-device-content.apple.com
+DOMAIN-SUFFIX,cn.apple.com
+DOMAIN-KEYWORD,ssl.apple.com
+DOMAIN-KEYWORD,humb.apple.com
+DOMAIN-KEYWORD,api-adservices.apple.com 
+DOMAIN-KEYWORD,ls.apple.com
+DOMAIN-KEYWORD,gsa.apple.com 
+DOMAIN-KEYWORD,ess.apple.com 
+
+# App Store
+DOMAIN,ppq.apple.com
+DOMAIN-SUFFIX,aaplimg.com
+DOMAIN-SUFFIX,itunes.apple.com
+DOMAIN-SUFFIX,apps.apple.com
+DOMAIN-SUFFIX,mzstatic.com
+
+# Apple ID
+DOMAIN,appleid.apple.com
+DOMAIN,appleid.cdn-apple.com
+DOMAIN,idmsa.apple.com
+DOMAIN,gsa.apple.com
+
+# Apple 推送通知
+DOMAIN,identity.apple.com
+DOMAIN-SUFFIX,push.apple.com
+IP-CIDR,17.249.0.0/16,no-resolve
+IP-CIDR,17.252.0.0/16,no-resolve
+IP-CIDR,17.57.144.0/22,no-resolve 
+IP-CIDR,17.188.128.0/18,no-resolve
+IP-CIDR,17.188.20.0/23,no-resolve
+IP-CIDR6,2620:149:a44::/48,no-resolve
+IP-CIDR6,2403:300:a42::/48,no-resolve
+IP-CIDR6,2403:300:a51::/48,no-resolve
+IP-CIDR6,2a01:b740:a42::/48,no-resolve

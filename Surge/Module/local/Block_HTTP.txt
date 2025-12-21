@@ -1,0 +1,8 @@
+[DELETE]
+#!author=
+#!icon=
+#!loon_version=
+#!homepage=
+[REPLACE]
+#!desc => #!desc=拦截常见的HTTPDNS服务
+#!tag => #!category =  Block Ads

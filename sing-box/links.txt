@@ -1,0 +1,16 @@
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/DirectWhitelist.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Advertising.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/PayPal.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/OpenAI.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/ProxyMedia.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Twitter.list
+https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Surge/Telegram/Telegram.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/GameClient.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Google.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Microsoft.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/AppleProxy.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Apple.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Proxy.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/China.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/BlockiOSUpdate.list
+https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/TikTok.list

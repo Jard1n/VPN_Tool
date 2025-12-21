@@ -1,0 +1,79 @@
+[General]
+# ------------- 通用设置 ----------------
+# 日志级别
+loglevel = notify
+# 游戏模式
+udp-priority = false
+# IPv6
+ipv6 = false
+# 允许 Surge VIF 处理 IPv6 的TCP请求
+ipv6-vif = false
+# 直连测试URL
+internet-test-url = http://www.baidu.com
+# 代理测速URL
+proxy-test-url = http://www.apple.com/library/test/success.html
+# 测试超时(秒)
+test-timeout = 3
+# 自定义GeoIP数据库
+geoip-maxmind-url = https://raw.githubusercontent.com/Jard1n/GeoIP/release/GeoIP-CN.mmdb
+# 关闭GeoIP数据库自动更新
+disable-geoip-db-auto-update = false
+# DNS服务器
+dns-server = 223.5.5.5, 119.29.29.29
+# 加密 DNS 服务器设置
+# encrypted-dns-server = h3://223.5.5.5/dns-query
+# 关闭加密DNS的服务端证书验证
+encrypted-dns-skip-cert-verification = false
+# 使加密 DNS 遵循出站模式和规则
+encrypted-dns-follow-outbound-mode = false
+# 代理策略请求本地 DNS 映射，仅对配置了 IP 地址的本地 DNS 映射生效
+use-local-host-item-for-proxy = true
+# 劫持DNS
+hijack-dns = *:53
+# 跳过代理
+skip-proxy = localhost, *.local, captive.apple.com, e.crashlytics.com, www.baidu.com, passenger.t3go.cn, yunbusiness.ccb.com, wxh.wo.cn, gate.lagou.com, www.abchina.com.cn, login-service.mobile-bank.psbc.com, mobile-bank.psbc.com, 10.0.0.0/8, 127.0.0.1/32, 172.16.0.0/12, 192.168.0.0/16, 192.168.122.1/32, 193.168.0.1/32, ::1/128, fe80::/10, 100.64.0.0/10
+# 排除简单主机名
+exclude-simple-hostnames = true
+
+# 远程控制器
+external-controller-access = Jard1n@0.0.0.0:6155
+# HTTP-API
+http-api = Jard1n@0.0.0.0:6166
+# 使用https替代http协议
+http-api-tls = false
+# Web 控制器
+http-api-web-dashboard = true
+
+# 当遇到 REJECT 策略时返回错误页
+show-error-page-for-reject = true
+# UDP回退行为
+udp-policy-not-supported-behaviour = REJECT
+# Always Real IP Hosts
+always-real-ip = *.lan, *.direct, cable.auth.com, *.msftconnecttest.com, *.msftncsi.com, *.srv.nintendo.net, *.stun.playstation.net, xbox.*.microsoft.com, *.xboxlive.com, stun.*, *.logon.battlenet.com.cn, *.logon.battle.net, *.blzstatic.cn, stun.l.google.com, localhost.*.qq.com, localhost.*.weixin.qq.com, *.cmpassport.com, id6.me, open.e.189.cn, mdn.open.wo.cn, opencloud.wostore.cn, auth.wosms.cn
+
+# 将TCP连接视为HTTP请求，使重写、脚本等功能可用
+# force-http-engine-hosts =
+# 在进行协议嗅探时，以下关键字将恢复为原始 TCP 处理，避免一些兼容性问题
+# always-raw-tcp-keywords =
+# 不对以下特定主机名的TCP进行协议嗅探，解决一些兼容性问题
+# always-raw-tcp-hosts = 
+# VIF Excluded Routes
+# tun-excluded-routes = 0.0.0.0/8, 10.0.0.0/8, 100.64.0.0/10, 127.0.0.0/8, 169.254.0.0/16, 172.16.0.0/12, 192.0.0.0/24, 192.0.2.0/24, 192.168.0.0/16, 192.88.99.0/24, 198.51.100.0/24, 203.0.113.0/24, 224.0.0.0/4, 255.255.255.255/32
+# VIF Included Routes
+# tun-included-routes = 192.168.1.12/32
+
+# -------------- Mac设置 ---------------
+# > vif模式
+vif-mode = v3
+# 当 Wi-Fi 不是首选网络时 SSID 组策略使用默认策略
+use-default-policy-if-wifi-not-primary = false
+# 遵循 /etc/hosts 中的本地 DNS 映射项
+read-etc-hosts = true
+# HTTP 代理服务端口
+http-listen = 0.0.0.0:6152
+# SOCKS5 代理服务端口
+socks5-listen = 0.0.0.0:6153
+# CPU调试模式
+debug-cpu-usage = false
+# 内存调试模式
+debug-memory-usage = false

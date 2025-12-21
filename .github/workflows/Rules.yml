@@ -1,0 +1,146 @@
+name: Update rules
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "25 */12 * * *"
+
+
+jobs:
+  Update_rules:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout target repository
+        uses: actions/checkout@v4
+        with:
+          repository: Jard1n/VPN_Tool
+          path: VPN_Tool-repo
+          
+      - name: 下载文件
+        run: |
+           declare -A file_path_url=(
+               ["AppleCDN.list"]="Surge/Rule/AppleCDN.list https://ruleset.skk.moe/List/domainset/apple_cdn.conf"
+               ["MicrosoftCDN.list"]="Surge/Rule/MicrosoftCDN.list https://ruleset.skk.moe/List/non_ip/microsoft_cdn.conf"
+               ["Global.list"]="Surge/Rule/Global.list https://raw.githubusercontent.com/SouthAlley/q/main/rule/global/fin.txt"
+               ["Proxy.list"]="Surge/Rule/Proxy.list https://raw.githubusercontent.com/SouthAlley/q/main/local/proxy.list"
+               ["Advertising.list"]="Surge/Rule/Advertising.list https://raw.githubusercontent.com/SouthAlley/q/main/rule/ad1/fin.txt"
+               ["China.list"]="Surge/Rule/China.list https://raw.githubusercontent.com/SouthAlley/q/main/local/china.list"
+               ["Clash_Proxy"]="Clash/Rule/Proxy.list https://raw.githubusercontent.com/SouthAlley/q/main/local/proxy.list"
+               ["Clash_Advertising"]="Clash/Rule/Advertising.list https://raw.githubusercontent.com/SouthAlley/q/main/rule/ad1/fin.txt"
+               ["Clash_China"]="Clash/Rule/China.list https://raw.githubusercontent.com/SouthAlley/q/main/local/china.list"
+               ["Clash_Global"]="Clash/Rule/Global.list https://raw.githubusercontent.com/SouthAlley/q/main/rule/global/fin.txt"
+               )
+
+           for file in "${!file_path_url[@]}"; do
+               IFS=' ' read -r path url <<< "${file_path_url[$file]}"
+               mkdir -p "VPN_Tool-repo/${path%/*}"
+               curl -L -o "VPN_Tool-repo/$path" "$url"
+               IFS='/' read -ra parts <<< "${path%.list}"
+               rule_type="${parts[-1]}"
+               category="${parts[0]}"
+
+               original_file="VPN_Tool-repo/$path"
+               del_file="VPN_Tool-repo/$category/Rule/local/del/${rule_type}.ini"
+               add_file="VPN_Tool-repo/$category/Rule/local/add/${rule_type}.ini"
+
+               # 处理规则
+               process_rules() {
+                   # 修改, 为,
+                   sed -i 's/, /,/g' "$original_file"
+                   # 修改为大写
+                   sed -i -e 's/host,/DOMAIN,/gi' -e 's/host-suffix,/DOMAIN-SUFFIX,/gi' -e 's/host-keyword,/DOMAIN-KEYWORD,/gi' -e 's/host-wildcard,/DOMAIN-WILDCARD,/gi' "$original_file"
+                   sed -i 's/ip-cidr,/IP-CIDR,/gi' "$original_file"
+                   sed -i 's/ip6-cidr,/IP-CIDR6,/gi' "$original_file"
+                   sed -i 's/user-agent,/USER-AGENT,/g' "$original_file"
+                   # 删除不必要的部分
+                   sed -i '/^\(AND\|OR\|NOT\)/!s/\([^,]*,[^,]*\),.*/\1/g' "$original_file"
+                   # 如果包含IP-CIDR且不包含,no-resolve 则添加,no-resolve
+                   sed -i '/IP-/ {/no-resolve/! s/$/,no-resolve/}' "$original_file"
+                   # 修改;为#
+                   sed -i 's/;/# /g' "$original_file"
+                   sed -E -i '/\*/{/^DOMAIN-WILDCARD,/! s/^/DOMAIN-WILDCARD,/}' "$original_file"
+                   }
+                   
+               # 处理 _Set.list 文件
+               if [[ "$file" == *_Set ]]; then
+                   if [ -f "$original_file" ]; then
+                        process_rules
+                        # 删除 DOMAIN 和 DOMAIN-SUFFIX 行
+                        sed -i '/^\(DOMAIN\|DOMAIN-SUFFIX\),.*$/d' "$original_file"
+                        # 删除注释
+                        sed -i 's/#.*//' "$original_file"
+                        # 删除空行
+                        sed -i '/^[[:space:]]*$/d' "$original_file"
+                        if [[ "$file" == Surfboard_* ]]; then
+                            sed -i '/^\(DOMAIN-WILDCARD\|URL-REGEX\|USER-AGENT\|OR\|AND\),.*$/d' "$original_file"
+                        fi
+                        echo "$original_file 操作完成."
+                    else
+                        echo "$original_file not found."
+                    fi
+                    
+               # 处理 _Domain.list 文件           
+               elif [[ "$file" == *_Domain ]]; then
+                   if [ -f "$original_file" ]; then
+                        process_rules
+                        # DOMAIN, 移除
+                        sed -i 's/DOMAIN,//g' "$original_file"
+                        # DOMAIN-SUFFIX, 替换为 .
+                        sed -i 's/DOMAIN-SUFFIX,/./g' "$original_file"
+                        # 删除规则
+                        sed -i '/^\(PROCESS-NAME\|DOMAIN-WILDCARD\|DOMAIN-KEYWORD\|IP-CIDR\|IP-CIDR6\|IP-ASN\|URL-REGEX\|USER-AGENT\|OR\|AND\),.*$/d' "$original_file"
+                        # 删除注释
+                        sed -i 's/#.*//' "$original_file"
+                        # 删除空行
+                        sed -i '/^[[:space:]]*$/d' "$original_file"
+                        echo "$original_file 操作完成."
+                    else
+                        echo "$original_file not found."
+                    fi
+
+               else
+                   # 规则修改
+                   if [ -f "$original_file" ]; then
+                        process_rules
+                        sed -i 's/^\./DOMAIN-SUFFIX,/g' "$original_file"
+                        sed -E -i '/^[^*#\/[:space:]]/ s/^[^,]*$/DOMAIN,&/' "$original_file"
+                        if [[ "$file" == Clash_* ]]; then
+                            sed -i 's/DEST-PORT/DST-PORT/g' "$original_file"
+                        fi
+                        echo "$original_file 操作完成."
+                   else
+                        echo "$original_file not found."
+                   fi
+               fi
+                   
+               # 删除规则
+               if [ -f "$del_file" ]; then
+                    grep -vFf "$del_file" "$original_file" > "$original_file.tmp" && mv "$original_file.tmp" "$original_file"
+                    echo "删除${rule_type}操作完成。"
+               else
+                    echo "$del_file 不存在。跳过删除${rule_type}操作。"
+               fi
+               
+               # 添加自定义规则
+               if [ -f "$add_file" ]; then
+                   cat "$add_file" >> "$original_file"
+                   echo "添加${rule_type}操作完成。"
+               else
+                   echo "$add_file 不存在。跳过添加${rule_type}操作。"
+               fi
+           done
+
+      - name: Add and 提交更改
+        run: |
+          cd VPN_Tool-repo
+          if [[ -n $(git status -s) ]]; then
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add .
+            git commit -m "Update rules"
+            git push
+          else
+            echo "No changes to commit."
+          fi
+

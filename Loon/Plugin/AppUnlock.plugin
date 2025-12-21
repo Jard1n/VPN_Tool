@@ -1,0 +1,35 @@
+#!name= AllinOneUnlock
+#!desc= APP解锁合集
+#!author= Jard1n
+#!homepage= https://github.com/Jard1n/VPN_Tool/main/Loon
+#!icon= https://raw.githubusercontent.com/Orz-3/mini/master/Color/Element.png
+
+
+[Rewrite]
+# 彩云天气
+^https:\/\/biz\.cyapi\.cn\/(p\/v1\/entries|p\/v1\/trial_card\/info|v2\/product) reject-dict
+^https:\/\/starplucker\.cyapi\.cn\/v3\/(config\/cypage\/\w+\/conditions|notification\/message_center|operation\/homefeatures) reject-dict
+# Spotify推广
+^https?://spclient.wg.spotify.com/(ad-logic|ads|.+ad_slot|.+banners|.+canvases|.+cards|.+crashlytics|.+doubleclick.net|.+enabled-tracks|.+promoted_offer) reject-img
+^https?:\/\/api\d?\.musical\.ly\/api\/ad\/ reject-img
+
+[Script]
+# 哔哩哔哩繁体CC字幕转中文简体 //aisubtitle.hdslb.com
+http-response ^https?:\/\/aisubtitle\.hdslb\.com\/bfs\/subtitle\/.+\.json script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Bilibili/bilibili_cc.js, requires-body=true, tag=bilibili_cc
+
+# Spotify解锁 //spclient.wg.spotify.com
+http-request ^https:\/\/spclient\.wg\.spotify\.com\/(artistview\/v1\/artist|album-entity-view\/v2\/album)\/ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-json.js, tag=spotify-json
+http-response ^https:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$ script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js, requires-body=true, binary-body-mode=true, tag=spotify-proto
+
+# 彩云天气 //api.caiyunapp.com,starplucker.cyapi.cn,biz.cyapi.cn,wrapper.cyapi.cn
+http-response ^https:\/\/api\.caiyunapp\.com\/v1\/activity\? script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/AppUnlock/caiyun.js, requires-body=true, tag=彩云天气
+http-response ^https:\/\/biz\.cyapi\.cn\/(api\/v1\/user_detail|p\/v1\/vip_info|v2\/user) script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/AppUnlock/caiyun.js, requires-body=true, tag=彩云天气
+http-response ^https:\/\/wrapper\.cyapi\.cn\/v1\/activity\? script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/AppUnlock/caiyun.js, requires-body=true, tag=彩云天气
+http-request ^https:\/\/wrapper\.cyapi\.cn\/v1\/(nafp\/origin_images|satellite)\? script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/AppUnlock/caiyun.js, tag=彩云天气
+
+# 百度文库解锁VIP文档阅读权限 //appwk.baidu.com
+http-response ^https:\/\/appwk\.baidu\.com\/naapi\/user\/getinfo script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/AppUnlock/baidulibrary.js, requires-body=true, tag=百度文库
+
+
+[MITM]
+hostname = aisubtitle.hdslb.com, spclient.wg.spotify.com, api.caiyunapp.com, starplucker.cyapi.cn, biz.cyapi.cn, wrapper.cyapi.cn, appwk.baidu.com

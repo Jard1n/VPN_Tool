@@ -1,0 +1,52 @@
+# > PayPal
+DOMAIN,cdn.honey.io
+DOMAIN-KEYWORD,paypal
+
+# Braintree
+DOMAIN-SUFFIX,braintreegateway.com
+DOMAIN-SUFFIX,braintreegateway.tv
+DOMAIN-SUFFIX,braintreepayments.com
+DOMAIN-SUFFIX,braintreepayments.info
+DOMAIN-SUFFIX,braintreepayments.org
+DOMAIN-SUFFIX,braintreepayments.tv
+DOMAIN-SUFFIX,braintreepaymentsolutions.com
+DOMAIN-SUFFIX,braintreeps.com
+DOMAIN-SUFFIX,briantreepayments.net
+DOMAIN-SUFFIX,briantreepayments.tv
+DOMAIN-SUFFIX,card.io
+DOMAIN-SUFFIX,getbraintree.com
+
+# LoanBuilder
+DOMAIN-SUFFIX,loanbuilder.com
+DOMAIN-SUFFIX,swiftcapital.com
+
+# Simility
+DOMAIN-SUFFIX,simility.com
+
+# Swift Financial
+DOMAIN-SUFFIX,cashify.net
+DOMAIN-SUFFIX,swiftbank.info
+DOMAIN-SUFFIX,swiftbank.us
+DOMAIN-SUFFIX,swiftfinancial.com
+DOMAIN-SUFFIX,swiftfinancial.info
+DOMAIN-SUFFIX,swiftfinancial.net
+
+# Venmo
+DOMAIN-SUFFIX,venmo-touch.com
+DOMAIN-SUFFIX,venmo.com
+DOMAIN-SUFFIX,venmo.info
+DOMAIN-SUFFIX,venmo.net
+DOMAIN-SUFFIX,venmo.org
+
+# Xoom
+DOMAIN-SUFFIX,cash2.com
+DOMAIN-SUFFIX,filipino-music.net
+DOMAIN-SUFFIX,s-xoom.com
+DOMAIN-SUFFIX,webmoneyinfo.com
+DOMAIN-SUFFIX,wwwxoom.com
+DOMAIN-SUFFIX,xoom-experience.com
+DOMAIN-SUFFIX,xoom.com
+DOMAIN-SUFFIX,xoom.io
+DOMAIN-SUFFIX,xoom.net.cn
+DOMAIN-SUFFIX,xoom.us
+DOMAIN-SUFFIX,xoomcom.com

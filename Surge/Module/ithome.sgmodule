@@ -1,0 +1,18 @@
+#!name = 净化 & IT之家
+#!desc = 过滤IT之家信息流广告和文末广告
+#!arguments = banner:1, bannerAd:1, top:1
+#!arguments-desc = 开启为: 1\n关闭为: 0\n\n去除轮播图广告: bannerAd\n去除整个轮播图: banner\n去除置顶: top
+#!category =  Block Ads
+
+
+[URL Rewrite]
+^https?:\/\/api\.zuihuimai\.com\/static\/.*\/hongbao - reject
+^https?:\/\/dat\.ruanmei\.com\/ithome\/money\/acd\.json$ - reject
+
+
+[Script]
+IT之家 = type=http-response,pattern=^https:\/\/napi\.ithome\.com\/api\/(?:news\/index|topmenu\/getfeeds\?|api\/douyin\/GetLiveInfo),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/IThome/ithomes.js, argument="{"banner":"{{{banner}}}","bannerAd":"{{{bannerAd}}}","top":"{{{top}}}"}"
+
+
+[MITM]
+hostname = %APPEND% api.zuihuimai.com, dat.ruanmei.com, napi.ithome.com

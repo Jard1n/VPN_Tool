@@ -1,0 +1,29 @@
+#!name = 净化 & 百度贴吧
+#!desc = 移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面
+#!category =  Block Ads
+
+
+[Rule]
+DOMAIN,afd.baidu.com,REJECT,extended-matching
+DOMAIN,mobads.baidu.com,REJECT,extended-matching
+DOMAIN,180.76.76.200,REJECT,extended-matching
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
+
+
+[Map Local]
+^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover data-type=text data="{}" status-code=200
+^https:\/\/tiebac\.baidu\.com\/c\/f\/forum\/forumGuide data-type=text data="{}" status-code=200
+^https:\/\/tiebac\.baidu\.com\/c\/u\/chat\/getChatSubscriptionList data-type=text data="{}" status-code=200
+
+
+[Script]
+清理首页 = type=http-response, pattern=^https:\/\/tieba\.baidu\.com\/c\/f\/frs\/frsBottom, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
+清理首页 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/livefeed\/feed, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
+清理侧拉抽屉 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
+清理我的页面 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
+tieba.Json = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$), requires-body=1, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/tiebaJson.js
+tieba.Proto = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd, requires-body=1, binary-body-mode=1, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/tiebaProto.js
+
+
+[MITM]
+hostname = %APPEND% tiebac.baidu.com, tieba.baidu.com

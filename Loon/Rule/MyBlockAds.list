@@ -1,0 +1,127 @@
+# 2023-09-14 21:45
+
+# ======= A ======= #
+# 阿里云
+IP-CIDR, 203.107.1.1/24, REJECT
+# Apple
+DOMAIN, advertising.apple.com, REJECT
+DOMAIN, api-adservices.apple.com, REJECT
+DOMAIN, apple.comscoreresearch.com, REJECT
+DOMAIN, banners.itunes.apple.com, REJECT
+DOMAIN, iad.apple.com, REJECT
+DOMAIN, iadcontent.apple.com, REJECT
+DOMAIN, iadctest.qwapi.com, REJECT
+DOMAIN, iadmoo.apple.com, REJECT
+DOMAIN, iadworkbench.apple.com, REJECT
+DOMAIN, launch.apple.com, REJECT
+DOMAIN, metrics.apple.com, REJECT
+DOMAIN, qwapi.apple.com, REJECT
+DOMAIN, securemetrics.apple.com, REJECT
+DOMAIN, webproxy-advp.iad-apple.com, REJECT
+DOMAIN, webproxy-advp.iad-apple.com.akadns.net, REJECT
+DOMAIN-SUFFIX, advp.apple.com, REJECT
+DOMAIN-SUFFIX, iadsdk.apple.com, REJECT
+# 安全浏览限制解除
+DOMAIN, lookup.api.bsb.baidu.com, REJECT
+DOMAIN, proxy.safebrowsing.apple, REJECT
+DOMAIN, safebrowsing.g.applimg.com, REJECT
+DOMAIN, safebrowsing.googleapis.com, REJECT
+DOMAIN, safebrowsing.urlsec.qq.com, REJECT
+DOMAIN, token.safebrowsing.apple, REJECT
+DOMAIN, vs6.bj2ct.u3.ucweb.com, REJECT
+DOMAIN-SUFFIX, safebrowsing.apple, REJECT
+DOMAIN-SUFFIX, u3.ucweb.com, REJECT
+
+# ======= B ======= #
+
+# ======= C ======= #
+# ChatGPT
+DOMAIN, o33249.ingest.sentry.io, REJECT
+
+# ======= F ======= #
+# Foreca & Google
+DOMAIN, adservice.google.com, REJECT
+DOMAIN, googleads.g.doubleclick-cn.net, REJECT
+DOMAIN, googleads.g.doubleclick.net, REJECT
+DOMAIN, pagead2.googlesyndication.com, REJECT
+DOMAIN, pubads.g.doubleclick.net, REJECT
+DOMAIN, www.googleadservices.com, REJECT
+DOMAIN-KEYWORD, adservice.google.com., REJECT
+
+# ======= G ======= #
+# 工商银行 开屏广告
+DOMAIN, pageviewp.icbc.com.cn, REJECT
+# 广告联盟
+DOMAIN, is.snssdk.com, REJECT
+DOMAIN, mi.gdt.qq.com, REJECT
+DOMAIN, open.e.kuaishou.com, REJECT
+DOMAIN-SUFFIX, pangolin-sdk-toutiao-b.com, REJECT
+DOMAIN-SUFFIX, pangolin-sdk-toutiao.com, REJECT
+DOMAIN-SUFFIX, pangolin-sdk-toutiao1.com, REJECT
+DOMAIN-SUFFIX, pangolin.snssdk.com, REJECT
+
+# ======= K ======= #
+# 酷我音乐
+DOMAIN, ad.tencentmusic.com, REJECT
+DOMAIN, g.koowo.com, REJECT
+DOMAIN, mobilead.kuwo.cn, REJECT
+DOMAIN, rich.kuwo.cn, REJECT
+DOMAIN, tmead.y.qq.com, REJECT
+DOMAIN, tmeadcomm.y.qq.com, REJECT
+
+# ======= L ======= #
+# 蓝奏云
+DOMAIN, statics.woozooo.com, REJECT
+
+# ======= M ======= #
+# 美团
+DOMAIN, al-log.d.meituan.net, REJECT
+DOMAIN, babel-statistics-android.d.meituan.net, REJECT
+DOMAIN, maplocatesdksnapshot.d.meituan.net, REJECT
+DOMAIN, metrics-picture.d.meituan.net, REJECT
+DOMAIN, route-stats.d.meituan.net, REJECT
+# 美颜相机
+DOMAIN, aaid.uyunad.com, REJECT
+DOMAIN, adui.tg.meitu.com, REJECT
+
+# ======= O ======= #
+# Outlook
+DOMAIN, acdn.adnxs.com, REJECT
+DOMAIN, mediation.adnxs.com, REJECT
+DOMAIN, sin3-ib.adnxs.com, REJECT
+
+# ======= R ======= #
+# RARBG 推广跳转
+DOMAIN, bravetense.com, REJECT
+DOMAIN, furiousfar.com, REJECT
+DOMAIN, swallowcrockerybless.com, REJECT
+
+# ======= T ======= #
+# 腾讯 无法使用的推送服务
+DOMAIN, tpns.qq.com, REJECT
+
+# ======= W ======= #
+# 网上国网
+DOMAIN, h5-api.feiersmart.com, REJECT
+# 网易云音乐
+DOMAIN, gdt.qq.com, REJECT
+DOMAIN, httpdns.n.netease.com, REJECT
+DOMAIN, iadmat.nosdn.127.net, REJECT
+DOMAIN, iadmusicmat.music.126.net, REJECT
+DOMAIN, iadmusicmatvideo.music.126.net, REJECT
+HOST-SUFFIX, 163jiasu.com, REJECT
+
+# ======= X ======= #
+# 迅雷 解除版权限制
+;DOMAIN, hub5btmain.v6.shub.sandai.net, REJECT
+;DOMAIN, hub5emu.v6.shub.sandai.net, REJECT
+;DOMAIN, hub5idx.v6.shub.sandai.net, REJECT
+
+# ======= Y ======= #
+# 云闪付 开屏广告
+DOMAIN, ads.95516.com, REJECT
+DOMAIN, cm-10-138.getui.com, REJECT
+DOMAIN, sdk-conf.getui.com, REJECT
+DOMAIN, sdk.open.talk.getui.net, REJECT
+DOMAIN, switch.cup.com.cn, REJECT
+DOMAIN, tysdk.95516.com, REJECT
