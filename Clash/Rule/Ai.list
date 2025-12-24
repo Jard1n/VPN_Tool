@@ -39,7 +39,6 @@ DOMAIN,api.githubcopilot.com
 DOMAIN,copilot-proxy.githubusercontent.com
 DOMAIN,copilot.microsoft.com
 DOMAIN,sydney.bing.com
-DOMAIN,www.bing.com
 
 # Claude
 DOMAIN,o1158394.ingest.us.sentry.io
