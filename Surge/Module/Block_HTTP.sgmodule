@@ -1,7 +1,7 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
 #!category =  Block Ads
-#!date=2025-11-23 22:49:40
+#!date=2025-12-29 17:33:55
 
 [Rule]
 DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT,extended-matching
@@ -84,6 +84,7 @@ DOMAIN,httpdns.alicdn.com,REJECT,extended-matching
 DOMAIN,httpdns-api.aliyuncs.com,REJECT,extended-matching
 DOMAIN,httpdns-sc.aliyuncs.com,REJECT,extended-matching
 IP-CIDR,203.107.1.0/24,REJECT,no-resolve
+DOMAIN,ucdc.upaas.quark.cn,REJECT,extended-matching
 DOMAIN,httpdns.danuoyi.tbcache.com,REJECT,extended-matching
 DOMAIN,httpdns.cctv.com,REJECT,extended-matching
 DOMAIN,httpdns-browser.platform.dbankcloud.cn,REJECT,extended-matching
