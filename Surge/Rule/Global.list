@@ -2,7 +2,6 @@
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
-DOMAIN,anime-rule34-world.b-cdn.net
 DOMAIN,api.acaisbest.shop
 DOMAIN,api.stentvessel.top
 DOMAIN,api.waqi.info
@@ -72,10 +71,8 @@ DOMAIN,rsshub.rssforever.com
 DOMAIN,rsshub.umzzz.com
 DOMAIN,rsshub.woodland.cafe
 DOMAIN,rsshub2.asailor.org
-DOMAIN,servd-anthropic-website.b-cdn.net
 DOMAIN,straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
 DOMAIN,tagcdnsub.work
-DOMAIN,tmdb-image-prod.b-cdn.net
 DOMAIN,ut1-time.colorado.edu
 DOMAIN,utcnist.colorado.edu
 DOMAIN,utcnist2.colorado.edu
@@ -2468,6 +2465,7 @@ DOMAIN-SUFFIX,azureserviceprofiler.com
 DOMAIN-SUFFIX,azuresmartspaces.net
 DOMAIN-SUFFIX,azurestackvalidation.com
 DOMAIN-SUFFIX,azurewebsites.net
+DOMAIN-SUFFIX,b-cdn.net
 DOMAIN-SUFFIX,b-eroland.net
 DOMAIN-SUFFIX,b-ok.africa
 DOMAIN-SUFFIX,b-ok.asia
@@ -4038,6 +4036,8 @@ DOMAIN-SUFFIX,bumptop.net
 DOMAIN-SUFFIX,bumptop.org
 DOMAIN-SUFFIX,bumptunes.com
 DOMAIN-SUFFIX,bunbunhk.com
+DOMAIN-SUFFIX,bunny.net
+DOMAIN-SUFFIX,bunnycdn.com
 DOMAIN-SUFFIX,bunnylust.com
 DOMAIN-SUFFIX,burningcamel.com
 DOMAIN-SUFFIX,burstly.net
