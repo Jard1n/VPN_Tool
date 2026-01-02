@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Microsoft CDN
-# Size: 58
+# Size: 57
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -24,7 +24,6 @@ DOMAIN-SUFFIX,officecdn.microsoft.com
 DOMAIN-SUFFIX,developer.microsoft.com
 DOMAIN-SUFFIX,download.microsoft.com
 DOMAIN-SUFFIX,devblogs.microsoft.com
-DOMAIN-SUFFIX,learn.microsoft.com
 DOMAIN-SUFFIX,storecorefulfillment.download.prss.microsoft.com
 DOMAIN-SUFFIX,mpnbenefitsrtluat.download.prss.microsoft.com
 DOMAIN-SUFFIX,azurestackhubuat.download.prss.microsoft.com
@@ -69,4 +68,3 @@ DOMAIN-SUFFIX,fs.microsoft.com
 URL-REGEX,^http://www\.microsoft\.com/pki/
 URL-REGEX,^http://www\.microsoft\.com/pkiops/
 ################## EOF ##################
-
