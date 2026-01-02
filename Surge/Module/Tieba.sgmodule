@@ -1,29 +1,34 @@
 #!name = 净化 & 百度贴吧
 #!desc = 移除开屏广告、信息流广告和帖内广告，精简侧拉抽屉及我的页面
 #!category =  Block Ads
+#!arguments = per_filter_video_thread:"true"
+#!arguments-desc = [per_filter_video_thread]:拦截推荐页面视频帖, true:拦截
 
 
 [Rule]
-DOMAIN,afd.baidu.com,REJECT,extended-matching
-DOMAIN,mobads.baidu.com,REJECT,extended-matching
 DOMAIN,180.76.76.200,REJECT,extended-matching
 IP-CIDR,180.76.76.200/32,REJECT,no-resolve
 
 
-[Map Local]
-^https:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover data-type=text data="{}" status-code=200
-^https:\/\/tiebac\.baidu\.com\/c\/f\/forum\/forumGuide data-type=text data="{}" status-code=200
-^https:\/\/tiebac\.baidu\.com\/c\/u\/chat\/getChatSubscriptionList data-type=text data="{}" status-code=200
+[Body Rewrite]
+http-response-jq ^https?:\/\/tiebac\.baidu\.com\/c\/s\/sync$ 'delpaths([["activity_switch"],["video_report_config"],["advertisement_config"],["next_start"],["push_strategy_new"],["live_activity_guide"],["h5_pop_ups"],["duxiaoman_url"],["is_need_remind_live_rooms"],["floating_icon"],["ad_stlog_switch"],["first_time_motivate"],["windowStrategyList"],["ad_adsense"],["ad_config"],["videoup_guide_pop"],["ad_origin_config_switch"],["needNewUserLead"],["h5_pop_ups_config"],["alaTabColor"],["search_guide"],["ad_sdk_priority"],["low_version_pop_config"],["ad_num_competition_frs"],["live_new_user_guide_day"],["screen_fill_data_result"],["yy_live_tab"],["ad_num_competition_personalize"],["complete_apk_url"],["user_activity"],["homepage_guide"],["bottom_bubble_config"],["home_screen_ad"],["afSearch_tab"],["recent_client_info"],["video_activity"],["namoaixud_url"],["yy_live_config"],["user_growth_task_list"],["cloud_control_data_info"],["scheme_whitelist"],["wl_config","pb_banner_funad_cache_strategy"],["wl_config","pb_comment_asyncafd_cache_strategy"],["wl_config","download_edge_float"],["wl_config","download_pause_retain_dialog_conf"],["wl_config","download_mobile_dialog_conf"],["wl_config","download_fake_progress_config_a"],["wl_config","download_fake_progress_config_b"]]) | if .wl_config then .wl_config += {"home_ad_num":0,"frs_ad_num":0,"pb_comment_ad_num":0,"index_bear_density":0,"frs_bear_density":0,"index_bear_first_floor_max":999999999,"index_bear_first_floor_min":999999999} else . end | .index_tab_info |= map(select(.tab_name == "推荐")) | .top_level_navi |= {"推荐": .["推荐"], "侧边栏": .["侧边栏"], "关注": .["关注"]}'
+http-response-jq ^https?:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile$ 'delpaths([["url_map"],["user_agent_info"],["bubble_info"],["duxiaoman_entry"],["uc_card"],["finance_tab"],["vip_banner"],["ala_live_info"],["recom_naws_list"],["duxiaoman"],["user","consume_info"],["namoaixud_entry"]]) | if .user?.shake_ad_switch then .user.shake_ad_switch.is_show = 0 else . end | .custom_grid |= map(select(.title == "游戏大厅" or .title == "预约管理" or .title == "领话费" or .title == "短故事" | not)) | .zone_info |= map(select(.type == "commerce" or .type == "banner" or .type == "game" | not) | if .common_func?.common_func_noraml then .common_func.common_func_noraml |= map(select(.name != "创建智能体")) else . end)'
+http-response-jq ^https?:\/\/tiebac?\.baidu\.com\/c\/f\/frs\/frsBottom(\?|$) 'delpaths([["card_activity"]])'
+http-response-jq ^https?:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home$ 'delpaths([["game_center"],["tools"],["task_list"],["vip_banner"]])'
+http-response-jq ^https?:\/\/tieba\.baidu\.com\/c\/f\/forum\/forumGuide$ 'delpaths([["hot_search"]])'
 
+
+
+[Map Local]
+^https?:\/\/tiebac\.baidu\.com\/c\/f\/forum\/getInterestClassList$ data-type=text data="{}"
+^https?:\/\/tiebac\.baidu\.com\/c\/f\/search\/discover$ data-type=text data="{}"
+^https?:\/\/tieba\.baidu\.com\/c\/f\/search\/discover$ data-type=text data="{}"
+^https:\/\/tieba\.baidu\.com\/c\/f\/forum\/getForumAlbum$ data-type=text data="{}"
+^http:\/\/c\.tieba\.baidu\.com\/c\/f\/forum\/hotforum$ data-type=text data="{}"
+^https?:\/\/tieba\.baidu\.com\/mo\/q\/search\/startPage\? data-type=text data="{"no":0,"error":"success"}"
 
 [Script]
-清理首页 = type=http-response, pattern=^https:\/\/tieba\.baidu\.com\/c\/f\/frs\/frsBottom, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
-清理首页 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/livefeed\/feed, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
-清理侧拉抽屉 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/c\/f\/sidebar\/home, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
-清理我的页面 = type=http-response, pattern=^https:\/\/tiebac\.baidu\.com\/c\/u\/user\/profile, requires-body=1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/Tieba_remove_ads.js
-tieba.Json = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/(c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)$|tiebaads\/commonbatch|c\/s\/sync$), requires-body=1, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/tiebaJson.js
-tieba.Proto = type=http-response, pattern=^http(s:\/\/tiebac|:\/\/c\.tieba)\.baidu\.com\/c\/f\/(frs\/(page|threadlist|generalTabList)|pb\/page|excellent\/personalized)\?cmd, requires-body=1, binary-body-mode=1, timeout=10, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/tiebaProto.js
-
+ProtoBuf处理 = type=http-response, pattern=^https?:\/\/tieba(?:c)?\.baidu\.com\/c\/(f\/excellent\/personalized|f\/frs\/page|b\/ad\/adBid|f\/ad\/getFeedAd|f\/pb\/page|f\/frs\/generalTabList)\?cmd=\d+&format=protobuf, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/tieba-proto.js, requires-body=true, binary-body-mode=true, timeout=10, argument=[{{{per_filter_video_thread}}}]
 
 [MITM]
-hostname = %APPEND% tiebac.baidu.com, tieba.baidu.com
+hostname = %APPEND% tiebac.baidu.com, tieba.baidu.co
