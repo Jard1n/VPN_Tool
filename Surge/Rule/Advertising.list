@@ -1,4 +1,4 @@
-# Main total line 3985 
+# Main total line 3986 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -278,6 +278,7 @@ DOMAIN,mon11-misc-lq.toutiaoapi.com
 DOMAIN,mopnativeadv.037201.com
 DOMAIN,mouseflow.com
 DOMAIN,mqtt.zhihu.com
+DOMAIN,msmp.abchina.com.cn
 DOMAIN,mssdk-bu.snssdk.com
 DOMAIN,mssdk.snssdk.com
 DOMAIN,mtvod.meituan.net
