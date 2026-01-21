@@ -43,6 +43,7 @@ DOMAIN,sydney.bing.com
 
 # Claude
 DOMAIN,o1158394.ingest.us.sentry.io
+DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claudeusercontent.com
