@@ -1,4 +1,4 @@
-# Main total line 23151 
+# Main total line 23152 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -3185,6 +3185,7 @@ DOMAIN-SUFFIX,binance.org
 DOMAIN-SUFFIX,binance.vision
 DOMAIN-SUFFIX,binanceapi.com
 DOMAIN-SUFFIX,binancecnt.com
+DOMAIN-SUFFIX,binanceru.net
 DOMAIN-SUFFIX,binancezh.be
 DOMAIN-SUFFIX,binancezh.biz
 DOMAIN-SUFFIX,binancezh.cc
