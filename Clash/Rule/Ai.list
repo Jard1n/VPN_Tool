@@ -42,6 +42,7 @@ DOMAIN,sydney.bing.com
 
 # Claude
 DOMAIN,o1158394.ingest.us.sentry.io
+DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claudeusercontent.com
@@ -53,6 +54,7 @@ DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,meta.ai
 
 # Perplexity
+DOMAIN, pplx-res.cloudinary.com
 DOMAIN-SUFFIX,pplx.ai
 DOMAIN-SUFFIX,perplexity.ai
 DOMAIN-SUFFIX,perplexity.com
