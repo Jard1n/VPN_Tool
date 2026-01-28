@@ -1,4 +1,4 @@
-# Main total line 3989 
+# Main total line 3988 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -62,7 +62,6 @@ DOMAIN,ads-cloud.rovio.com
 DOMAIN,ads-d.viber.com
 DOMAIN,ads.aplus.pptv.com
 DOMAIN,ads.aplusapi.pptv.com
-DOMAIN,ads.auctions.yahoo.com
 DOMAIN,ads.aws.viber.com
 DOMAIN,ads.chinadaily.com.cn
 DOMAIN,ads.daydaycook.com.cn
@@ -752,6 +751,7 @@ DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,ads-video-al.xhscdn.com
 DOMAIN-SUFFIX,ads-video-qc.xhscdn.com
 DOMAIN-SUFFIX,ads.95516.com
+DOMAIN-SUFFIX,ads.auctions.yahoo.com
 DOMAIN-SUFFIX,ads.cdn.tvb.com
 DOMAIN-SUFFIX,ads.csdn.net
 DOMAIN-SUFFIX,ads.cup.com.cn
@@ -1022,7 +1022,6 @@ DOMAIN-SUFFIX,applog.zijieapi.com
 DOMAIN-SUFFIX,applogapi.autohome.com.cn
 DOMAIN-SUFFIX,applvn.com
 DOMAIN-SUFFIX,appuu.cn
-DOMAIN-SUFFIX,appversion.115.com
 DOMAIN-SUFFIX,apsalar.com
 DOMAIN-SUFFIX,apxadtracking.net
 DOMAIN-SUFFIX,aqyad.com
