@@ -1,4 +1,4 @@
-# Main total line 3986 
+# Main total line 3989 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -43,7 +43,6 @@ DOMAIN,adfox.yandex.ru
 DOMAIN,adfstat.yandex.ru
 DOMAIN,adgame.waimai.meituan.com
 DOMAIN,adim.pinduoduo.com
-DOMAIN,adimg.uve.weibo.com
 DOMAIN,adimg.vue.weibo.com
 DOMAIN,adlaunch.moji.com
 DOMAIN,adlaunch.qingting.fm
@@ -591,6 +590,7 @@ DOMAIN-SUFFIX,ad.thepaper.cn
 DOMAIN-SUFFIX,ad.toutiao.com
 DOMAIN-SUFFIX,ad.v3mh.com
 DOMAIN-SUFFIX,ad.vidverto.io
+DOMAIN-SUFFIX,ad.weibo.com
 DOMAIN-SUFFIX,ad.winrar.com.cn
 DOMAIN-SUFFIX,ad.wretch.cc
 DOMAIN-SUFFIX,ad.xiaomi.com
@@ -684,6 +684,7 @@ DOMAIN-SUFFIX,adhome.1fangchan.com
 DOMAIN-SUFFIX,adhood.com
 DOMAIN-SUFFIX,adhouyi.com
 DOMAIN-SUFFIX,adimg.mobile.sina.cn
+DOMAIN-SUFFIX,adimg.uve.weibo.com
 DOMAIN-SUFFIX,adinall.com
 DOMAIN-SUFFIX,adinfuse.com
 DOMAIN-SUFFIX,adintl.cn
@@ -874,6 +875,7 @@ DOMAIN-SUFFIX,adx-api.jinmo.tech
 DOMAIN-SUFFIX,adx-drcn.op.dbankcloud.cn
 DOMAIN-SUFFIX,adx-open-service.youku.com
 DOMAIN-SUFFIX,adx-saas.advlion.com
+DOMAIN-SUFFIX,adx-strategy-api-cn.statisticslinks.com
 DOMAIN-SUFFIX,adx.ads.heytapmobi.com
 DOMAIN-SUFFIX,adx.adwangmai.com
 DOMAIN-SUFFIX,adx.appsdk.com.cn
@@ -2166,6 +2168,7 @@ DOMAIN-SUFFIX,moogos.com
 DOMAIN-SUFFIX,mookie1.com
 DOMAIN-SUFFIX,mopub.com
 DOMAIN-SUFFIX,moquanad.com
+DOMAIN-SUFFIX,mores.toponad.com
 DOMAIN-SUFFIX,mparticle.com
 DOMAIN-SUFFIX,mplxtms.com
 DOMAIN-SUFFIX,mpnrs.com
