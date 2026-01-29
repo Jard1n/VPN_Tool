@@ -1,6 +1,6 @@
 #########################################
 # Sukka's Ruleset - Microsoft CDN
-# Size: 57
+# Size: 58
 # License: AGPL 3.0
 # Homepage: https://ruleset.skk.moe
 # GitHub: https://github.com/SukkaW/Surge
@@ -13,6 +13,7 @@
 DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
 DOMAIN,res-h3.public.cdn.office.net
 DOMAIN,statics.teams.cdn.office.net
+DOMAIN,res-2.cdn.office.net
 DOMAIN,res-1.cdn.office.net
 DOMAIN,res.cdn.office.net
 DOMAIN-SUFFIX,download.windowsupdate.com
