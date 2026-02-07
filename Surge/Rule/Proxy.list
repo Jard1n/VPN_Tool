@@ -4536,6 +4536,7 @@ DOMAIN-SUFFIX,pmates.com
 DOMAIN-SUFFIX,po2b.com
 DOMAIN-SUFFIX,pobieramy.top
 DOMAIN-SUFFIX,pocket-image-cache.com
+DOMAIN-SUFFIX,pocketcasts.com
 DOMAIN-SUFFIX,podbean.com
 DOMAIN-SUFFIX,podcast.co
 DOMAIN-SUFFIX,podictionary.com
@@ -5384,7 +5385,6 @@ DOMAIN-SUFFIX,startpage.com
 DOMAIN-SUFFIX,startuplivingchina.com
 DOMAIN-SUFFIX,static-economist.com
 DOMAIN-SUFFIX,static.fun
-DOMAIN-SUFFIX,static.pocketcasts.com
 DOMAIN-SUFFIX,statically.io
 DOMAIN-SUFFIX,staticflickr.com
 DOMAIN-SUFFIX,statueofdemocracy.org
@@ -6858,10 +6858,8 @@ DOMAIN-SUFFIX,z-lib.fm
 DOMAIN-SUFFIX,z-lib.fo
 DOMAIN-SUFFIX,z-lib.gd
 DOMAIN-SUFFIX,z-lib.gl
-DOMAIN-SUFFIX,z-lib.gs
 DOMAIN-SUFFIX,z-lib.io
 DOMAIN-SUFFIX,z-lib.org
-DOMAIN-SUFFIX,z-library.rs
 DOMAIN-SUFFIX,z-library.sk
 DOMAIN-SUFFIX,z.com
 DOMAIN-SUFFIX,za
