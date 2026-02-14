@@ -1,4 +1,4 @@
-# Main total line 23183 
+# Main total line 23198 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -1595,6 +1595,7 @@ DOMAIN-SUFFIX,apkmonk.com
 DOMAIN-SUFFIX,apkplz.com
 DOMAIN-SUFFIX,apkpure.com
 DOMAIN-SUFFIX,apkpure.net
+DOMAIN-SUFFIX,apkpures.xyz
 DOMAIN-SUFFIX,aple.com
 DOMAIN-SUFFIX,aplestore.com
 DOMAIN-SUFFIX,aplleipods.com
@@ -2079,6 +2080,7 @@ DOMAIN-SUFFIX,attcenter.com
 DOMAIN-SUFFIX,attcollaborate.com
 DOMAIN-SUFFIX,attdns.com
 DOMAIN-SUFFIX,attdns.net
+DOMAIN-SUFFIX,attestation.app
 DOMAIN-SUFFIX,attexperts.com
 DOMAIN-SUFFIX,attglobal.net
 DOMAIN-SUFFIX,attic.io
@@ -9080,6 +9082,17 @@ DOMAIN-SUFFIX,grannylovesyoungcock.com
 DOMAIN-SUFFIX,grannytube.net
 DOMAIN-SUFFIX,granulate.io
 DOMAIN-SUFFIX,graph.org
+DOMAIN-SUFFIX,grapheneos.app
+DOMAIN-SUFFIX,grapheneos.com
+DOMAIN-SUFFIX,grapheneos.dev
+DOMAIN-SUFFIX,grapheneos.foundation
+DOMAIN-SUFFIX,grapheneos.info
+DOMAIN-SUFFIX,grapheneos.net
+DOMAIN-SUFFIX,grapheneos.network
+DOMAIN-SUFFIX,grapheneos.online
+DOMAIN-SUFFIX,grapheneos.org
+DOMAIN-SUFFIX,grapheneos.ovh
+DOMAIN-SUFFIX,grapheneos.page
 DOMAIN-SUFFIX,graphengine.io
 DOMAIN-SUFFIX,graphql.org
 DOMAIN-SUFFIX,gravatar.com
@@ -17591,6 +17604,7 @@ DOMAIN-SUFFIX,sculpoly.com
 DOMAIN-SUFFIX,sdcountybmw.com
 DOMAIN-SUFFIX,sdnitube.buzz
 DOMAIN-SUFFIX,seagroup.com
+DOMAIN-SUFFIX,seamlessupdate.app
 DOMAIN-SUFFIX,seamonkey-project.org
 DOMAIN-SUFFIX,seancody.com
 DOMAIN-SUFFIX,seaofsolitude.com
@@ -20562,6 +20576,7 @@ DOMAIN-SUFFIX,valuegb.com
 DOMAIN-SUFFIX,valvesoftware.com
 DOMAIN-SUFFIX,van001.com
 DOMAIN-SUFFIX,van698.com
+DOMAIN-SUFFIX,vanadium.app
 DOMAIN-SUFFIX,vanilla-jp.com
 DOMAIN-SUFFIX,vanish.at
 DOMAIN-SUFFIX,vanish.be
