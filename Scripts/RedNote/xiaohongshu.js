@@ -2,7 +2,7 @@
 /*
 引用地址 https://raw.githubusercontent.com/RuCu6/Loon/main/Scripts/xiaohongshu.js
 */
-// 2025-12-15 12:05
+// 2026-02-14 15:00
 
 const url = $request.url;
 if (!$response.body) $done({});
@@ -27,6 +27,15 @@ if (url.includes("/v1/interaction/comment/video/download")) {
   let newDatas = [];
   if (obj?.data?.[0]?.note_list?.length > 0) {
     for (let item of obj.data[0].note_list) {
+      if (item?.function_switch?.length > 0) {
+        // 新的保存按钮配置
+        for (let i of item.function_switch) {
+          if (i?.enable === false) {
+            i.enable = true;
+            i.reason = "";
+          }
+        }
+      }
       if (item?.media_save_config) {
         // 水印开关
         item.media_save_config.disable_save = false;
@@ -162,7 +171,7 @@ if (url.includes("/v1/interaction/comment/video/download")) {
   // 关注列表
   if (obj?.data?.items?.length > 0) {
     // recommend_user可能感兴趣的人
-    obj.data.items = obj.data.items.filter((i) => !["recommend_user"]?.includes(i?.recommend_reason));
+    obj.data.items = obj.data.items.filter((i) => !["recommend_user"].includes(i?.recommend_reason));
   }
 } else if (url.includes("/v4/note/videofeed")) {
   // 信息流 视频
@@ -322,6 +331,9 @@ if (url.includes("/v1/interaction/comment/video/download")) {
         // 信息流-带货
         continue;
       } else if (item?.note_attributes?.includes("goods")) {
+        // 信息流-商品
+        continue;
+      } else if (item?.has_related_goods === true) {
         // 信息流-商品
         continue;
       } else {
