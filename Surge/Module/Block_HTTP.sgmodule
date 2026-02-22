@@ -1,7 +1,7 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
 #!category =  Block Ads
-#!date=2026-01-30 00:55:36
+#!date=2026-02-22 01:38:58
 
 [Rule]
 DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT,extended-matching
@@ -84,6 +84,7 @@ DOMAIN,httpdns.alicdn.com,REJECT,extended-matching
 DOMAIN,httpdns-api.aliyuncs.com,REJECT,extended-matching
 DOMAIN,httpdns-sc.aliyuncs.com,REJECT,extended-matching
 IP-CIDR,203.107.1.0/24,REJECT,no-resolve
+DOMAIN,amdc.alipay.com,REJECT,extended-matching
 DOMAIN,ucdc.upaas.quark.cn,REJECT,extended-matching
 DOMAIN,httpdns.danuoyi.tbcache.com,REJECT,extended-matching
 DOMAIN,httpdns.cctv.com,REJECT,extended-matching
@@ -106,6 +107,7 @@ URL-REGEX,"^http:\/\/180\.76\.76\.112\/v\d\/",REJECT,extended-matching
 URL-REGEX,"^http:\/\/180\.76\.76\.112\/v\d\/resolve",REJECT,extended-matching
 URL-REGEX,"^http:\/\/180\.76\.76\.220\/v\d\/resolve",REJECT,extended-matching
 IP-CIDR,186.76.76.200/32,REJECT,no-resolve
+IP-CIDR,180.76.76.200/32,REJECT,no-resolve
 DOMAIN,httpdns.ocloud.heytapmobi.com,REJECT,extended-matching
 DOMAIN,httpdns.push.heytapmobi.com,REJECT,extended-matching
 DOMAIN,dns.jd.com,REJECT,extended-matching
@@ -171,26 +173,18 @@ URL-REGEX,"^http:\/\/54\.222\.159\.138:8053\/httpdns\/",REJECT,extended-matching
 URL-REGEX,"^http:\/\/101\.42\.130\.147:8053\/httpdns\/",REJECT,extended-matching
 URL-REGEX,"^http:\/\/106\.55\.220\.18:8053\/httpdns\/",REJECT,extended-matching
 URL-REGEX,"^http:\/\/139\.196\.12\.179:8053\/httpdns\/",REJECT,extended-matching
+USER-AGENT,"HttpdnsSDK*",REJECT
 
 [URL Rewrite]
-^https?:\/\/203\.107\.1\.1/\d+/ss - reject
-^https?:\/\/203\.107\.1\.33/\d+/ss - reject
-^https?:\/\/203\.107\.1\.66/\d+/ss - reject
-^https?:\/\/203\.107\.1\.67/\d+/ss - reject
-^https?:\/\/203\.107\.1\.97/\d+/ss - reject
-^https?:\/\/2401:b180:2000:30::1c\/\d+\/d - reject
-^https?:\/\/2401:b180:2000:20::10\/\d+\/d - reject
 ^https?:\/\/cdn\.wup\.huya\.com\/monitor\/monitor\.jsp - reject
 ^https:\/\/gslbali\.ximalaya\.com\/linkeye-cloud\/httpdns\/ - reject
 
 [Map Local]
 ^https?:\/\/appconf\.mail\.163\.com\/mailmaster\/api\/http\/urlConfig\.do$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
-^https?:\/\/amdc\.alipay\.com\/query data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
 ^https:\/\/msglb\.91160\.com\/msg\/outer\/broker\/get$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 ^https:\/\/ucdc\d?-upaas\.uc\.cn\/api\/v\d\/dns_query\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
-hostname = %APPEND% 203.107.1.1, 203.107.1.33, 203.107.1.66, 203.107.1.67, 203.107.1.97, 2401:b180:2000:30::1c, 2401:b180:2000:20::10, amdc.alipay.com, appconf.mail.163.com, msglb.91160.com, ucdc2-upaas.uc.cn
+hostname = %APPEND% appconf.mail.163.com, msglb.91160.com, ucdc2-upaas.uc.cn
