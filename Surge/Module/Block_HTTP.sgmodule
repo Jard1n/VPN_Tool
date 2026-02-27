@@ -1,9 +1,11 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
 #!category =  Block Ads
-#!date=2026-02-22 01:38:58
+#!date=2026-02-26 22:36:54
 
 [Rule]
+URL-REGEX,"^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\/(\d+\/)?resolve(\?)?",REJECT,extended-matching
+URL-REGEX,"^http:\/\/\[((([0-9A-Fa-f]{1,4}:){7}([0-9A-Fa-f]{1,4}|:))|(([0-9A-Fa-f]{1,4}:){6}(:[0-9A-Fa-f]{1,4}|((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){5}(((:[0-9A-Fa-f]{1,4}){1,2})|:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3})|:))|(([0-9A-Fa-f]{1,4}:){4}(((:[0-9A-Fa-f]{1,4}){1,3})|((:[0-9A-Fa-f]{1,4})?:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){3}(((:[0-9A-Fa-f]{1,4}){1,4})|((:[0-9A-Fa-f]{1,4}){0,2}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){2}(((:[0-9A-Fa-f]{1,4}){1,5})|((:[0-9A-Fa-f]{1,4}){0,3}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(([0-9A-Fa-f]{1,4}:){1}(((:[0-9A-Fa-f]{1,4}){1,6})|((:[0-9A-Fa-f]{1,4}){0,4}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:))|(:(((:[0-9A-Fa-f]{1,4}){1,7})|((:[0-9A-Fa-f]{1,4}){0,5}:((25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)(\.(25[0-5]|2[0-4]\d|1\d\d|[1-9]?\d)){3}))|:)))\]\/(\d+\/)?resolve(\?)?",REJECT,extended-matching
 DOMAIN,yyapp-httpdns.gslb.yy.com,REJECT,extended-matching
 DOMAIN,union-httpdns.gslb.yy.com,REJECT,extended-matching
 DOMAIN,yuyin-httpdns.gslb.yy.com,REJECT,extended-matching
@@ -61,23 +63,6 @@ IP-CIDR6,2409:8702:4860:10::4d/128,REJECT,no-resolve
 DOMAIN,httpdns.kg.qq.com,REJECT,extended-matching
 URL-REGEX,"^http:\/\/182\.256\.116\.116\/d",REJECT,extended-matching
 DOMAIN,httpdns.bilivideo.com,REJECT,extended-matching
-URL-REGEX,"^http:\/\/47\.101\.175\.206\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/47\.100\.123\.169\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/120\.46\.169\.234\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/121\.36\.72\.124\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/116\.63\.10\.135\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/117\.185\.228\.108\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/117\.144\.238\.29\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/122\.9\.7\.134\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/101\.91\.140\.124\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/101\.91\.140\.224\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/122\.9\.13\.79\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/122\.9\.15\.129\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/112\.65\.200\.117\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/112\.64\.218\.119\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/114\.116\.215\.110\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/116\.63\.10\.31\/resolve",REJECT,extended-matching
-URL-REGEX,"^http:\/\/203\.119\.206\.8\/\d+\/resolve\?",REJECT,extended-matching
 DOMAIN,httpdns.browser.miui.com,REJECT,extended-matching
 DOMAIN,resolver.msg.xiaomi.net,REJECT,extended-matching
 DOMAIN,httpdns.alicdn.com,REJECT,extended-matching
@@ -163,7 +148,6 @@ IP-CIDR,118.89.204.198/23,REJECT,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 DOMAIN,hd.xiaojukeji.com,REJECT,extended-matching
 DOMAIN,httpdns.zybang.com,REJECT,extended-matching
-URL-REGEX,"^http:\/\/203\.107\.1\.33\/191607\/resolve\?",REJECT,extended-matching
 URL-REGEX,"^http:\/\/119\.29\.29\.29\/d",REJECT,extended-matching
 DOMAIN,serveraddr.service.kugou.com,REJECT,extended-matching
 DOMAIN,twns.p2ptun.qq.com,REJECT,extended-matching
