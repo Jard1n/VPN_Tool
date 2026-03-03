@@ -1,0 +1,15 @@
+#!name = VPS使用信息
+#!desc = 监控VPS每月流量信息和处理器、内存占用情况
+#!arguments = VPS名称:Server, VPS IP地址:127.0.0.1, icon:internaldrive.fill, 流量重置时间:1, 面板刷新时间:5, VPS名称1:Server, VPS IP地址1:127.0.0.1, icon1:internaldrive.fill, 流量重置时间1:1
+#!arguments-desc=- 屏蔽参数：[true, false] \n- 翻译参数：[语言代码, off] \n- 脚本引擎：[auto, jsc, webview]
+
+[Panel]
+{{{VPS名称}}} = script-name= Serverinfo,update-interval={{{面板刷新时间}}}
+
+{{{VPS名称1}}} = script-name= Serverinfo1,update-interval={{{面板刷新时间}}}
+
+
+[Script]
+Serverinfo = type=generic,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/serverinfo.js, argument = url=http://{{{VPS IP地址}}}:7122&name={{{VPS名称}}}&icon={{{icon}}}&resetDay={{{流量重置时间}}
+
+Serverinfo1 = type=generic,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/serverinfo.js, argument = url=http://{{{VPS IP地址1}}}:7122&name={{{VPS名称1}}}&icon={{{icon1}}}&resetDay={{{流量重置时间1}}
