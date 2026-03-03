@@ -9,6 +9,6 @@
 
 
 [Script]
-Serverinfo = type=generic,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/serverinfo.js, argument = url=http://{{{VPS IP地址}}}:7122&name={{{VPS名称}}}&icon={{{icon}}}&resetDay={{{流量重置时间}}
+Serverinfo = type=generic,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/serverinfo.js, argument = url=http://{{{VPS IP地址}}}:7122&name={{{VPS名称}}}&icon={{{icon}}}&resetDay={{{流量重置时间}}}
 
-Serverinfo1 = type=generic,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/serverinfo.js, argument = url=http://{{{VPS IP地址1}}}:7122&name={{{VPS名称1}}}&icon={{{icon1}}}&resetDay={{{流量重置时间1}}
+Serverinfo1 = type=generic,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/serverinfo.js, argument = url=http://{{{VPS IP地址1}}}:7122&name={{{VPS名称1}}}&icon={{{icon1}}}&resetDay={{{流量重置时间1}}}
