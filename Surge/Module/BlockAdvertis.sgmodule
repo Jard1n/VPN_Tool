@@ -1,9 +1,10 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-03-01 04:51:41
+#!date=2026-03-03 10:07:10
 
 [Rule]
+DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
 AND,((DOMAIN-KEYWORD,tnc),(OR,((DOMAIN-SUFFIX,capcutapi.com),(DOMAIN-SUFFIX,zijieapi.com),(DOMAIN-SUFFIX,isnssdk.com),(DOMAIN-SUFFIX,toutiaoapi.com),(DOMAIN-SUFFIX,bytedance.com),(DOMAIN-SUFFIX,snssdk.com),(DOMAIN-SUFFIX,sgsnssdk.com)))),DIRECT
 AND,((DOMAIN-KEYWORD,-ad-,extended-matching),(DOMAIN-SUFFIX,byteimg.com,extended-matching)),REJECT
 AND,((DOMAIN-KEYWORD,ads,extended-matching),(DOMAIN-KEYWORD,-normal.zijieapi.com,extended-matching)),REJECT
@@ -249,6 +250,7 @@ DOMAIN,ad-evods.tianya.tv,REJECT,extended-matching
 DOMAIN-SUFFIX,tuia.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,66mobi.com,REJECT,extended-matching
 DOMAIN-SUFFIX,xdplt.com,REJECT,extended-matching
+DOMAIN,ads.cup.com.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,adjust.com,REJECT,extended-matching
 DOMAIN-SUFFIX,adjust.net.in,REJECT,extended-matching
 DOMAIN,app-analytics-services.com,REJECT,extended-matching
@@ -308,6 +310,7 @@ DOMAIN-SUFFIX,applvn.com,REJECT,extended-matching
 DOMAIN-SUFFIX,moloco.com,REJECT,extended-matching
 DOMAIN-SUFFIX,rayjump.com,REJECT,extended-matching
 DOMAIN-SUFFIX,rixengine.com,REJECT,extended-matching
+DOMAIN-SUFFIX,amazon-adsystem.com,REJECT,extended-matching
 
 
 [URL Rewrite]
