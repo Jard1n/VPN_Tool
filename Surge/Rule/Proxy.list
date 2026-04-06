@@ -1,4 +1,4 @@
-# Main total line 349 
+# Main total line 352 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,copilot.microsoft.com
@@ -94,6 +94,7 @@ DOMAIN-SUFFIX,duckduckco.com
 DOMAIN-SUFFIX,elastic.co
 DOMAIN-SUFFIX,elastic.com
 DOMAIN-SUFFIX,eu
+DOMAIN-SUFFIX,evoxt.com
 DOMAIN-SUFFIX,facebook.com
 DOMAIN-SUFFIX,fanbox.cc
 DOMAIN-SUFFIX,fb.com
@@ -179,6 +180,7 @@ DOMAIN-SUFFIX,notion.site
 DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,nsloon.com
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,paypal.com
 DOMAIN-SUFFIX,paypal.me
 DOMAIN-SUFFIX,paypalobjects.com
@@ -230,6 +232,7 @@ DOMAIN-SUFFIX,spring.io
 DOMAIN-SUFFIX,spring.net
 DOMAIN-SUFFIX,stackoverflow.com
 DOMAIN-SUFFIX,steamdb.info
+DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,surfshark.com
 DOMAIN-SUFFIX,surfsharkdns.com
 DOMAIN-SUFFIX,t.co
