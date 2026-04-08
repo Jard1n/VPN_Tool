@@ -1,4 +1,4 @@
-# Main total line 4243 
+# Main total line 4244 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -2144,6 +2144,7 @@ DOMAIN-SUFFIX,mobclix.com
 DOMAIN-SUFFIX,mobfox.com
 DOMAIN-SUFFIX,mobgi.com
 DOMAIN-SUFFIX,mobile-pubt.ele.me
+DOMAIN-SUFFIX,mobile.events.data.microsoft.com
 DOMAIN-SUFFIX,mobilead.kuwo.cn
 DOMAIN-SUFFIX,mobileads.dx.cn
 DOMAIN-SUFFIX,mobileads.google.com
