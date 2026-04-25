@@ -5,7 +5,7 @@
 #!homepage=
 [REPLACE]
 #!desc => #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
-#!tag => #!category =  Block Ads
+#!category => #!category =  Block Ads
 [INSERT BEFORE "[URL Rewrite]"]
 [END INSERT]
 [INSERT AFTER "[Host]"]
