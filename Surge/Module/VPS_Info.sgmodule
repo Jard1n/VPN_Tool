@@ -1,6 +1,6 @@
 #!name = VPS使用信息
 #!desc = 监控VPS每月流量信息和处理器、内存占用情况
-#!arguments = VPS名称:Server, VPS IP地址:127.0.0.1, icon:internaldrive.fill, 流量重置时间:None, 面板刷新时间:5, VPS名称1:Server, VPS IP地址1:127.0.0.1, icon1:internaldrive.fill, 流量重置时间1:None, VPS名称2:Server, VPS IP地址2:127.0.0.1, icon2:internaldrive.fill, 流量重置时间2:None
+#!arguments = VPS名称:#, VPS IP地址:127.0.0.1, icon:internaldrive.fill, 流量重置时间:None, 面板刷新时间:5, VPS名称1:#, VPS IP地址1:127.0.0.1, icon1:internaldrive.fill, 流量重置时间1:None, VPS名称2:#, VPS IP地址2:127.0.0.1, icon2:internaldrive.fill, 流量重置时间2:None
 #!category = 面板
 
 [Panel]
