@@ -1,6 +1,6 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
-#!category=去广告, 依赖
+#!category =  Block Ads
 #!date=2026-03-01 23:16:49
 
 [Rule]
