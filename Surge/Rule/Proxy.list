@@ -1,7 +1,8 @@
-# Main total line 359 
+# Main total line 365 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,copilot.microsoft.com
+DOMAIN,hanime1.me
 DOMAIN,http-inputs-notion.splunkcloud.com
 DOMAIN,imagine.meta.com
 DOMAIN,in.mesl.cloud
@@ -10,9 +11,11 @@ DOMAIN,pplx-res.cloudinary.com
 DOMAIN,reddit.app.link
 DOMAIN,sakuracat.link
 DOMAIN,sub.store
+DOMAIN,surrit.com
 DOMAIN,sydney.bing.com
 DOMAIN,vps.hosting
 DOMAIN-SUFFIX,91porn.com
+DOMAIN-SUFFIX,91porny.com
 DOMAIN-SUFFIX,aboutamazon.com
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,aiv-cdn.net
@@ -115,6 +118,7 @@ DOMAIN-SUFFIX,gitter-static.net
 DOMAIN-SUFFIX,gitter.im
 DOMAIN-SUFFIX,goog
 DOMAIN-SUFFIX,gov
+DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,grok.com
 DOMAIN-SUFFIX,hk
 DOMAIN-SUFFIX,hltv.org
@@ -135,6 +139,7 @@ DOMAIN-SUFFIX,ipstack.com
 DOMAIN-SUFFIX,ipwho.is
 DOMAIN-SUFFIX,it
 DOMAIN-SUFFIX,jable.tv
+DOMAIN-SUFFIX,javday.homes
 DOMAIN-SUFFIX,javrate.com
 DOMAIN-SUFFIX,jitpack.io
 DOMAIN-SUFFIX,jp
@@ -169,6 +174,7 @@ DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.net
 DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,msngr.com
+DOMAIN-SUFFIX,mushroomtrack.com
 DOMAIN-SUFFIX,mvnrepository.com
 DOMAIN-SUFFIX,mypikpak.com
 DOMAIN-SUFFIX,netify.ai
