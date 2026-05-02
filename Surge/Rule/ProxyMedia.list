@@ -428,3 +428,6 @@ DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,googlevideo.com
 DOMAIN-KEYWORD,youtube
 USER-AGENT,com.google.ios.youtube*
+
+# IPTV
+IP-CIDR,88.212.7.11/32,no-resolve
