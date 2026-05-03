@@ -1,4 +1,4 @@
-# Main total line 365 
+# Main total line 366 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,copilot.microsoft.com
@@ -322,6 +322,7 @@ DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,x.com
 DOMAIN-SUFFIX,xxx
 DOMAIN-SUFFIX,yandex.com
+DOMAIN-SUFFIX,youmind.com
 DOMAIN-KEYWORD,blogspot
 DOMAIN-KEYWORD,github
 DOMAIN-KEYWORD,gitlab
