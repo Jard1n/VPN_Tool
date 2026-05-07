@@ -16,6 +16,7 @@ DOMAIN-SUFFIX,swiftgram.app
 IP-CIDR,139.59.210.98/32,no-resolve
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
+IP-CIDR,194.221.250.50/32,no-resolve
 IP-CIDR,196.55.216.167/32,no-resolve
 IP-CIDR,5.28.195.1/32,no-resolve
 IP-CIDR,5.28.195.2/32,no-resolve
