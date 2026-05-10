@@ -1,4 +1,4 @@
-# Main total line 366 
+# Main total line 367 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,copilot.microsoft.com
@@ -120,6 +120,7 @@ DOMAIN-SUFFIX,goog
 DOMAIN-SUFFIX,gov
 DOMAIN-SUFFIX,greasyfork.org
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,gyks.cf
 DOMAIN-SUFFIX,hk
 DOMAIN-SUFFIX,hltv.org
 DOMAIN-SUFFIX,hockeyapp.net
