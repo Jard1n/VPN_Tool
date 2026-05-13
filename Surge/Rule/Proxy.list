@@ -1,4 +1,4 @@
-# Main total line 367 
+# Main total line 368 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,copilot.microsoft.com
@@ -48,6 +48,7 @@ DOMAIN-SUFFIX,browserleaks.org
 DOMAIN-SUFFIX,bugzilla.org
 DOMAIN-SUFFIX,byapps.net
 DOMAIN-SUFFIX,bybit.biz
+DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybits.org
 DOMAIN-SUFFIX,bycsi.com
 DOMAIN-SUFFIX,ca
