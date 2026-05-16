@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-05-15 00:55:35
+#!date=2026-05-15 22:13:11
 
 [Rule]
 DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
@@ -314,6 +314,9 @@ DOMAIN-SUFFIX,moloco.com,REJECT,extended-matching
 DOMAIN-SUFFIX,rayjump.com,REJECT,extended-matching
 DOMAIN-SUFFIX,rixengine.com,REJECT,extended-matching
 DOMAIN-SUFFIX,amazon-adsystem.com,REJECT,extended-matching
+DOMAIN-SUFFIX,skarb.club,REJECT,extended-matching
+DOMAIN-SUFFIX,skarb.work,REJECT,extended-matching
+DOMAIN-SUFFIX,amplitude.com,REJECT,extended-matching
 
 
 [URL Rewrite]
