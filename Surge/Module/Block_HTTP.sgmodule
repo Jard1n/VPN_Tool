@@ -1,7 +1,7 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
 #!category =  Block Ads
-#!date=2026-03-01 23:16:49
+#!date=2026-05-16 17:12:20
 
 [Rule]
 DOMAIN-KEYWORD,httpdns,REJECT,extended-matching
@@ -142,6 +142,7 @@ DOMAIN,serveraddr.service.kugou.com,REJECT,extended-matching
 DOMAIN,twns.p2ptun.qq.com,REJECT,extended-matching
 DOMAIN,tp2p.kg.qq.com,REJECT,extended-matching
 IP-CIDR,81.71.61.216/32,REJECT,no-resolve
+DOMAIN,httpdns.immomo.com,REJECT,extended-matching
 URL-REGEX,"^http:\/\/((25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?):\d+\/httpdns\/",REJECT,extended-matching
 URL-REGEX,"^http:\/\/\[[0-9a-fA-F:]+\]:\d+\/httpdns\/",REJECT,extended-matching
 
