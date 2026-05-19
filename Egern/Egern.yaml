@@ -1,0 +1,161 @@
+# 仅虚拟网接口模式
+vif_only: true
+# 是否启用 IPv6
+ipv6: false
+# HTTP 代理端口号。默认值是 3080
+http_port: 3080
+# SOCKS 代理端口号。默认值是 3090
+socks_port: 3090
+# 允许外部连接通过 Wi-Fi 访问设备上的代理
+allow_external_connections: true
+# 全局阻止 QUIC 协议
+# 优先级：代理 > 策略组 > 全局。代理自身的 block_quic 优先级最高
+block_quic: false
+# 隐藏 VPN 图标
+hide_vpn_icon: false
+# 劫持 DNS 的地址列表
+hijack_dns:
+- '*:53'
+# 指定自定义的 GeoIP 数据库 URL
+geoip_db_url: https://raw.githubusercontent.com/Jard1n/GeoIP/release/Private-GeoIP-CN.mmdb
+# 指定自定义的 ASN 数据库 URL
+asn_db_url: null
+# 代理延迟测试 URL
+proxy_latency_test_url: http://www.google.com/blank.html
+# 直连延迟测试 URL
+direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+# 兼容路由模式
+compat_route: false
+# 包含所有网络流量
+include_all_networks: false
+# 包含 APNs 流量
+include_apns: false
+# 包含蜂窝网络服务流量
+include_cellular_services: false
+# 包含本地网络流量
+include_local_networks: false
+
+# 绕过隧道代理的域名列表
+bypass_tunnel_proxy:
+- 127.0.0.0/8
+- 192.168.0.0/16
+- 10.0.0.0/8
+- 172.16.0.0/12
+- 100.64.0.0/10
+- 162.14.0.0/16
+- 211.99.96.0/19
+- 162.159.192.0/24
+- 162.159.193.0/24
+- 162.159.195.0/24
+- fc00::/7
+- fe80::/10
+- localhost
+- '*.local'
+- captive.apple.com
+- e.crashlytics.com
+- www.baidu.com
+- passenger.t3go.cn
+- yunbusiness.ccb.com
+- wxh.wo.cn
+- gate.lagou.com
+- www.abchina.com.cn
+- login-service.mobile-bank.psbc.com
+- mobile-bank.psbc.com
+- www.baidu.com
+- yunbusiness.ccb.com
+- wxh.wo.cn
+- gate.lagou.com
+- www.abchina.com.cn
+- www.shanbay.com
+- login-service.mobile-bank.psbc.com
+- mobile-bank.psbc.com
+- id6.me
+- www.163.com
+
+# 使用真实 IP 的域名列表
+real_ip_domains:
+- '*.lan'
+- '*.direct'
+- cable.auth.com
+- '*.msftconnecttest.com'
+- '*.msftncsi.com'
+- '*.srv.nintendo.net'
+- '*.stun.playstation.net'
+- xbox.*.microsoft.com
+- '*.xboxlive.com'
+- stun.*
+- '*.logon.battlenet.com.cn'
+- '*.logon.battle.net'
+- '*.blzstatic.cn'
+- stun.l.google.com
+- localhost.*.qq.com
+- localhost.*.weixin.qq.com
+- '*.cmpassport.com'
+- id6.me
+- open.e.189.cn
+- mdn.open.wo.cn
+- opencloud.wostore.cn
+- id.mail.wo.cn
+- hmrz.wo.cn
+- nishub1.10010.com
+- enrichgw.10010.com
+- '*.wosms.cn'
+- '*.sslip.io'
+- '*.nip.io'
+- easy-login.10099.com.cn
+- '*-update.xoyocdn.com'
+- id6.me
+- open.e.189.cn
+
+# 虚拟接口包含的路由
+vif_included_routes:
+  - 192.168.0.1/32
+
+# 虚拟接口排除的路由
+vif_excluded_routes:
+  - 192.168.0.1/32
+
+
+
+dns:
+  # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)
+  bootstrap:
+    - system
+  # DNS 服务器组
+  upstreams:
+    ChinaDNS:
+    - 223.5.5.5
+    - 119.29.29.29
+  upstreams:
+    Google:
+      - https://8.8.8.8/dns-query
+      - https://8.8.4.4/dns-query
+
+  # DNS 转发规则
+  forward:
+    - domain_suffix:
+        match: "cn"
+        value: bootstrap
+    - wildcard:
+        match: '*.cn'
+        value: bootstrap
+    - proxy_rule_set:
+        match: https://github.com/ACL4SSR/ACL4SSR/raw/master/Clash/ChinaDomain.list
+        value: bootstrap
+    - regex:
+        match: ^ad\..*|^ads\..*
+        value: reject
+    - wildcard:
+        match: '*'
+        value: google
+  # 主机映射
+  hosts:
+    example.com: www.example.com
+    localhost: 127.0.0.1
+    "*.local": 192.168.1.1
+  # 屏蔽IP
+  block_ips:
+    - 1.2.3.4
+    - 4.3.2.1/32
+  # 公网IP查询地址
+  public_ip_lookup_url: https://ifconfig.me/ip
