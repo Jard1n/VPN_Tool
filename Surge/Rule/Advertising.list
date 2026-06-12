@@ -1,4 +1,4 @@
-# Main total line 4257 
+# Main total line 4258 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -3484,6 +3484,7 @@ IP-CIDR,103.155.214.207/32,no-resolve
 IP-CIDR,103.167.92.73/32,no-resolve
 IP-CIDR,103.169.90.205/32,no-resolve
 IP-CIDR,103.174.102.240/32,no-resolve
+IP-CIDR,103.179.189.35/32,no-resolve
 IP-CIDR,103.19.128.222/32,no-resolve
 IP-CIDR,103.224.182.210/32,no-resolve
 IP-CIDR,103.224.182.251/32,no-resolve
