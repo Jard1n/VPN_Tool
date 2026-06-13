@@ -1,7 +1,7 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
 #!category =  Block Ads
-#!date=2026-06-01 17:11:35
+#!date=2026-06-12 14:11:07
 
 [Rule]
 DOMAIN-KEYWORD,httpdns,REJECT,extended-matching
@@ -160,5 +160,7 @@ URL-REGEX,"^http:\/\/\[[0-9a-fA-F:]+\]:\d+\/httpdns\/",REJECT,extended-matching
 
 ^https:\/\/ucdc\d?-upaas\.uc\.cn\/api\/v\d\/dns_query\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
+^https:\/\/gw-cn\.jiaoliuqu\.com\/taqu-im-broadcast-srv\/v\d\/Comet\/get\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+
 [MITM]
-hostname = %APPEND% appconf.mail.163.com, msglb.91160.com, ucdc2-upaas.uc.cn
+hostname = %APPEND% appconf.mail.163.com, msglb.91160.com, ucdc2-upaas.uc.cn, gw-cn.jiaoliuqu.com
