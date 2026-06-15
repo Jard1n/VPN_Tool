@@ -1,4 +1,4 @@
-# Main total line 4258 
+# Main total line 4252 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -2883,23 +2883,17 @@ DOMAIN-SUFFIX,tmfmazu-wangka.m.qq.com
 DOMAIN-SUFFIX,tmfmazu.m.qq.com
 DOMAIN-SUFFIX,tmfsdk.m.qq.com
 DOMAIN-SUFFIX,tmfsdktcpv4.m.qq.com
-DOMAIN-SUFFIX,tnc0-aliec2.zijieapi.com
-DOMAIN-SUFFIX,tnc0-alisc1.zijieapi.com
 DOMAIN-SUFFIX,tnc0-bjlgy.zijieapi.com
 DOMAIN-SUFFIX,tnc3-aliec1.toutiaoapi.com
 DOMAIN-SUFFIX,tnc3-aliec2.bytedance.com
 DOMAIN-SUFFIX,tnc3-aliec2.snssdk.com
 DOMAIN-SUFFIX,tnc3-aliec2.toutiaoapi.com
-DOMAIN-SUFFIX,tnc3-aliec2.zijieapi.com
 DOMAIN-SUFFIX,tnc3-alisc1.bytedance.com
 DOMAIN-SUFFIX,tnc3-alisc1.snssdk.com
 DOMAIN-SUFFIX,tnc3-alisc1.toutiaoapi.com
-DOMAIN-SUFFIX,tnc3-alisc1.zijieapi.com
-DOMAIN-SUFFIX,tnc3-alisc2.zijieapi.com
 DOMAIN-SUFFIX,tnc3-bjlgy.bytedance.com
 DOMAIN-SUFFIX,tnc3-bjlgy.snssdk.com
 DOMAIN-SUFFIX,tnc3-bjlgy.toutiaoapi.com
-DOMAIN-SUFFIX,tnc3-bjlgy.zijieapi.com
 DOMAIN-SUFFIX,tnkfactory.com
 DOMAIN-SUFFIX,tns-counter.ru
 DOMAIN-SUFFIX,tns.simba.taobao.com
