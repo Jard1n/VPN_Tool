@@ -1,7 +1,7 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
 #!category =  Block Ads
-#!date=2026-06-12 14:11:07
+#!date=2026-06-15 21:46:05
 
 [Rule]
 DOMAIN-KEYWORD,httpdns,REJECT,extended-matching
@@ -107,6 +107,8 @@ DOMAIN,dotserver.douyucdn.cn,REJECT,extended-matching
 DOMAIN,hdns.ksyun.com,REJECT,extended-matching
 DOMAIN,httpdns.push.oppomobile.com,REJECT,extended-matching
 DOMAIN,httpdns.ocloud.oppomobile.com,REJECT,extended-matching
+DOMAIN,cdndns.kwd.inkuai.com,REJECT,extended-matching
+DOMAIN,hdns.k-dyn.com,REJECT,extended-matching
 DOMAIN,kuaishou.httpdns.pro,REJECT,extended-matching
 DOMAIN,httpdns.kwd.inkuai.com,REJECT,extended-matching
 DOMAIN,apidns.kwd.inkuai.com,REJECT,extended-matching
