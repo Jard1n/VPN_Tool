@@ -1,4 +1,4 @@
-# Main total line 24322 
+# Main total line 24302 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -148,7 +148,6 @@ DOMAIN-SUFFIX,12bet.com
 DOMAIN-SUFFIX,12diasdepresentesdeitunes.com
 DOMAIN-SUFFIX,12diasderegalosdeitunes.cl
 DOMAIN-SUFFIX,12diasderegalosdeitunes.co
-DOMAIN-SUFFIX,12diasderegalosdeitunes.co.cr
 DOMAIN-SUFFIX,12diasderegalosdeitunes.co.ni
 DOMAIN-SUFFIX,12diasderegalosdeitunes.co.ve
 DOMAIN-SUFFIX,12diasderegalosdeitunes.com
@@ -156,7 +155,6 @@ DOMAIN-SUFFIX,12diasderegalosdeitunes.com.co
 DOMAIN-SUFFIX,12diasderegalosdeitunes.com.hn
 DOMAIN-SUFFIX,12diasderegalosdeitunes.com.ni
 DOMAIN-SUFFIX,12diasderegalosdeitunes.com.ve
-DOMAIN-SUFFIX,12diasderegalosdeitunes.cr
 DOMAIN-SUFFIX,12diasderegalosdeitunes.gt
 DOMAIN-SUFFIX,12diasderegalosdeitunes.hn
 DOMAIN-SUFFIX,12diasderegalosdeitunes.pe
@@ -1062,7 +1060,6 @@ DOMAIN-SUFFIX,airbnb.cat
 DOMAIN-SUFFIX,airbnb.ch
 DOMAIN-SUFFIX,airbnb.cl
 DOMAIN-SUFFIX,airbnb.cn
-DOMAIN-SUFFIX,airbnb.co.cr
 DOMAIN-SUFFIX,airbnb.co.in
 DOMAIN-SUFFIX,airbnb.co.nz
 DOMAIN-SUFFIX,airbnb.co.ve
@@ -1291,7 +1288,6 @@ DOMAIN-SUFFIX,alienware.at
 DOMAIN-SUFFIX,alienware.be
 DOMAIN-SUFFIX,alienware.biz
 DOMAIN-SUFFIX,alienware.ch
-DOMAIN-SUFFIX,alienware.co.cr
 DOMAIN-SUFFIX,alienware.co.in
 DOMAIN-SUFFIX,alienware.co.nz
 DOMAIN-SUFFIX,alienware.com
@@ -1762,7 +1758,6 @@ DOMAIN-SUFFIX,apple.ch
 DOMAIN-SUFFIX,apple.cl
 DOMAIN-SUFFIX,apple.cm
 DOMAIN-SUFFIX,apple.co
-DOMAIN-SUFFIX,apple.co.cr
 DOMAIN-SUFFIX,apple.co.hu
 DOMAIN-SUFFIX,apple.co.mz
 DOMAIN-SUFFIX,apple.co.nz
@@ -3661,7 +3656,6 @@ DOMAIN-SUFFIX,bmw-motorrad.com.hr
 DOMAIN-SUFFIX,bmw-motorrad.com.my
 DOMAIN-SUFFIX,bmw-motorrad.com.pe
 DOMAIN-SUFFIX,bmw-motorrad.com.py
-DOMAIN-SUFFIX,bmw-motorrad.cr
 DOMAIN-SUFFIX,bmw-motorrad.cz
 DOMAIN-SUFFIX,bmw-motorrad.de
 DOMAIN-SUFFIX,bmw-motorrad.dk
@@ -3728,7 +3722,6 @@ DOMAIN-SUFFIX,bmw.cc
 DOMAIN-SUFFIX,bmw.ch
 DOMAIN-SUFFIX,bmw.cl
 DOMAIN-SUFFIX,bmw.co.ao
-DOMAIN-SUFFIX,bmw.co.cr
 DOMAIN-SUFFIX,bmw.co.ke
 DOMAIN-SUFFIX,bmw.co.nz
 DOMAIN-SUFFIX,bmw.co.th
@@ -4073,7 +4066,6 @@ DOMAIN-SUFFIX,bridgestone-brand.com
 DOMAIN-SUFFIX,bridgestone-plt-eng.com
 DOMAIN-SUFFIX,bridgestone-tac-oman.com
 DOMAIN-SUFFIX,bridgestone.cl
-DOMAIN-SUFFIX,bridgestone.co.cr
 DOMAIN-SUFFIX,bridgestone.co.in
 DOMAIN-SUFFIX,bridgestone.co.th
 DOMAIN-SUFFIX,bridgestone.com
@@ -4085,7 +4077,6 @@ DOMAIN-SUFFIX,bridgestoneamericas.com
 DOMAIN-SUFFIX,bridgestonearena.com
 DOMAIN-SUFFIX,bridgestonecntc.com
 DOMAIN-SUFFIX,bridgestonecomercial.cl
-DOMAIN-SUFFIX,bridgestonecomercial.co.cr
 DOMAIN-SUFFIX,bridgestonecomercial.com.ar
 DOMAIN-SUFFIX,bridgestonecomercial.com.br
 DOMAIN-SUFFIX,bridgestonecomercial.com.co
@@ -5458,6 +5449,7 @@ DOMAIN-SUFFIX,cpu-monkey.com
 DOMAIN-SUFFIX,cpuid.com
 DOMAIN-SUFFIX,cpz.to
 DOMAIN-SUFFIX,cqcorea.com
+DOMAIN-SUFFIX,cr
 DOMAIN-SUFFIX,crabporn.com
 DOMAIN-SUFFIX,crackle.com
 DOMAIN-SUFFIX,craigslist.org
@@ -8068,13 +8060,11 @@ DOMAIN-SUFFIX,fireofliberty.org
 DOMAIN-SUFFIX,fireside.fm
 DOMAIN-SUFFIX,firesidegatherings.com
 DOMAIN-SUFFIX,firestone.cl
-DOMAIN-SUFFIX,firestone.co.cr
 DOMAIN-SUFFIX,firestone.com.ar
 DOMAIN-SUFFIX,firestone.com.br
 DOMAIN-SUFFIX,firestone.com.co
 DOMAIN-SUFFIX,firestonebpco.com
 DOMAIN-SUFFIX,firestonecomercial.cl
-DOMAIN-SUFFIX,firestonecomercial.co.cr
 DOMAIN-SUFFIX,firestonecomercial.com.ar
 DOMAIN-SUFFIX,firestonecomercial.com.br
 DOMAIN-SUFFIX,firestonecomercial.com.co
@@ -11312,7 +11302,6 @@ DOMAIN-SUFFIX,intel.cl
 DOMAIN-SUFFIX,intel.cm
 DOMAIN-SUFFIX,intel.co
 DOMAIN-SUFFIX,intel.co.ae
-DOMAIN-SUFFIX,intel.co.cr
 DOMAIN-SUFFIX,intel.com
 DOMAIN-SUFFIX,intel.com.ar
 DOMAIN-SUFFIX,intel.com.bo
@@ -11327,7 +11316,6 @@ DOMAIN-SUFFIX,intel.com.pr
 DOMAIN-SUFFIX,intel.com.py
 DOMAIN-SUFFIX,intel.com.uy
 DOMAIN-SUFFIX,intel.com.ve
-DOMAIN-SUFFIX,intel.cr
 DOMAIN-SUFFIX,intel.cu
 DOMAIN-SUFFIX,intel.cz
 DOMAIN-SUFFIX,intel.de
@@ -12356,7 +12344,6 @@ DOMAIN-SUFFIX,kaspersky.pt
 DOMAIN-SUFFIX,kaspersky.rs
 DOMAIN-SUFFIX,kaspersky.se
 DOMAIN-SUFFIX,kastatic.org
-DOMAIN-SUFFIX,kat.cr
 DOMAIN-SUFFIX,katestube.com
 DOMAIN-SUFFIX,kathmandupost.com
 DOMAIN-SUFFIX,kavkazr.com
@@ -12384,7 +12371,6 @@ DOMAIN-SUFFIX,keepmovingwithmovefree.com
 DOMAIN-SUFFIX,keepyourcad.com
 DOMAIN-SUFFIX,keezmovies.com
 DOMAIN-SUFFIX,keiba.net
-DOMAIN-SUFFIX,kemono.cr
 DOMAIN-SUFFIX,kemono.party
 DOMAIN-SUFFIX,kemono.su
 DOMAIN-SUFFIX,kemptechnologies.com
@@ -13143,7 +13129,6 @@ DOMAIN-SUFFIX,lxxlxx.com
 DOMAIN-SUFFIX,lyfhk.net
 DOMAIN-SUFFIX,lynxjs.org
 DOMAIN-SUFFIX,lysol.cl
-DOMAIN-SUFFIX,lysol.co.cr
 DOMAIN-SUFFIX,lysol.com
 DOMAIN-SUFFIX,lysol.net
 DOMAIN-SUFFIX,lyzsxx.com
@@ -13992,7 +13977,6 @@ DOMAIN-SUFFIX,mini.by
 DOMAIN-SUFFIX,mini.cc
 DOMAIN-SUFFIX,mini.ch
 DOMAIN-SUFFIX,mini.cl
-DOMAIN-SUFFIX,mini.co.cr
 DOMAIN-SUFFIX,mini.co.me
 DOMAIN-SUFFIX,mini.co.th
 DOMAIN-SUFFIX,mini.com
@@ -18158,7 +18142,6 @@ DOMAIN-SUFFIX,rustup.rs
 DOMAIN-SUFFIX,rusvpn.com
 DOMAIN-SUFFIX,rutor.info
 DOMAIN-SUFFIX,rutracker.cc
-DOMAIN-SUFFIX,rutracker.cr
 DOMAIN-SUFFIX,rutracker.me
 DOMAIN-SUFFIX,rutracker.net
 DOMAIN-SUFFIX,rutracker.org
@@ -19256,7 +19239,6 @@ DOMAIN-SUFFIX,sony.be
 DOMAIN-SUFFIX,sony.biz
 DOMAIN-SUFFIX,sony.ch
 DOMAIN-SUFFIX,sony.cl
-DOMAIN-SUFFIX,sony.co.cr
 DOMAIN-SUFFIX,sony.co.in
 DOMAIN-SUFFIX,sony.co.nz
 DOMAIN-SUFFIX,sony.co.th
@@ -21848,7 +21830,6 @@ DOMAIN-SUFFIX,visa-atm.com
 DOMAIN-SUFFIX,visa.be
 DOMAIN-SUFFIX,visa.cl
 DOMAIN-SUFFIX,visa.co.ao
-DOMAIN-SUFFIX,visa.co.cr
 DOMAIN-SUFFIX,visa.co.in
 DOMAIN-SUFFIX,visa.co.ke
 DOMAIN-SUFFIX,visa.co.ni
@@ -23577,7 +23558,6 @@ DOMAIN-SUFFIX,yahoo.cm
 DOMAIN-SUFFIX,yahoo.co.ao
 DOMAIN-SUFFIX,yahoo.co.bw
 DOMAIN-SUFFIX,yahoo.co.ck
-DOMAIN-SUFFIX,yahoo.co.cr
 DOMAIN-SUFFIX,yahoo.co.in
 DOMAIN-SUFFIX,yahoo.co.mz
 DOMAIN-SUFFIX,yahoo.co.nz
