@@ -261,6 +261,7 @@ DOMAIN,firebaseinappmessaging.googleapis.com,REJECT,extended-matching
 DOMAIN,fundingchoicesmessages.google.com,REJECT,extended-matching
 DOMAIN-SUFFIX,doubleclick.net,REJECT,extended-matching
 DOMAIN-SUFFIX,doubleclick-cn.net,REJECT,extended-matching
+DOMAIN-SUFFIX,googlesyndication.com,REJECT,extended-matching
 DOMAIN-SUFFIX,googlesyndication-cn.com,REJECT,extended-matching
 DOMAIN-SUFFIX,xinduoad.com,REJECT,extended-matching
 DOMAIN-SUFFIX,kuaiyiad.com,REJECT,extended-matching
@@ -301,9 +302,10 @@ DOMAIN-SUFFIX,fancyapi.com,REJECT,extended-matching
 DOMAIN-SUFFIX,medproad.com,REJECT,extended-matching
 DOMAIN-SUFFIX,applovin.com,REJECT,extended-matching
 DOMAIN-SUFFIX,iads.unity3d.com,REJECT,extended-matching
+DOMAIN-SUFFIX,unityads.unity3d.com,REJECT,extended-matching
 DOMAIN-SUFFIX,unityads.unitychina.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,tapjoy.com,REJECT,extended-matching
-DOMAIN-SUFFIX,ads.vungle.com,REJECT,extended-matching
+DOMAIN-SUFFIX,vungle.com,REJECT,extended-matching
 DOMAIN-SUFFIX,adsmoloco.com,REJECT,extended-matching
 DOMAIN-SUFFIX,smadex.com,REJECT,extended-matching
 DOMAIN-SUFFIX,tapad.com,REJECT,extended-matching
@@ -319,6 +321,9 @@ DOMAIN-SUFFIX,amazon-adsystem.com,REJECT,extended-matching
 DOMAIN-SUFFIX,skarb.club,REJECT,extended-matching
 DOMAIN-SUFFIX,skarb.work,REJECT,extended-matching
 DOMAIN-SUFFIX,amplitude.com,REJECT,extended-matching
+DOMAIN-SUFFIX,fivecdm.com,REJECT,extended-matching
+DOMAIN-SUFFIX,doubleverify.com,REJECT,extended-matching
+DOMAIN,ep7.facebook.com,REJECT,extended-matching
 
 
 [URL Rewrite]
