@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-06-01 17:11:35
+#!date=2026-07-01 10:51:11
 
 [Rule]
 DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
@@ -26,6 +26,7 @@ DOMAIN-KEYWORD,iflyad.bj.openstorage.cn,REJECT,extended-matching
 DOMAIN-KEYWORD,bjimp.voiceads.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,1rtb.net,REJECT,extended-matching
 DOMAIN-SUFFIX,1rtb.com,REJECT,extended-matching
+DOMAIN-SUFFIX,yfanads.com,REJECT,extended-matching
 DOMAIN-SUFFIX,halomobi.com,REJECT,extended-matching
 DOMAIN-SUFFIX,hubcloud.com.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,inmobi.cn,REJECT,extended-matching
@@ -78,8 +79,13 @@ DOMAIN,nadvideo2.baidu.com,REJECT,extended-matching
 DOMAIN,wn.pos.baidu.com,REJECT,extended-matching
 DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT,extended-matching
 DOMAIN,mobads-pre-config.cdn.bcebos.com,REJECT,extended-matching
+DOMAIN,hm.baidu.com,REJECT,extended-matching
+DOMAIN,api.map.baidu.com,REJECT,extended-matching
+DOMAIN,dlswbr.baidu.com,REJECT,extended-matching
+DOMAIN,miao.baidu.com,REJECT,extended-matching
 DOMAIN-SUFFIX,union.baidu.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,union.baidu.com,REJECT,extended-matching
+DOMAIN,tdid.m.qq.com,REJECT,extended-matching
 DOMAIN,adsmind.gdtimg.com,REJECT,extended-matching
 DOMAIN,adsmind.ugdtimg.com,REJECT,extended-matching
 DOMAIN,ads.privacy.qq.com,REJECT,extended-matching
@@ -197,6 +203,7 @@ DOMAIN,logrcv.aiclk.com,REJECT,extended-matching
 DOMAIN,acjs.aliyun.com,REJECT,extended-matching
 DOMAIN,retcode.alicdn.com,REJECT,extended-matching
 DOMAIN,arms-retcode.aliyuncs.com,REJECT,extended-matching
+DOMAIN-SUFFIX,iytcdn.com,REJECT,extended-matching
 DOMAIN,huichuan.sm.cn,REJECT,extended-matching
 DOMAIN,huichuan-mc.sm.cn,REJECT,extended-matching
 DOMAIN,api.sm.cn,REJECT,extended-matching
@@ -297,6 +304,7 @@ DOMAIN-SUFFIX,adshenshi.com,REJECT,extended-matching
 DOMAIN-SUFFIX,qidianad.com,REJECT,extended-matching
 DOMAIN-SUFFIX,kuaichuanad.com,REJECT,extended-matching
 DOMAIN-SUFFIX,statisticslinks.com,REJECT,extended-matching
+DOMAIN,adx.zuoyebang.com,REJECT,extended-matching
 DOMAIN-SUFFIX,tradplusad.com,REJECT,extended-matching
 DOMAIN-SUFFIX,fancyapi.com,REJECT,extended-matching
 DOMAIN-SUFFIX,medproad.com,REJECT,extended-matching
@@ -323,6 +331,8 @@ DOMAIN-SUFFIX,skarb.work,REJECT,extended-matching
 DOMAIN-SUFFIX,amplitude.com,REJECT,extended-matching
 DOMAIN-SUFFIX,fivecdm.com,REJECT,extended-matching
 DOMAIN-SUFFIX,doubleverify.com,REJECT,extended-matching
+DOMAIN-SUFFIX,tobidad.cn,REJECT,extended-matching
+DOMAIN-SUFFIX,tobidad.com,REJECT,extended-matching
 DOMAIN,ep7.facebook.com,REJECT,extended-matching
 
 
