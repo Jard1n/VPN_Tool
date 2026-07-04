@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-07-03 09:41:05
+#!date=2026-07-03 13:27:04
 
 [Rule]
 DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
@@ -61,6 +61,9 @@ DOMAIN-SUFFIX,popadshop.com,REJECT,extended-matching
 DOMAIN-SUFFIX,admobile.vip,REJECT,extended-matching
 DOMAIN-SUFFIX,yksdks.com,REJECT,extended-matching
 DOMAIN-SUFFIX,dutils.com,REJECT,extended-matching
+DOMAIN,init.sms.mob.com,DIRECT
+DOMAIN,sdkapi.sms.mob.com,DIRECT
+DOMAIN,code.sms.mob.com,DIRECT
 DOMAIN-SUFFIX,mob.com,REJECT,extended-matching
 DOMAIN,smartop-sdkapi.jiguang.cn,DIRECT
 DOMAIN,sdk.verification.jiguang.cn,DIRECT
