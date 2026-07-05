@@ -1,4 +1,4 @@
-# Main total line 24341 
+# Main total line 24344 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -31,7 +31,6 @@ DOMAIN,hub.slarker.me
 DOMAIN,i.jeded.com
 DOMAIN,imperial.insendi.com
 DOMAIN,in.mesl.cloud
-DOMAIN,ingest.apple-studies.com
 DOMAIN,ip-api.com
 DOMAIN,licdn.cn.cdn20.com
 DOMAIN,link.theplatform.com
@@ -1750,6 +1749,7 @@ DOMAIN-SUFFIX,apple-pay.rs
 DOMAIN-SUFFIX,apple-pay.wang
 DOMAIN-SUFFIX,apple-store.net
 DOMAIN-SUFFIX,apple-store.wang
+DOMAIN-SUFFIX,apple-studies.com
 DOMAIN-SUFFIX,apple-usa.net
 DOMAIN-SUFFIX,apple.ae
 DOMAIN-SUFFIX,apple.at
@@ -2170,6 +2170,7 @@ DOMAIN-SUFFIX,atlaspost.com
 DOMAIN-SUFFIX,atlassian-dev.net
 DOMAIN-SUFFIX,atlassian.com
 DOMAIN-SUFFIX,atlassian.net
+DOMAIN-SUFFIX,atmeta.com
 DOMAIN-SUFFIX,atnext.com
 DOMAIN-SUFFIX,atom.com
 DOMAIN-SUFFIX,atom.io
@@ -2550,6 +2551,7 @@ DOMAIN-SUFFIX,aziani.com
 DOMAIN-SUFFIX,azirevpn.com
 DOMAIN-SUFFIX,aznude.com
 DOMAIN-SUFFIX,azure
+DOMAIN-SUFFIX,azure-api.net
 DOMAIN-SUFFIX,azure-devices-int.net
 DOMAIN-SUFFIX,azure-devices.net
 DOMAIN-SUFFIX,azure-dns.com
@@ -2587,6 +2589,7 @@ DOMAIN-SUFFIX,azureplanetscale.net
 DOMAIN-SUFFIX,azureserviceprofiler.com
 DOMAIN-SUFFIX,azuresmartspaces.net
 DOMAIN-SUFFIX,azurestackvalidation.com
+DOMAIN-SUFFIX,azurestaticapps.net
 DOMAIN-SUFFIX,azurewebsites.net
 DOMAIN-SUFFIX,b-cdn.net
 DOMAIN-SUFFIX,b-eroland.net
