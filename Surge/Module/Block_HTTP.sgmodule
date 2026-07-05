@@ -1,7 +1,7 @@
 #!name=HTTPDNS拦截器
 #!desc=拦截常见的HTTPDNS服务
 #!category =  Block Ads
-#!date=2026-07-03 00:35:14
+#!date=2026-07-04 20:05:14
 
 [Rule]
 DOMAIN-KEYWORD,httpdns,REJECT,extended-matching

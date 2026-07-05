@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-07-03 13:27:04
+#!date=2026-07-04 18:02:50
 
 [Rule]
 DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
@@ -225,7 +225,6 @@ DOMAIN,dsp-x.jd.com,REJECT,extended-matching
 DOMAIN,im-x.jd.com,REJECT,extended-matching
 DOMAIN,xlog.jd.com,REJECT,extended-matching
 DOMAIN,janapi.jd.com,REJECT,extended-matching
-DOMAIN,dg.k.jd.com,REJECT,extended-matching
 DOMAIN-SUFFIX,toponadss.com,REJECT,extended-matching
 DOMAIN-SUFFIX,toponad.com,REJECT,extended-matching
 DOMAIN-SUFFIX,motowoo.com,REJECT,extended-matching
@@ -317,6 +316,8 @@ DOMAIN-SUFFIX,yiweiads.com,REJECT,extended-matching
 DOMAIN-SUFFIX,adx.52qumao.com,REJECT,extended-matching
 DOMAIN-SUFFIX,hzjizhun.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,hzjizhun.com,REJECT,extended-matching
+DOMAIN-SUFFIX,sogaha.cn,REJECT,extended-matching
+DOMAIN,zxid-m.mobileservice.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,tradplusad.com,REJECT,extended-matching
 DOMAIN-SUFFIX,fancyapi.com,REJECT,extended-matching
 DOMAIN-SUFFIX,medproad.com,REJECT,extended-matching
