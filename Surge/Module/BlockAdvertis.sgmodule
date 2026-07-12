@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-07-04 18:02:50
+#!date=2026-07-11 20:45:02
 
 [Rule]
 DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
@@ -197,6 +197,7 @@ AND,((DOMAIN-KEYWORD,adash,extended-matching),(DOMAIN-SUFFIX,ut.taobao.com,exten
 URL-REGEX,"^http:\/\/.+\/amdc\/mobileDispatch",REJECT,extended-matching
 DOMAIN,baichuan-sdk.alicdn.com,REJECT,extended-matching
 DOMAIN,acs4baichuan.m.taobao.com,REJECT,extended-matching
+DOMAIN,nbsdk-baichuan.alicdn.com,REJECT,extended-matching
 DOMAIN,api.sm.cn,REJECT,extended-matching
 DOMAIN,c.sm.cn,REJECT,extended-matching
 DOMAIN,content-understand-strategy.sm.cn,REJECT,extended-matching
