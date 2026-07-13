@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-07-11 20:45:02
+#!date=2026-07-12 23:46:27
 
 [Rule]
 DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
@@ -85,7 +85,6 @@ DOMAIN,wn.pos.baidu.com,REJECT,extended-matching
 DOMAIN,miniapp-ad.cdn.bcebos.com,REJECT,extended-matching
 DOMAIN,mobads-pre-config.cdn.bcebos.com,REJECT,extended-matching
 DOMAIN,hm.baidu.com,REJECT,extended-matching
-DOMAIN,api.map.baidu.com,REJECT,extended-matching
 DOMAIN,dlswbr.baidu.com,REJECT,extended-matching
 DOMAIN,miao.baidu.com,REJECT,extended-matching
 DOMAIN-SUFFIX,union.baidu.cn,REJECT,extended-matching
