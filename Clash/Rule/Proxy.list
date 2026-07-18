@@ -1,4 +1,4 @@
-# Main total line 370 
+# Main total line 371 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,copilot.microsoft.com
@@ -65,6 +65,7 @@ DOMAIN-SUFFIX,cloudflare.com
 DOMAIN-SUFFIX,cloudflare.net
 DOMAIN-SUFFIX,cloudflare.tv
 DOMAIN-SUFFIX,cms-twdigitalassets.com
+DOMAIN-SUFFIX,coinbase.com
 DOMAIN-SUFFIX,community
 DOMAIN-SUFFIX,compose-spec.io
 DOMAIN-SUFFIX,db-ip.com
