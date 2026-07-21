@@ -1,4 +1,4 @@
-# Main total line 4250 
+# Main total line 4249 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DST-PORT,6443))
@@ -166,6 +166,7 @@ DOMAIN,cwx.lianwangtech.com
 DOMAIN,dagonghuzhu.com
 DOMAIN,ddacn6pr5v0tl.cloudfront.net
 DOMAIN,dflow.bz.mgtv.com
+DOMAIN,dig.bdurl.net
 DOMAIN,dispatcher.360in.com
 DOMAIN,dns.alidns.com
 DOMAIN,dns.jd.com
@@ -1373,7 +1374,6 @@ DOMAIN-SUFFIX,dev-push.m.youku.com
 DOMAIN-SUFFIX,dh54wf.xyz
 DOMAIN-SUFFIX,dianjoy.com
 DOMAIN-SUFFIX,dianru.com
-DOMAIN-SUFFIX,dig.bdurl.net
 DOMAIN-SUFFIX,digitalpimpnetwork.com
 DOMAIN-SUFFIX,directrev.com
 DOMAIN-SUFFIX,dispatcher.upmc.uc.cn
@@ -2062,7 +2062,6 @@ DOMAIN-SUFFIX,mbai.cn
 DOMAIN-SUFFIX,mbdlog.iqiyi.com
 DOMAIN-SUFFIX,mc7clurd09pla4nrtat7ion.com
 DOMAIN-SUFFIX,mcgi.v.qq.com
-DOMAIN-SUFFIX,mcs.zijieapi.com
 DOMAIN-SUFFIX,mdc.meitustat.com
 DOMAIN-SUFFIX,mdevstat.qqlive.qq.com
 DOMAIN-SUFFIX,mdfull.com
