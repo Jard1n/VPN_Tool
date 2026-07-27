@@ -89,7 +89,6 @@ DOMAIN,adsmind.tc.qq.com
 DOMAIN,adsstatic.vivo.com.cn
 DOMAIN,adtrack.ucweb.com
 DOMAIN,adtrack.xiaojukeji.com
-DOMAIN,adtracker.adfunlink.com
 DOMAIN,adttrackingprd.hwwt8.com
 DOMAIN,adv-adlog.variflight.com
 DOMAIN,adv-ads.variflight.com
@@ -389,6 +388,7 @@ DOMAIN,ws.ksmobile.net
 DOMAIN,wxsmsdy.video.qq.com
 DOMAIN,wxsnsdy.video.qq.com
 DOMAIN,yandexmetrica.com
+DOMAIN,youku-acs.m.taobao.com
 DOMAIN,yt-adp.nosdn.127.net
 DOMAIN,yt-adp.ws.126.net
 DOMAIN,zgsdk.zhugeio.com
@@ -753,6 +753,7 @@ DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,ads-video-al.xhscdn.com
 DOMAIN-SUFFIX,ads-video-qc.xhscdn.com
 DOMAIN-SUFFIX,ads.95516.com
+DOMAIN-SUFFIX,ads.adfunlink.com
 DOMAIN-SUFFIX,ads.auctions.yahoo.com
 DOMAIN-SUFFIX,ads.cdn.tvb.com
 DOMAIN-SUFFIX,ads.csdn.net
@@ -850,6 +851,7 @@ DOMAIN-SUFFIX,adthor.com
 DOMAIN-SUFFIX,adtongji.xyz
 DOMAIN-SUFFIX,adtrace.org
 DOMAIN-SUFFIX,adtrack.quark.cn
+DOMAIN-SUFFIX,adtracker.adfunlink.com
 DOMAIN-SUFFIX,adtrk.me
 DOMAIN-SUFFIX,adui.tg.meitu.com
 DOMAIN-SUFFIX,adukwai.com
@@ -1770,7 +1772,6 @@ DOMAIN-SUFFIX,image.gentags.com
 DOMAIN-SUFFIX,image.hpplay.cn
 DOMAIN-SUFFIX,imageplus.baidu.cn
 DOMAIN-SUFFIX,imageplus.baidu.com
-DOMAIN-SUFFIX,images.pinduoduo.com
 DOMAIN-SUFFIX,imageter.com
 DOMAIN-SUFFIX,imazingchina.com
 DOMAIN-SUFFIX,imdns.hpplay.cn
@@ -3306,7 +3307,6 @@ DOMAIN-SUFFIX,yongyuelm.com
 DOMAIN-SUFFIX,yooli.com
 DOMAIN-SUFFIX,yottos.com
 DOMAIN-SUFFIX,youappi.com
-DOMAIN-SUFFIX,youku-acs.m.taobao.com
 DOMAIN-SUFFIX,youmi.net
 DOMAIN-SUFFIX,youradexchange.com
 DOMAIN-SUFFIX,youtube.112.2o7.net
