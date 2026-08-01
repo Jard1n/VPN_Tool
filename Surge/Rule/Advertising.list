@@ -1,4 +1,4 @@
-# Main total line 4249 
+# Main total line 4250 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -10,6 +10,7 @@ DOMAIN-WILDCARD,*-ad.video.yximgs.com*
 DOMAIN-WILDCARD,*-ad.wtzw.com*
 DOMAIN-WILDCARD,*-be-pack-sign.pglstatp-toutiao.com*
 DOMAIN-WILDCARD,*-normal.zijieapi.com*
+DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
 DOMAIN,a.cpic.com.cn
 DOMAIN,a.wkanx.com
 DOMAIN,abema-adx.ameba.jp

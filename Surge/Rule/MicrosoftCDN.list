@@ -9,8 +9,10 @@
 #
 # This file contains data from:
 #   - https://github.com/felixonmars/dnsmasq-china-list
+#
+# $content-hash-v1$:g4NlhDOr7KS8TQ-sReEqmINJsl50fqjTecVGRClOlRU$
 #########################################
-DOMAIN,7h1s_rul35et_i5_mad3_by_5ukk4w-ruleset.skk.moe
+DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
 DOMAIN-SUFFIX,sdx.microsoft.com
 DOMAIN,res.cdn.office.net
 DOMAIN-SUFFIX,cn.windowssearch.com
