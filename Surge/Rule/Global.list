@@ -1,4 +1,4 @@
-# Main total line 24413 
+# Main total line 24423 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -803,6 +803,7 @@ DOMAIN-SUFFIX,acrobat.com
 DOMAIN-SUFFIX,acs.org
 DOMAIN-SUFFIX,actalis.com
 DOMAIN-SUFFIX,actfortibet.org
+DOMAIN-SUFFIX,actifio.com
 DOMAIN-SUFFIX,activated.win
 DOMAIN-SUFFIX,activematter.game
 DOMAIN-SUFFIX,activeteachonline.com
@@ -1968,6 +1969,8 @@ DOMAIN-SUFFIX,applfe.com
 DOMAIN-SUFFIX,applicationinsights.io
 DOMAIN-SUFFIX,applicationinsights.net
 DOMAIN-SUFFIX,applle.com
+DOMAIN-SUFFIX,applovin.com
+DOMAIN-SUFFIX,applvn.com
 DOMAIN-SUFFIX,applw.com
 DOMAIN-SUFFIX,appmediagroup.com
 DOMAIN-SUFFIX,approvedusedbmw.com
@@ -12048,6 +12051,7 @@ DOMAIN-SUFFIX,jessicaturner.com
 DOMAIN-SUFFIX,jetbrains.ai
 DOMAIN-SUFFIX,jetbrains.cloud
 DOMAIN-SUFFIX,jetbrains.com
+DOMAIN-SUFFIX,jetbrains.dev
 DOMAIN-SUFFIX,jetbrains.io
 DOMAIN-SUFFIX,jetbrains.net
 DOMAIN-SUFFIX,jetbrains.org
@@ -12579,6 +12583,7 @@ DOMAIN-SUFFIX,korewaeroi.com
 DOMAIN-SUFFIX,korona.com
 DOMAIN-SUFFIX,koshelek.app
 DOMAIN-SUFFIX,kostenlosepornoclips.com
+DOMAIN-SUFFIX,kotl.in
 DOMAIN-SUFFIX,kotlinconf.com
 DOMAIN-SUFFIX,kotlinlang.org
 DOMAIN-SUFFIX,kouwobb.com
@@ -12606,6 +12611,7 @@ DOMAIN-SUFFIX,ksescortclub.com
 DOMAIN-SUFFIX,kspcoin.com
 DOMAIN-SUFFIX,ksyp10.com
 DOMAIN-SUFFIX,ktech.team
+DOMAIN-SUFFIX,ktor.io
 DOMAIN-SUFFIX,ktvu.com
 DOMAIN-SUFFIX,ktzhk.com
 DOMAIN-SUFFIX,ku77.xyz
@@ -14811,6 +14817,7 @@ DOMAIN-SUFFIX,myiphide.com
 DOMAIN-SUFFIX,myiphider.com
 DOMAIN-SUFFIX,myipod.net
 DOMAIN-SUFFIX,myipstack.com
+DOMAIN-SUFFIX,myjetbrains.com
 DOMAIN-SUFFIX,myjkwd.com
 DOMAIN-SUFFIX,mykomica.org
 DOMAIN-SUFFIX,mylcloud.net
@@ -15617,6 +15624,7 @@ DOMAIN-SUFFIX,ntdtv.org
 DOMAIN-SUFFIX,ntdtv.se
 DOMAIN-SUFFIX,ntdtvla.com
 DOMAIN-SUFFIX,ntdvn.com
+DOMAIN-SUFFIX,nthlink.com
 DOMAIN-SUFFIX,ntl.fyi
 DOMAIN-SUFFIX,ntp.nat.ms
 DOMAIN-SUFFIX,ntp.nic.cz
@@ -16070,6 +16078,7 @@ DOMAIN-SUFFIX,openweathermap.org
 DOMAIN-SUFFIX,openweave.io
 DOMAIN-SUFFIX,openwebster.com
 DOMAIN-SUFFIX,openwrt.org
+DOMAIN-SUFFIX,openxla.org
 DOMAIN-SUFFIX,opera-api.com
 DOMAIN-SUFFIX,opera-api2.com
 DOMAIN-SUFFIX,opera-browser.com
@@ -20094,6 +20103,7 @@ DOMAIN-SUFFIX,talk853.com
 DOMAIN-SUFFIX,talkatone.com
 DOMAIN-SUFFIX,talkboxapp.com
 DOMAIN-SUFFIX,talkcc.com
+DOMAIN-SUFFIX,talkingkotlin.com
 DOMAIN-SUFFIX,talkonly.net
 DOMAIN-SUFFIX,talksport.com
 DOMAIN-SUFFIX,tamiaode.tk
