@@ -10,9 +10,9 @@
 # Data from:
 #  - https://github.com/felixonmars/dnsmasq-china-list
 #
-# $content-hash-v1$:Ngpf6t4ETqZkhA4KnoMG09a-CtOnxoQEXG6q8hwgYsY$
+# $content-hash-v1$:8nUMBKPuv5hpO7O7PCZGi-9iEo7dB8jneGtIkh4UvKs$
 #########################################
-DOMAIN,7h15_ru1353t_1s_m4d3_by_5ukk4w.skk.moe
+DOMAIN,7h15.ru1353t.1s.m4d3.by.5ukk4w.skk.moe
 DOMAIN-SUFFIX,xp.apple.com
 DOMAIN-SUFFIX,cds.apple.com
 DOMAIN-SUFFIX,cl1.apple.com
