@@ -2,6 +2,7 @@ import pandas as pd
 import re
 import concurrent.futures
 import os
+import subprocess
 import json
 import requests
 import yaml
@@ -163,7 +164,7 @@ def parse_list_file(link, output_directory):
             output_file.write(result_rules_str)
 
         srs_path = file_name.replace(".json", ".srs")
-        os.system(f"sing-box rule-set compile --output {srs_path} {file_name}")
+        subprocess.run(["sing-box", "rule-set", "compile", "--output", srs_path, file_name], check=False)
         return file_name
     except Exception as e:
         print(f'获取链接出错，已跳过：{link}，原因：{str(e)}')
