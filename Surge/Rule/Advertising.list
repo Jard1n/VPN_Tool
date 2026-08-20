@@ -1,4 +1,4 @@
-# Main total line 4250 
+# Main total line 4249 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -1976,7 +1976,6 @@ DOMAIN-SUFFIX,log-upload.mihoyo.com
 DOMAIN-SUFFIX,log-verify.dutils.com
 DOMAIN-SUFFIX,log-verify.hiaiabc.com
 DOMAIN-SUFFIX,log.aispeech.com
-DOMAIN-SUFFIX,log.aliyuncs.com
 DOMAIN-SUFFIX,log.amemv.com
 DOMAIN-SUFFIX,log.appstore3.huan.tv
 DOMAIN-SUFFIX,log.avlyun.com
