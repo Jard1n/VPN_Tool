@@ -14,6 +14,7 @@ DOMAIN,httpdns.alicdn.com,REJECT,extended-matching,pre-matching
 # refer: https://static-aliyun-doc.oss-cn-hangzhou.aliyuncs.com/download%2Fpdf%2F30114%2F%25E7%2594%25A8%25E6%2588%25B7%25E6%258C%2587%25E5%258D%2597_cn_zh-CN.pdf
 DOMAIN,httpdns-api.aliyuncs.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns-sc.aliyuncs.com,REJECT,extended-matching,pre-matching
+DOMAIN,resolvers-cn.httpdns.aliyuncs.com,REJECT,extended-matching,pre-matching
 # refer: http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/pdf/httpdns-api-reference-cn-zh-2016-05-12.pdf
 # refer: http://docs-aliyun.cn-hangzhou.oss.aliyun-inc.com/pdf/httpdns-product-introduction-cn-zh-2017-05-24.pdf
 # refer: https://help.aliyun.com/document_detail/435282.html
@@ -23,11 +24,14 @@ IP-CIDR,203.107.1.0/24,REJECT,no-resolve,pre-matching
 # Baidu
 DOMAIN,httpsdns.baidu.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.baidu.com,REJECT,extended-matching,pre-matching
+IP-CIDR,180.76.76.112/32,REJECT,no-resolve,pre-matching
 
 # BaiduBCE
 # refer: https://bce-cdn.bj.bcebos.com/p3m/pdf/bce-doc/online/HTTPDNS/HTTPDNS.pdf
 DOMAIN,httpdns.baidubce.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns.bcelive.com,REJECT,extended-matching,pre-matching
 IP-CIDR,180.76.76.200/32,REJECT,no-resolve,pre-matching
+IP-CIDR,180.76.76.220/32,REJECT,no-resolve,pre-matching
 
 # Bilibili
 DOMAIN,httpdns.bilivideo.com,REJECT,extended-matching,pre-matching
@@ -55,6 +59,9 @@ IP-CIDR,112.65.200.117/32,REJECT,no-resolve,pre-matching
 # Huawei
 DOMAIN,httpdns.c.cdnhwc2.com,REJECT,extended-matching,pre-matching
 
+# iQIYI
+DOMAIN,doh.iqiyi.com,REJECT,extended-matching,pre-matching
+
 # JD
 DOMAIN,dns.jd.com,REJECT,extended-matching,pre-matching
 IP-CIDR,101.124.19.122/32,REJECT,no-resolve,pre-matching
@@ -65,19 +72,31 @@ IP-CIDR6,2402:db40:5100:1011::5/128,REJECT,no-resolve,pre-matching
 # refer: https://docs.jdcloud.com/cn/httpdns/interface-specification
 IP-CIDR,103.224.222.208/32,REJECT,no-resolve,pre-matching
 
+# Kuwo
+DOMAIN,httpdns.kg.qq.com,REJECT,extended-matching,pre-matching
+
 # Keep
 DOMAIN,httpdns.calorietech.com,REJECT,extended-matching,pre-matching
 
 # Meituan
 DOMAIN,httpdns.meituan.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdnsvip.meituan.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdnsmultiapi.meituan.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdnsmultiapivip.meituan.com,REJECT,extended-matching,pre-matching
+DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT,extended-matching,pre-matching
+DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT,extended-matching,pre-matching
 IP-CIDR,202.90.108.13/32,REJECT,no-resolve
 IP-CIDR,202.90.110.46/32,REJECT,no-resolve
 
+# Momo
+DOMAIN,httpdns.immomo.com,REJECT,extended-matching,pre-matching
+
 # NetEase
 # refer: https://lbs.netease.im/lbs/conf.jsp
+DOMAIN,httpdns.yunxinfw.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.yunxindns.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.n.netease.com,REJECT,extended-matching,pre-matching
+DOMAIN,httpdns-sdk.n.netease.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.music.163.com,REJECT,extended-matching,pre-matching
 DOMAIN,music.httpdns.c.163.com,REJECT,extended-matching,pre-matching
 DOMAIN,lofter.httpdns.c.163.com,REJECT,extended-matching,pre-matching
@@ -87,6 +106,7 @@ IP-CIDR,115.236.121.51/32,REJECT,no-resolve,pre-matching
 IP-CIDR,115.236.121.195/32,REJECT,no-resolve,pre-matching
 
 # Oppo
+DOMAIN,httpdns.ocloud.oppomobile.com,REJECT,extended-matching,pre-matching
 DOMAIN,httpdns.push.oppomobile.com,REJECT,extended-matching,pre-matching
 
 # Sina
@@ -115,6 +135,7 @@ IP-CIDR,182.254.118.119/32,REJECT,no-resolve,pre-matching
 # Weixin
 # refer: http://dns.weixin.qq.com/cgi-bin/micromsg-bin/newgetdns
 # refer: https://developers.weixin.qq.com/doc/oplatform/Third-party_Platforms/Mini_Programs/HTTPDNS.html
+DOMAIN,aedns.weixin.qq.com,REJECT,extended-matching,pre-matching
 DOMAIN,dns.weixin.qq.com,REJECT,extended-matching,pre-matching
 DOMAIN,dns.weixin.qq.com.cn,REJECT,extended-matching,pre-matching
 IP-CIDR,42.81.232.18/32,REJECT,no-resolve,pre-matching
@@ -130,6 +151,9 @@ IP-CIDR6,240e:928:1400:10::25/128,REJECT,no-resolve,pre-matching
 IP-CIDR,182.254.116.117/32,REJECT,no-resolve,pre-matching
 IP-CIDR,182.254.118.119/32,REJECT,no-resolve,pre-matching
 
+# YY
+DOMAIN,yuyin-httpdns.gslb.yy.com,REJECT,extended-matching,pre-matching
+
 # Zhihu
 # refer: https://github.com/lwd-temp/anti-ip-attribution/issues/24
 IP-CIDR,118.89.204.198/32,REJECT,no-resolve,pre-matching
@@ -137,8 +161,6 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve,pre-matching
 
 [URL Rewrite]
 # Alipay
-^https?:\/\/amdc\.alipay\.com\/s?query - reject
-^https?:\/\/amdc-sibling\.alipay\.com\.cn\/s?query - reject
 ^https?:\/\/110\.76\.8\.150\/squery - reject
 ^https?:\/\/203\.209\.230\.39\/squery - reject
 ^https?:\/\/203\.209\.245\.102\/squery - reject
@@ -225,6 +247,11 @@ IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve,pre-matching
 # Zhihu
 # refer: https://github.com/lwd-temp/anti-ip-attribution/issues/24
 ^http:\/\/103\.41\.167\.237\/v2\/resolv - reject
+
+[Map Local]
+# Alipay
+^https?:\/\/amdc\.alipay\.com\/s?query data-type=text data='{}' status-code=200 header="Content-Type:text/json"
+^https?:\/\/amdc-sibling\.alipay\.com\.cn\/s?query data-type=text data='{}' status-code=200 header="Content-Type:text/json"
 
 [MITM]
 hostname = %APPEND% 119.29.29.98, 119.29.29.99, amdc.alipay.com, amdc-sibling.alipay.com.cn, dns.jd.com, *.httpdns.pro
