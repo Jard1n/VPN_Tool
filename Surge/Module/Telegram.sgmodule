@@ -1,0 +1,31 @@
+#!name = Telegram DC
+#!desc = 电报数据中心分流。
+#!arguments = DC1:𝑺𝒎𝒂𝒓𝒕𝑼𝑺, DC2:𝑬𝒖𝒓𝒐𝒑𝒆, DC3:𝑺𝒎𝒂𝒓𝒕𝑼𝑺, DC4:𝑬𝒖𝒓𝒐𝒑𝒆, DC5:𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+#!arguments-desc = 填写对应策略组名称:\nDC1: 🇺🇸美国\nDC2: 🇪🇺欧盟\nDC3: 🇺🇸美国\nDC4: 🇪🇺欧盟\nDC5: 🇸🇬新加坡
+
+
+[Rule]
+# Telegram DC1
+DOMAIN,pluto.web.telegram.org,{{{DC1}}} // HTTP endpoints
+DOMAIN,pluto-1.web.telegram.org,{{{DC1}}} // HTTP endpoints
+IP-ASN,59930,{{{DC1}}},no-resolve // Data Center
+
+# Telegram DC2
+DOMAIN,venus.web.telegram.org,{{{DC2}}} // HTTP endpoints
+DOMAIN,venus-1.web.telegram.org,{{{DC2}}} // HTTP endpoints
+IP-ASN,44907,{{{DC2}}},no-resolve // Data Center
+
+# Telegram DC3
+DOMAIN,aurora.web.telegram.org,{{{DC3}}} // HTTP endpoints
+DOMAIN,aurora-1.web.telegram.org,{{{DC3}}} // HTTP endpoints
+IP-ASN,211157,{{{DC3}}},no-resolve // Data Center
+
+# Telegram DC4
+DOMAIN,vesta.web.telegram.org,{{{DC4}}} // HTTP endpoints
+DOMAIN,vesta-1.web.telegram.org,{{{DC4}}} // HTTP endpoints
+IP-ASN,62041,{{{DC4}}},no-resolve // Data Center
+
+# Telegram DC5
+DOMAIN,flora.web.telegram.org,{{{DC5}}} // HTTP endpoints
+DOMAIN,flora-1.web.telegram.org,{{{DC5}}} // HTTP endpoints
+IP-ASN,62014,{{{DC5}}},no-resolve // Data Center

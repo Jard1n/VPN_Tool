@@ -1,0 +1,98 @@
+# 铁路12306
+DOMAIN,ad.12306.cn
+
+# Alibaba
+DOMAIN,log.mmstat.com
+DOMAIN,sycm.mmstat.com
+
+# Apple
+DOMAIN,ca.iadsdk.apple.com
+
+# General
+DOMAIN,app.adjust.com
+DOMAIN,app.appsflyer.com
+DOMAIN,bdtj.tagtic.cn
+
+# Google China
+DOMAIN,crl.pki.goog
+DOMAIN,ocsp.pki.goog
+DOMAIN,dl.google.com
+DOMAIN,dl.l.google.com
+DOMAIN,fonts.gstatic.com
+DOMAIN,ssl.gstatic.com
+DOMAIN,tools.google.com
+DOMAIN,tools.l.google.com
+DOMAIN,redirector.gvt1.com
+DOMAIN,fonts.googleapis.com
+DOMAIN,update.googleapis.com
+DOMAIN,clientservices.googleapis.com
+DOMAIN,redirector.c.bigcache.googleapis.com
+DOMAIN-SUFFIX,googletraveladservices.com
+
+# Firebase Cloud Messaging
+DOMAIN,mtalk.google.com
+DOMAIN,alt1-mtalk.google.com
+DOMAIN,alt2-mtalk.google.com
+DOMAIN,alt3-mtalk.google.com
+DOMAIN,alt4-mtalk.google.com
+DOMAIN,alt5-mtalk.google.com
+DOMAIN,alt6-mtalk.google.com
+DOMAIN,alt7-mtalk.google.com
+DOMAIN,alt8-mtalk.google.com
+
+# CDN公共直连
+DOMAIN-SUFFIX,baomitu.com
+DOMAIN-SUFFIX,bootcss.com
+DOMAIN-SUFFIX,jiasule.com
+DOMAIN-SUFFIX,staticfile.org
+DOMAIN-SUFFIX,upaiyun.com
+
+# QQ空间
+DOMAIN-KEYWORD,ctc.qzs.qzone.qq.com
+
+# Tencent
+DOMAIN,fairplay.l.qq.com
+DOMAIN,livew.l.qq.com
+DOMAIN,vd.l.qq.com
+DOMAIN,vi.l.qq.com
+
+# Umeng
+DOMAIN,msg.umeng.com
+DOMAIN,msg.umengcloud.com
+
+# 秀米
+DOMAIN-SUFFIX,xiumi.us
+
+# Windows服务器更新服务
+DOMAIN-SUFFIX,dl.delivery.mp.microsoft.com
+DOMAIN-SUFFIX,update.microsoft.com
+DOMAIN-SUFFIX,windowsupdate.com
+DOMAIN-SUFFIX,windowsupdate.microsoft.com
+DOMAIN,download.microsoft.com
+DOMAIN,wustat.windows.com
+DOMAIN,ntservicepack.microsoft.com
+
+# Router managed 路由器管理域名
+DOMAIN,instant.arubanetworks.com
+DOMAIN,setmeup.arubanetworks.com
+DOMAIN,router.asus.com
+DOMAIN,www.asusrouter.com
+DOMAIN-SUFFIX,hiwifi.com
+DOMAIN-SUFFIX,leike.cc
+DOMAIN-SUFFIX,miwifi.com
+DOMAIN-SUFFIX,my.router
+DOMAIN-SUFFIX,p.to
+DOMAIN-SUFFIX,peiluyou.com
+DOMAIN-SUFFIX,phicomm.me
+DOMAIN-SUFFIX,router.ctc
+DOMAIN-SUFFIX,routerlogin.com
+DOMAIN-SUFFIX,tendawifi.com
+DOMAIN-SUFFIX,zte.home
+DOMAIN-SUFFIX,tplogin.cn
+DOMAIN-SUFFIX,wifi.cmcc
+
+# 路由器后台
+IP-CIDR,192.168.0.1/24,no-resolve
+
+# 天翼网关
+IP-CIDR,192.168.1.1/24,no-resolve

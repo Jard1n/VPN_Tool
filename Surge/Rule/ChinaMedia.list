@@ -1,0 +1,117 @@
+# Bilibili 哔哩哔哩
+DOMAIN,apiintl.biliapi.net
+DOMAIN,upos-hz-mirrorakam.akamaized.net
+DOMAIN-SUFFIX,acg.tv
+DOMAIN-SUFFIX,acgvideo.com
+DOMAIN-SUFFIX,b23.tv
+DOMAIN-SUFFIX,bigfun.cn
+DOMAIN-SUFFIX,bigfunapp.cn
+DOMAIN-SUFFIX,biliapi.com
+DOMAIN-SUFFIX,biliapi.net
+DOMAIN-SUFFIX,bilibili.com
+DOMAIN-SUFFIX,bilibili.tv
+DOMAIN-SUFFIX,biligame.com
+DOMAIN-SUFFIX,biligame.net
+DOMAIN-SUFFIX,bilivideo.cn
+DOMAIN-SUFFIX,bilivideo.com
+DOMAIN-SUFFIX,hdslb.com
+DOMAIN-SUFFIX,im9.com
+DOMAIN-SUFFIX,smtcdns.net
+USER-AGENT,Bilibili*
+USER-AGENT,bili*
+USER-AGENT,bili-inter*
+
+# Iqiyi 爱奇艺
+DOMAIN,intel-cache.m.iqiyi.com
+DOMAIN,intel-cache.video.iqiyi.com
+DOMAIN,intl-rcd.iqiyi.com
+DOMAIN,intl-subscription.iqiyi.com
+DOMAIN-SUFFIX,inter.iqiyi.com
+DOMAIN-SUFFIX,inter.ptqy.gitv.tv
+DOMAIN-SUFFIX,intl.iqiyi.com
+DOMAIN-SUFFIX,iq.com
+DOMAIN-SUFFIX,iqiyi.com
+DOMAIN-SUFFIX,71edge.com
+IP-CIDR,23.40.241.251/32,no-resolve
+IP-CIDR,23.40.242.10/32,no-resolve
+IP-CIDR,103.44.56.0/22,no-resolve
+IP-CIDR,118.26.32.0/23,no-resolve
+IP-CIDR,118.26.120.0/24,no-resolve
+IP-CIDR,223.119.62.225/28,no-resolve
+USER-AGENT,QYPlayer*
+USER-AGENT,iQIYI*
+
+# Letv 乐视
+DOMAIN-SUFFIX,api.mob.app.letv.com
+
+# MOO
+USER-AGENT,MOO*
+USER-AGENT,TencentMidasConnect*
+
+# TencentVideo 腾讯视频
+DOMAIN-SUFFIX,v.smtcdns.com
+DOMAIN-SUFFIX,vv.video.qq.com
+DOMAIN-SUFFIX,video.qq.com
+DOMAIN-SUFFIX,i.qq.com
+DOMAIN-SUFFIX,v.qq.com
+
+# Youku 优酷
+DOMAIN-SUFFIX,youku.com
+DOMAIN-SUFFIX,soku.com
+DOMAIN-SUFFIX,ykimg.com
+IP-CIDR,106.11.0.0/16,no-resolve
+
+# > Acfun
+DOMAIN-SUFFIX,acfun.cn
+DOMAIN-SUFFIX,aixifan.com
+
+# > XiGua
+DOMAIN-SUFFIX,ixigua.com
+DOMAIN-SUFFIX,snssdk.com
+
+# > HunanTV
+DOMAIN-SUFFIX,hitv.com
+DOMAIN-SUFFIX,hunantv.com
+DOMAIN-SUFFIX,mgtv.com
+
+# > Le
+DOMAIN-SUFFIX,le.com
+
+# > PPLive
+DOMAIN-SUFFIX,pplive.cn
+DOMAIN-SUFFIX,pptv.com
+
+# > Sohu Video
+DOMAIN-SUFFIX,itc.cn
+DOMAIN-SUFFIX,sohu.com
+
+# > Migu Video
+DOMAIN-SUFFIX,cmvideo.cn
+DOMAIN-SUFFIX,miguvideo.com
+
+# (Music)
+# > QQ Music
+DOMAIN-SUFFIX,music.qq.com
+DOMAIN-SUFFIX,music.tc.qq.com
+DOMAIN-SUFFIX,qqmusic.qq.com
+DOMAIN-SUFFIX,tencentmusic.com
+DOMAIN-SUFFIX,y.qq.com
+DOMAIN,aqqmusic.tc.qq.com
+DOMAIN,moo.qq.com
+
+# > China Music Corp
+DOMAIN-SUFFIX,kuwo.cn
+DOMAIN-SUFFIX,kugou.com
+
+# > Netease Cloud Music
+DOMAIN-SUFFIX,music.163.com
+DOMAIN-SUFFIX,music.126.net
+DOMAIN,mam.netease.com
+DOMAIN,api.iplay.163.com
+
+# > Qianqian Music
+DOMAIN-SUFFIX,qianqian.com
+DOMAIN-SUFFIX,taihe.com
+
+# > Migu Music
+DOMAIN-SUFFIX,migu.cn

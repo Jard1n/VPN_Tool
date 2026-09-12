@@ -1,0 +1,15 @@
+no_resolve: true
+domain_suffix_set:
+- router.synology.com
+- router.asus.com
+- www.miwifi.com
+- miwifi.com
+- mediarouter.home
+- tplogin.cn
+- tplinklogin.net
+- tplinkwifi.net
+- melogin.cn
+- falogin.cn
+- tendawifi.com
+- leike.cc
+- zte.home

@@ -1,0 +1,475 @@
+# 仅虚拟网接口模式
+vif_only: false
+# 是否启用 IPv6
+ipv6: false
+# HTTP 代理端口号。默认值是 3080
+http_port: 3080
+# SOCKS 代理端口号。默认值是 3090
+socks_port: 3090
+# 允许外部连接通过 Wi-Fi 访问设备上的代理
+allow_external_connections: true
+# 切换策略时关闭连接
+close_connections_on_policy_change: true
+# 全局阻止 QUIC 协议
+# 优先级：代理 > 策略组 > 全局。代理自身的 block_quic 优先级最高
+block_quic: false
+# 隐藏 VPN 图标
+hide_vpn_icon: false
+# 劫持 DNS 的地址列表
+hijack_dns:
+- '*:53'
+# 指定自定义的 GeoIP 数据库 URL
+geoip_db_url: https://raw.githubusercontent.com/Jard1n/GeoIP/release/Private-GeoIP-CN.mmdb
+# 指定自定义的 ASN 数据库 URL
+asn_db_url: null
+# 代理延迟测试 URL
+proxy_latency_test_url: http://www.google.com/blank.html
+# 直连延迟测试 URL
+direct_latency_test_url: http://connectivitycheck.platform.hicloud.com/generate_204
+# 兼容路由模式
+compat_route: false
+# 包含所有网络流量
+include_all_networks: false
+# 包含 APNs 流量
+include_apns: false
+# 包含蜂窝网络服务流量
+include_cellular_services: false
+# 包含本地网络流量
+include_local_networks: false
+
+# 绕过隧道代理的域名列表
+bypass_tunnel_proxy:
+- 127.0.0.0/8
+- 192.168.0.0/16
+- 10.0.0.0/8
+- 172.16.0.0/12
+- 100.64.0.0/10
+- 162.14.0.0/16
+- 211.99.96.0/19
+- 162.159.192.0/24
+- 162.159.193.0/24
+- 162.159.195.0/24
+- fc00::/7
+- fe80::/10
+- localhost
+- '*.local'
+- captive.apple.com
+- e.crashlytics.com
+- www.baidu.com
+- passenger.t3go.cn
+- yunbusiness.ccb.com
+- wxh.wo.cn
+- gate.lagou.com
+- www.abchina.com.cn
+- login-service.mobile-bank.psbc.com
+- mobile-bank.psbc.com
+- www.baidu.com
+- yunbusiness.ccb.com
+- wxh.wo.cn
+- gate.lagou.com
+- www.abchina.com.cn
+- www.shanbay.com
+- login-service.mobile-bank.psbc.com
+- mobile-bank.psbc.com
+- id6.me
+- www.163.com
+
+# 使用真实 IP 的域名列表
+real_ip_domains:
+- '*.lan'
+- '*.direct'
+- cable.auth.com
+- '*.msftconnecttest.com'
+- '*.msftncsi.com'
+- '*.srv.nintendo.net'
+- '*.stun.playstation.net'
+- xbox.*.microsoft.com
+- '*.xboxlive.com'
+- stun.*
+- '*.logon.battlenet.com.cn'
+- '*.logon.battle.net'
+- '*.blzstatic.cn'
+- stun.l.google.com
+- localhost.*.qq.com
+- localhost.*.weixin.qq.com
+- '*.cmpassport.com'
+- id6.me
+- open.e.189.cn
+- mdn.open.wo.cn
+- opencloud.wostore.cn
+- id.mail.wo.cn
+- hmrz.wo.cn
+- nishub1.10010.com
+- enrichgw.10010.com
+- '*.wosms.cn'
+- '*.sslip.io'
+- '*.nip.io'
+- easy-login.10099.com.cn
+- '*-update.xoyocdn.com'
+- id6.me
+- open.e.189.cn
+
+# 虚拟接口包含的路由
+# vif_included_routes:
+#   - 192.168.0.1/32
+
+# 虚拟接口排除的路由
+# vif_excluded_routes:
+#   - 192.168.0.1/32
+
+
+dns:
+  # DNS 引导器：用于解析上游DNS(DoT、DoH、DoQ)
+  bootstrap:
+  - 223.5.5.5
+  - 119.29.29.29
+  - system
+  
+  # 代理 DNS 的强制上游
+  # proxy_nameservers:
+  # - 119.29.29.29
+  # - 223.5.5.5
+  
+  # DNS 服务器组
+  upstreams:
+    Domestic-DNS:
+    - 223.5.5.5
+    - 119.29.29.29
+    Foreign-DNS:
+      - https://8.8.8.8/dns-query
+      - https://8.8.4.4/dns-query
+
+  # DNS 转发规则
+  # forward:
+  #   - domain_suffix:
+  #       match: "cn"
+  #       value: bootstrap
+  #   - wildcard:
+  #       match: '*.cn'
+  #       value: bootstrap
+  #   - wildcard:
+  #       match: '*'
+  #       value: ChinaDNS
+
+  # 主机映射
+  hosts:
+    iosapps.itunes.apple.com: 
+    - iosapps.itunes.apple.com.download.ks-cdn.com
+
+  # 屏蔽IP
+  block_ips:
+    - 4.3.2.1/32
+  # 公网IP查询地址
+  public_ip_lookup_url: https://ifconfig.me/ip
+
+# 代理服务器
+proxies:
+- snell:
+    name: 123
+    server: 1.1.2.2
+    port: 42631
+    psk: 123456789
+    version: 5
+    udp_relay: false
+    tfo: true
+- anytls:
+    name: 123
+    server: 1.1.2.2
+    port: 3871
+    password: 123456
+    tfo: false
+    udp_relay: false
+
+policy_groups:
+- select:
+    name: 𝑴𝒂𝒏𝒖𝒂𝒍
+    policies:
+    - DIRECT
+    - 𝑺𝒆𝒓𝒗𝒆𝒓
+    - 𝑺𝒖𝒓𝒑𝒍𝒖𝒔
+    - 𝑬𝒖𝒓𝒐𝒑𝒆
+    - 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+    - 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+    - 𝑺𝒎𝒂𝒓𝒕𝑯𝑲
+    - 𝑺𝒎𝒂𝒓𝒕𝑼𝑺
+    - 𝑱𝒂𝒑𝒂𝒏
+    - 𝑲𝒐𝒓𝒆𝒂
+    - 𝑻𝒂𝒊𝒘𝒂𝒏
+    - 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+- select:
+    name: 𝑺𝒆𝒓𝒗𝒆𝒓
+    policies:
+    - AliYun
+- select:
+    name: 𝑺𝒖𝒓𝒑𝒍𝒖𝒔
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?!.*(🇭🇰|🇺🇸|🇯🇵|🇰🇷|🇸🇬|🇨🇳|🇦🇹|🇧🇪|🇧🇬|🇭🇷|🇨🇾|🇨🇿|🇩🇰|🇪🇪|🇫🇮|🇫🇷|🇩🇪|🇬🇷|🇭🇺|🇮🇪|🇮🇹|🇱🇻|🇱🇹|🇱🇺|🇲🇹|🇳🇱|🇵🇱|🇵🇹|🇷🇴|🇸🇰|🇪🇸|🇸🇪|(\b(TW|Taiwan)(\d+)?\b))).*$
+    hidden: false
+- select:
+    name: 𝑬𝒖𝒓𝒐𝒑𝒆
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇦🇹|🇧🇪|🇧🇬|🇭🇷|🇨🇾|🇨🇿|🇩🇰|🇪🇪|🇫🇮|🇫🇷|🇩🇪|🇬🇷|🇭🇺|🇮🇪|🇮🇹|🇱🇻|🇱🇹|🇱🇺|🇲🇹|🇳🇱|🇵🇱|🇵🇹|🇷🇴|🇸🇰|🇪🇸|🇸🇪))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$
+    hidden: false
+- select:
+    name: 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong Kong)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$
+    hidden: false
+- select:
+    name: 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇺🇸|美国|(\b(US|United States)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$
+    hidden: false
+- select:
+    name: 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎
+    policies:
+    - 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+    - 𝑺𝒆𝒓𝒗𝒆𝒓
+    - 𝑳𝒐𝒘𝒓𝒂𝒕𝒊𝒐
+- select:
+    name: 𝑨𝑰
+    policies:
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑺𝒆𝒓𝒗𝒆𝒓
+    - 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+    - 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+    - 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+    - 𝑱𝒂𝒑𝒂𝒏
+- select:
+    name: 𝑬𝒎𝒃𝒚
+    policies:
+    - DIRECT
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑳𝒐𝒘𝒓𝒂𝒕𝒊𝒐
+    - 𝑺𝒆𝒓𝒗𝒆𝒓
+    - 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+- select:
+    name: 𝑺𝒕𝒓𝒆𝒂𝒎𝒊𝒏𝒈
+    policies:
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑳𝒐𝒘𝒓𝒂𝒕𝒊𝒐
+    - 𝑺𝒆𝒓𝒗𝒆𝒓
+    - 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+    - 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+    - 𝑱𝒂𝒑𝒂𝒏
+    - 𝑲𝒐𝒓𝒆𝒂
+    - 𝑻𝒂𝒊𝒘𝒂𝒏
+    - 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+- select:
+    name: 𝑮𝒐𝒐𝒈𝒍𝒆
+    policies:
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑺𝒆𝒓𝒗𝒆𝒓
+    - 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+    - 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+    - 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+    - 𝑱𝒂𝒑𝒂𝒏
+- select:
+    name: 𝑴𝒊𝒄𝒓𝒐𝒔𝒐𝒇𝒕
+    policies:
+    - DIRECT
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+    - 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+    - 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+    - 𝑱𝒂𝒑𝒂𝒏
+- select:
+    name: 𝑨𝒑𝒑𝒍𝒆
+    policies:
+    - DIRECT
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑯𝒐𝒏𝒈𝑲𝒐𝒏𝒈
+    - 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+    - 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+    - 𝑱𝒂𝒑𝒂𝒏
+- select:
+    name: 𝑮𝒂𝒎𝒆
+    policies:
+    - DIRECT
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑬𝒖𝒓𝒐𝒑𝒆
+    - 𝑺𝒖𝒓𝒑𝒍𝒖𝒔
+- select:
+    name: 𝑭𝒊𝒏𝒂𝒍
+    policies:
+    - ♾️Final
+    - 𝑴𝒂𝒏𝒖𝒂𝒍
+    - 𝑬𝒖𝒓𝒐𝒑𝒆
+    - 𝑺𝒖𝒓𝒑𝒍𝒖𝒔
+- smart:
+    name: 𝑺𝒎𝒂𝒓𝒕𝑯𝑲
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇭🇰|香港|(\b(HK|Hong Kong)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|IEPL|(\b(GAME)\b))).*$
+    hidden: true
+    priorities:
+      家宽: 0.4
+      (Dmit|Jinx): 0.8
+- smart:
+    name: 𝑺𝒎𝒂𝒓𝒕𝑼𝑺
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇺🇸|美国|(\b(US|United States)(\d+)?\b)))(?!.*((?i)回国|校园|IEPL|蜂窝|20x|(\b(GAME)\b))).*$
+    hidden: true
+- smart:
+    name: 𝑱𝒂𝒑𝒂𝒏
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇯🇵|日本|(\b(JP|Japan)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$
+    hidden: true
+- smart:
+    name: 𝑻𝒂𝒊𝒘𝒂𝒏
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇨🇳|台湾|(\b(TW|Taiwan)(\d+)?\b)))(?!.*((?i)回国|校园|IEPL|蜂窝|20x|(\b(GAME)\b))).*$
+    hidden: true
+- smart:
+    name: 𝑺𝒊𝒏𝒈𝒂𝒑𝒐𝒓𝒆
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇸🇬|新加坡|狮|(\b(SG|Singapore)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|消耗|(\b(GAME)\b))).*$
+    hidden: true
+    priorities:
+      (Singtel|SG.GS): 0.2
+- smart:
+    name: 𝑲𝒐𝒓𝒆𝒂
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*((?i)🇰🇷|韩国|(\b(KR|Korea)(\d+)?\b)))(?!.*((?i)回国|校园|游戏|(\b(GAME)\b))).*$
+    hidden: true
+- smart:
+    name: 𝑳𝒐𝒘𝒓𝒂𝒕𝒊𝒐
+    policies:
+    - Proxy
+    flatten: true
+    filter: ^(?=.*(?i)((0\.[0-9]*[1-9]+)))(?!.*((?i)emby|Traffic)).*$
+    hidden: true
+- select:
+    name: ♾️Final
+    policies:
+    - DIRECT
+    hidden: true
+
+- external:
+    name: MESL
+    type: select
+    urls:
+    - https://you.com/
+    update_interval: 0
+    hidden: true
+- external:
+    name: Sakura
+    type: select
+    urls:
+    - https://you.com/
+    filter: ^(?=.*((?i)IEPL))(?!.*((?i)回国|校园|游戏|蜂窝|20x|(\b(GAME)\b))).*$
+    hidden: true
+- select:
+    name: Proxy
+    policies:
+    - MESL
+    - Sakura
+    flatten: true
+    filter: ^(?=.*(.*))(?!.*((?i)套餐|更新|订阅|流量|机场|下次|备用|到期|过期|已用|(\b(USE|USED|TOTAL|EXPIRE|Traffic|Panel)\b|(\d{4}-\d{2}-\d{2}|\dG)))).*$
+    hidden: true
+
+rules:
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/DirectWhitelist.list
+    policy: DIRECT
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Advertising.list
+    policy: REJECT
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Ai.list
+    policy: 𝑨𝑰
+- rule_set:
+    match: Emby.list
+    policy: 𝑬𝒎𝒃𝒚
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/ProxyMedia.list
+    policy: 𝑺𝒕𝒓𝒆𝒂𝒎𝒊𝒏𝒈
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Telegram.list
+    policy: 𝑻𝒆𝒍𝒆𝒈𝒓𝒂𝒎
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/GameClient.list
+    policy: 𝑮𝒂𝒎𝒆
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Google.list
+    policy: 𝑮𝒐𝒐𝒈𝒍𝒆
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Microsoft.list
+    policy: 𝑴𝒊𝒄𝒓𝒐𝒔𝒐𝒇𝒕
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/AppleProxy.list
+    policy: 𝑨𝒎𝒆𝒓𝒊𝒄𝒂
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Apple.list
+    policy: 𝑨𝒑𝒑𝒍𝒆
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/Proxy.list
+    policy: 𝑴𝒂𝒏𝒖𝒂𝒍
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/China.list
+    policy: DIRECT
+- rule_set:
+    match: https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Surge/Rule/LAN.list
+    policy: DIRECT
+- geoip:
+    match: CN
+    policy: DIRECT
+- default:
+    policy: 𝑭𝒊𝒏𝒂𝒍
+
+header_rewrites:
+- add:
+    match: ^https:\/\/ddgksf2013\.top(\/.*)?
+    name: content-disposition
+    value: inline
+    type: response
+- replace:
+    match: ^https:\/\/ddgksf2013\.top(\/.*)?
+    name: content-type
+    value: text/plain; charset=utf-8
+    type: response
+- replace:
+    match: ^https:\/\/ddgksf2013\.top(\/.*)?
+    name: User-Agent
+    value: Surge iOS/3685
+    type: request
+- add:
+    match: ^https:\/\/kelee\.one(\/.*)?
+    name: content-disposition
+    value: inline
+    type: response
+- replace:
+    match: ^https:\/\/kelee\.one(\/.*)?
+    name: content-type
+    value: text/plain; charset=utf-8
+    type: response
+- replace:
+    match: ^https:\/\/kelee\.one(\/.*)?
+    name: User-Agent
+    value: Surge iOS/3685
+    type: request
+
+mitm:
+  hostnames:
+    includes:
+    - kelee.one
+    - ddgksf2013.top

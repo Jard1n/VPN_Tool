@@ -1,0 +1,54 @@
+# > Epicgames
+DOMAIN-SUFFIX,battlebreakers.com
+DOMAIN-SUFFIX,eac-cdn.com
+DOMAIN-SUFFIX,easy.ac
+DOMAIN-SUFFIX,easyanticheat.net
+DOMAIN-SUFFIX,fortnite.com
+DOMAIN-SUFFIX,playparagon.com
+DOMAIN-SUFFIX,roborecall.com
+DOMAIN-SUFFIX,shadowcomplex.com
+DOMAIN-SUFFIX,spyjinx.com
+DOMAIN-SUFFIX,unrealtournament.com
+
+
+# > 微软游戏
+# 极限竞速
+DOMAIN-SUFFIX,forzamotorsport.net
+DOMAIN-SUFFIX,forzaracingchampionship.com
+DOMAIN-SUFFIX,forzarc.com
+# 精灵与萤火意志
+DOMAIN-SUFFIX,orithegame.com
+# 我的世界
+DOMAIN-SUFFIX,callersbane.com
+DOMAIN-SUFFIX,minecraft.net
+DOMAIN-SUFFIX,minecraftshop.com
+DOMAIN-SUFFIX,mojang.com
+## >> Bethesda
+DOMAIN-SUFFIX,beth.games
+DOMAIN-SUFFIX,bethesda.net
+DOMAIN-SUFFIX,bethesdagamestudios.com
+DOMAIN-SUFFIX,bethsoft.com
+
+
+# > Riot
+# 英雄联盟
+DOMAIN-SUFFIX,leagueoflegends.com
+DOMAIN-SUFFIX,leagueoflegends.info
+DOMAIN-SUFFIX,leagueoflegends.net
+DOMAIN-SUFFIX,leagueoflegends.org
+DOMAIN-SUFFIX,leagueoflegendsscripts.com
+DOMAIN-SUFFIX,leaguesharp.info
+DOMAIN-SUFFIX,leaguoflegends.com
+DOMAIN-SUFFIX,learnwithleague.com
+DOMAIN-SUFFIX,lol-europe.com
+DOMAIN-SUFFIX,lolclub.org
+DOMAIN-SUFFIX,lolespor.com
+DOMAIN-SUFFIX,lolesports.com
+DOMAIN-SUFFIX,lolfanart.net
+DOMAIN-SUFFIX,lolpcs.com
+DOMAIN-SUFFIX,lolstatic-a.akamaihd.net
+DOMAIN-SUFFIX,lolstatic.com
+DOMAIN-SUFFIX,lolusercontent.com
+DOMAIN-SUFFIX,pvp.net
+DOMAIN-SUFFIX,pvp.tv
+DOMAIN-SUFFIX,ulol.com

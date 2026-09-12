@@ -1,0 +1,26 @@
+#!name = 净化 & 百度网盘
+#!desc = 过滤百度网盘广告
+#!category =  Block Ads
+
+
+[Map Local]
+# 应用配置
+^https:\/\/pan\.baidu\.com\/api\/getconfig data-type=text data="{}" status-code=200
+^https:\/\/pan\.baidu\.com\/api\/getsyscfg data-type=text data="{}" status-code=200
+# 签到任务配置
+^https:\/\/pan\.baidu\.com\/api\/taskscore\/tasklist data-type=text data="{}" status-code=200
+# 弹窗配置
+^https:\/\/pan\.baidu\.com\/act\/api\/activityentry data-type=text data="{}" status-code=200
+# 我的 - 游戏中心
+^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user\?method=gamecenter data-type=text data="{}" status-code=200
+# 我的页面 - 其他推广
+^https:\/\/pan\.baidu\.com\/act\/v2\/welfare\/list data-type=text data="{}" status-code=200
+# 广告配置
+^https:\/\/pan\.baidu\.com\/rest\/\d\.\d\/pcs\/adv data-type=text data="{}" status-code=200
+
+[Script]
+百度网盘 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/api\/getsyscfg\?, requires-body=1, max-size=0, script-update-interval=-1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/baiduCloud.js
+百度网盘 = type=http-response, pattern=^https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user, requires-body=1, max-size=0, script-update-interval=-1, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Baidu/baiduCloud.js
+
+[MITM]
+hostname = %APPEND% pan.baidu.com

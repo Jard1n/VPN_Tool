@@ -1,0 +1,22 @@
+DOMAIN,cdn.auth0.com
+DOMAIN,events.statsigapi.net
+DOMAIN-SUFFIX,chatgpt.com
+DOMAIN-SUFFIX,featuregates.org
+DOMAIN-SUFFIX,identrust.com
+DOMAIN-SUFFIX,intercom.io
+DOMAIN-SUFFIX,intercomcdn.com
+DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaiusercontent.com
+DOMAIN-SUFFIX,host.livekit.cloud
+DOMAIN-SUFFIX,turn.livekit.cloud
+DOMAIN-SUFFIX,chatgpt.livekit.cloud
+DOMAIN-KEYWORD,openai
+
+# 订阅/数据跟踪
+DOMAIN,api.revenuecat.com
+DOMAIN,api.statsig.com
+DOMAIN,browser-intake-datadoghq.com
+DOMAIN,o33249.ingest.sentry.io
+DOMAIN-SUFFIX,stripe.com
+DOMAIN-SUFFIX,stripecdn.com
+DOMAIN-SUFFIX,stripe.network
