@@ -14,68 +14,39 @@ IP-CIDR,103.41.167.237/32,REJECT,no-resolve
 IP-CIDR,118.89.204.198/32,REJECT,no-resolve
 IP-CIDR6,2402:4e00:1200:ed00:0:9089:6dac:96b6/128,REJECT,no-resolve
 
-
-[URL Rewrite]
-^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card - reject
-^https:\/\/www\.zhihu\.com\/appview\/v3\/zhmore - reject
-^https:\/\/link\.zhihu\.com\/\?target=(?:https?)?(?:%3A|:)?(?:\/\/|%2F%2F)?(.*) http://$1 302
-
-
 [Body Rewrite]
-http-response-jq ^https:\/\/api\.zhihu\.com\/bazaar\/vip_tab\/header\? 'delpaths([["activity_banner"], ["activity_window"], ["vip_tip"]])'
-http-response ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v2\? "recommend_queries":\{.+\} "recommend_queries":{}
-
+http-response-jq ^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/zhihu\/config\/all\? 'def drop_keys: {"km_httpdns_new_config_tars":true,"preFetchHttpDns":true,"httpdns_detector_use_concurrent":true,"httpdns_use_memory_cache":true,"httpdns_new_config_tars":true,"coreNetworkConf_useTars":true,"km_coreNetworkConf_useTars":true,"sugarQuicConfig":true,"quic_dns_detect_enable":true,"quicMixAB":true,"quic_downgrade_enable":true,"quic_priority_strategy":true,"quic_check_health_enable":true,"tquic_configuration":true,"networkExprimentList":true,"tars_ab_list":true,"zaSetExtraRequestHeader":true}; .data.configs |= map(select((drop_keys[.configKey]// false) | not) | if (.configValue | type) == "object" then del(.configValue.delayHttpdns, .configValue.dnsParser, .configValue.HTTPDNS) else . end)'
+http-response-jq ^https:\/\/api\.zhihu\.com\/root\/tab\/v\d(?:\?.+)?$ '.tab_list |= map(select(.tab_type == "follow" or .tab_type == "recommend" or .tab_type == "hot" or .tab_type == "ring_tab"))'
+http-response-jq ^https:\/\/api\.zhihu\.com\/topstory\/recommend\? '.data |= map(select(.type == "ComponentCard"))'
+http-response-jq ^https:\/\/api\.zhihu\.com\/questions\/\d+\/feeds\? 'delpaths([["ad_info"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/comment_v\d\/(answers|pins)\/\d+\/root_comment\? 'delpaths([["atmosphere_voting_config"]])'
+http-response-jq ^https:\/\/(api|page-info)(?:\.zhihu)?\.com\/answers\/v\d\/\d+(?:\?.*)?$ 'delpaths([["third_business"]])'
+http-response-jq ^https:\/\/(api|page-info)(?:\.zhihu)?\.com\/answers\/v\d\/\d+(?:\?.*)?$ 'delpaths([["float_search_word"]])'
+http-response-jq ^https:\/\/(api|page-info)(?:\.zhihu)?\.com\/answers\/v\d\/\d+(?:\?.*)?$ '.structured_content.segments |= map(select(.type != "card"))'
+http-response-jq ^https:\/\/api\.zhihu\.com\/topstory\/recommend\? '.data[]?.children |= (if type == "array" then map(select(.id != "ring")) else . end)'
+http-response-jq ^https:\/\/api\.zhihu\.com\/(articles|answers|pins)\/v\d\/\d+\? 'delpaths([["third_business"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/(articles|answers|pins)\/v\d\/\d+\? 'delpaths([["ring_info"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/(articles|answers|pins)\/v\d\/\d+\? 'delpaths([["interaction_bar_plugins"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/comment_v\d\/answers\/\d+\/list-headers$ 'delpaths([["continuous_consumption_module"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/podcasts\/hub\/v\d$ 'delpaths([["banners"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/search\/recommend_query\/v\d\? '.recommend_queries.queries |= map(select(.type == "normal"))'
+http-response-jq ^https:\/\/api\.zhihu\.com\/search_v\d\? 'delpaths([["pendant"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/search\/tabs\? '.data |= map(select(.t | IN("general", "ai_zhida", "recent", "people", "zvideo", "ring", "topic", "podcast", "column", "pin", "favlist")))'
+http-response-jq ^https:\/\/api\.zhihu\.com\/people\/self$ 'delpaths([["vip_info","entrance_new","right_button"]])'
+http-response-jq ^https:\/\/api\.zhihu\.com\/people\/self$ 'delpaths([["vip_info","entrance_v2"]])'
 
 [Map Local]
-# 首页 - 悬浮图标、顶部横幅、开屏广告、关注页推荐、推荐信息流、热榜信息流、热榜直播、回答底部卡片
-^https:\/\/api\.zhihu\.com\/commercial_api\/ data-type=text data="{}" status-code=200
-^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/settings data-type=text data="{}" status-code=200
-^https:\/\/api\.zhihu\.com\/(?:moments\/lastread|drama\/hot-drama-list) data-type=text data="{}" status-code=200
-^https:\/\/api\.zhihu\.com\/root\/window data-type=text data="{}" status-code=200
-
-# 会员页面 - 弹窗、悬浮动图
-^https:\/\/api\.zhihu\.com\/(?:bazaar\/float_window|market\/popovers_v2) data-type=text data="{}" status-code=200
-
-# 我的页面 - 项目列表、会员卡片
-^https:\/\/api\.zhihu\.com\/me\/guides data-type=text data="{}" status-code=200
-^https:\/\/api\.zhihu\.com\/people\/homepage_entry_v2 data-type=text data="{}" status-code=200
-
-# 搜索页 - 关键词、猜你想搜
-^https:\/\/api\.zhihu\.com\/search\/(hot_search|preset_words) data-type=text data="{}" status-code=200
-^https:\/\/www\.zhihu\.com\/api\/v4\/search\/related_queries\/(?:article|answer)\/\d+ data-type=text data="{}" status-code=200
-
-# 回答详情页 - 评论区顶部、下一个回答
-^https:\/\/api\.zhihu\.com\/comment_v5\/(?:articles|answers)\/\d+\/list-headers data-type=text data="{}" status-code=200
-^https:\/\/api\.zhihu\.com\/prague\/related_suggestion_native\/feed\? data-type=text data="{}" status-code=200
-^https:\/\/api\.zhihu\.com\/v5\.1\/topics\/answer\/\d+\/relation data-type=text data="{}" status-code=200
-
-# 其他 - 服务器推送配置
-^https:\/\/api\.zhihu\.com\/ab\/api\/v1\/products\/zhihu\/platforms\/ios\/config data-type=text data="{}" status-code=200
-^https:\/\/api\.zhihu\.com\/ad-style-service\/request data-type=text data="{}" status-code=200
-^https:\/\/appcloud2\.zhihu\.com\/v3\/resource\?group_name=mp data-type=text data="{}" status-code=200
-
-# 网页版去广告 //www.zhihu.com,zhuanlan.zhihu.com
-^https:\/\/api\.zhihu\.com\/distribute\/rhea\/qa_ad_card\/h5\/recommendation\? data-type=text data="{}" status-code=200
-^https:\/\/www\.zhihu\.com\/api\/v4\/hot_recommendation data-type=text data="{}" status-code=200
-^https:\/\/www\.zhihu\.com\/api\/v4\/mcn\/v2\/linkcards\? data-type=text data="{}" status-code=200
-^https:\/\/www\.zhihu\.com\/api\/v4/(?:answers|questions)\/\d+/related-readings data-type=text data="{}" status-code=200
-^https:\/\/www\.zhihu\.com\/commercial_api\/banners_v3\/mobile_banner data-type=text data="{}" status-code=200
-^https:\/\/zhuanlan\.zhihu\.com\/api\/articles\/\d+\/recommendation data-type=text data="{}" status-code=200
-
-
-[Script]
-移除回答底部卡片推广 = type=http-response, pattern=^https:\/\/(?:api|page-info)\.zhihu\.com\/(?:answers|articles)\/v2\/\d+, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-移除首页悬浮图标 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/commercial_api\/app_float_layer, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-移除推荐信息流推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/feed\/render\/tab\/config\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-移除推荐信息流推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/(?:moments_v3|topstory\/hot-lists\/total|topstory\/recommend), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-精简顶部标签 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/root\/tab, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-移除热榜信息流推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/v2\/topstory\/hot-lists\/everyone-seeing\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-移除下一个回答推广、评论区顶部推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/next-(?:bff|data|render), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-移除回答详情页推广 = type=http-response, pattern=^https:\/\/api\.zhihu\.com\/questions\/\d+(?:\/answers|\/feeds|\?include=), requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-移除回答详情页推广 = type=http-response, pattern=^https:\/\/www\.zhihu\.com\/api\/v4\/(?:articles|answers)\/\d+\/recommendations?\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-拦截服务器推送配置 config = type=http-response, pattern=^https:\/\/appcloud2\.zhihu\.com\/v3\/config, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-拦截服务器推送配置 config all = type=http-response, pattern=^https:\/\/m-cloud\.zhihu\.com\/api\/cloud\/zhihu\/config\/all\?, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Zhihu/zhihu.js
-
+^https:\/\/api\.zhihu\.com\/commercial_api\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.zhihu\.com\/next-render\?id=\d+&type=answer data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.zhihu\.com\/search\/preset_words\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.zhihu\.com\/search\/related_queries\/question\/\d+$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/zhida\.zhihu\.com\/ai_ingress\/knowledge\/square\/categories\/feeds\?categoryId=1%7D$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/zhida\.zhihu\.com\/ai_ingress\/ai_chat\/guidance$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.zhihu\.com\/content-distribution-core\/bubble\/common\/show$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/www\.zhihu\.com\/api\/v\d\/members\/homepage_card$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.zhihu\.com\/people\/homepage_entry_v\d$ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.zhihu\.com\/kvip\/right\/my_card\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+^https:\/\/api\.zhihu\.com\/unlimited\/go\/my_card\/v\d\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
-hostname = %APPEND% *.zhihu.com
+hostname = %APPEND% m-cloud.zhihu.com, api.zhihu.com, www.zhihu.com, page-info.zhihu.com, zhida.zhihu.com
