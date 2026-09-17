@@ -173,10 +173,10 @@ def process_multiple_urls(url_list):
 if __name__ == "__main__":
     url_list = [
         "https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.sgmodule",
-        "https://github.com/BiliUniverse/Enhanced/releases/latest/download/BiliBili.Enhanced.sgmodule",
-        "https://github.com/BiliUniverse/Global/releases/latest/download/BiliBili.Global.sgmodule",
-        "https://github.com/BiliUniverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule",
-        "https://github.com/BiliUniverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule",
+        "https://github.com/Biliverse/Enhanced/releases/latest/download/BiliBili.Enhanced.sgmodule",
+        "https://github.com/Biliverse/Global/releases/latest/download/BiliBili.Global.sgmodule",
+        "https://github.com/Biliverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule",
+        "https://github.com/Biliverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule",
         "https://github.com/NSRingo/WeatherKit/releases/latest/download/iRingo.WeatherKit.sgmodule",
         "https://github.com/NSRingo/LocationService/releases/latest/download/iRingo.LocationService.sgmodule",
         "https://github.com/NSRingo/Maps/releases/latest/download/iRingo.Maps.sgmodule",
