@@ -28,7 +28,7 @@ force-http-engine-hosts = %APPEND% upos-sz-mirror*.bilivideo.com:80, cn-hk-eq-*.
 ^https:\/\/upos-bstar1-mirrorakam\.akamaized\.net(?::(?:443|4483))?\/upgcxcode\/ https://{{{Host.BStar}}}/upgcxcode/ header
 
 [Map Local]
-^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/Redirect(?:\?.*)?$ data-type=file data="https://github.com/Biliverse/Redirect/releases/download/v0.2.23/BiliBili.Redirect.boxjs.json" status-code=200 header="Content-Type:application/json; charset=utf-8|Cache-Control:no-store|X-PreferencePanes-Version:0.2.23"
+^https:\/\/(?:biliverse\.github\.io|app\.bilibili\.com)\/api\/Redirect(?:\?.*)?$ data-type=file data="https://github.com/Biliverse/Redirect/releases/download/v0.2.24/BiliBili.Redirect.boxjs.json" status-code=200 header="Content-Type:application/json; charset=utf-8|Cache-Control:no-store|X-PreferencePanes-Version:0.2.24"
 
 [Script]
 📺 BiliBili.Redirect.CDN.upgcxcode.m4s = type=http-request, pattern=^https?:\/\/.+\.bilivideo\.com(?::(?:80|443|4483))?\/upgcxcode\/, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/Fries/Redirect.request.bundle.js, argument=Host.OverseaVideo="{{{Host.OverseaVideo}}}"&Host.BStar="{{{Host.BStar}}}"&Host.PCDN="{{{Host.PCDN}}}"&Host.MCDN="{{{Host.MCDN}}}"&Storage="{{{Storage}}}"&LogLevel="{{{LogLevel}}}"
