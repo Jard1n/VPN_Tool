@@ -173,7 +173,7 @@ def process_multiple_urls(url_list):
 if __name__ == "__main__":
     url_list = [
         "https://github.com/DualSubs/YouTube/releases/latest/download/DualSubs.YouTube.sgmodule",
-        "https://github.com/Biliverse/Enhanced/releases/latest/download/BiliBili.Enhanced.sgmodule",
+        "https://github.com/Biliverse/Enhanced/releases/latest/download/Biliverse.Enhanced.sgmodule",
         "https://github.com/Biliverse/Global/releases/latest/download/BiliBili.Global.sgmodule",
         "https://github.com/Biliverse/Redirect/releases/latest/download/BiliBili.Redirect.sgmodule",
         "https://github.com/Biliverse/ADBlock/releases/latest/download/BiliBili.ADBlock.sgmodule",
