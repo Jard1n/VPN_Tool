@@ -1,6 +1,9 @@
 # 铁路12306
 DOMAIN,ad.12306.cn
 
+# Apple
+DOMAIN,ca.iadsdk.apple.com
+
 # Alibaba
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
