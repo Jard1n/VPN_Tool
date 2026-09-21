@@ -5,9 +5,6 @@ DOMAIN,ad.12306.cn
 DOMAIN,log.mmstat.com
 DOMAIN,sycm.mmstat.com
 
-# Apple
-DOMAIN,ca.iadsdk.apple.com
-
 # General
 DOMAIN,app.adjust.com
 DOMAIN,app.appsflyer.com
@@ -76,8 +73,11 @@ DOMAIN-SUFFIX,zte.home
 DOMAIN-SUFFIX,tplogin.cn
 DOMAIN-SUFFIX,wifi.cmcc
 
-# 路由器后台
-IP-CIDR,192.168.0.1/24,no-resolve
-
-# 天翼网关
-IP-CIDR,192.168.1.1/24,no-resolve
+# 本地/局域网地址
+DOMAIN-SUFFIX,home
+DOMAIN-SUFFIX,direct
+DOMAIN-SUFFIX,lan
+DOMAIN-SUFFIX,local
+DOMAIN-SUFFIX,localhost
+DOMAIN-SUFFIX,ip6-localhost
+DOMAIN-SUFFIX,ip6-loopback
