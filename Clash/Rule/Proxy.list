@@ -1,7 +1,6 @@
-# Main total line 587 
+# Main total line 606 
 # ------------------------------------------
 DOMAIN,69shuba.cx
-DOMAIN,copilot.microsoft.com
 DOMAIN,ea-api.arkoselabs.com
 DOMAIN,eaasserts-a.akamaihd.net
 DOMAIN,eacommerce.akamaized.net
@@ -19,13 +18,13 @@ DOMAIN,rtm.tnt-ea.com
 DOMAIN,sakuracat.link
 DOMAIN,sub.store
 DOMAIN,surrit.com
-DOMAIN,sydney.bing.com
 DOMAIN,ubisoft-avatars.akamaized.net
 DOMAIN,ubistatic-a.akamaihd.net
 DOMAIN,ubistatic2-a.akamaihd.net
 DOMAIN,ubistatic3-a.akamaihd.net
 DOMAIN,vps.hosting
 DOMAIN,zzz.haus
+DOMAIN-SUFFIX,1drv.com
 DOMAIN-SUFFIX,1e100.net
 DOMAIN-SUFFIX,2k.com
 DOMAIN-SUFFIX,2kcoretech.online
@@ -37,6 +36,7 @@ DOMAIN-SUFFIX,aboutamazon.com
 DOMAIN-SUFFIX,ads-twitter.com
 DOMAIN-SUFFIX,aiv-cdn.net
 DOMAIN-SUFFIX,aiv-delivery.net
+DOMAIN-SUFFIX,aka.ms
 DOMAIN-SUFFIX,amazon.com
 DOMAIN-SUFFIX,amazon.jobs
 DOMAIN-SUFFIX,amazonaws.com
@@ -221,6 +221,8 @@ DOMAIN-SUFFIX,gvt2.com
 DOMAIN-SUFFIX,gvt3.com
 DOMAIN-SUFFIX,gyks.cf
 DOMAIN-SUFFIX,helpshift.com
+DOMAIN-SUFFIX,here.com
+DOMAIN-SUFFIX,here.net
 DOMAIN-SUFFIX,hk
 DOMAIN-SUFFIX,hltv.org
 DOMAIN-SUFFIX,hockeyapp.net
@@ -259,6 +261,9 @@ DOMAIN-SUFFIX,line-cdn.net
 DOMAIN-SUFFIX,line-scdn.net
 DOMAIN-SUFFIX,line.me
 DOMAIN-SUFFIX,linux.do
+DOMAIN-SUFFIX,live.com
+DOMAIN-SUFFIX,live.net
+DOMAIN-SUFFIX,livefilestore.com
 DOMAIN-SUFFIX,m.me
 DOMAIN-SUFFIX,maven.org
 DOMAIN-SUFFIX,media-amazon.com
@@ -272,6 +277,7 @@ DOMAIN-SUFFIX,mega.nz
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,metacubex.one
+DOMAIN-SUFFIX,microsoftpersonalcontent.com
 DOMAIN-SUFFIX,missav.ai
 DOMAIN-SUFFIX,mofoprod.net
 DOMAIN-SUFFIX,mozilla.com
@@ -305,6 +311,8 @@ DOMAIN-SUFFIX,notion.so
 DOMAIN-SUFFIX,nsloon.com
 DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,okx.com
+DOMAIN-SUFFIX,oneclient.sfx.ms
+DOMAIN-SUFFIX,onedrive.com
 DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,opgg-static.akamaized.net
@@ -364,17 +372,26 @@ DOMAIN-SUFFIX,rsg.sc
 DOMAIN-SUFFIX,ru
 DOMAIN-SUFFIX,s.team
 DOMAIN-SUFFIX,sandai.net
+DOMAIN-SUFFIX,sclive.net
 DOMAIN-SUFFIX,seagroup.com
 DOMAIN-SUFFIX,seattlespheres.com
 DOMAIN-SUFFIX,sg
+DOMAIN-SUFFIX,sharepoint.com
+DOMAIN-SUFFIX,sharepointonline.com
 DOMAIN-SUFFIX,shitjournal.org
 DOMAIN-SUFFIX,sidestore.io
+DOMAIN-SUFFIX,skydrive.wns.windows.com
+DOMAIN-SUFFIX,skype.com
+DOMAIN-SUFFIX,skype.net
+DOMAIN-SUFFIX,skypeassets.com
+DOMAIN-SUFFIX,skypeforbusiness.com
 DOMAIN-SUFFIX,smartmailcloud.com
 DOMAIN-SUFFIX,sonatype.org
 DOMAIN-SUFFIX,sony.com
 DOMAIN-SUFFIX,sonyentertainmentnetwork.com
 DOMAIN-SUFFIX,sora.com
 DOMAIN-SUFFIX,sourcegraph.com
+DOMAIN-SUFFIX,spoprod-a.akamaihd.net
 DOMAIN-SUFFIX,spring.io
 DOMAIN-SUFFIX,spring.net
 DOMAIN-SUFFIX,stackoverflow.com
@@ -397,9 +414,11 @@ DOMAIN-SUFFIX,steamusercontent-a.akamaihd.net
 DOMAIN-SUFFIX,steamusercontent.com
 DOMAIN-SUFFIX,steamuserimages-a.akamaihd.net
 DOMAIN-SUFFIX,steamvideo-a.akamaihd.net
+DOMAIN-SUFFIX,storage.msn.com
 DOMAIN-SUFFIX,stripe.com
 DOMAIN-SUFFIX,surfshark.com
 DOMAIN-SUFFIX,surfsharkdns.com
+DOMAIN-SUFFIX,swiftgram.app
 DOMAIN-SUFFIX,synergyse.com
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,t.me

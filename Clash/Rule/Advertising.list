@@ -1,4 +1,4 @@
-# Main total line 4268 
+# Main total line 4270 
 # ------------------------------------------
 AND,((DOMAIN-KEYWORD,-misc-),(DOMAIN-SUFFIX,zijieapi.com))
 AND,((DOMAIN-KEYWORD,adx-),(DOMAIN-SUFFIX,statisticslinks.com))
@@ -2371,6 +2371,8 @@ DOMAIN-SUFFIX,pgdt.gtimg.cn
 DOMAIN-SUFFIX,phloxsub73ulata.com
 DOMAIN-SUFFIX,phluant.com
 DOMAIN-SUFFIX,photozoomchina.com
+DOMAIN-SUFFIX,pica-a-display.diwodiwo.xyz
+DOMAIN-SUFFIX,pica-ad-api.diwodiwo.xyz
 DOMAIN-SUFFIX,pica-juicy.picacomic.com
 DOMAIN-SUFFIX,pictela.net
 DOMAIN-SUFFIX,picture.duokan.com
