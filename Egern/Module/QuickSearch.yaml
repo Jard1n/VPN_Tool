@@ -1,0 +1,121 @@
+name: QuickSearch
+description: Safari快捷搜索(需要把Safari的搜索引擎设置为：DuckDuckGo)
+compat_arguments:
+  百度: www.baidu.com
+compat_arguments_desc: |-
+  网页版:www.baidu.com
+  手机版:m.baidu.com
+dns: {}
+url_rewrites:
+- match: ^https:\/\/duckduckgo.com\/\?q=yd\+([^&]+).+
+  location: http://dict.youdao.com/search?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=trc\+([^&]+).+
+  location: https://translate.google.com/#view=home&op=translate&sl=auto&tl=zh-CN&text=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=tre\+([^&]+).+
+  location: https://translate.google.com/#view=home&op=translate&sl=auto&tl=en&text=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=tt\+([^&]+).+
+  location: https://so.toutiao.com/search?keyword=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=db\+([^&]+).+
+  location: https://m.douban.com/search?query=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=zh\+([^&]+).+
+  location: http://www.zhihu.com/search?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=wb\+([^&]+).+
+  location: https://s.weibo.com/weibo/$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=sspai\+([^&]+).+
+  location: https://sspai.com/search/post/$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=ssp\+([^&]+).+
+  location: https://www.google.com/search?as_q=$1&as_sitesearch=sspai.com
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=gh\+([^&]+).+
+  location: https://github.com/search?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=gu\+([^&]+).+
+  location: https://github.com/search?q=$1&type=users
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=gc\+([^&]+).+
+  location: https://github.com/search?o=desc&q=$1&s=indexed&type=Code
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=so\+([^&]+).+
+  location: https://stackoverflow.com/search?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=se\+([^&]+).+
+  location: https://stackexchange.com/search?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=wa\+([^&]+).+
+  location: https://www.wolframalpha.com/input/?i=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=rd\+([^&]+).+
+  location: https://www.reddit.com/search?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=yt\+([^&]+).+
+  location: https://www.youtube.com/results?search_query=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=bili\+([^&]+).+
+  location: https://m.bilibili.com/search?keyword=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=gd\+([^&]+).+
+  location: https://www.google.com/search?q=%22Google+Drive%22+$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=ph\+([^&]+).+
+  location: https://cn.pornhub.com/video/search?search=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=af\+([^&]+).+
+  location: https://www.acfun.cn/search?keyword=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=sp\+([^&]+).+
+  location: https://soupian.icu/search?key=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=cn&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143465&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=cn&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=hk&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143463&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=hk&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=tw&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143470&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tw&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=us&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143441&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=us&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=jp&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143462&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=jp&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=kr&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143466&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=kr&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=tr&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143480&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=sg&.+
+  location: https://itunes.apple.com/WebObjects/MZStore.woa/wa/resetAndRedirect?dsf=143464&mt=8&url=/WebObjects/MZStore.woa/wa/viewSoftware?mt=8&id=1108187390&cc=tr&urlDesc=
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=bd\+([^&]+).+
+  location: https://{{{百度}}}/s?wd=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=sg\+([^&]+).+
+  location: https://www.sogou.com/web?query=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=wk\+([^&]+).+
+  location: https://zh.wikipedia.org/wiki/$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=yh\+([^&]+).+
+  location: https://greasyfork.org/zh-CN/scripts?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=by\+([^&]+).+
+  location: https://www.bing.com/search?q=$1
+  status_code: 302
+- match: ^https:\/\/duckduckgo.com\/\?q=([^&]+).+
+  location: https://www.google.com/search?q=$1
+  status_code: 302
+mitm:
+  hostnames:
+    includes:
+    - duckduckgo.com
