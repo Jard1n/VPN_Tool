@@ -409,13 +409,11 @@ DOMAIN-SUFFIX,byteintl.net
 DOMAIN-SUFFIX,byteoversea.com
 DOMAIN-SUFFIX,byteoversea.net
 DOMAIN-SUFFIX,bytetcdn.com
-DOMAIN-SUFFIX,capcut.com
 DOMAIN-SUFFIX,ibytedtos.com
 DOMAIN-SUFFIX,ibyteimg.com
 DOMAIN-SUFFIX,ipstatp.com
 DOMAIN-SUFFIX,isnssdk.com
 DOMAIN-SUFFIX,muscdn.com
-DOMAIN-SUFFIX,musemuse.cn
 DOMAIN-SUFFIX,musical.ly
 DOMAIN-SUFFIX,pstatp.com
 DOMAIN-SUFFIX,sgpstatp.com
@@ -432,6 +430,7 @@ DOMAIN-SUFFIX,ttoversea.net
 DOMAIN-SUFFIX,ttoverseaus.net
 DOMAIN-SUFFIX,ttwstatic.com
 DOMAIN-SUFFIX,tzvbfs.com
+DOMAIN-SUFFIX,ttcdn-us.com
 DOMAIN-KEYWORD,bytedance.map.
 DOMAIN-KEYWORD,musical.ly.
 DOMAIN-KEYWORD,tiktok
