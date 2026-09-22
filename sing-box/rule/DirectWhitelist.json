@@ -42,11 +42,18 @@
       "domain_suffix": [
         "baomitu.com",
         "bootcss.com",
+        "direct",
         "dl.delivery.mp.microsoft.com",
         "googletraveladservices.com",
         "hiwifi.com",
+        "home",
+        "ip6-localhost",
+        "ip6-loopback",
         "jiasule.com",
+        "lan",
         "leike.cc",
+        "local",
+        "localhost",
         "miwifi.com",
         "my.router",
         "p.to",
@@ -64,12 +71,6 @@
         "windowsupdate.microsoft.com",
         "xiumi.us",
         "zte.home"
-      ]
-    },
-    {
-      "ip_cidr": [
-        "192.168.0.1/24",
-        "192.168.1.1/24"
       ]
     }
   ],
