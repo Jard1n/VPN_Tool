@@ -1,4 +1,4 @@
-# Main total line 615 
+# Main total line 617 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,ea-api.arkoselabs.com
@@ -323,6 +323,8 @@ DOMAIN-SUFFIX,onetrust.com
 DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,opgg-static.akamaized.net
+DOMAIN-SUFFIX,oracle.com
+DOMAIN-SUFFIX,oraclecloud.com
 DOMAIN-SUFFIX,origin.com
 DOMAIN-SUFFIX,pages.dev
 DOMAIN-SUFFIX,paragon.com
