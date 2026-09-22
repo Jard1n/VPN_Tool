@@ -13,4 +13,6 @@ DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,ttlstatic.com
 DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-SUFFIX,ttcdn-us.com
 DOMAIN-KEYWORD,tiktok
+IP-CIDR,34.102.215.99/30,no-resolve
