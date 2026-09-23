@@ -11,16 +11,20 @@ DOMAIN,openaiapi-site.azureedge.net
 DOMAIN,openaicomproductionae4b.blob.core.windows.net
 DOMAIN,production-openaicom-storage.azureedge.net
 DOMAIN,turn.livekit.cloud
+DOMAIN, openaicom.imgix.net
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,sora.com
+DOMAIN-SUFFIX, chatgpt.site
+DOMAIN-SUFFIX, crixet.com
 
 # Gemini
 DOMAIN,ai.google.dev
 DOMAIN,aida.googleapis.com
+DOMAIN,aicode.googleapis.com
 DOMAIN,aistudio.google.com
 DOMAIN,alkalicore-pa.clients6.google.com
 DOMAIN,alkalimakersuite-pa.clients6.google.com
@@ -28,11 +32,27 @@ DOMAIN,bard.google.com
 DOMAIN,deepmind.com
 DOMAIN,deepmind.google
 DOMAIN,geller-pa.googleapis.com
+DOMAIN,gemini.google
 DOMAIN,gemini.google.com
 DOMAIN,generativeai.google
 DOMAIN,generativelanguage.googleapis.com
 DOMAIN,makersuite.google.com
 DOMAIN,proactivebackend-pa.googleapis.com
+DOMAIN,robinfrontend-pa.googleapis.com
+DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
+DOMAIN,notebooklm.google
+DOMAIN,notebooklm.google.com
+DOMAIN,jules.google
+DOMAIN,jules.google.com
+DOMAIN,labs.google
+DOMAIN,aisandbox-pa.googleapis.com
+
+# Google Antigravity
+DOMAIN-SUFFIX,antigravity.google
+DOMAIN-SUFFIX,antigravity-unleash.goog
+DOMAIN,daily-cloudcode-pa.sandbox.googleapis.com
+DOMAIN,daily-cloudcode-pa.googleapis.com
+AND,((DOMAIN-KEYWORD,antigravity-auto-updater-),(DOMAIN-SUFFIX,run.app))
 
 # Copilot
 DOMAIN,api.githubcopilot.com
@@ -62,3 +82,9 @@ DOMAIN-SUFFIX,perplexity.com
 # Grok AI
 DOMAIN-SUFFIX,x.ai
 DOMAIN-SUFFIX,grok.com
+
+# OpenRouter
+DOMAIN-SUFFIX,openrouter.ai
+
+# MiniMax国际版
+DOMAIN-SUFFIX,minimax.io
