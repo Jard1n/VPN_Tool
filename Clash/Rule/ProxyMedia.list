@@ -377,6 +377,7 @@ DOMAIN,hamifans.emome.net
 DOMAIN-SUFFIX,skyking.com.tw
 
 # TikTok
+DOMAIN,api.snapkit.com
 DOMAIN,lf16-effectcdn.byteeffecttos-g.com
 DOMAIN,lf16-pkgcdn.pitaya-clientai.com
 DOMAIN,lf19-pkgcdn.pitaya-clientai.com
@@ -392,11 +393,11 @@ DOMAIN-SUFFIX,sgpstatp.com
 DOMAIN-SUFFIX,tik-tokapi.com
 DOMAIN-SUFFIX,ttlstatic.com
 DOMAIN-SUFFIX,ttwstatic.com
+DOMAIN-SUFFIX,ttcdn-us.com
 DOMAIN-KEYWORD,tiktok
-IP-CIDR,71.18.10.224/30,no-resolve
-IP-CIDR,71.18.27.224/30,no-resolve
-IP-CIDR,71.18.40.224/30,no-resolve
-IP-CIDR,71.18.43.224/30,no-resolve
+IP-CIDR,34.102.215.99/32,no-resolve
+IP-ASN,11983,no-resolve
+IP-ASN,138699,no-resolve
 
 # Twitch
 DOMAIN-SUFFIX,jtvnw.net
