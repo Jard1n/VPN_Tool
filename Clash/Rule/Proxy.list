@@ -1,4 +1,4 @@
-# Main total line 617 
+# Main total line 623 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,ea-api.arkoselabs.com
@@ -100,6 +100,7 @@ DOMAIN-SUFFIX,bybit.biz
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybits.org
 DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,byteplusvod.com
 DOMAIN-SUFFIX,c.gle
 DOMAIN-SUFFIX,ca
 DOMAIN-SUFFIX,canva.com
@@ -246,10 +247,12 @@ DOMAIN-SUFFIX,ipleak.net
 DOMAIN-SUFFIX,ipregistry.co
 DOMAIN-SUFFIX,ipstack.com
 DOMAIN-SUFFIX,ipwho.is
+DOMAIN-SUFFIX,isafepal.com
 DOMAIN-SUFFIX,it
 DOMAIN-SUFFIX,jable.tv
 DOMAIN-SUFFIX,javday.homes
 DOMAIN-SUFFIX,javrate.com
+DOMAIN-SUFFIX,jevusers.com
 DOMAIN-SUFFIX,jitpack.io
 DOMAIN-SUFFIX,jp
 DOMAIN-SUFFIX,kelee.one
@@ -319,6 +322,7 @@ DOMAIN-SUFFIX,nssurge.com
 DOMAIN-SUFFIX,okx.com
 DOMAIN-SUFFIX,oneclient.sfx.ms
 DOMAIN-SUFFIX,onedrive.com
+DOMAIN-SUFFIX,onesignal.com
 DOMAIN-SUFFIX,onetrust.com
 DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,openai.com
@@ -496,6 +500,7 @@ DOMAIN-SUFFIX,vercel.store
 DOMAIN-SUFFIX,videos-rockstargames-com.akamaized.net
 DOMAIN-SUFFIX,vine.co
 DOMAIN-SUFFIX,wa.me
+DOMAIN-SUFFIX,walletconnect.com
 DOMAIN-SUFFIX,whatbrowser.org
 DOMAIN-SUFFIX,whatsapp-plus.info
 DOMAIN-SUFFIX,whatsapp-plus.me
@@ -548,6 +553,7 @@ DOMAIN-SUFFIX,xn--gogl-1nd42e.com
 DOMAIN-SUFFIX,xn--ngstr-lra8j.com
 DOMAIN-SUFFIX,xxx
 DOMAIN-SUFFIX,yandex.com
+DOMAIN-SUFFIX,yfamilys.com
 DOMAIN-SUFFIX,youmind.com
 DOMAIN-SUFFIX,youtu.be
 DOMAIN-SUFFIX,youtube-nocookie.com
