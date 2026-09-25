@@ -24,8 +24,14 @@
         "musical.ly",
         "sgpstatp.com",
         "tik-tokapi.com",
+        "ttcdn-us.com",
         "ttlstatic.com",
         "ttwstatic.com"
+      ]
+    },
+    {
+      "ip_cidr": [
+        "34.102.215.99/30"
       ]
     }
   ],
