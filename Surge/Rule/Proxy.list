@@ -1,4 +1,4 @@
-# Main total line 623 
+# Main total line 624 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,ea-api.arkoselabs.com
@@ -293,6 +293,7 @@ DOMAIN-SUFFIX,mozilla.com
 DOMAIN-SUFFIX,mozilla.net
 DOMAIN-SUFFIX,mozilla.org
 DOMAIN-SUFFIX,msngr.com
+DOMAIN-SUFFIX,muse.ai
 DOMAIN-SUFFIX,mushroomtrack.com
 DOMAIN-SUFFIX,mvnrepository.com
 DOMAIN-SUFFIX,mwm-bs.com
