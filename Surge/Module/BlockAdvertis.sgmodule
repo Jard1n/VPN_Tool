@@ -191,6 +191,7 @@ DOMAIN,df.tanx.com,REJECT,extended-matching
 DOMAIN,opehs.tanx.com,REJECT,extended-matching
 DOMAIN,beacon-api.aliyuncs.com,REJECT,extended-matching
 DOMAIN,adash.man.aliyuncs.com,REJECT,extended-matching
+DOMAIN,adashx.m.taobao.com,REJECT,extended-matching
 DOMAIN,applog.uc.cn,REJECT,extended-matching
 DOMAIN,atoken.m.taobao.com,REJECT,extended-matching
 AND,((DOMAIN-KEYWORD,adash,extended-matching),(DOMAIN-SUFFIX,ut.taobao.com,extended-matching)),REJECT
