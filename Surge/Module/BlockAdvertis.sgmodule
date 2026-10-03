@@ -1,7 +1,7 @@
 #!name=广告平台拦截器
 #!desc=此插件是所有去广告插件的基础，只针对广告平台处理
 #!category =  Block Ads
-#!date=2026-09-23 11:35:33
+#!date=2026-10-02 13:57:49
 
 [Rule]
 DOMAIN-KEYWORD,adstrategy,REJECT,extended-matching
@@ -351,12 +351,14 @@ DOMAIN-SUFFIX,tobidad.cn,REJECT,extended-matching
 DOMAIN-SUFFIX,tobidad.com,REJECT,extended-matching
 DOMAIN,ep7.facebook.com,REJECT,extended-matching
 
+[Map Local]
+(?i)^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ data-type=text data="" status-code=404
 
-[URL Rewrite]
-^https:\/\/video-dsp\.pddpic\.com\/market-dsp-video\/ - reject
-^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_ - reject
-^https:\/\/images\.pinduoduo\.com\/mrk\/ - reject
-^https:\/\/images\.pinduoduo\.com\/marketing_api\/ - reject
+(?i)^https:\/\/t-dsp\.pinduoduo\.com\/dspcb\/i\/mrk_ data-type=text data="" status-code=404
+
+(?i)^https:\/\/images\.pinduoduo\.com\/mrk\/ data-type=text data="" status-code=404
+
+(?i)^https:\/\/images\.pinduoduo\.com\/marketing_api\/ data-type=text data="" status-code=404
 
 [MITM]
 hostname = %APPEND% video-dsp.pddpic.com, t-dsp.pinduoduo.com, images.pinduoduo.com
