@@ -1,4 +1,4 @@
-# Main total line 624 
+# Main total line 632 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,ea-api.arkoselabs.com
@@ -15,8 +15,10 @@ DOMAIN,pplx-res.cloudinary.com
 DOMAIN,reddit.app.link
 DOMAIN,rtm.tnt-ea.com
 DOMAIN,sakuracat.link
+DOMAIN,secure.gravatar.com
 DOMAIN,sub.store
 DOMAIN,surrit.com
+DOMAIN,surrit.mrstcdn.store
 DOMAIN,ubisoft-avatars.akamaized.net
 DOMAIN,ubistatic-a.akamaihd.net
 DOMAIN,ubistatic2-a.akamaihd.net
@@ -95,11 +97,14 @@ DOMAIN-SUFFIX,boxofficemojo.com
 DOMAIN-SUFFIX,browserleaks.com
 DOMAIN-SUFFIX,browserleaks.org
 DOMAIN-SUFFIX,bugzilla.org
+DOMAIN-SUFFIX,byabcde.com
 DOMAIN-SUFFIX,byapps.net
+DOMAIN-SUFFIX,bybdc6.com
 DOMAIN-SUFFIX,bybit.biz
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,bybits.org
 DOMAIN-SUFFIX,bycsi.com
+DOMAIN-SUFFIX,bynbc.com
 DOMAIN-SUFFIX,byteplusvod.com
 DOMAIN-SUFFIX,c.gle
 DOMAIN-SUFFIX,ca
@@ -252,6 +257,7 @@ DOMAIN-SUFFIX,it
 DOMAIN-SUFFIX,jable.tv
 DOMAIN-SUFFIX,javday.homes
 DOMAIN-SUFFIX,javrate.com
+DOMAIN-SUFFIX,javtrailers.com
 DOMAIN-SUFFIX,jevusers.com
 DOMAIN-SUFFIX,jitpack.io
 DOMAIN-SUFFIX,jp
@@ -285,6 +291,7 @@ DOMAIN-SUFFIX,mega.nz
 DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,meta.ai
 DOMAIN-SUFFIX,meta.com
+DOMAIN-SUFFIX,metaaivm.com
 DOMAIN-SUFFIX,metacubex.one
 DOMAIN-SUFFIX,microsoftpersonalcontent.com
 DOMAIN-SUFFIX,missav.ai
@@ -437,6 +444,7 @@ DOMAIN-SUFFIX,synergyse.com
 DOMAIN-SUFFIX,t.co
 DOMAIN-SUFFIX,t.me
 DOMAIN-SUFFIX,take2games.com
+DOMAIN-SUFFIX,tampermonkey.net
 DOMAIN-SUFFIX,tdesktop.com
 DOMAIN-SUFFIX,telega.one
 DOMAIN-SUFFIX,telegra.ph
