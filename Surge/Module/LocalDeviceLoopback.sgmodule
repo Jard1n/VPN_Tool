@@ -1,0 +1,9 @@
+#!name = 本机开发服务回环
+#!desc = 将10.7.0.1的反射映像还原到本设备，以便使用设备上的开发者工具
+
+[General]
+ipv6-vif = disabled
+tun-included-routes = %INSERT% 10.7.0.1/32
+
+[IP Rewrite]
+10.7.0.1 = reflect
