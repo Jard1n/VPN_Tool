@@ -19,8 +19,10 @@ const header = $request.headers;
 const ua = $request.headers.rpid || $request.headers.Rpid;
 const blockIds = [
 	"1000002",
-	"1430064"
-	
+	"1000019",
+	"1430064",
+	"1120002",
+	"1130016"
 ];
 
 const modifyIds = [
@@ -29,27 +31,29 @@ const modifyIds = [
 ];
 
 if (typeof $response == "undefined" && blockIds.includes(ua)) {
-	$done({status: "HTTP/1.1 404 Not Found"});
-} else if (typeof $response !== "undefined" && modifyIds.includes(ua)){
-	let raw = $response.bodyBytes;
-	if (raw && typeof raw !== 'string') {
-	  let u8 = raw instanceof Uint8Array ? raw : new Uint8Array(raw);
-	  $done({ bodyBytes: fixCloseClickBytes(u8) });
-	} else {
-	  let body = $response.body;
-	  if (typeof body !== 'string' || !body) {
-	    $done();
-	  } else {
-	    let u8 = new Uint8Array(body.length);
-	    for (let i = 0; i < body.length; i++) u8[i] = body.charCodeAt(i) & 0xff;
-	    let out = fixCloseClickBytes(u8);
-	    let s = "";
-	    for (let i = 0; i < out.length; i++) s += String.fromCharCode(out[i]);
-	    $done({ body: s });
-	  }
-	}
+  $done({status: "HTTP/1.1 404 Not Found"});
+} else if (typeof $response !== "undefined" && modifyIds.includes(ua)) {
+  const isQuanX = typeof $task !== "undefined";
+  const binaryBody = isQuanX ? new Uint8Array($response.bodyBytes) : $response.body;
+  console.log("[closeClick] isQuanX=" + isQuanX +
+              " bodyBytesType=" + (typeof $response.bodyBytes) +
+              " bodyType=" + (typeof $response.body) +
+              " binLen=" + (binaryBody ? binaryBody.length : "null"));
+  
+  if (!binaryBody || binaryBody.length === 0) {
+    console.log("[closeClick] bodyBytes 为空，无法处理");
+    $done({});
+  } else {
+    let out = fixCloseClickBytes(binaryBody);
+    console.log("[closeClick] inLen=" + binaryBody.length + " outLen=" + out.length);
+    if (isQuanX) {
+      $done({ bodyBytes: out.buffer.slice(out.byteOffset, out.byteOffset + out.byteLength) });
+    } else {
+      $done({ body: out });
+    }
+  }
 } else {
-	$done();
+  $done();
 }
 
-function fixCloseClickBytes(u8){function ue(s){const o=[];for(let i=0;i<s.length;i++){let c=s.charCodeAt(i);if(c<128)o.push(c);else if(c<2048)o.push(192|c>>6,128|c&63);else if(c>=55296&&c<=56319){const c2=s.charCodeAt(++i);c=65536+((c-55296)<<10)+(c2-56320);o.push(240|c>>18,128|(c>>12)&63,128|(c>>6)&63,128|c&63)}else o.push(224|c>>12,128|(c>>6)&63,128|c&63)}return new Uint8Array(o)}function ud(u){let s="",i=0;while(i<u.length){const b=u[i++];if(b<128)s+=String.fromCharCode(b);else if(b<224)s+=String.fromCharCode((b&31)<<6|u[i++]&63);else if(b<240)s+=String.fromCharCode((b&15)<<12|(u[i++]&63)<<6|u[i++]&63);else{const cp=(b&7)<<18|(u[i++]&63)<<12|(u[i++]&63)<<6|u[i++]&63;const off=cp-65536;s+=String.fromCharCode(55296+(off>>10),56320+(off&1023))}}return s}function repl(o){if(o===null||typeof o!=="object")return o;if(Array.isArray(o))return o.map(repl);if(o.closeClick===true)return{};const r={};for(const k in o)if(Object.prototype.hasOwnProperty.call(o,k))r[k]=repl(o[k]);return r}function tryJson(d){if(d.length===0||d[0]!==123)return null;let s;try{s=ud(d)}catch(e){return null}if(s[0]!=="{"||s[s.length-1]!=="}")return null;if(s.indexOf('"closeClick":true')===-1&&s.indexOf('"closeClick": true')===-1)return null;try{return ue(JSON.stringify(repl(JSON.parse(s))))}catch(e){return null}}function rw(r,w,buf,depth){if(depth>12)throw Error("deep");let mod=false;while(r.pos<r.len){const t=r.uint32(),f=t>>>3,wt=t&7;if(wt===0){w.uint32(f<<3).uint64(r.uint64())}else if(wt===1){if(r.pos+8>r.len)throw Error("trunc");const lo=r.uint32(),hi=r.uint32();w.uint32(f<<3|1).uint32(lo).uint32(hi)}else if(wt===2){const l=r.uint32();if(r.pos+l>r.len)throw Error("trunc");const d=buf.slice(r.pos,r.pos+l);r.pos+=l;let nd=tryJson(d);if(nd!==null){mod=true}else{try{const r2=protobuf.Reader.create(d),w2=protobuf.Writer.create();if(rw(r2,w2,d,depth+1)){nd=w2.finish();mod=true}}catch(e){}}if(nd===null)nd=d;w.uint32(f<<3|2).uint32(nd.length).bytes(nd)}else if(wt===3){w.uint32(f<<3|3);if(rw(r,w,buf,depth+1))mod=true;w.uint32(f<<3|4)}else if(wt===4){return mod}else if(wt===5){if(r.pos+4>r.len)throw Error("trunc");w.uint32(f<<3|5).uint32(r.uint32())}else throw Error("wt "+wt)}return mod}try{const r=protobuf.Reader.create(u8),w=protobuf.Writer.create();const mod=rw(r,w,u8,0);return mod?w.finish():u8}catch(e){console.log("[closeClick] "+e.message);return u8}}
+function fixCloseClickBytes(u8){function rw(r,w,buf,d){if(d>16)throw Error("deep");let m=false;while(r.pos<r.len){const ts=r.pos,tag=r.uint32(),f=tag>>>3,wt=tag&7;if(wt===0){w.uint32((f<<3)|0).uint64(r.uint64())}else if(wt===1){if(r.pos+8>r.len)throw Error("trunc64@"+r.pos);const lo=r.uint32(),hi=r.uint32();w.uint32((f<<3)|1).uint32(lo).uint32(hi)}else if(wt===2){const len=r.uint32();if(r.pos+len>r.len)throw Error("trunc@pos="+r.pos+" len="+len+" remain="+(r.len-r.pos)+" tagStart="+ts+" field="+f);const data=buf.slice(r.pos,r.pos+len);r.pos+=len;if(hf(data,f,w,d))m=true}else if(wt===3){w.uint32((f<<3)|3);if(rw(r,w,buf,d+1))m=true;w.uint32((f<<3)|4)}else if(wt===4){return m}else if(wt===5){if(r.pos+4>r.len)throw Error("trunc32@"+r.pos);w.uint32((f<<3)|5).uint32(r.uint32())}else throw Error("wt="+wt+"@"+ts)}return m}function hf(data,fn,w,d){let st=0;while(st<data.length&&(data[st]===0x20||data[st]===0x09||data[st]===0x0a||data[st]===0x0d))st++;if(st<data.length&&data[st]===0x7b){const nd=tj(data,st);if(nd!==null){const tot=st+nd.length,bf=new Uint8Array(tot);for(let i=0;i<st;i++)bf[i]=data[i];for(let i=0;i<nd.length;i++)bf[i+st]=nd[i];w.uint32((fn<<3)|2).uint32(tot).bytes(bf);return true}}let s="";for(let i=0;i<data.length;i++)s+=String.fromCharCode(data[i]);if(s.indexOf("closeClick\x12\x02\x08\x01")!==-1){w.uint32((fn<<3)|2).uint32(0);return true}try{const r2=protobuf.Reader.create(data),w2=protobuf.Writer.create();if(rw(r2,w2,data,d+1)){const sub=w2.finish();w.uint32((fn<<3)|2).uint32(sub.length).bytes(sub);return true}}catch(e){}w.uint32((fn<<3)|2).uint32(data.length).bytes(data);return false}function tj(data,st){let s="";for(let i=st;i<data.length;i++)s+=String.fromCharCode(data[i]);if(s.indexOf('"closeClick":true')===-1&&s.indexOf('"closeClick": true')===-1&&s.indexOf('\\"closeClick\\":true')===-1)return null;try{const o=JSON.parse(s),s2=JSON.stringify(rc(o));if(s2===s)return null;const out=new Uint8Array(s2.length);for(let i=0;i<s2.length;i++)out[i]=s2.charCodeAt(i)&255;return out}catch(e){return null}}function rc(o){if(o===null||typeof o!=="object")return o;if(Array.isArray(o))return o.map(rc);if(o.closeClick===true)return{};const r={};for(const k in o)if(Object.prototype.hasOwnProperty.call(o,k))r[k]=rc(o[k]);return r}try{const r=protobuf.Reader.create(u8),w=protobuf.Writer.create();rw(r,w,u8,0);return w.finish()}catch(e){console.log("[closeClick] "+e.message);return u8}}
