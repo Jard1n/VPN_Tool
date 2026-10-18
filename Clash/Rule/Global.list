@@ -1,4 +1,4 @@
-# Main total line 24534 
+# Main total line 24540 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -5659,6 +5659,7 @@ DOMAIN-SUFFIX,cursor-cdn.com
 DOMAIN-SUFFIX,cursor.com
 DOMAIN-SUFFIX,cursor.sh
 DOMAIN-SUFFIX,cursorapi.com
+DOMAIN-SUFFIX,cursorvm.com
 DOMAIN-SUFFIX,curve.fi
 DOMAIN-SUFFIX,curvefish.com
 DOMAIN-SUFFIX,curvybbwwives.com
@@ -16086,6 +16087,7 @@ DOMAIN-SUFFIX,ooyala.com
 DOMAIN-SUFFIX,op.gg
 DOMAIN-SUFFIX,op7979.com
 DOMAIN-SUFFIX,openai.com
+DOMAIN-SUFFIX,openai.org
 DOMAIN-SUFFIX,openallweb.com
 DOMAIN-SUFFIX,openamt.com
 DOMAIN-SUFFIX,openapiplatform.com
@@ -18487,6 +18489,7 @@ DOMAIN-SUFFIX,scholarpedia.org
 DOMAIN-SUFFIX,schwab.com
 DOMAIN-SUFFIX,schwab.com.cn
 DOMAIN-SUFFIX,schwabassetmanagement.com
+DOMAIN-SUFFIX,schwabcdn.com
 DOMAIN-SUFFIX,schwabplan.com
 DOMAIN-SUFFIX,sci.hubg.org
 DOMAIN-SUFFIX,science.com
@@ -20759,6 +20762,8 @@ DOMAIN-SUFFIX,timesnownews.com
 DOMAIN-SUFFIX,timestalks.com
 DOMAIN-SUFFIX,timeweb.cloud
 DOMAIN-SUFFIX,timeweb.com
+DOMAIN-SUFFIX,timeweb.tech
+DOMAIN-SUFFIX,timewebcloud.kz
 DOMAIN-SUFFIX,timi1.me
 DOMAIN-SUFFIX,timo0.com
 DOMAIN-SUFFIX,timsah.com
@@ -21368,6 +21373,7 @@ DOMAIN-SUFFIX,typekit.com
 DOMAIN-SUFFIX,typekit.net
 DOMAIN-SUFFIX,typenetwork.com
 DOMAIN-SUFFIX,typepad.com
+DOMAIN-SUFFIX,typesafe.ai
 DOMAIN-SUFFIX,typeset.io
 DOMAIN-SUFFIX,typesquare.com
 DOMAIN-SUFFIX,typography.com
