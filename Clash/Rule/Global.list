@@ -1,4 +1,4 @@
-# Main total line 24540 
+# Main total line 24547 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -2148,7 +2148,6 @@ DOMAIN-SUFFIX,asminternational.org
 DOMAIN-SUFFIX,asmr.gay
 DOMAIN-SUFFIX,asmrbuluo.com
 DOMAIN-SUFFIX,asn-online.org
-DOMAIN-SUFFIX,asobostudio.com
 DOMAIN-SUFFIX,asp-cc.com
 DOMAIN-SUFFIX,asp.net
 DOMAIN-SUFFIX,aspbjournals.org
@@ -3110,7 +3109,14 @@ DOMAIN-SUFFIX,beevpn.com
 DOMAIN-SUFFIX,beforeigners.com
 DOMAIN-SUFFIX,befuck.com
 DOMAIN-SUFFIX,befuck.net
+DOMAIN-SUFFIX,beget.app
+DOMAIN-SUFFIX,beget.cloud
 DOMAIN-SUFFIX,beget.com
+DOMAIN-SUFFIX,beget.de
+DOMAIN-SUFFIX,beget.hosting
+DOMAIN-SUFFIX,beget.pro
+DOMAIN-SUFFIX,beget.tech
+DOMAIN-SUFFIX,begetcdn.cloud
 DOMAIN-SUFFIX,begin-trade.com
 DOMAIN-SUFFIX,behance.net
 DOMAIN-SUFFIX,behindkink.com
@@ -8202,7 +8208,6 @@ DOMAIN-SUFFIX,flickr.net
 DOMAIN-SUFFIX,flickrhivemind.net
 DOMAIN-SUFFIX,flickriver.com
 DOMAIN-SUFFIX,flightradar24.com
-DOMAIN-SUFFIX,flightsimulator.com
 DOMAIN-SUFFIX,fling.com
 DOMAIN-SUFFIX,flipboard.com
 DOMAIN-SUFFIX,flipfap.com
@@ -19592,6 +19597,7 @@ DOMAIN-SUFFIX,sprinklesapp.com
 DOMAIN-SUFFIX,sprite.org
 DOMAIN-SUFFIX,sproutcore.com
 DOMAIN-SUFFIX,sproxy.info
+DOMAIN-SUFFIX,sprut.io
 DOMAIN-SUFFIX,sptvbroadcast.com
 DOMAIN-SUFFIX,sputnikglobe.com
 DOMAIN-SUFFIX,sputnikimages.com
@@ -23373,6 +23379,7 @@ DOMAIN-SUFFIX,xn--8uq428d76d.tokyo
 DOMAIN-SUFFIX,xn--90ab.com
 DOMAIN-SUFFIX,xn--90ab2c.xn--p1ai
 DOMAIN-SUFFIX,xn--90absjljw3g.xn--p1ai
+DOMAIN-SUFFIX,xn--90aefb9d.xn--p1ai
 DOMAIN-SUFFIX,xn--90aifd0az.shop
 DOMAIN-SUFFIX,xn--90aifd0azb.xn--p1acf
 DOMAIN-SUFFIX,xn--90wwvt03e.com
