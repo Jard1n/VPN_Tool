@@ -1,4 +1,4 @@
-# Main total line 4278 
+# Main total line 4277 
 # ------------------------------------------
 AND,((DOMAIN-KEYWORD,-misc-),(DOMAIN-SUFFIX,zijieapi.com))
 AND,((DOMAIN-KEYWORD,adx-),(DOMAIN-SUFFIX,statisticslinks.com))
@@ -2933,7 +2933,6 @@ DOMAIN-SUFFIX,tosv.byted.org
 DOMAIN-SUFFIX,touch-moblie.com
 DOMAIN-SUFFIX,touclick.com
 DOMAIN-SUFFIX,towableunto.cfd
-DOMAIN-SUFFIX,tp-pay.snssdk.com
 DOMAIN-SUFFIX,tpa-hcdn.iqiyi.com
 DOMAIN-SUFFIX,tpc.googlesyndication-cn.com
 DOMAIN-SUFFIX,tpns.tencent.com
