@@ -1,4 +1,4 @@
-# Main total line 4278 
+# Main total line 4287 
 # ------------------------------------------
 AND,((DOMAIN-KEYWORD,-misc-),(DOMAIN-SUFFIX,zijieapi.com))
 AND,((DOMAIN-KEYWORD,adx-),(DOMAIN-SUFFIX,statisticslinks.com))
@@ -526,8 +526,10 @@ DOMAIN-SUFFIX,ad-cdn.qingting.fm
 DOMAIN-SUFFIX,ad-center.com
 DOMAIN-SUFFIX,ad-channel.wikawika.xyz
 DOMAIN-SUFFIX,ad-cloud.jp
+DOMAIN-SUFFIX,ad-cmp.hismarttv.com
 DOMAIN-SUFFIX,ad-delivery.net
 DOMAIN-SUFFIX,ad-display.wikawika.xyz
+DOMAIN-SUFFIX,ad-download.hismarttv.com
 DOMAIN-SUFFIX,ad-files.4pyun.com
 DOMAIN-SUFFIX,ad-locus.com
 DOMAIN-SUFFIX,ad-maven.com
@@ -1147,6 +1149,7 @@ DOMAIN-SUFFIX,bn.ufitjvn.com
 DOMAIN-SUFFIX,bobo.corp.163.com
 DOMAIN-SUFFIX,bole.shangshufang.ksosoft.com
 DOMAIN-SUFFIX,books-analytics-events.apple.com
+DOMAIN-SUFFIX,boost-cmp.hismarttv.com
 DOMAIN-SUFFIX,bootcdn.net
 DOMAIN-SUFFIX,bootcss.com
 DOMAIN-SUFFIX,bootpreload.uve.weibo.com
@@ -1806,6 +1809,7 @@ DOMAIN-SUFFIX,imgapp.yeyou.com
 DOMAIN-SUFFIX,imgxxx.shunxincar.cn
 DOMAIN-SUFFIX,imindmap.cc
 DOMAIN-SUFFIX,immob.cn
+DOMAIN-SUFFIX,imp-cmp.hismarttv.com
 DOMAIN-SUFFIX,imp.xgo.com.cn
 DOMAIN-SUFFIX,impactserving.com
 DOMAIN-SUFFIX,impolo.com
@@ -1982,6 +1986,7 @@ DOMAIN-SUFFIX,lm10111.jtrincc.cn
 DOMAIN-SUFFIX,lmlicenses.wip4.adobe.com
 DOMAIN-SUFFIX,lnk0.com
 DOMAIN-SUFFIX,lnk8.cn
+DOMAIN-SUFFIX,loading-cmp.hismarttv.com
 DOMAIN-SUFFIX,loan-supermarket.faas.ele.me
 DOMAIN-SUFFIX,localytics.com
 DOMAIN-SUFFIX,location.ximalaya.com
@@ -2199,6 +2204,7 @@ DOMAIN-SUFFIX,mpro.baidu.com
 DOMAIN-SUFFIX,mpush.cn
 DOMAIN-SUFFIX,msads.net
 DOMAIN-SUFFIX,msclick2.kuwo.cn
+DOMAIN-SUFFIX,msg-cmp.hismarttv.com
 DOMAIN-SUFFIX,msg.71.am
 DOMAIN-SUFFIX,msg.mobile.kugou.com
 DOMAIN-SUFFIX,msg.youku.com
@@ -2352,6 +2358,7 @@ DOMAIN-SUFFIX,parrable.com
 DOMAIN-SUFFIX,partner.toutiao.com
 DOMAIN-SUFFIX,passport-log.youku.com
 DOMAIN-SUFFIX,passwordrecovery.cn
+DOMAIN-SUFFIX,paster-cmp.hismarttv.com
 DOMAIN-SUFFIX,patriot.cs.pp.cn
 DOMAIN-SUFFIX,pay.sboot.cn
 DOMAIN-SUFFIX,pb.hd.sohu.com
@@ -2528,6 +2535,7 @@ DOMAIN-SUFFIX,reader.meizu.com
 DOMAIN-SUFFIX,reader.res.meizu.com
 DOMAIN-SUFFIX,realsrv.com
 DOMAIN-SUFFIX,rebel.ai
+DOMAIN-SUFFIX,recmd-cmp.hismarttv.com
 DOMAIN-SUFFIX,recommend-drcn.hms.dbankcloud.cn
 DOMAIN-SUFFIX,redirect.simba.taobao.com
 DOMAIN-SUFFIX,redirectpopads.com
@@ -2546,6 +2554,7 @@ DOMAIN-SUFFIX,res.gwifi.com.cn
 DOMAIN-SUFFIX,res.hunantv.com
 DOMAIN-SUFFIX,res.limei.com
 DOMAIN-SUFFIX,res.mi.baidu.com
+DOMAIN-SUFFIX,resource-cmp.hismarttv.com
 DOMAIN-SUFFIX,responsys.net
 DOMAIN-SUFFIX,restartad.com
 DOMAIN-SUFFIX,retargeter.com
