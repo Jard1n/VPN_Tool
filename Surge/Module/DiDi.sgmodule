@@ -30,8 +30,6 @@ http-response-jq ^https:\/\/api\.udache\.com\/gulfstream\/porsche\/v\d\/bronze\/
 http-response-jq ^https:\/\/api\.udache\.com\/gulfstream\/porsche\/v\d\/SFCHomeTab\? '.data.tab_list |= map(select(.tab_id == "passenger" or .tab_id == "driver"))'
 http-response-jq ^https:\/\/htwkop\.xiaojukeji\.com(:443)?\/gateway\?api=hm\.fa\.querySellCardSummary 'if ((getpath([]) // {}) | has("data")) then (setpath(["data"]; "{}")) else . end'
 http-response-jq ^https:\/\/htwkop\.xiaojukeji\.com(:443)?\/gateway\?api=hm\.fa\.queryWelfareCenter 'if ((getpath([]) // {}) | has("data")) then (setpath(["data"]; "{}")) else . end'
-http-response-jq ^https:\/\/poi\.map\.xiaojukeji\.com\/mapapi\/startinfo\?api_version 'delpaths([["rec_destination"]])'
-http-response-jq ^https:\/\/poi\.map\.xiaojukeji\.com\/mapapi\/poiinfo\?product_id 'delpaths([["rec_destination"]])'
 http-response-jq ^https:\/\/common\.diditaxi\.com\.cn\/user_common\/itineraryList\? 'del(.data.tab_nav[]?.tab_param)'
 
 [Map Local]
@@ -46,4 +44,4 @@ http-response-jq ^https:\/\/common\.diditaxi\.com\.cn\/user_common\/itineraryLis
 ^https:\/\/freight\.xiaojukeji\.com\/gateway\?api=freight\.d\.core\.multiDisplayV\d data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
-hostname = %APPEND% as.xiaojukeji.com, conf.diditaxi.com.cn, common.diditaxi.com.cn, res.xiaojukeji.com, api.udache.com, daijia.kuaidadi.com, htwkop-st.xiaojukeji.com, htwkop.xiaojukeji.com, freight.xiaojukeji.com, poi.map.xiaojukeji.com
+hostname = %APPEND% as.xiaojukeji.com, conf.diditaxi.com.cn, common.diditaxi.com.cn, res.xiaojukeji.com, api.udache.com, daijia.kuaidadi.com, htwkop-st.xiaojukeji.com, htwkop.xiaojukeji.com, freight.xiaojukeji.com
