@@ -71,9 +71,6 @@ http-response-jq ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpag
 # 去除搜索页发现热词、美团热搜榜单及AI搜索气泡
 http-response-jq ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/hotword\/city\/divide\/hotrecommend\/ 'if (.data.segmentsV2 | type) == "array" then .data.segmentsV2 |= map(if (.hotwordSegments | type) == "array" then .hotwordSegments |= map(select(.pageName != "EntranceHotwordsV2Hotwords" and .pageName != "EntranceHotwordsV2ContentCard")) | select((.hotwordSegments | length) > 0) else . end) else . end | if (.data.aiSearchBubble.bubbleTexts | type) == "array" then .data.aiSearchBubble.bubbleTexts = [] else . end'
 
-# 禁用小团AI助手技能配置（解析内嵌JSON字符串并清空skills）
-http-response-jq ^https?:\/\/assistify\.meituan\.com\/assistant\/getAppClientHornConfig 'if (.data | type) == "string" then .data |= (try (fromjson | if (.skills | type) == "object" then .skills = {} else . end | tojson) catch .) else . end'
-
 # 去除购物页顶部横幅(topBannerArea)
 http-response-jq ^https?:\/\/mop\.meituan\.com\/mop\/entry\/shoppingCartEntry '(if (.resourcesMap.topBannerArea | type) == "array" then .resourcesMap.topBannerArea = [] else . end) | (if (.resource.topBannerArea | type) == "array" then .resource.topBannerArea = [] else . end) | (if (.data.resourcesMap.topBannerArea | type) == "array" then .data.resourcesMap.topBannerArea = [] else . end) | (if (.data.resource.topBannerArea | type) == "array" then .data.resource.topBannerArea = [] else . end)'
 
@@ -81,4 +78,4 @@ http-response-jq ^https?:\/\/mop\.meituan\.com\/mop\/entry\/shoppingCartEntry '(
 http-response-jq ^https?:\/\/mop\.meituan\.com\/api\/entryModule\/startupPicture '(if (.resourcesMap.startupPicArea | type) == "array" then .resourcesMap.startupPicArea = [] else . end) | (if (.resource.startupPicArea | type) == "array" then .resource.startupPicArea = [] else . end) | (if (.data.resourcesMap.startupPicArea | type) == "array" then .data.resourcesMap.startupPicArea = [] else . end) | (if (.data.resource.startupPicArea | type) == "array" then .data.resource.startupPicArea = [] else . end)'
 
 [MITM]
-hostname = %APPEND% apimobile.meituan.com, feedguess.meituan.com, mop.meituan.com, mt-personalcenter.meituan.com, assistify.meituan.com, httpdns.meituan.com, httpdnsmultiapi.meituan.com
+hostname = %APPEND% apimobile.meituan.com, feedguess.meituan.com, mop.meituan.com, mt-personalcenter.meituan.com, httpdns.meituan.com, httpdnsmultiapi.meituan.com
