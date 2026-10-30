@@ -4,19 +4,19 @@
 
 
 [Rule]
-DOMAIN,shark-mt.meituan.com,REJECT
-DOMAIN,shark-default.meituan.com,REJECT
-DOMAIN,shark-dp.meituan.com,REJECT
-DOMAIN,shark-ps.meituan.com,REJECT
-DOMAIN,shark-wm.sankuai.com,REJECT
-DOMAIN,shark.dianping.com,REJECT
-DOMAIN-WILDCARD,mquic-*.meituan.com,REJECT
-DOMAIN,httpdnsmultiapi.meituan.com,REJECT
-DOMAIN,httpdnsmultiapivip.meituan.com,REJECT
-DOMAIN,httpdns.meituan.com,REJECT
-DOMAIN,httpdnsvip.meituan.com,REJECT
-DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT
-DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT
+DOMAIN,shark-mt.meituan.com,REJECT,extended-matching
+DOMAIN,shark-default.meituan.com,REJECT,extended-matching
+DOMAIN,shark-dp.meituan.com,REJECT,extended-matching
+DOMAIN,shark-ps.meituan.com,REJECT,extended-matching
+DOMAIN,shark-wm.sankuai.com,REJECT,extended-matching
+DOMAIN,shark.dianping.com,REJECT,extended-matching
+DOMAIN-WILDCARD,mquic-*.meituan.com,REJECT,extended-matching
+DOMAIN,httpdnsmultiapi.meituan.com,REJECT,extended-matching
+DOMAIN,httpdnsmultiapivip.meituan.com,REJECT,extended-matching
+DOMAIN,httpdns.meituan.com,REJECT,extended-matching
+DOMAIN,httpdnsvip.meituan.com,REJECT,extended-matching
+DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT,extended-matching
+DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT,extended-matching
 IP-CIDR,202.90.108.13/32,REJECT,no-resolve
 IP-CIDR,202.90.110.46/32,REJECT,no-resolve
 IP-CIDR,202.90.108.69/32,REJECT,no-resolve
@@ -55,23 +55,30 @@ IP-CIDR6,2402:4e00:40:40::2:373/128,REJECT,no-resolve
 ^https?:\/\/(httpdns|httpdnsvip|httpdnsmultiapi|httpdnsmultiapivip)\.meituan\.com\/ - reject
 ^http:\/\/103\.37\.155\.60\/fetch - reject
 
-[Script]
-# 底部Tab栏净化（去除视频、小团AI）
-美团_底部Tab = type=http-response,pattern=^https?:\/\/apimobile\.meituan\.com\/aggroup\/indexTab,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
-# 去除购物车底部推流 & 我的页面底部瀑布流
-美团_推荐流 = type=http-response,pattern=^https?:\/\/feedguess\.meituan\.com\/lycoris\/scene\/(gwc_feed1_2265|personalcenter_2154)(\?|$),requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
-# 去除我的页面底部交叉推荐组件
-美团_我的页面 = type=http-response,pattern=^https?:\/\/mt-personalcenter\.meituan\.com\/usercenter\/display,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
+[Body Rewrite]
+# 底部Tab栏净化（去除视频 video、小团AI xiaotuan）
+http-response-jq ^https?:\/\/apimobile\.meituan\.com\/aggroup\/indexTab 'if (.data.resource.tabArea | type) == "array" and (.data.resource.tabArea | map(.tabName) | contains(["homepage","mine"])) then .data.resource.tabArea |= map(select(.tabName != "video" and .tabName != "xiaotuan")) else . end'
+
+# 去除购物车底部推流(gwc_feed1_2265) & 我的页面底部瀑布流(personalcenter_2154)
+http-response-jq ^https?:\/\/feedguess\.meituan\.com\/lycoris\/scene\/(gwc_feed1_2265|personalcenter_2154)(\?|$) 'if (.data | type) == "array" then .data = [] | .bottom = true | .ext = ((.ext // {}) + {forbidByExp: true}) else . end'
+
+# 去除我的页面底部交叉推荐组件(mine_cross_recommend)
+http-response-jq ^https?:\/\/mt-personalcenter\.meituan\.com\/usercenter\/display 'if (.children | type) == "array" then .children |= map(select(.name != "mine_cross_recommend")) else . end'
+
 # 去除搜索框默认词与候选热词
-美团_搜索默认词 = type=http-response,pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/defaultword,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
+http-response-jq ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/defaultword 'if (.searchIntroduceResponse | type) == "object" then (if (.searchIntroduceResponse.defaultWordRes.defaultWordItems | type) == "array" then .searchIntroduceResponse.defaultWordRes.defaultWordItems = [] else . end) | (if (.searchIntroduceResponse.HotWordInfos | type) == "array" then .searchIntroduceResponse.HotWordInfos = [] else . end) else . end'
+
 # 去除搜索页发现热词、美团热搜榜单及AI搜索气泡
-美团_搜索热推 = type=http-response,pattern=^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/hotword\/city\/divide\/hotrecommend\/,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
-# 禁用小团AI助手技能配置
-美团_小团AI配置 = type=http-response,pattern=^https?:\/\/assistify\.meituan\.com\/assistant\/getAppClientHornConfig,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
-# 去除购物页顶部横幅
-美团_购物页横幅 = type=http-response,pattern=^https?:\/\/mop\.meituan\.com\/mop\/entry\/shoppingCartEntry,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
-# 净化开屏广告
-美团_开屏净化 = type=http-response,pattern=^https?:\/\/mop\.meituan\.com\/api\/entryModule\/startupPicture,requires-body=1,max-size=-1,script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/meituan.js
+http-response-jq ^https?:\/\/apimobile\.meituan\.com\/group\/v1\/deal\/searchpage\/hotword\/city\/divide\/hotrecommend\/ 'if (.data.segmentsV2 | type) == "array" then .data.segmentsV2 |= map(if (.hotwordSegments | type) == "array" then .hotwordSegments |= map(select(.pageName != "EntranceHotwordsV2Hotwords" and .pageName != "EntranceHotwordsV2ContentCard")) | select((.hotwordSegments | length) > 0) else . end) else . end | if (.data.aiSearchBubble.bubbleTexts | type) == "array" then .data.aiSearchBubble.bubbleTexts = [] else . end'
+
+# 禁用小团AI助手技能配置（解析内嵌JSON字符串并清空skills）
+http-response-jq ^https?:\/\/assistify\.meituan\.com\/assistant\/getAppClientHornConfig 'if (.data | type) == "string" then .data |= (try (fromjson | if (.skills | type) == "object" then .skills = {} else . end | tojson) catch .) else . end'
+
+# 去除购物页顶部横幅(topBannerArea)
+http-response-jq ^https?:\/\/mop\.meituan\.com\/mop\/entry\/shoppingCartEntry '(if (.resourcesMap.topBannerArea | type) == "array" then .resourcesMap.topBannerArea = [] else . end) | (if (.resource.topBannerArea | type) == "array" then .resource.topBannerArea = [] else . end) | (if (.data.resourcesMap.topBannerArea | type) == "array" then .data.resourcesMap.topBannerArea = [] else . end) | (if (.data.resource.topBannerArea | type) == "array" then .data.resource.topBannerArea = [] else . end)'
+
+# 净化开屏广告(startupPicArea)
+http-response-jq ^https?:\/\/mop\.meituan\.com\/api\/entryModule\/startupPicture '(if (.resourcesMap.startupPicArea | type) == "array" then .resourcesMap.startupPicArea = [] else . end) | (if (.resource.startupPicArea | type) == "array" then .resource.startupPicArea = [] else . end) | (if (.data.resourcesMap.startupPicArea | type) == "array" then .data.resourcesMap.startupPicArea = [] else . end) | (if (.data.resource.startupPicArea | type) == "array" then .data.resource.startupPicArea = [] else . end)'
 
 [MITM]
 hostname = %APPEND% apimobile.meituan.com, feedguess.meituan.com, mop.meituan.com, mt-personalcenter.meituan.com, assistify.meituan.com, httpdns.meituan.com, httpdnsmultiapi.meituan.com
