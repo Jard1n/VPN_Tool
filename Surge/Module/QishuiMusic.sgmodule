@@ -1,43 +1,49 @@
 #!name=净化 & 汽水音乐
 #!desc=移除开屏广告、弹窗广告、播放器推广、歌曲详情界面视频推广
-#!date=2026-06-01 17:11:35
+#!date=2026-10-30
 #!category =  Block Ads
 
+
+[Rule]
+# 拦截字节 HTTPDNS 与商业化弹窗静态包、直播间配置
+DOMAIN,dig.zjurl.cn,REJECT
+DOMAIN,webcast-open.douyin.com,REJECT
+DOMAIN,lf-webcast-gr-sourcecdn.bytegecko.com,REJECT
+URL-REGEX,^https:\/\/lf-res-\d\.douyinstatic\.com\/.*\/commercial_popups\/,REJECT
+
 [Body Rewrite]
-http-response-jq ^https:\/\/tnc\d-(bjlgy|ali[a-z]{2})\d?\.zijieapi\.com\/get_domains\/v\d\/\? 'if (getpath(["data"]) | has("opaque_data_enabled")) then (setpath(["data","opaque_data_enabled"]; 0)) else . end'
-http-response-jq ^https:\/\/tnc\d-(bjlgy|ali[a-z]{2})\d?\.zijieapi\.com\/get_domains\/v\d\/\? 'if (getpath(["data"]) | has("ttnet_http_dns_enabled")) then (setpath(["data","ttnet_http_dns_enabled"]; 0)) else . end'
-http-response-jq ^https:\/\/tnc\d-(bjlgy|ali[a-z]{2})\d?\.zijieapi\.com\/get_domains\/v\d\/\? 'if (getpath(["data"]) | has("ttnet_quic_enabled")) then (setpath(["data","ttnet_quic_enabled"]; 0)) else . end'
-http-response-jq ^https:\/\/tnc\d-(bjlgy|ali[a-z]{2})\d?\.zijieapi\.com\/get_domains\/v\d\/\? 'if (getpath(["data"]) | has("ttnet_tt_http_dns")) then (setpath(["data","ttnet_tt_http_dns"]; 0)) else . end'
-http-response-jq ^https:\/\/tnc\d-(bjlgy|ali[a-z]{2})\d?\.zijieapi\.com\/get_domains\/v\d\/\? '.data.ttnet_dispatch_actions |= map(select(.action != "dispatch" and .action != "tc"))'
-http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/me\? 'delpaths([["reward_ad_banner"]])'
-http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/feed\/song-tab\? 'del(.items[] | select(.type == "video_track_mix"))'
-http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/card\? 'delpaths([["preview_guide"]])'
-http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/card\? 'del(.card_items[] | select(has("priority_display")))'
-http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/more-panel\? '.blocks |= map(select(.type != "related_video"))'
+# TTNet 调度降级（关闭 QUIC / HTTPDNS）
+http-response-jq ^https:\/\/tnc\d-(bjlgy|ali[a-z]{2})\d?\.zijieapi\.com\/get_domains\/v\d\/\? 'if (.data | type) == "object" then (if (.data | has("opaque_data_enabled")) then .data.opaque_data_enabled = 0 else . end) | (if (.data | has("ttnet_http_dns_enabled")) then .data.ttnet_http_dns_enabled = 0 else . end) | (if (.data | has("ttnet_quic_enabled")) then .data.ttnet_quic_enabled = 0 else . end) | (if (.data | has("ttnet_tt_http_dns")) then .data.ttnet_tt_http_dns = 0 else . end) | (if (.data.ttnet_dispatch_actions | type) == "array" then .data.ttnet_dispatch_actions |= map(select(.action != "dispatch" and .action != "tc")) else . end) else . end'
+# 全局 Settings 配置净化
+http-response-jq ^https:\/\/conf\.qishui\.com\/service\/settings\/v3\/ 'if (.data.settings | type) == "object" then .data.settings.video_live_tab_config = ((.data.settings.video_live_tab_config // {}) | .enable_video_live_tab = 0 | .tabs = ["discover","song","commerce","mine"] | .before_login_tabs = ["discover","song","commerce","mine"] | if (.main_top_entrances | type) == "array" then .main_top_entrances |= map(select(. != "live")) else . end) | .data.settings.luna_video = ((.data.settings.luna_video // {}) | .video_tab_enable = false | .inner_feed_enable = false) | .data.settings.commerce_popup_client = ((.data.settings.commerce_popup_client // {}) | .disable_preview_popup = true) else . end'
+# 用户开关设置：关闭冷启动自动弹窗广告，保留听歌金币悬浮挂件开关
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/user\/settings(\?|$) 'if (.luna_user_settings | type) == "object" then .luna_user_settings.popup_auto_start_ad = "0" else . end'
+# 我的页面 & 侧边栏净化
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/me(\?|$) 'if (.me_tab_sidebar.sections | type) == "array" then .me_tab_sidebar.sections |= map(if (.items | type) == "array" then .items |= map(select(.item_type != "mini_game" and .item_type != "mini_program" and .item_type != "shop_order")) else . end) else . end'
+# 开屏广告精准剥离（完整保留激励视频 reward_config）
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/ads\/config(\?|$) 'del(.splash_config) | if (.ad_unit_configs | type) == "array" then .ad_unit_configs |= map(select(.ad_supported_scene.ad_type != 1)) else . end'
+# 商业化弹窗
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/commerce\/v2\/upsell(\?|$) 'del(.sort_control_unique_names, .cold_launch_timing) | if (.upsell_map | type) == "object" then .upsell_map |= with_entries(select(.key | test("preview|cold_launch|background_to_front|persuade|expired_popup|snack_bar|voice_prompt") | not)) else . end'
+# 歌曲推荐流：移除混入的视频轨道
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/feed\/song-tab(\?|$) 'if (.items | type) == "array" then .items |= map(select(.type != "video_track_mix")) else . end'
+# 播放器卡片与进度条导流（删除试听结束看视频听整天导流条 preview_guide 及带 priority_display 的推广卡片）
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/card(\?|$) 'del(.preview_guide) | if (.card_items | type) == "array" then .card_items |= map(select(has("priority_display") | not)) else . end'
+# 更多面板：移除相关视频区块
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/more-panel(\?|$) 'if (.blocks | type) == "array" then .blocks |= map(select(.type != "related_video")) else . end'
+# 最近播放媒体：移除视频流
+http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/me\/recently-played-media(\?|$) 'if (.media | type) == "array" then .media |= map(select(.type != "video")) else . end'
 
 [Map Local]
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/commerce\/upsells_config\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(api|api5-lq)\.qishui\.com\/luna\/ads\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/ads\/ data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/webcast-open\.douyin\.com\/webcast\/openapi\/feed\/\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/treasure\/entrance\/config\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/activities\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/media_ads\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/commerce\/upsells\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/commerce\/v2\/commerce_info\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/listen-video\/reminder\? data-type=text data="{}" status-code=200 header="Content-Type:application/json"
-
-[Script]
-移除播放页面视频流 = type=http-response, pattern=^https:\/\/(beta-luna\.douyin|api5-lq\.qishui)\.com\/luna\/me\/recently-played-media\?, requires-body=true, script-path=https://raw.githubusercontent.com/Jard1n/VPN_Tool/main/Scripts/QishuiMusic.js
+# 拦截促销弹窗排序决策与旧版 upsells
+^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/commerce\/(v2\/)?(upsells|upsells_config|upsell_sort_decision)(\?|$) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 商城订单状态查询
+^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/commerce\/ecommerce\/order_list(\?|$) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 拦截开屏 DSP 实时竞价广告与音频插播广告（放行 /luna/advert/incentive/ 供主动看广告领VIP时长使用）
+^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/(ads\/dsp\/retrieve|media_ads)(\?|$) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 听视频/短剧提醒与信息流
+^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/(v2\/feed\/)?listen-video\/(reminder|module|tab-feed)(\?|$) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
+# 活动弹窗、拉新弹窗、听歌模式悬浮Widget与一起听导流
+^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/(activities|acquisition|feed\/mode\/widget|social\/mate\/guidance)(\?|$) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
-hostname = %APPEND% webcast-open.douyin.com, beta-luna.douyin.com, api.qishui.com, api5-lq.qishui.com, tnc*-*.zijieapi.com
+hostname = %APPEND% beta-luna.douyin.com, api.qishui.com, api5-lq.qishui.com, conf.qishui.com, lf-res-*.douyinstatic.com, tnc*-*.zijieapi.com
