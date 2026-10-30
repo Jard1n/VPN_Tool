@@ -1,4 +1,4 @@
-# Main total line 4288 
+# Main total line 4289 
 # ------------------------------------------
 AND,((DOMAIN-KEYWORD,-misc-),(DOMAIN-SUFFIX,zijieapi.com))
 AND,((DOMAIN-KEYWORD,adx-),(DOMAIN-SUFFIX,statisticslinks.com))
@@ -122,6 +122,7 @@ DOMAIN,api.xsj.wasu.tv
 DOMAIN,api.zuihuimai.com
 DOMAIN,apiv4-iyes.youku.com
 DOMAIN,apm.gotokeep.com
+DOMAIN,app-alpha.bytedance.net
 DOMAIN,app-log.dewu.com
 DOMAIN,app.bugsnag.com
 DOMAIN,app.getsentry.com
