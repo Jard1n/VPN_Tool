@@ -4,20 +4,19 @@
 
 
 [Rule]
-AND,((PROTOCOL,QUIC), (OR,((DOMAIN-SUFFIX,meituan.com), (DOMAIN-SUFFIX,meituan.net), (DOMAIN-SUFFIX,dianping.com), (DOMAIN-SUFFIX,sankuai.com)))),REJECT
-DOMAIN,shark-mt.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,shark-default.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,shark-dp.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,shark-ps.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,shark-wm.sankuai.com,REJECT,extended-matching,pre-matching
-DOMAIN,shark.dianping.com,REJECT,extended-matching,pre-matching
-DOMAIN-WILDCARD,mquic-*.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,httpdnsmultiapi.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,httpdnsmultiapivip.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,httpdns.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,httpdnsvip.meituan.com,REJECT,extended-matching,pre-matching
-DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT,extended-matching,pre-matching
-DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT,extended-matching,pre-matching
+DOMAIN,shark-mt.meituan.com,REJECT,extended-matching
+DOMAIN,shark-default.meituan.com,REJECT,extended-matching
+DOMAIN,shark-dp.meituan.com,REJECT,extended-matching
+DOMAIN,shark-ps.meituan.com,REJECT,extended-matching
+DOMAIN,shark-wm.sankuai.com,REJECT,extended-matching
+DOMAIN,shark.dianping.com,REJECT,extended-matching
+DOMAIN-WILDCARD,mquic-*.meituan.com,REJECT,extended-matching
+DOMAIN,httpdnsmultiapi.meituan.com,REJECT,extended-matching
+DOMAIN,httpdnsmultiapivip.meituan.com,REJECT,extended-matching
+DOMAIN,httpdns.meituan.com,REJECT,extended-matching
+DOMAIN,httpdnsvip.meituan.com,REJECT,extended-matching
+DOMAIN,dnspod.meituan.httpdns.qcloud.com,REJECT,extended-matching
+DOMAIN,dnspod.meituan.httpdns.start.qcloud.com,REJECT,extended-matching
 IP-CIDR,202.90.108.13/32,REJECT,no-resolve,pre-matching
 IP-CIDR,202.90.110.46/32,REJECT,no-resolve,pre-matching
 IP-CIDR,202.90.108.69/32,REJECT,no-resolve,pre-matching
