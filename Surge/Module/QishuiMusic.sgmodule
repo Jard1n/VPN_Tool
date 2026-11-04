@@ -42,4 +42,4 @@ http-response-jq ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com
 ^https:\/\/(beta-luna\.douyin|api5-lq\.qishui|api\.qishui)\.com\/luna\/(activities|acquisition|feed\/mode\/widget|social\/mate\/guidance)(\?|$) data-type=text data="{}" status-code=200 header="Content-Type:application/json"
 
 [MITM]
-hostname = %APPEND% beta-luna.douyin.com, api.qishui.com, api5-lq.qishui.com, conf.qishui.com, dig.zjurl.cn, lf-res-*.douyinstatic.com, tnc*-*.zijieapi.com
+hostname = %APPEND% beta-luna.douyin.com, api.qishui.com, api5-lq.qishui.com, conf.qishui.com, lf-res-*.douyinstatic.com, tnc*-*.zijieapi.com
