@@ -1,4 +1,4 @@
-# Main total line 24629 
+# Main total line 24631 
 # ------------------------------------------
 DOMAIN,1password.drift.click
 DOMAIN,a4e8s8k3.map2.ssl.hwcdn.net
@@ -31,6 +31,7 @@ DOMAIN,hb4bbbbb.pmhcjk.com
 DOMAIN,holoxx.f5.si
 DOMAIN,hpstore.corpmerchandise.com
 DOMAIN,http-inputs-notion.splunkcloud.com
+DOMAIN,http-intake.logs.us5.datadoghq.com
 DOMAIN,hub.slarker.me
 DOMAIN,i.jeded.com
 DOMAIN,imperial.insendi.com
@@ -9650,6 +9651,7 @@ DOMAIN-SUFFIX,grep.app
 DOMAIN-SUFFIX,gridaware.app
 DOMAIN-SUFFIX,grindr.com
 DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,grokbot.com
 DOMAIN-SUFFIX,grokipedia.com
 DOMAIN-SUFFIX,grokusercontent.com
 DOMAIN-SUFFIX,grooby.com
