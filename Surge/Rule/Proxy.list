@@ -1,4 +1,4 @@
-# Main total line 637 
+# Main total line 638 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,ea-api.arkoselabs.com
@@ -68,6 +68,7 @@ DOMAIN-SUFFIX,awswaf.com
 DOMAIN-SUFFIX,azure.com
 DOMAIN-SUFFIX,azureedge.net
 DOMAIN-SUFFIX,azurefd.net
+DOMAIN-SUFFIX,bandwagonhost.com
 DOMAIN-SUFFIX,battle.net
 DOMAIN-SUFFIX,battlenet.com
 DOMAIN-SUFFIX,bbc.co
