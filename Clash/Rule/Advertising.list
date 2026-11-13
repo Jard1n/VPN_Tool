@@ -1,4 +1,4 @@
-# Main total line 4263 
+# Main total line 4265 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DST-PORT,6443))
@@ -485,6 +485,7 @@ DOMAIN-SUFFIX,a.dangdang.com
 DOMAIN-SUFFIX,a.ki
 DOMAIN-SUFFIX,a.koudai.com
 DOMAIN-SUFFIX,a.market.xiaomi.com
+DOMAIN-SUFFIX,a.pemsrv.com
 DOMAIN-SUFFIX,a.shukriya90.com
 DOMAIN-SUFFIX,a.youdao.com
 DOMAIN-SUFFIX,a0.app.xiaomi.com
@@ -1875,6 +1876,7 @@ DOMAIN-SUFFIX,jihehuaban.com.cn
 DOMAIN-SUFFIX,jimdo.com
 DOMAIN-SUFFIX,jing.58.com
 DOMAIN-SUFFIX,jisucn.com
+DOMAIN-SUFFIX,jitrivppyz.in
 DOMAIN-SUFFIX,jiubuhua.com
 DOMAIN-SUFFIX,jizzads.com
 DOMAIN-SUFFIX,jknmthwd.xyz
