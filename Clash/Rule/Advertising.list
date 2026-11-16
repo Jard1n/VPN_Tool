@@ -1,4 +1,4 @@
-# Main total line 4269 
+# Main total line 4272 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DST-PORT,6443))
@@ -1116,6 +1116,7 @@ DOMAIN-SUFFIX,bgg.baidu.com
 DOMAIN-SUFFIX,bhichong.com
 DOMAIN-SUFFIX,bianxian.com
 DOMAIN-SUFFIX,bianxianmao.com
+DOMAIN-SUFFIX,bid.shanghailingye.cn
 DOMAIN-SUFFIX,biddingos.com
 DOMAIN-SUFFIX,biddingx.com
 DOMAIN-SUFFIX,bidtheatre.com
@@ -1348,6 +1349,7 @@ DOMAIN-SUFFIX,d10lumateci472.cloudfront.net
 DOMAIN-SUFFIX,d227cncaprzd7y.cloudfront.net
 DOMAIN-SUFFIX,da.hunantv.com
 DOMAIN-SUFFIX,da.mgtv.com
+DOMAIN-SUFFIX,da.statisticslinks.com
 DOMAIN-SUFFIX,dafapromo.com
 DOMAIN-SUFFIX,daitdai.com
 DOMAIN-SUFFIX,daoyoudao.com
@@ -2894,6 +2896,7 @@ DOMAIN-SUFFIX,tjlog.ps.easou.com
 DOMAIN-SUFFIX,tjqonline.cn
 DOMAIN-SUFFIX,tk.baidu.cn
 DOMAIN-SUFFIX,tk.baidu.com
+DOMAIN-SUFFIX,tk.statisticslinks.com
 DOMAIN-SUFFIX,tkweb.baidu.com
 DOMAIN-SUFFIX,tmead.y.qq.com
 DOMAIN-SUFFIX,tmeadcomm.y.qq.com
