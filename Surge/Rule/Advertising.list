@@ -1,4 +1,4 @@
-# Main total line 4271 
+# Main total line 4275 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -2302,6 +2302,10 @@ DOMAIN-SUFFIX,open.snssdk.com
 DOMAIN-SUFFIX,openadapi.fancydsp.com
 DOMAIN-SUFFIX,openapi-news.meizu.com
 DOMAIN-SUFFIX,openrcv.baidu.com
+DOMAIN-SUFFIX,openx.com
+DOMAIN-SUFFIX,openx.net
+DOMAIN-SUFFIX,openxenterprise.com
+DOMAIN-SUFFIX,openxmarket.asia
 DOMAIN-SUFFIX,optaim.com
 DOMAIN-SUFFIX,optimix.asia
 DOMAIN-SUFFIX,optimix.cn
@@ -2647,6 +2651,7 @@ DOMAIN-SUFFIX,sentiance.com
 DOMAIN-SUFFIX,sentry.music.163.com
 DOMAIN-SUFFIX,servebom.com
 DOMAIN-SUFFIX,servedby-buysellads.com
+DOMAIN-SUFFIX,servedbyopenx.com
 DOMAIN-SUFFIX,server.m.pp.cn
 DOMAIN-SUFFIX,server.mch3.com
 DOMAIN-SUFFIX,serverbid.com
@@ -3441,7 +3446,6 @@ DOMAIN-KEYWORD,omgmta
 DOMAIN-KEYWORD,omniture
 DOMAIN-KEYWORD,onenews
 DOMAIN-KEYWORD,open.douyin.com
-DOMAIN-KEYWORD,openx
 DOMAIN-KEYWORD,pagespeed-mod
 DOMAIN-KEYWORD,pangolin-dsp-toutiao
 DOMAIN-KEYWORD,pangolin-sdk-toutiao
