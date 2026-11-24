@@ -72,6 +72,7 @@ IP-CIDR6,2607:6bc0::/48, no-resolve
 # Meta AI
 DOMAIN,imagine.meta.com
 DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metaaivm.com
 
 # Perplexity
 DOMAIN, pplx-res.cloudinary.com
