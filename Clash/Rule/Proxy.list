@@ -1,4 +1,4 @@
-# Main total line 640 
+# Main total line 645 
 # ------------------------------------------
 DOMAIN,69shuba.cx
 DOMAIN,ea-api.arkoselabs.com
@@ -9,10 +9,13 @@ DOMAIN,hanime1.me
 DOMAIN,http-inputs-notion.splunkcloud.com
 DOMAIN,in.mesl.cloud
 DOMAIN,ip.net.coffee
+DOMAIN,iptv.445569.xyz
 DOMAIN,javday.app
+DOMAIN,live.fanmingming.com
 DOMAIN,origin-a.akamaihd.net
 DOMAIN,originasserts.akamaized.net
 DOMAIN,pplx-res.cloudinary.com
+DOMAIN,rdap.arin.net
 DOMAIN,reddit.app.link
 DOMAIN,rtm.tnt-ea.com
 DOMAIN,sakuracat.link
@@ -238,6 +241,8 @@ DOMAIN-SUFFIX,here.net
 DOMAIN-SUFFIX,hk
 DOMAIN-SUFFIX,hltv.org
 DOMAIN-SUFFIX,hockeyapp.net
+DOMAIN-SUFFIX,hostloc.com
+DOMAIN-SUFFIX,hostloc.net
 DOMAIN-SUFFIX,ikuncode.cc
 DOMAIN-SUFFIX,imdb
 DOMAIN-SUFFIX,imdb.com
