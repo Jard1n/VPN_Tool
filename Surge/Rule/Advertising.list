@@ -1,4 +1,4 @@
-# Main total line 4275 
+# Main total line 4271 
 # ------------------------------------------
 AND,((IP-CIDR,101.126.58.201/32,no-resolve),(DEST-PORT,6443))
 AND,((IP-CIDR,110.249.199.75/32,no-resolve),(DEST-PORT,6443))
@@ -3670,7 +3670,6 @@ IP-CIDR,153.3.3.226/32,no-resolve
 IP-CIDR,154.199.255.184/32,no-resolve
 IP-CIDR,154.204.32.99/32,no-resolve
 IP-CIDR,154.223.16.232/32,no-resolve
-IP-CIDR,154.7.80.158/32,no-resolve
 IP-CIDR,156.233.32.123/32,no-resolve
 IP-CIDR,156.245.23.49/32,no-resolve
 IP-CIDR,157.90.183.248/32,no-resolve
@@ -3851,7 +3850,6 @@ IP-CIDR,194.180.36.96/32,no-resolve
 IP-CIDR,194.226.139.121/32,no-resolve
 IP-CIDR,194.226.139.7/32,no-resolve
 IP-CIDR,194.26.232.61/32,no-resolve
-IP-CIDR,194.59.220.161/32,no-resolve
 IP-CIDR,194.63.140.103/32,no-resolve
 IP-CIDR,194.63.143.61/32,no-resolve
 IP-CIDR,194.63.143.96/32,no-resolve
@@ -4016,7 +4014,6 @@ IP-CIDR,23.229.68.43/32,no-resolve
 IP-CIDR,23.229.68.44/30,no-resolve
 IP-CIDR,23.229.69.124/32,no-resolve
 IP-CIDR,23.229.70.48/32,no-resolve
-IP-CIDR,23.231.151.252/32,no-resolve
 IP-CIDR,23.81.64.183/32,no-resolve
 IP-CIDR,23.82.169.37/32,no-resolve
 IP-CIDR,23.82.169.38/31,no-resolve
@@ -4154,7 +4151,6 @@ IP-CIDR,60.16.255.36/32,no-resolve
 IP-CIDR,60.19.29.21/32,no-resolve
 IP-CIDR,60.19.29.22/31,no-resolve
 IP-CIDR,60.19.29.24/30,no-resolve
-IP-CIDR,60.190.139.164/32,no-resolve
 IP-CIDR,60.191.124.236/32,no-resolve
 IP-CIDR,60.191.124.252/32,no-resolve
 IP-CIDR,60.7.133.200/32,no-resolve
